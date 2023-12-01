@@ -1,0 +1,23 @@
+#!/bin/bash
+batch_extract_k
+K_STR="kernel_log_"
+
+
+if [ ! -f $1 ]; then
+echo $1 "  not exist!"
+exit
+fi
+
+RESULT=$(find)
+for FILE in $RESULT
+do
+
+if [[ $FILE == *$K_STR* ]]
+then
+echo $FILE
+sed -i -f $1 $FILE
+echo -e "\n"
+fi
+
+
+done

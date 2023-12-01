@@ -1,0 +1,7 @@
+adb root
+adb shell "sync"
+adb shell "mv /data/debuglogger  /data/debuglogger_xx"
+adb shell "mv /data/debuglogger_compress  /data/debuglogger_compress_xx"
+adb root&&adb pull /data/debuglogger_xx .  &&adb pull /data/debuglogger_compress_xx .
+adb shell "mv /data/debuglogger_xx  /data/debuglogger"
+adb shell "mv /data/debuglogger_compress_xx  /data/debuglogger_compress"

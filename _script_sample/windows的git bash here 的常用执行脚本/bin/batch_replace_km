@@ -1,0 +1,31 @@
+#!/bin/bash
+
+batch_extract_km
+
+K_STR="kernel_log_"
+M_STR="main_log_"
+
+if [ ! -f $1 ]; then
+echo $1 "  not exist!"
+exit
+fi
+
+RESULT=$(find)
+for FILE in $RESULT
+do
+
+if [[ $FILE == *$K_STR* ]]
+then
+echo $FILE
+sed -i -f $1 $FILE
+echo -e "\n"
+fi
+
+if [[ $FILE == *$M_STR* ]]
+then
+echo $FILE
+sed -i -f $1 $FILE
+echo -e "\n"
+fi
+
+done

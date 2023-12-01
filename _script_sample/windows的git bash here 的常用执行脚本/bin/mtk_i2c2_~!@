@@ -1,0 +1,88 @@
+s/Linux version 4.14/~!@  Linux version 4.14/g
+s/small than grab window/~!@#  small than grab window/g
+s/\[ISP\]\[ISP_WaitIrq\] ERRRR/~!@#  \[ISP\]\[ISP_WaitIrq\] ERRRR/g
+s/max96722b0_mipi_yuv_camera_sensor\[write_cmos_sensor/~!@#  max96722b0_mipi_yuv_camera_sensor\[write_cmos_sensor/g
+s/max96722b1_mipi_yuv_camera_sensor\[write_cmos_sensor/~!@#  max96722b1_mipi_yuv_camera_sensor\[write_cmos_sensor/g
+s/max96722b2_mipi_yuv_camera_sensor\[write_cmos_sensor/~!@#  max96722b2_mipi_yuv_camera_sensor\[write_cmos_sensor/g
+s/max96722b3_mipi_yuv_camera_sensor\[write_cmos_sensor/~!@#  max96722b3_mipi_yuv_camera_sensor\[write_cmos_sensor/g
+s/max96722b0_mipi_yuv_camera_sensor\[write_cmos_max/~!@#  max96722b0_mipi_yuv_camera_sensor\[write_cmos_max/g
+s/max96722b1_mipi_yuv_camera_sensor\[write_cmos_max/~!@#  max96722b1_mipi_yuv_camera_sensor\[write_cmos_max/g
+s/max96722b2_mipi_yuv_camera_sensor\[write_cmos_max/~!@#  max96722b2_mipi_yuv_camera_sensor\[write_cmos_max/g
+s/max96722b3_mipi_yuv_camera_sensor\[write_cmos_max/~!@#  max96722b3_mipi_yuv_camera_sensor\[write_cmos_max/g
+s/----- beginning of kernel/\n\n\n  ~!@#----- beginning of kernelkernel/g
+s/------ beginning of system/\n\n\n  ~!@#------ beginning of system/g
+s/------ beginning of main/\n\n\n  ~!@#------ beginning of main/g
+s/--MAX96722B0--beging/~!@  --MAX96722B0--beging/g
+s/--MAX96722B1--beging/~!@  --MAX96722B1--beging/g
+s/--MAX96722B2--beging/~!@  --MAX96722B2--beging/g
+s/--MAX96722B3--beging/~!@  --MAX96722B3--beging/g
+s/camera ID\=0x/~!@  camera ID\=0x/g
+s/--MAX96722B0--end/~!@  --MAX96722B0--end/g
+s/--MAX96722B1--end/~!@  --MAX96722B1--end/g
+s/--MAX96722B2--end/~!@  --MAX96722B2--end/g
+s/--MAX96722B3--end/~!@  --MAX96722B3--end/g
+s/\[imgsensor\]Open bridge error/~!@#  \[imgsensor\]Open bridge error/g
+s/max96722b0_mipi_yuv_camera_sensor\[get_imgsensor_id\] Sensor Not Connect/~!@#  max96722b0_mipi_yuv_camera_sensor\[get_imgsensor_id\] Sensor Not Connect/g
+s/max96722b1_mipi_yuv_camera_sensor\[get_imgsensor_id\] Sensor Not Connect/~!@#  max96722b1_mipi_yuv_camera_sensor\[get_imgsensor_id\] Sensor Not Connect/g
+s/max96722b2_mipi_yuv_camera_sensor\[get_imgsensor_id\] Sensor Not Connect/~!@#  max96722b2_mipi_yuv_camera_sensor\[get_imgsensor_id\] Sensor Not Connect/g
+s/max96722b3_mipi_yuv_camera_sensor\[get_imgsensor_id\] Sensor Not Connect/~!@#  max96722b3_mipi_yuv_camera_sensor\[get_imgsensor_id\] Sensor Not Connect/g
+s/---\[ end trace/~!@#  ---\[ end trace/g
+s/cut here/cut here  ~!@/g
+s/max96722b0_mipi_yuv_camera_sensor\[read_cmos_max9670x_sensor/~!@#  max96722b0_mipi_yuv_camera_sensor\[read_cmos_max9670x_sensor/g
+s/max96722b1_mipi_yuv_camera_sensor\[read_cmos_max9670x_sensor/~!@#  max96722b1_mipi_yuv_camera_sensor\[read_cmos_max9670x_sensor/g
+s/max96722b2_mipi_yuv_camera_sensor\[read_cmos_max9670x_sensor/~!@#  max96722b2_mipi_yuv_camera_sensor\[read_cmos_max9670x_sensor/g
+s/max96722b3_mipi_yuv_camera_sensor\[read_cmos_max9670x_sensor/~!@#  max96722b3_mipi_yuv_camera_sensor\[read_cmos_max9670x_sensor/g
+s/max96722b0_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/~!@  max96722b0_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/g
+s/max96722b1_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/~!@  max96722b1_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/g
+s/max96722b2_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/~!@  max96722b2_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/g
+s/max96722b3_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/~!@  max96722b3_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable/g
+s/max96722b0_mipi_yuv_camera_sensor\[read_cmos_sensor/~!@#  max96722b0_mipi_yuv_camera_sensor\[read_cmos_sensor/g
+s/max96722b1_mipi_yuv_camera_sensor\[read_cmos_sensor/~!@#  max96722b1_mipi_yuv_camera_sensor\[read_cmos_sensor/g
+s/max96722b2_mipi_yuv_camera_sensor\[read_cmos_sensor/~!@#  max96722b2_mipi_yuv_camera_sensor\[read_cmos_sensor/g
+s/max96722b3_mipi_yuv_camera_sensor\[read_cmos_sensor/~!@#  max96722b3_mipi_yuv_camera_sensor\[read_cmos_sensor/g
+s/startActivityFromPkgName\: com.senseauto.camera/~!@  startActivityFromPkgName\: com.senseauto.camera/g
+s/DFFactoryPattern: TextureViewHelper/~!@  DFFactoryPattern: TextureViewHelper/g
+s/Creating new stream/~!@  Creating new stream/g
+s/report OMS/~!@  report OMS/g
+s/report DMS/~!@  report DMS/g
+s/FATAL EXCEPTION/~!@#  FATAL EXCEPTION/g
+s/max96722b0_mipi_yuv_camera_sensor\[open\] sensor_init/~!@#  max96722b0_mipi_yuv_camera_sensor\[open\] sensor_init/g
+s/max96722b1_mipi_yuv_camera_sensor\[open\] sensor_init/~!@#  max96722b1_mipi_yuv_camera_sensor\[open\] sensor_init/g
+s/max96722b2_mipi_yuv_camera_sensor\[open\] sensor_init/~!@#  max96722b2_mipi_yuv_camera_sensor\[open\] sensor_init/g
+s/max96722b3_mipi_yuv_camera_sensor\[open\] sensor_init/~!@#  max96722b3_mipi_yuv_camera_sensor\[open\] sensor_init/g
+s/max96722b0_mipi_yuv_camera_sensor\[open\] open/~!@#  max96722b0_mipi_yuv_camera_sensor\[open\] open/g
+s/max96722b1_mipi_yuv_camera_sensor\[open\] open/~!@#  max96722b1_mipi_yuv_camera_sensor\[open\] open/g
+s/max96722b2_mipi_yuv_camera_sensor\[open\] open/~!@#  max96722b2_mipi_yuv_camera_sensor\[open\] open/g
+s/max96722b3_mipi_yuv_camera_sensor\[open\] open/~!@#  max96722b3_mipi_yuv_camera_sensor\[open\] open/g
+s/max96722b0_mipi_yuv_camera_sensor\[close\]/~!@#  max96722b0_mipi_yuv_camera_sensor\[close\]/g
+s/max96722b1_mipi_yuv_camera_sensor\[close\]/~!@#  max96722b1_mipi_yuv_camera_sensor\[close\]/g
+s/max96722b2_mipi_yuv_camera_sensor\[close\]/~!@#  max96722b2_mipi_yuv_camera_sensor\[close\]/g
+s/max96722b3_mipi_yuv_camera_sensor\[close\]/~!@#  max96722b3_mipi_yuv_camera_sensor\[close\]/g
+s/LinkB_ID=0x/~!@  LinkB_ID=0x/g
+s/ addr= 0x/~!@   addr= 0x/g
+s/Kernel command line/~!@  Kernel command line/g
+s/DMS report uevent/~!@#  DMS report uevent/g
+s/OMS report uevent/~!@#  OMS report uevent/g
+s/adjust g_max96722b/~!@#  adjust g_max96722b/g
+s/Sensor Status\:linkb/~!@  Sensor Status\:linkb/g
+s/Sensor Status\:linkc/~!@  Sensor Status\:linkc/g
+s/preview failed/~!@#  preview failed/g
+s/onConfigureFailed/~!@#  onConfigureFailed/g
+s/sensor_idx 1, ppw/~!@  sensor_idx 1, ppw/g
+s/sensor_idx 2, ppw/~!@  sensor_idx 2, ppw/g
+s/sensor_idx 3, ppw/~!@  sensor_idx 3, ppw/g
+s/sensor_idx 4, ppw/~!@  sensor_idx 4, ppw/g
+#s/CameraActivity\#0]/~!@  CameraActivity\#0]/g
+s/Cam\:\:2\] deque fps/~!@  Cam\:\:2\] deque fps/g
+s/Cam\:\:3\] deque fps/~!@  Cam\:\:3\] deque fps/g
+s/PM\: suspend exit/~!@ PM\: suspend exit/g
+s/PM\: suspend entry/~!@  PM\: suspend entry/g
+s/adopt_CAMERA_HW_FeatureControl/adopt_CAMERA_HW_FeatureControl  ~!@#/g
+s/connect\: already connected/~!@#  connect\: already connected/g
+s/imgsensor\]open/imgsensor\]open ~!@/g
+s/imgsensor\]close/imgsensor\]close  ~!@/g
+s/I2C write failed addr/~!@  I2C write failed addr/g
+s/I2C read failed addr/~!@  I2C read failed addr/g
+s/for HAL version default and Camera API version 2/for HAL version default and Camera API version 2  ~!@/g
+s/Call trace\:/Call trace\:  ~!@/g
+s/nisy/nisy  ~!@#/g

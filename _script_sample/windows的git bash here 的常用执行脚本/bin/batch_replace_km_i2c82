@@ -1,0 +1,4 @@
+#!/bin/bash
+batch_extract_km
+batch_replace_km ~/bin/mtk_i2c8_@!~
+batch_replace_km ~/bin/mtk_i2c2_~!@

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+RADIO="radio_log_"
+BSP="bsp_log_"
+CRASH="crash_log_" 
+EVENTS="events_log_"
+SYS="sys_log_"
+
+RESULT=$(find)
+for FILE in $RESULT
+do
+
+if [[ $FILE == *$RADIO* || $FILE == *$BSP* || $FILE == *$CRASH* || $FILE == *$EVENTS* ||  $FILE == *$SYS* ]]
+then
+echo $FILE
+rm -rf $FILE
+fi
+
+
+done

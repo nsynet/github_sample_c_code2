@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ ! -f $1 ]; then
+echo $1 "  not exist!"
+exit
+fi
+
+result=$(find)
+for file in $result
+do
+if [ -f "$file" ]
+then
+echo $file
+sed -i -f $1 $file
+echo -e "\n"
+fi
+done

@@ -1,0 +1,7 @@
+s/psci_system_suspend/#$%  psci_system_suspend/g
+s/PowerManagerService: PowerSleepProc start/$$$  PowerManagerService: PowerSleepProc start/g
+s/PowerManagerService: PowerSleepProc finish/$$$  PowerManagerService: PowerSleepProc finish/g
+s/PowerManagerService: PowerWakeUpProc start/$$$  PowerManagerService: PowerWakeUpProc start/g
+s/PowerManagerService: PowerWakeUpProc finish/$$$  PowerManagerService: PowerWakeUpProc finish/g
+s/PM: suspend exit/PM: suspend exit/g
+s/PM: suspend entry/PM: suspend entry/g

@@ -1,0 +1,45 @@
+Linux version 4.14
+small than grab window
+\[ISP\]\[ISP_WaitIrq\] ERRRR
+max96722_mipi_yuv_camera_sensor\[Chenck_Sensor_Signal\] Sensor Statu
+max96722_mipi_yuv_camera_sensor\[streaming_control\] streaming_enable
+max96722_mipi_yuv_camera_sensor\[write_cmos_sensor
+max96722_mipi_yuv_camera_sensor\[write_cmos_max
+----- beginning of kernel
+------ beginning of system
+------ beginning of main
+--MAX96722--beging
+camera ID=0x
+--MAX96722--end
+cam_avm_lock_satus =
+cam_avm_err_satu
+cam_avm_status is local_statu
+WANR\:0x400 register = 0x
+serializer id\=0x
+LiteCameraDevice: deque fail
+LD01 off
+LD02 off
+LD01 on
+LD02 on
+max96722_mipi_yuv_camera_sensor\[open\] sensor_init
+max96722_mipi_yuv_camera_sensor\[open\] open
+max96722_mipi_yuv_camera_sensor\[close\]
+Kernel command line
+open  cameraLinkStatus failed
+open  Errbnode failed
+AVM report uevent
+shm_read error, errno
+CamCon CheckCam failed
+#tempStates \:
+mErrbstatus \: 0
+#MTKThreadStatus \:
+open CameraStatu
+libavm  \: DF camstatu
+Lite DF stoping start
+Lite DF resume starting
+sensor_idx 0, ppw
+LiteCameraDevice\: enqThreadLoop\-\-
+SENINF0_PkCnt
+cam_start_monitor uevent
+cam_stop_monitor uevent
+Cam\:\:0\] deque fp

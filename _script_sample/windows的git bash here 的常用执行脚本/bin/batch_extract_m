@@ -1,0 +1,16 @@
+#!/bin/bash
+
+K_STR="kernel_log_"
+M_STR="main_log_"
+RESULT=$(find)
+
+for FILE in $RESULT
+do
+if [[ $FILE == *$M_STR* ]]
+then
+echo $FILE
+gzip -d $FILE # -k=keep original file
+echo -e "\n"
+fi
+
+done

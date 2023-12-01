@@ -1,0 +1,2 @@
+#可以使用  logcat |grep ThermalEventListener  来实时观察风扇转动
+s/ThermalEventListener/^^^  ThermalEventListener/g

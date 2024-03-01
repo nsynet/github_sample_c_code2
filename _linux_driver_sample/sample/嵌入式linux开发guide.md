@@ -17,7 +17,7 @@
 | GPIO输出  | <p>gpio_request()<br>gpio_direction_output()<br>gpio_set_value()  </p>|gpio_free()|
 | GPIO编号转换为相应的IRQ（中断请求）编号  | gpio_to_irq()  ||如果GPIO引脚被配置为中断源，则此函数可以将GPIO编号转换为相应的IRQ（中断请求）编号。|
 |将IRQ编号转换为相应的GPIO编号   | irq_to_gpio()  | |
-|   |   |
+|供电芯片的开关   |regulator_get();regulator_enable(); regulator_disable();  |regulator_put()| |
 |   |   |
 |   |   |
 |   |   |

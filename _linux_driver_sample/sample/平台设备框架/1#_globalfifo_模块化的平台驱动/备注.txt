@@ -1,0 +1,18 @@
+本书配套代码/home/baohua/develop/training/kernel/drivers/globalfifo/ch12中包含了globalfifo driver和device端的两个模块。在该目录运行make，会生成两个模块：globalfifo.ko和globalfifo-dev.ko，把globalfifo.ko和globalfifo-dev.ko先后insmod，会导致platform_driver和platform_device的匹配，globalfifo_probe（）会执行，/dev/globalfifo节点会自动生成，默认情况下需要root权限来访问/dev/globalfifo。
+
+如果此后我们rmmod globalfifo-dev.ko，则会导致platform_driver的remove（）成员函数，即globalfifo_remove（）函数被执行，/dev/globalfifo节点会自动消失。
+
+_probe()
+	|__ platform_set_drvdata
+	|__ misc_register()
+
+_remove()	
+	|__ misc_deregister()
+	
+platform_device 添加driver:
+
+globalfifodev_init()
+	|__ platform_device_alloc()
+	
+globalfifodev_exit
+	|__ platform_device_unregister()

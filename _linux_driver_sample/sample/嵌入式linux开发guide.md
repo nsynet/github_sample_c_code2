@@ -15,11 +15,11 @@
 | 中断的申请  | <p>gpio_is_valid(g_cam_gpio_status.cam_avm_lock_status);<br>cam_avm_lock_irq = gpio_to_irq(g_cam_gpio_status.cam_avm_lock_status);<br>request_threaded_irq(cam_avm_lock_irq, NULL,cam_avm_lock_on_isr, irq_flags, "avm_lock_status", NULL); </p>| |
 | GPIO输入  | <p>gpio_request()<br>gpio_direction_input()<br>gpio_get_value() </p> |gpio_free() |devm_gpio_request_one是gpio_request_one的设备管理版本。它在设备管理的上下文中申请GPIO，会自动管理GPIO的生命周期。当设备被移除或卸载时，它会自动释放所申请的GPIO，无需显式调用gpio_free。这使得代码更加简洁和可靠，因为不需要担心在设备卸载时忘记释放GPIO。另外，devm_gpio_request_one和gpio_request_one都允许在申请GPIO时设置其方向和初始值。例如，你可以使用devm_gpio_request_one将GPIO设置为输入或输出，并设置其初始电平为高电平或低电平。|
 | GPIO输出  | <p>gpio_request()<br>gpio_direction_output()<br>gpio_set_value()  </p>|gpio_free()|
-| GPIO编号转换为相应的IRQ（中断请求）编号  | gpio_to_irq()  ||如果GPIO引脚被配置为中断源，则此函数可以将GPIO编号转换为相应的IRQ（中断请求）编号。|
-|将IRQ编号转换为相应的GPIO编号   | irq_to_gpio()  | |
+| GPIO编号转换为相应的IRQ（中断请求）编号  | gpio_to_irq()  | |如果GPIO引脚被配置为中断源，则此函数可以将GPIO编号转换为相应的IRQ（中断请求）编号。|
+|将IRQ编号转换为相应的GPIO编号   | irq_to_gpio()  | | |
 |供电芯片的开关   |regulator_get();regulator_enable(); regulator_disable();  |regulator_put()| |
-|   |   |
-|   |   |
+|模块化的平台设备驱动   | module_platform_driver  | | |
+|非模块化的平台设备驱动   |platform_driver_register  |platform_driver_unregister| | |
 |   |   |
 |   |   |
 |   |   |
@@ -51,6 +51,12 @@ devm_kzalloc()
 devm_clk_get
 devm_gpio_request_one
 sysfs_create_group(struct kobject *kobj,const struct attribute_group *grp)
+
+
+## 常用的内核开关
+| 名称 | 用途 | 建议是否开关 |
+| ------------ | ------------ | ------------ |
+|CONFIG_DYNAMIC_DEBUG |  |  |
 
 
 ## 排查内存问题

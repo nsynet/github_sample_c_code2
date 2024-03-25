@@ -19,30 +19,19 @@
 |将IRQ编号转换为相应的GPIO编号   | irq_to_gpio()  | | |
 |供电芯片的开关   |regulator_get();regulator_enable(); regulator_disable();  |regulator_put()| |
 |模块化的平台设备驱动   | module_platform_driver  | | |
-|非模块化的平台设备驱动   |platform_driver_register  |platform_driver_unregister| | |
+|非模块化的平台设备驱动   |<p>module_init时使用platform_driver_register()<br>probe时使用platform_set_drvdata()<br>of_platform_populate() 函数是一个用于从设备树（Device Tree）中解析并创建平台设备（platform devices）<br></p>|module_exit时使用platform_driver_unregister| | |
 |misc device注册   | misc_register()  |misc_deregister()  | misc_register()会自动创建文件节点,不需要mknod()手工创建设备节点 |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+|i2c设备   |i2c_add_driver   | i2c_del_driver  |  |
+|   |   |  |  |
+|   |   |  |  |
+|   |   |  |  |
+|   |   |  |  |
+|   |   |  |  |
+|   |   |  |  |
+|   |   |  |  |
+|   |   |  |  |
+|   |   |  |  |
+|workqueue   |xx| yy | zz |
 
 复位处理:硬复位一般重新上电没有问题;但是软复位需要考虑外设的复位,否则可能有故障(比如外设配置了新地址,cpu仍然使用默认地址读写外设,导致找不到外设),需要做到reset键把必要的外设芯片都重启了,避免外设芯片一直上电,导致故障时reset后仍然有故障(类似摄像头的寄存器配置错误的故障)
 

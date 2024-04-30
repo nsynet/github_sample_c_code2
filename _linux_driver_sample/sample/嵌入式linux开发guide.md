@@ -6,7 +6,7 @@
 | ------------ | ------------ | ------------ | ------------ |
 |注册字符设备(古老,不建议用)   | register_chrdev()|unregister_chrdev()|register_chrdev()根据给定的主设备号是否为0来决定使用静态注册还是动态注册。当您使用unregister_chrdev()注销一个设备时，它会自动删除与该设备关联的cdev结构。但是，如果您使用unregister_chrdev_region()，您需要确保手动删除任何与该设备范围关联的cdev结构（如果有的话）|
 |注册字符设备(静态注册)|register_chrdev_region()   |unregister_chrdev_region()|register_chrdev_region() 是用于静态注册设备号的函数。它要求开发者指定设备的主设备号和次设备号的范围，并事先知道要使用的主、次设备号。在调用这个函数之前，开发者需要查看 /proc/devices 文件来确认哪些设备号没有被使用,比register_chrdev()繁琐,但是避免了 register_chrdev() 中可能导致的资源浪费问题。|
-|注册字符设备(动态注册)   | alloc_chrdev_region() 分配一个设备号范围+cdev_alloc()+cdev_init()+cdev_add()    |cdev_del() + kfree() + unregister_chrdev_region()|register_chrdev_region（）函数用于已知起始设备的设备号的情况，而alloc_chrdev_region（）用于设备号未知，向系统动态申请未被占用的设备号的情况|
+|注册字符设备(动态注册)   | <p>alloc_chrdev_region() 分配一个设备号范围<br>cdev_alloc()<br>cdev_init()<br>cdev_add()<br></p>|cdev_del() + kfree() + unregister_chrdev_region()|register_chrdev_region（）函数用于已知起始设备的设备号的情况，而alloc_chrdev_region（）用于设备号未知，向系统动态申请未被占用的设备号的情况|
 |创建/sys/class/xxx 节点  | class_create()  |class_destroy()|
 |创建设备节点/dev/xxx   |device_create()   |device_destroy() |
 |创建sysfs,即/sys/devices/xxx 节点   | sysfs_create_group()  |sysfs_remove_group|
@@ -17,20 +17,20 @@
 | GPIO输出  | <p>gpio_request()<br>gpio_direction_output()<br>gpio_set_value()  </p>|gpio_free()|
 | GPIO编号转换为相应的IRQ（中断请求）编号  | gpio_to_irq()  | |如果GPIO引脚被配置为中断源，则此函数可以将GPIO编号转换为相应的IRQ（中断请求）编号。|
 |将IRQ编号转换为相应的GPIO编号   | irq_to_gpio()  | | |
-|供电芯片的开关   |regulator_get();regulator_enable(); regulator_disable();  |regulator_put()| |
+|供电芯片的开关   |<p>regulator_get();<br>regulator_enable();<br> regulator_disable();<br></p>  |regulator_put()| |
 |模块化的平台设备驱动   | module_platform_driver  | | |
 |非模块化的平台设备驱动   |<p>module_init时使用platform_driver_register()<br>probe时使用platform_set_drvdata()<br>of_platform_populate() 函数是一个用于从设备树（Device Tree）中解析并创建平台设备（platform devices）<br></p>|module_exit时使用platform_driver_unregister| | |
-|misc device注册   | misc_register()  |misc_deregister()  | misc_register()会自动创建文件节点,不需要mknod()手工创建设备节点 |
-|i2c设备   |i2c_add_driver   | i2c_del_driver  |  |
+|misc device注册   | misc_register()  |misc_deregister()  | misc_register()会自动创建文件节点,不需要mknod()手工创建设备节点,misc设备不需要probe |
+|i2c设备   |i2c_add_driver()   | i2c_del_driver()  | probe()阶段初始化:i2c_check_functionality()+i2c_set_clientdata() |
 |   |   |  |  |
 |   |   |  |  |
 |   |   |  |  |
 |   |   |  |  |
+|media设备   | <p>media_device_init()<br>media_device_register()<br>media_entity_pads_init()<br></p>|  |  |
+|v4l2设备   |<p>v4l2_device_register()<br>video_register_device()<br></p>   |  |  |
+|v4l2 subdevice设备   |<p>v4l2_subdev_init()<br>v4l2_device_register_subdev()</p>    |  |  |
 |   |   |  |  |
-|   |   |  |  |
-|   |   |  |  |
-|   |   |  |  |
-|   |   |  |  |
+|创建/sys/kernel/下的 kobject（Kernel Object）  |kobject_create_and_add   |kobject_put   | <p>msm_cam_sysfs_kobj = kobject_create_and_add("camera_360", kernel_kobj);<br>msm_sensor_sysfs_add_link(msm_cam_sysfs_kobj, &s_ctrl->pdev->dev.kobj, "max9286_pid_all", "max9286_pid_all");<br>效果: /sys/kernel/camera_360/max9286_pid_all 指向 /sys/devices/soc/1b0c000.qcom,cci/1b0c000.qcom,cci:qcom,camera@1/max9286_pid_all</p> |
 |workqueue   |xx| yy | zz |
 
 复位处理:硬复位一般重新上电没有问题;但是软复位需要考虑外设的复位,否则可能有故障(比如外设配置了新地址,cpu仍然使用默认地址读写外设,导致找不到外设),需要做到reset键把必要的外设芯片都重启了,避免外设芯片一直上电,导致故障时reset后仍然有故障(类似摄像头的寄存器配置错误的故障)
@@ -41,11 +41,21 @@ devm_clk_get
 devm_gpio_request_one
 sysfs_create_group(struct kobject *kobj,const struct attribute_group *grp)
 
+## 常用的内核函数
+| 名称 | 用途 |
+| ------------ | ------------ |
+|debugfs_create_dir() |创建在/sys/kernel/debug/下的调试文件系统  | 
 
 ## 常用的内核开关
-| 名称 | 用途 | 建议是否开关 |
+| 名称 | 用途 | 哪些开发板是开启的? |
 | ------------ | ------------ | ------------ |
-|CONFIG_DYNAMIC_DEBUG |  |  |
+|CONFIG_DYNAMIC_DEBUG |CONFIG_DYNAMIC_DEBUG是一个用于动态调试的配置选项。当这个选项被启用（设置为y）时，内核会在编译阶段保留所有动态调试的语句。这些调试语句可以在运行时根据需要打开或关闭，通过特定的debugfs控制文件/sys/kernel/debug/dynamic_debug/control进行操作。这使得开发者能够灵活地选择需要调试的模块、文件、行号和格式，获取更为详细和针对性的调试信息。这对于解决复杂的内核问题或优化性能非常有帮助。  |  |
+|CONFIG_COMPAT | 它主要用于支持32位应用在64位系统上运行。启用此选项可以确保内核提供必要的兼容层，使得旧版本的32位应用能够在新版本的64位系统上正常工作。这对于维护系统的向后兼容性非常重要，特别是在那些需要支持旧有软件或库的系统环境中。 |美格MEIG 6125开发板  |
+| | |
+| | |
+| | |
+| | |
+
 
 
 ## 排查内存问题
@@ -97,6 +107,7 @@ static void __exit my_module_exit(void) {
 module_init(my_module_init);  
 module_exit(my_module_exit);
 ```
+//每个module_init()都会被执行,但是在其init结构体中配置了 `of_match_table`,只有设备树中匹配上的,才能执行这个设备的probe函数.
 
 ###
 分析Linux内核执行时间过长的原因可以涉及多个方面。以下是一些常见的分析和调试步骤：

@@ -305,8 +305,6 @@ nisy        5165    5141  0 05:09 pts/6    00:00:00 grep --colour=auto _c1_
 ./arch_status
 [nisy@nisy 5139]$ 
 [nisy@nisy 5139]$ 
-[nisy@nisy 5139]$ ls -al /fd
-ls: 无法访问 '/fd': 没有那个文件或目录
 [nisy@nisy 5139]$ ls -al
 总计 0
 dr-xr-xr-x   9 nisy nisy 0  6月 7日 05:09 .

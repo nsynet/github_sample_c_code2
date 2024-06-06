@@ -1,0 +1,689 @@
+[nisy@nisy _linux_vscode_hello_world]$ ps -ef |grep _c1_
+nisy        5139    5016 99 05:09 pts/5    00:00:11 ./_c1_
+nisy        5165    5141  0 05:09 pts/6    00:00:00 grep --colour=auto _c1_
+[nisy@nisy _linux_vscode_hello_world]$ cd /proc/5139
+[nisy@nisy 5139]$ find .
+.
+./task
+./task/5139
+./task/5139/fd
+./task/5139/fd/0
+./task/5139/fd/1
+./task/5139/fd/2
+./task/5139/fdinfo
+./task/5139/fdinfo/0
+./task/5139/fdinfo/1
+./task/5139/fdinfo/2
+./task/5139/ns
+./task/5139/ns/net
+./task/5139/ns/uts
+./task/5139/ns/ipc
+./task/5139/ns/pid
+./task/5139/ns/pid_for_children
+./task/5139/ns/user
+./task/5139/ns/mnt
+./task/5139/ns/cgroup
+./task/5139/ns/time
+./task/5139/ns/time_for_children
+./task/5139/net
+./task/5139/net/arp
+./task/5139/net/dev
+./task/5139/net/hci
+./task/5139/net/raw
+./task/5139/net/sco
+./task/5139/net/tcp
+./task/5139/net/udp
+./task/5139/net/bnep
+./task/5139/net/icmp
+./task/5139/net/igmp
+./task/5139/net/raw6
+./task/5139/net/snmp
+./task/5139/net/stat
+./task/5139/net/stat/rt_cache
+./task/5139/net/stat/arp_cache
+./task/5139/net/stat/ndisc_cache
+./task/5139/net/tcp6
+./task/5139/net/udp6
+./task/5139/net/unix
+./task/5139/net/icmp6
+./task/5139/net/igmp6
+./task/5139/net/l2cap
+./task/5139/net/ptype
+./task/5139/net/route
+./task/5139/net/snmp6
+./task/5139/net/packet
+./task/5139/net/psched
+./task/5139/net/rfcomm
+./task/5139/net/netlink
+./task/5139/net/netstat
+./task/5139/net/rt_acct
+./task/5139/net/udplite
+./task/5139/net/anycast6
+./task/5139/net/fib_trie
+./task/5139/net/if_inet6
+./task/5139/net/mcfilter
+./task/5139/net/rt_cache
+./task/5139/net/sockstat
+./task/5139/net/udplite6
+./task/5139/net/wireless
+./task/5139/net/connector
+./task/5139/net/dev_mcast
+./task/5139/net/dev_snmp6
+./task/5139/net/dev_snmp6/lo
+./task/5139/net/dev_snmp6/wlp59s0
+./task/5139/net/ip_mr_vif
+./task/5139/net/mcfilter6
+./task/5139/net/netfilter
+./task/5139/net/netfilter/nf_log
+./task/5139/net/protocols
+./task/5139/net/rt6_stats
+./task/5139/net/sockstat6
+./task/5139/net/xfrm_stat
+./task/5139/net/ip6_mr_vif
+./task/5139/net/ipv6_route
+./task/5139/net/ip_mr_cache
+./task/5139/net/fib_triestat
+./task/5139/net/ip6_mr_cache
+./task/5139/net/softnet_stat
+./task/5139/net/ip6_flowlabel
+./task/5139/net/ip_tables_names
+./task/5139/net/ip_tables_matches
+./task/5139/net/ip_tables_targets
+./task/5139/environ
+./task/5139/auxv
+./task/5139/status
+./task/5139/personality
+./task/5139/limits
+./task/5139/sched
+./task/5139/comm
+./task/5139/syscall
+./task/5139/cmdline
+./task/5139/stat
+./task/5139/statm
+./task/5139/maps
+./task/5139/children
+./task/5139/numa_maps
+./task/5139/mem
+./task/5139/cwd
+./task/5139/root
+./task/5139/exe
+./task/5139/mounts
+./task/5139/mountinfo
+./task/5139/clear_refs
+./task/5139/smaps
+./task/5139/smaps_rollup
+./task/5139/pagemap
+./task/5139/attr
+./task/5139/attr/current
+./task/5139/attr/prev
+./task/5139/attr/exec
+./task/5139/attr/fscreate
+./task/5139/attr/keycreate
+./task/5139/attr/sockcreate
+./task/5139/attr/smack
+./task/5139/attr/smack/current
+./task/5139/attr/apparmor
+./task/5139/attr/apparmor/current
+./task/5139/attr/apparmor/prev
+./task/5139/attr/apparmor/exec
+./task/5139/wchan
+./task/5139/stack
+./task/5139/schedstat
+./task/5139/latency
+./task/5139/cpuset
+./task/5139/cgroup
+./task/5139/cpu_resctrl_groups
+./task/5139/oom_score
+./task/5139/oom_adj
+./task/5139/oom_score_adj
+./task/5139/loginuid
+./task/5139/sessionid
+./task/5139/io
+./task/5139/uid_map
+./task/5139/gid_map
+./task/5139/projid_map
+./task/5139/setgroups
+./task/5139/arch_status
+./fd
+./fd/0
+./fd/1
+./fd/2
+./map_files
+./map_files/558abb7ef000-558abb7f0000
+./map_files/558abb7f0000-558abb7f1000
+./map_files/558abb7f1000-558abb7f2000
+./map_files/558abb7f2000-558abb7f3000
+./map_files/558abb7f3000-558abb7f4000
+./map_files/7fa950ca5000-7fa950ccb000
+./map_files/7fa950ccb000-7fa950e2a000
+./map_files/7fa950e2a000-7fa950e7f000
+./map_files/7fa950e7f000-7fa950ee3000
+./map_files/7fa950ee3000-7fa950ee5000
+./map_files/7fa950f25000-7fa950f26000
+./map_files/7fa950f26000-7fa950f4c000
+./map_files/7fa950f4c000-7fa950f56000
+./map_files/7fa950f56000-7fa950f58000
+./map_files/7fa950f58000-7fa950f5a000
+./fdinfo
+./fdinfo/0
+./fdinfo/1
+./fdinfo/2
+./ns
+./ns/net
+./ns/uts
+./ns/ipc
+./ns/pid
+./ns/pid_for_children
+./ns/user
+./ns/mnt
+./ns/cgroup
+./ns/time
+./ns/time_for_children
+./net
+./net/arp
+./net/dev
+./net/hci
+./net/raw
+./net/sco
+./net/tcp
+./net/udp
+./net/bnep
+./net/icmp
+./net/igmp
+./net/raw6
+./net/snmp
+./net/stat
+./net/stat/rt_cache
+./net/stat/arp_cache
+./net/stat/ndisc_cache
+./net/tcp6
+./net/udp6
+./net/unix
+./net/icmp6
+./net/igmp6
+./net/l2cap
+./net/ptype
+./net/route
+./net/snmp6
+./net/packet
+./net/psched
+./net/rfcomm
+./net/netlink
+./net/netstat
+./net/rt_acct
+./net/udplite
+./net/anycast6
+./net/fib_trie
+./net/if_inet6
+./net/mcfilter
+./net/rt_cache
+./net/sockstat
+./net/udplite6
+./net/wireless
+./net/connector
+./net/dev_mcast
+./net/dev_snmp6
+./net/dev_snmp6/lo
+./net/dev_snmp6/wlp59s0
+./net/ip_mr_vif
+./net/mcfilter6
+./net/netfilter
+./net/netfilter/nf_log
+./net/protocols
+./net/rt6_stats
+./net/sockstat6
+./net/xfrm_stat
+./net/ip6_mr_vif
+./net/ipv6_route
+./net/ip_mr_cache
+./net/fib_triestat
+./net/ip6_mr_cache
+./net/softnet_stat
+./net/ip6_flowlabel
+./net/ip_tables_names
+./net/ip_tables_matches
+./net/ip_tables_targets
+./environ
+./auxv
+./status
+./personality
+./limits
+./sched
+./autogroup
+./timens_offsets
+./comm
+./syscall
+./cmdline
+./stat
+./statm
+./maps
+./numa_maps
+./mem
+./cwd
+./root
+./exe
+./mounts
+./mountinfo
+./mountstats
+./clear_refs
+./smaps
+./smaps_rollup
+./pagemap
+./attr
+./attr/current
+./attr/prev
+./attr/exec
+./attr/fscreate
+./attr/keycreate
+./attr/sockcreate
+./attr/smack
+./attr/smack/current
+./attr/apparmor
+./attr/apparmor/current
+./attr/apparmor/prev
+./attr/apparmor/exec
+./wchan
+./stack
+./schedstat
+./latency
+./cpuset
+./cgroup
+./cpu_resctrl_groups
+./oom_score
+./oom_adj
+./oom_score_adj
+./loginuid
+./sessionid
+./coredump_filter
+./io
+./uid_map
+./gid_map
+./projid_map
+./setgroups
+./timers
+./timerslack_ns
+./arch_status
+[nisy@nisy 5139]$ 
+[nisy@nisy 5139]$ 
+[nisy@nisy 5139]$ ls -al /fd
+ls: 无法访问 '/fd': 没有那个文件或目录
+[nisy@nisy 5139]$ ls -al
+总计 0
+dr-xr-xr-x   9 nisy nisy 0  6月 7日 05:09 .
+dr-xr-xr-x 344 root root 0  6月 7日 04:53 ..
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 arch_status
+dr-xr-xr-x   2 nisy nisy 0  6月 7日 05:09 attr
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 autogroup
+-r--------   1 nisy nisy 0  6月 7日 05:09 auxv
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 cgroup
+--w-------   1 nisy nisy 0  6月 7日 05:09 clear_refs
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 cmdline
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 comm
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 coredump_filter
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 cpu_resctrl_groups
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 cpuset
+lrwxrwxrwx   1 nisy nisy 0  6月 7日 05:09 cwd -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world
+-r--------   1 nisy nisy 0  6月 7日 05:09 environ
+lrwxrwxrwx   1 nisy nisy 0  6月 7日 05:09 exe -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+dr-x------   2 nisy nisy 0  6月 7日 05:09 fd
+dr-x------   2 nisy nisy 0  6月 7日 05:09 fdinfo
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 gid_map
+-r--------   1 nisy nisy 0  6月 7日 05:09 io
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 latency
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 limits
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 loginuid
+dr-x------   2 nisy nisy 0  6月 7日 05:09 map_files
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 maps
+-rw-------   1 nisy nisy 0  6月 7日 05:09 mem
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 mountinfo
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 mounts
+-r--------   1 nisy nisy 0  6月 7日 05:09 mountstats
+dr-xr-xr-x  59 nisy nisy 0  6月 7日 05:09 net
+dr-x--x--x   2 nisy nisy 0  6月 7日 05:09 ns
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 numa_maps
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 oom_adj
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 oom_score
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 oom_score_adj
+-r--------   1 nisy nisy 0  6月 7日 05:09 pagemap
+-r--------   1 nisy nisy 0  6月 7日 05:09 personality
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 projid_map
+lrwxrwxrwx   1 nisy nisy 0  6月 7日 05:09 root -> /
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 sched
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 schedstat
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 sessionid
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 setgroups
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 smaps
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 smaps_rollup
+-r--------   1 nisy nisy 0  6月 7日 05:09 stack
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 stat
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 statm
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 status
+-r--------   1 nisy nisy 0  6月 7日 05:09 syscall
+dr-xr-xr-x   3 nisy nisy 0  6月 7日 05:09 task
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 timens_offsets
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 timers
+-rw-rw-rw-   1 nisy nisy 0  6月 7日 05:09 timerslack_ns
+-rw-r--r--   1 nisy nisy 0  6月 7日 05:09 uid_map
+-r--r--r--   1 nisy nisy 0  6月 7日 05:09 wchan
+[nisy@nisy 5139]$ ls -al ./fd
+总计 0
+dr-x------ 2 nisy nisy  0  6月 7日 05:09 .
+dr-xr-xr-x 9 nisy nisy  0  6月 7日 05:09 ..
+lrwx------ 1 nisy nisy 64  6月 7日 05:09 0 -> /dev/pts/5
+lrwx------ 1 nisy nisy 64  6月 7日 05:09 1 -> /dev/pts/5
+lrwx------ 1 nisy nisy 64  6月 7日 05:09 2 -> /dev/pts/5
+[nisy@nisy 5139]$ tree .
+.
+├── arch_status
+├── attr
+│   ├── apparmor
+│   │   ├── current
+│   │   ├── exec
+│   │   └── prev
+│   ├── current
+│   ├── exec
+│   ├── fscreate
+│   ├── keycreate
+│   ├── prev
+│   ├── smack
+│   │   └── current
+│   └── sockcreate
+├── autogroup
+├── auxv
+├── cgroup
+├── clear_refs
+├── cmdline
+├── comm
+├── coredump_filter
+├── cpu_resctrl_groups
+├── cpuset
+├── cwd -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world
+├── environ
+├── exe -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+├── fd
+│   ├── 0 -> /dev/pts/5
+│   ├── 1 -> /dev/pts/5
+│   └── 2 -> /dev/pts/5
+├── fdinfo
+│   ├── 0
+│   ├── 1
+│   └── 2
+├── gid_map
+├── io
+├── latency
+├── limits
+├── loginuid
+├── map_files
+│   ├── 558abb7ef000-558abb7f0000 -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+│   ├── 558abb7f0000-558abb7f1000 -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+│   ├── 558abb7f1000-558abb7f2000 -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+│   ├── 558abb7f2000-558abb7f3000 -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+│   ├── 558abb7f3000-558abb7f4000 -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+│   ├── 7fa950ca5000-7fa950ccb000 -> /usr/lib/libc.so.6
+│   ├── 7fa950ccb000-7fa950e2a000 -> /usr/lib/libc.so.6
+│   ├── 7fa950e2a000-7fa950e7f000 -> /usr/lib/libc.so.6
+│   ├── 7fa950e7f000-7fa950ee3000 -> /usr/lib/libc.so.6
+│   ├── 7fa950ee3000-7fa950ee5000 -> /usr/lib/libc.so.6
+│   ├── 7fa950f25000-7fa950f26000 -> /usr/lib/ld-linux-x86-64.so.2
+│   ├── 7fa950f26000-7fa950f4c000 -> /usr/lib/ld-linux-x86-64.so.2
+│   ├── 7fa950f4c000-7fa950f56000 -> /usr/lib/ld-linux-x86-64.so.2
+│   ├── 7fa950f56000-7fa950f58000 -> /usr/lib/ld-linux-x86-64.so.2
+│   └── 7fa950f58000-7fa950f5a000 -> /usr/lib/ld-linux-x86-64.so.2
+├── maps
+├── mem
+├── mountinfo
+├── mounts
+├── mountstats
+├── net
+│   ├── anycast6
+│   ├── arp
+│   ├── bnep
+│   ├── connector
+│   ├── dev
+│   ├── dev_mcast
+│   ├── dev_snmp6
+│   │   ├── lo
+│   │   └── wlp59s0
+│   ├── fib_trie
+│   ├── fib_triestat
+│   ├── hci
+│   ├── icmp
+│   ├── icmp6
+│   ├── if_inet6
+│   ├── igmp
+│   ├── igmp6
+│   ├── ip6_flowlabel
+│   ├── ip6_mr_cache
+│   ├── ip6_mr_vif
+│   ├── ip_mr_cache
+│   ├── ip_mr_vif
+│   ├── ip_tables_matches
+│   ├── ip_tables_names
+│   ├── ip_tables_targets
+│   ├── ipv6_route
+│   ├── l2cap
+│   ├── mcfilter
+│   ├── mcfilter6
+│   ├── netfilter
+│   │   └── nf_log
+│   ├── netlink
+│   ├── netstat
+│   ├── packet
+│   ├── protocols
+│   ├── psched
+│   ├── ptype
+│   ├── raw
+│   ├── raw6
+│   ├── rfcomm
+│   ├── route
+│   ├── rt6_stats
+│   ├── rt_acct
+│   ├── rt_cache
+│   ├── sco
+│   ├── snmp
+│   ├── snmp6
+│   ├── sockstat
+│   ├── sockstat6
+│   ├── softnet_stat
+│   ├── stat
+│   │   ├── arp_cache
+│   │   ├── ndisc_cache
+│   │   └── rt_cache
+│   ├── tcp
+│   ├── tcp6
+│   ├── udp
+│   ├── udp6
+│   ├── udplite
+│   ├── udplite6
+│   ├── unix
+│   ├── wireless
+│   └── xfrm_stat
+├── ns
+│   ├── cgroup -> cgroup:[4026531835]
+│   ├── ipc -> ipc:[4026531839]
+│   ├── mnt -> mnt:[4026531840]
+│   ├── net -> net:[4026532008]
+│   ├── pid -> pid:[4026531836]
+│   ├── pid_for_children -> pid:[4026531836]
+│   ├── time -> time:[4026531834]
+│   ├── time_for_children -> time:[4026531834]
+│   ├── user -> user:[4026531837]
+│   └── uts -> uts:[4026531838]
+├── numa_maps
+├── oom_adj
+├── oom_score
+├── oom_score_adj
+├── pagemap
+├── personality
+├── projid_map
+├── root -> /
+├── sched
+├── schedstat
+├── sessionid
+├── setgroups
+├── smaps
+├── smaps_rollup
+├── stack
+├── stat
+├── statm
+├── status
+├── syscall
+├── task
+│   └── 5139
+│       ├── arch_status
+│       ├── attr
+│       │   ├── apparmor
+│       │   │   ├── current
+│       │   │   ├── exec
+│       │   │   └── prev
+│       │   ├── current
+│       │   ├── exec
+│       │   ├── fscreate
+│       │   ├── keycreate
+│       │   ├── prev
+│       │   ├── smack
+│       │   │   └── current
+│       │   └── sockcreate
+│       ├── auxv
+│       ├── cgroup
+│       ├── children
+│       ├── clear_refs
+│       ├── cmdline
+│       ├── comm
+│       ├── cpu_resctrl_groups
+│       ├── cpuset
+│       ├── cwd -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world
+│       ├── environ
+│       ├── exe -> /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+│       ├── fd
+│       │   ├── 0 -> /dev/pts/5
+│       │   ├── 1 -> /dev/pts/5
+│       │   └── 2 -> /dev/pts/5
+│       ├── fdinfo
+│       │   ├── 0
+│       │   ├── 1
+│       │   └── 2
+│       ├── gid_map
+│       ├── io
+│       ├── latency
+│       ├── limits
+│       ├── loginuid
+│       ├── maps
+│       ├── mem
+│       ├── mountinfo
+│       ├── mounts
+│       ├── net
+│       │   ├── anycast6
+│       │   ├── arp
+│       │   ├── bnep
+│       │   ├── connector
+│       │   ├── dev
+│       │   ├── dev_mcast
+│       │   ├── dev_snmp6
+│       │   │   ├── lo
+│       │   │   └── wlp59s0
+│       │   ├── fib_trie
+│       │   ├── fib_triestat
+│       │   ├── hci
+│       │   ├── icmp
+│       │   ├── icmp6
+│       │   ├── if_inet6
+│       │   ├── igmp
+│       │   ├── igmp6
+│       │   ├── ip6_flowlabel
+│       │   ├── ip6_mr_cache
+│       │   ├── ip6_mr_vif
+│       │   ├── ip_mr_cache
+│       │   ├── ip_mr_vif
+│       │   ├── ip_tables_matches
+│       │   ├── ip_tables_names
+│       │   ├── ip_tables_targets
+│       │   ├── ipv6_route
+│       │   ├── l2cap
+│       │   ├── mcfilter
+│       │   ├── mcfilter6
+│       │   ├── netfilter
+│       │   │   └── nf_log
+│       │   ├── netlink
+│       │   ├── netstat
+│       │   ├── packet
+│       │   ├── protocols
+│       │   ├── psched
+│       │   ├── ptype
+│       │   ├── raw
+│       │   ├── raw6
+│       │   ├── rfcomm
+│       │   ├── route
+│       │   ├── rt6_stats
+│       │   ├── rt_acct
+│       │   ├── rt_cache
+│       │   ├── sco
+│       │   ├── snmp
+│       │   ├── snmp6
+│       │   ├── sockstat
+│       │   ├── sockstat6
+│       │   ├── softnet_stat
+│       │   ├── stat
+│       │   │   ├── arp_cache
+│       │   │   ├── ndisc_cache
+│       │   │   └── rt_cache
+│       │   ├── tcp
+│       │   ├── tcp6
+│       │   ├── udp
+│       │   ├── udp6
+│       │   ├── udplite
+│       │   ├── udplite6
+│       │   ├── unix
+│       │   ├── wireless
+│       │   └── xfrm_stat
+│       ├── ns
+│       │   ├── cgroup -> cgroup:[4026531835]
+│       │   ├── ipc -> ipc:[4026531839]
+│       │   ├── mnt -> mnt:[4026531840]
+│       │   ├── net -> net:[4026532008]
+│       │   ├── pid -> pid:[4026531836]
+│       │   ├── pid_for_children -> pid:[4026531836]
+│       │   ├── time -> time:[4026531834]
+│       │   ├── time_for_children -> time:[4026531834]
+│       │   ├── user -> user:[4026531837]
+│       │   └── uts -> uts:[4026531838]
+│       ├── numa_maps
+│       ├── oom_adj
+│       ├── oom_score
+│       ├── oom_score_adj
+│       ├── pagemap
+│       ├── personality
+│       ├── projid_map
+│       ├── root -> /
+│       ├── sched
+│       ├── schedstat
+│       ├── sessionid
+│       ├── setgroups
+│       ├── smaps
+│       ├── smaps_rollup
+│       ├── stack
+│       ├── stat
+│       ├── statm
+│       ├── status
+│       ├── syscall
+│       ├── uid_map
+│       └── wchan
+├── timens_offsets
+├── timers
+├── timerslack_ns
+├── uid_map
+└── wchan
+
+28 directories, 272 files
+[nisy@nisy 5139]$ lsof -p 5139
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF   NODE NAME
+_c1_    5139 nisy  cwd    DIR  259,7        0 969970 /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world
+_c1_    5139 nisy  rtd    DIR  259,8     4096      2 /
+_c1_    5139 nisy  txt    REG  259,7    16640 998733 /run/media/nisy/win_program_D/_Technology/95_code/_my_github/github_sample_c_code2_/github_sample_c_code2/_c_sample/_linux_vscode_hello_world/_c1_
+_c1_    5139 nisy  mem    REG  259,8  2366488 542536 /usr/lib/libc.so.6
+_c1_    5139 nisy  mem    REG  259,8   216080 541620 /usr/lib/ld-linux-x86-64.so.2
+_c1_    5139 nisy    0u   CHR  136,5      0t0      8 /dev/pts/5
+_c1_    5139 nisy    1u   CHR  136,5      0t0      8 /dev/pts/5
+_c1_    5139 nisy    2u   CHR  136,5      0t0      8 /dev/pts/5
+[nisy@nisy 5139]$ 
+

@@ -1,4 +1,4 @@
-####!/bin/bash  
+#!/bin/bash  
   
 # 指定要遍历的目录  
 target_dir="$1"  

@@ -30,8 +30,8 @@
 |v4l2设备   |<p>v4l2_device_register()<br>video_register_device()<br></p>   |  |  | |
 |v4l2 subdevice设备   |<p>v4l2_subdev_init()<br>v4l2_device_register_subdev()</p>    |  |  | |
 |   |   |  |  | |
-|创建/sys/kernel/下的 kobject（Kernel Object）  |kobject_create_and_add   |kobject_put   | <p>msm_cam_sysfs_kobj = kobject_create_and_add("camera_360", kernel_kobj);<br>msm_sensor_sysfs_add_link(msm_cam_sysfs_kobj, &s_ctrl->pdev->dev.kobj, "max9286_pid_all", "max9286_pid_all");<br>效果: /sys/kernel/camera_360/max9286_pid_all 指向 /sys/devices/soc/1b0c000.qcom,cci/1b0c000.qcom,cci:qcom,camera@1/max9286_pid_all</p> | |
-|workqueue   |xx| yy | zz | |
+|创建/sys/kernel/下的 kobject（Kernel Object）  |kobject_create_and_add()   |kobject_put   | <p>msm_cam_sysfs_kobj = kobject_create_and_add("camera_360", kernel_kobj);<br>msm_sensor_sysfs_add_link(msm_cam_sysfs_kobj, &s_ctrl->pdev->dev.kobj, "max9286_pid_all", "max9286_pid_all");<br>效果: /sys/kernel/camera_360/max9286_pid_all 指向 /sys/devices/soc/1b0c000.qcom,cci/1b0c000.qcom,cci:qcom,camera@1/max9286_pid_all</p> | |
+|workqueue   |<p>struct delayed_work i2c8_cam_periodic_check_wq={0};<br>void i2c8_cam_periodic_check_report_wq_routine(struct work_struct *data);<br>INIT_DELAYED_WORK(&i2c8_cam_periodic_check_wq ,    i2c8_cam_periodic_check_report_wq_routine);</p>| schedule_delayed_work(&i2c8_cam_periodic_check_wq, msecs_to_jiffies(200)); |  | |
 
 复位处理:硬复位一般重新上电没有问题;但是软复位需要考虑外设的复位,否则可能有故障(比如外设配置了新地址,cpu仍然使用默认地址读写外设,导致找不到外设),需要做到reset键把必要的外设芯片都重启了,避免外设芯片一直上电,导致故障时reset后仍然有故障(类似摄像头的寄存器配置错误的故障)
 

@@ -1,4 +1,4 @@
-## _script\_python\hexdump_to_addr2value_.py
+##   _python_sample\hexdump_to_addr2value_.py
 
 用于把
 ```
@@ -30,3 +30,13 @@ f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
 03=01
 04=00
 ```
+
+## _python_sample\_socket的 client不断发送,server端不断接收的例子\
+
+## _python_sample\_python_export_registers_of_IC
+
+windows下导出2字节地址的i2c芯片的寄存器值(以bus2的0x29地址的max96722芯片为例)
+
+## _python_sample\_python_auto_test_phone_and_verify
+
+工作中自动化测试的用例的参考

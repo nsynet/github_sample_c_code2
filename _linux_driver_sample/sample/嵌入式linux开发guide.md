@@ -23,7 +23,7 @@
 |misc device注册   | misc_register()  |misc_deregister()  | misc_register()会自动创建文件节点,不需要mknod()手工创建设备节点,misc设备不需要probe | |
 |i2c设备   |i2c_add_driver()   | i2c_del_driver()  | probe()阶段初始化:i2c_check_functionality()+i2c_set_clientdata() | |
 |kernel module 的C代码和makefile参考   |   |  |  |https://github.com/figozhang/runninglinuxkernel_5.0/tree/rlk_5.0/kmodules/rlk_lab/rlk_basic/chapter_12_debug/lab3_procfs|
-|   |   |  |  |  |
+|module的加载和卸载   | insmod,但是推荐modprobe加载/rmod卸载/lsmod查询  |  |  |  |
 |   |   |  |  |  |
 |   |   |  |  |  |
 |media设备   | <p>media_device_init()<br>media_device_register()<br>media_entity_pads_init()<br></p>|  |  | |

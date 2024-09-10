@@ -4,7 +4,7 @@
 * ESP-IDF 5.3 
 * vscode +esp-idf 插件
 
-源地YD-ESP32-C3-C开发板的2个USB口安装驱动后,效果如下:
+立创实战派开发板(或源地YD-ESP32-C3-C开发板)的2个USB口安装驱动后,效果如下:
 
 ![](doc/2个usb端口2.png )
 
@@ -22,4 +22,9 @@ vscode直接打开<hello_world2_uart_esp_idf>，然后点击如下按钮一气�
 
 ### jtag升级软件和debug的验证project
 
-vscode直接打开<hello_world3_jtag_esp_idf>，仍然如上（其中代码部分的调试器的配置是 launch.json）,升级时会提示打开openocd,点击确认即可.
+实战派连接到一根USB-A的数据线,如下所示:
+![](doc/shizhangpai.jpg )
+vscode直接打开<hello_world3_jtag_esp_idf>，仍然如上（其中代码部分的调试器的配置是 launch.json）,升级时会提示打开openocd,点击确认即可,会完成JTAG升级.
+
+点击如下启动单步调试:
+![](doc/debugger.png )

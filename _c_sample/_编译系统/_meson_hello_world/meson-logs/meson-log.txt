@@ -1,0 +1,37 @@
+Build started at 2024-09-15T14:49:19.222985
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 1.0.1
+Source dir: /media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world/meson_demo
+Build dir: /media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world
+Build type: native build
+Project name: hello_world
+Project version: 0.1
+C compiler for the host machine: cc (gcc 12.2.0 "cc (Debian 12.2.0-14) 12.2.0")
+C linker for the host machine: cc ld.bfd 2.40
+C compiler for the build machine: cc (gcc 12.2.0 "cc (Debian 12.2.0-14) 12.2.0")
+C linker for the build machine: cc ld.bfd 2.40
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Build targets in project: 1
+
+Found ninja-1.11.1 at /usr/bin/ninja
+Running compile:
+Working directory:  /media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world/meson-private/tmpp7arxf4q
+Command line:  cc /media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world/meson-private/tmpp7arxf4q/testfile.c -o /media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world/meson-private/tmpp7arxf4q/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/12/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/12/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/12/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 

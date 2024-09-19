@@ -1,0 +1,116 @@
+ 
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$ find .
+.
+./meson_demo
+./meson_demo/build
+./meson_demo/meson.build
+./meson_demo/src
+./meson_demo/src/hello.c
+./meson_demo/src/main.c
+./meson_demo/src/hello.h
+
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$ meson ./meson_demo/
+The Meson build system
+Version: 1.0.1
+Source dir: /media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world/meson_demo
+Build dir: /media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world
+Build type: native build
+Project name: hello_world
+Project version: 0.1
+C compiler for the host machine: cc (gcc 12.2.0 "cc (Debian 12.2.0-14) 12.2.0")
+C linker for the host machine: cc ld.bfd 2.40
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Build targets in project: 1
+
+Found ninja-1.11.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$ find .
+.
+./build.ninja
+./compile_commands.json
+./hello_world.p
+./meson-info
+./meson-info/intro-benchmarks.json
+./meson-info/intro-buildoptions.json
+./meson-info/intro-buildsystem_files.json
+./meson-info/intro-dependencies.json
+./meson-info/intro-installed.json
+./meson-info/intro-install_plan.json
+./meson-info/intro-projectinfo.json
+./meson-info/intro-targets.json
+./meson-info/intro-tests.json
+./meson-info/meson-info.json
+./meson-logs
+./meson-logs/meson-log.txt
+./meson-private
+./meson-private/build.dat
+./meson-private/cmd_line.txt
+./meson-private/coredata.dat
+./meson-private/install.dat
+./meson-private/meson.lock
+./meson-private/meson_benchmark_setup.dat
+./meson-private/meson_test_setup.dat
+./meson-private/sanitycheckc.c
+./meson-private/sanitycheckc.exe
+./meson_demo
+./meson_demo/build
+./meson_demo/meson.build
+./meson_demo/src
+./meson_demo/src/hello.c
+./meson_demo/src/main.c
+./meson_demo/src/hello.h
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$ ninja
+[1/2] Compiling C object hello_world.p/src_main.c.o
+meson_demo/src/main.c:6:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+    6 | void main()
+      |      ^~~~
+[2/2] Linking target hello_world
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$ find .
+.
+./.ninja_deps
+./.ninja_log
+./build.ninja
+./compile_commands.json
+./hello_world
+./hello_world.p
+./hello_world.p/src_hello.c.o
+./hello_world.p/src_main.c.o
+./meson-info
+./meson-info/intro-benchmarks.json
+./meson-info/intro-buildoptions.json
+./meson-info/intro-buildsystem_files.json
+./meson-info/intro-dependencies.json
+./meson-info/intro-installed.json
+./meson-info/intro-install_plan.json
+./meson-info/intro-projectinfo.json
+./meson-info/intro-targets.json
+./meson-info/intro-tests.json
+./meson-info/meson-info.json
+./meson-logs
+./meson-logs/meson-log.txt
+./meson-private
+./meson-private/build.dat
+./meson-private/cmd_line.txt
+./meson-private/coredata.dat
+./meson-private/coredata.dat.prev
+./meson-private/install.dat
+./meson-private/meson.lock
+./meson-private/meson_benchmark_setup.dat
+./meson-private/meson_test_setup.dat
+./meson-private/sanitycheckc.c
+./meson-private/sanitycheckc.exe
+./meson_demo
+./meson_demo/build
+./meson_demo/meson.build
+./meson_demo/src
+./meson_demo/src/hello.c
+./meson_demo/src/hello.h
+./meson_demo/src/main.c
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$ ./hello_world
+Hello, World from a function!
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world$
+

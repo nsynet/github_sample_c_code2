@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world",
+    "command": "cc -Ihello_world.p -I. -Imeson_demo -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -O0 -g -MD -MQ hello_world.p/src_main.c.o -MF hello_world.p/src_main.c.o.d -o hello_world.p/src_main.c.o -c meson_demo/src/main.c",
+    "file": "meson_demo/src/main.c",
+    "output": "hello_world.p/src_main.c.o"
+  },
+  {
+    "directory": "/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_meson_hello_world",
+    "command": "cc -Ihello_world.p -I. -Imeson_demo -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -O0 -g -MD -MQ hello_world.p/src_hello.c.o -MF hello_world.p/src_hello.c.o.d -o hello_world.p/src_hello.c.o -c meson_demo/src/hello.c",
+    "file": "meson_demo/src/hello.c",
+    "output": "hello_world.p/src_hello.c.o"
+  }
+]

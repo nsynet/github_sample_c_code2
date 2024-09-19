@@ -1,0 +1,73 @@
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build$ find  ../
+../
+../build
+../CMakeLists.txt
+../hello.c
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build$ cmake ..
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build$
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build$ find  ../
+../
+../build
+../build/CMakeCache.txt
+../build/CMakeFiles
+../build/CMakeFiles/3.25.1
+../build/CMakeFiles/3.25.1/CMakeCCompiler.cmake
+../build/CMakeFiles/3.25.1/CMakeCXXCompiler.cmake
+../build/CMakeFiles/3.25.1/CMakeDetermineCompilerABI_C.bin
+../build/CMakeFiles/3.25.1/CMakeDetermineCompilerABI_CXX.bin
+../build/CMakeFiles/3.25.1/CMakeSystem.cmake
+../build/CMakeFiles/3.25.1/CompilerIdC
+../build/CMakeFiles/3.25.1/CompilerIdC/a.out
+../build/CMakeFiles/3.25.1/CompilerIdC/CMakeCCompilerId.c
+../build/CMakeFiles/3.25.1/CompilerIdC/tmp
+../build/CMakeFiles/3.25.1/CompilerIdCXX
+../build/CMakeFiles/3.25.1/CompilerIdCXX/a.out
+../build/CMakeFiles/3.25.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+../build/CMakeFiles/3.25.1/CompilerIdCXX/tmp
+../build/CMakeFiles/cmake.check_cache
+../build/CMakeFiles/CMakeDirectoryInformation.cmake
+../build/CMakeFiles/CMakeOutput.log
+../build/CMakeFiles/CMakeScratch
+../build/CMakeFiles/hello.dir
+../build/CMakeFiles/hello.dir/build.make
+../build/CMakeFiles/hello.dir/cmake_clean.cmake
+../build/CMakeFiles/hello.dir/compiler_depend.make
+../build/CMakeFiles/hello.dir/compiler_depend.ts
+../build/CMakeFiles/hello.dir/depend.make
+../build/CMakeFiles/hello.dir/DependInfo.cmake
+../build/CMakeFiles/hello.dir/flags.make
+../build/CMakeFiles/hello.dir/link.txt
+../build/CMakeFiles/hello.dir/progress.make
+../build/CMakeFiles/Makefile.cmake
+../build/CMakeFiles/Makefile2
+../build/CMakeFiles/pkgRedirects
+../build/CMakeFiles/progress.marks
+../build/CMakeFiles/TargetDirectories.txt
+../build/cmake_install.cmake
+../build/Makefile
+../CMakeLists.txt
+../hello.c
+
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build$ make
+[ 50%] Building C object CMakeFiles/hello.dir/hello.c.o
+[100%] Linking C executable hello
+[100%] Built target hello
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build$ ./hello
+Hello, CMake!
+nisy@localhost:/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build$
+

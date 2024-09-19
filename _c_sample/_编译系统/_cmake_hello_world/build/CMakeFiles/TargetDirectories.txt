@@ -1,0 +1,3 @@
+/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build/CMakeFiles/hello.dir
+/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build/CMakeFiles/edit_cache.dir
+/media/nisy/win_program_D/_Tech/95_code/_my_github/github_sample_c_code2/_c_sample/_编译系统/_cmake_hello_world/build/CMakeFiles/rebuild_cache.dir

@@ -48,7 +48,7 @@ free -h | grep Mem | awk '{printf "总内存: %s\n可用内存: %s\n已用内存
 
 # 显示磁盘使用情况
 echo -e "\n #  =====================磁盘使用情况====================="
-echo -e "\n ##  df -h \n $(df -h | column -t)" >>./save_basic_info_result.txt
+echo -e "\n ##  df -h \n $(df -h)" >>./save_basic_info_result.txt
 
 # 显示网络接口信息
 echo -e "\n #  =====================网络接口信息====================="
@@ -94,14 +94,22 @@ fi
 ## sysfs
 echo -e "\n #  ===================== /sys/ 文件系统 ====================="
 echo -e "\n ##  ls -al /sys/devices/platform/ \n $(ls -al /sys/devices/platform/)" >>./save_basic_info_result.txt
-echo -e "\n ##  ls -al /sys/devices/platform/ \n $(ls -al /sys/devices/platform/)" >>./save_basic_info_result.txt
+echo -e "\n ##  cat /sys/devices/system/cpu/cpu*/cpufreq/cpuinfo_cur_freq \n $(cat /sys/devices/system/cpu/cpu*/cpufreq/cpuinfo_cur_freq)" >>./save_basic_info_result.txt
+echo -e "\n ##  ls -al /sys/kernel/debug \n $(ls -al /sys/kernel/debug)" >>./save_basic_info_result.txt
 echo -e "\n ##  cat /sys/kernel/debug/gpio \n $(cat /sys/kernel/debug/gpio)" >>./save_basic_info_result.txt
+
 echo -e "\n ##  ===================== 打印 /sys/class/video4linux/video* ====================="
 for i in /sys/class/video4linux/video* ; do echo $i ;echo dev:$(cat $i/dev); echo name:$(cat $i/name);echo index:$(cat $i/index);echo link_name:$(cat $i/link_name);echo; done  >>./save_basic_info_result.txt
 echo -e "\n ##  ===================== 打印 /sys/class/video4linux/v4l-subdev* ====================="
 for i in /sys/class/video4linux/v4l-subdev* ; do echo $i ;echo dev:$(cat $i/dev); echo name:$(cat $i/name);echo index:$(cat $i/index);echo link_name:$(cat $i/link_name);echo; done >>./save_basic_info_result.txt
 echo -e "\n ##  ===================== 打印 /sys/bus/media/devices/media* ====================="
 for i in /sys/bus/media/devices/media* ; do echo $i ;echo dev:$(cat $i/dev); echo model:$(cat $i/model);echo; done >>./save_basic_info_result.txt
+
+echo -e "\n ##  ===================== 打印 /sys/ 的thermal相关 ====================="
+echo -e "\n ##  cat /sys/devices/virtual/thermal/thermal_zone*/type \n $(cat /sys/devices/virtual/thermal/thermal_zone*/type)" >>./save_basic_info_result.txt
+echo -e "\n ##  cat /sys/devices/virtual/thermal/cooling_device*/type \n $(cat /sys/devices/virtual/thermal/cooling_device*/type)" >>./save_basic_info_result.txt
+
+
 if is_android; then
 	echo -e "\n ##  dumpsys media.camera \n $(dumpsys media.camera)" >>./save_basic_info_result.txt
 	echo -e "\n ##  dumpsys thermalservice \n $(dumpsys thermalservice)" >>./save_basic_info_result.txt

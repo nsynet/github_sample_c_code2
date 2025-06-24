@@ -9,7 +9,7 @@
  4.9.88
 
  ##  系统运行时间: 
-  02:47:09 up  2:47,  load average: 0.00, 0.00, 0.00
+  00:24:00 up 24 min,  load average: 0.00, 0.00, 0.00
 
  ##  CPU 型号: 
  
@@ -21,12 +21,17 @@
  0
 
  ##  df -h 
- 
+ Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 1.9G    436.9M      1.4G  23% /
+devtmpfs                 84.1M         0     84.1M   0% /dev
+tmpfs                   244.6M         0    244.6M   0% /dev/shm
+tmpfs                   244.6M      1.1M    243.5M   0% /tmp
+tmpfs                   244.6M    160.0K    244.4M   0% /run
     link/ether 00:01:3f:2d:3e:4d brd ff:ff:ff:ff:ff:ff
 
  ##  w 
  USER		TTY		IDLE	TIME		 HOST
-root            ttymxc0         00:00   Jan  1 00:00:35  
+root            ttymxc0         00:00   Jan  1 00:00:52  
 
  ##  ps -ef 
  PID   USER     COMMAND
@@ -48,6 +53,7 @@ root            ttymxc0         00:00   Jan  1 00:00:35
    17 root     [crypto]
    18 root     [bioset]
    19 root     [kblockd]
+   20 root     [kworker/0:1]
    21 root     [ata_sff]
    22 root     [cfg80211]
    23 root     [watchdogd]
@@ -120,7 +126,7 @@ root            ttymxc0         00:00   Jan  1 00:00:35
   231 dbus     dbus-daemon --system
   262 root     /usr/sbin/connmand -n
   266 root     /usr/sbin/ofonod -n
-  272 root     /usr/sbin/wpa_supplicant -u
+  273 root     /usr/sbin/wpa_supplicant -u
   275 root     /usr/sbin/ntpd -g
   283 root     nginx: master process /usr/sbin/nginx
   285 www-data nginx: worker process
@@ -130,10 +136,10 @@ root            ttymxc0         00:00   Jan  1 00:00:35
   304 root     {cleanupd} smbd -D
   305 root     {lpqd} smbd -D
   306 root     nmbd -D
-  312 root     -sh
-  758 root     [kworker/0:0]
-  944 root     {save_basic_info} /bin/bash ./save_basic_info.sh
-  986 root     ps -ef
+  311 root     -sh
+  324 root     [kworker/0:0]
+  334 root     {save_basic_info} /bin/bash ./save_basic_info.sh
+  374 root     ps -ef
 
  ##  lspci 
  
@@ -184,7 +190,7 @@ i2c-0	i2c       	21a0000.i2c                     	I2C adapter
  ##  ls -al /bin 
  total 1707
 drwxr-xr-x    2 root     root          2048 Jun  3  2020 .
-drwxr-xr-x   24 root     root          1024 Jan  1 02:47 ..
+drwxr-xr-x   24 root     root          1024 Jan  1  1970 ..
 lrwxrwxrwx    1 root     root             7 Jun  3  2020 arch -> busybox
 lrwxrwxrwx    1 root     root             7 Jun  3  2020 ash -> busybox
 -rwxr-xr-x    1 root     root        603060 Jun  3  2020 bash
@@ -278,22 +284,18 @@ Usage: busybox [function [arguments]...]
 	will act like whatever it was invoked as.
 
 Currently defined functions:
-	[, [[, addgroup, adduser, ar, arch, arp, arping, ash, awk, basename, blkid, bunzip2, bzcat, cat, chattr, chgrp, chmod, chown, chroot,
-	chrt, chvt, cksum, clear, cmp, cp, cpio, crond, crontab, cut, date, dc, dd, deallocvt, delgroup, deluser, depmod, devmem, df, diff,
-	dirname, dmesg, dnsd, dnsdomainname, dos2unix, du, dumpkmap, echo, egrep, eject, env, ether-wake, expr, factor, fallocate, false, fbset,
-	fdflush, fdformat, fdisk, fgrep, find, flock, fold, free, freeramdisk, fsck, fsfreeze, fstrim, fuser, getopt, getty, grep, gunzip, gzip,
-	halt, hdparm, head, hexdump, hexedit, hostid, hostname, hwclock, i2cdetect, i2cdump, i2cget, i2cset, id, ifconfig, ifdown, ifup, inetd,
-	init, insmod, install, ip, ipaddr, ipcrm, ipcs, iplink, ipneigh, iproute, iprule, iptunnel, kill, killall, killall5, klogd, last, less,
-	link, linux32, linux64, linuxrc, ln, loadfont, loadkmap, logger, login, logname, losetup, ls, lsattr, lsmod, lsof, lspci, lsscsi, lsusb,
-	lzcat, lzma, lzopcat, makedevs, md5sum, mdev, mesg, microcom, mkdir, mkdosfs, mke2fs, mkfifo, mknod, mkpasswd, mkswap, mktemp, modinfo,
-	modprobe, more, mount, mountpoint, mt, mv, nameif, netstat, nice, nl, nohup, nproc, nslookup, nuke, od, openvt, partprobe, passwd,
-	paste, patch, pidof, ping, pipe_progress, pivot_root, poweroff, printenv, printf, ps, pwd, rdate, readlink, readprofile, realpath,
-	reboot, renice, reset, resize, resume, rm, rmdir, rmmod, route, run-init, run-parts, runlevel, sed, seq, setarch, setconsole, setfattr,
-	setkeycodes, setlogcons, setpriv, setserial, setsid, sh, sha1sum, sha256sum, sha3sum, sha512sum, shred, sleep, sort, start-stop-daemon,
-	strings, stty, su, sulogin, svc, svok, swapoff, swapon, switch_root, sync, sysctl, syslogd, tail, tar, tc, tee, telnet, test, tftp,
-	time, top, touch, tr, traceroute, true, truncate, tty, ubirename, udhcpc, uevent, umount, uname, uniq, unix2dos, unlink, unlzma, unlzop,
-	unxz, unzip, uptime, usleep, uudecode, uuencode, vconfig, vi, vlock, w, watch, watchdog, wc, wget, which, who, whoami, xargs, xxd, xz,
-	xzcat, yes, zcat
+	[, [[, addgroup, adduser, ar, arch, arp, arping, ash, awk, basename, blkid, bunzip2, bzcat, cat, chattr, chgrp, chmod, chown, chroot, chrt, chvt, cksum, clear, cmp, cp,
+	cpio, crond, crontab, cut, date, dc, dd, deallocvt, delgroup, deluser, depmod, devmem, df, diff, dirname, dmesg, dnsd, dnsdomainname, dos2unix, du, dumpkmap, echo, egrep,
+	eject, env, ether-wake, expr, factor, fallocate, false, fbset, fdflush, fdformat, fdisk, fgrep, find, flock, fold, free, freeramdisk, fsck, fsfreeze, fstrim, fuser, getopt,
+	getty, grep, gunzip, gzip, halt, hdparm, head, hexdump, hexedit, hostid, hostname, hwclock, i2cdetect, i2cdump, i2cget, i2cset, id, ifconfig, ifdown, ifup, inetd, init,
+	insmod, install, ip, ipaddr, ipcrm, ipcs, iplink, ipneigh, iproute, iprule, iptunnel, kill, killall, killall5, klogd, last, less, link, linux32, linux64, linuxrc, ln,
+	loadfont, loadkmap, logger, login, logname, losetup, ls, lsattr, lsmod, lsof, lspci, lsscsi, lsusb, lzcat, lzma, lzopcat, makedevs, md5sum, mdev, mesg, microcom, mkdir,
+	mkdosfs, mke2fs, mkfifo, mknod, mkpasswd, mkswap, mktemp, modinfo, modprobe, more, mount, mountpoint, mt, mv, nameif, netstat, nice, nl, nohup, nproc, nslookup, nuke, od,
+	openvt, partprobe, passwd, paste, patch, pidof, ping, pipe_progress, pivot_root, poweroff, printenv, printf, ps, pwd, rdate, readlink, readprofile, realpath, reboot, renice,
+	reset, resize, resume, rm, rmdir, rmmod, route, run-init, run-parts, runlevel, sed, seq, setarch, setconsole, setfattr, setkeycodes, setlogcons, setpriv, setserial, setsid,
+	sh, sha1sum, sha256sum, sha3sum, sha512sum, shred, sleep, sort, start-stop-daemon, strings, stty, su, sulogin, svc, svok, swapoff, swapon, switch_root, sync, sysctl,
+	syslogd, tail, tar, tc, tee, telnet, test, tftp, time, top, touch, tr, traceroute, true, truncate, tty, ubirename, udhcpc, uevent, umount, uname, uniq, unix2dos, unlink,
+	unlzma, unlzop, unxz, unzip, uptime, usleep, uudecode, uuencode, vconfig, vi, vlock, w, watch, watchdog, wc, wget, which, who, whoami, xargs, xxd, xz, xzcat, yes, zcat
 
  ##  ls -al /sys/devices/platform/ 
  total 0
@@ -303,25 +305,19 @@ drwxr-xr-x    4 root     root             0 Jan  1 00:00 Fixed MDIO bus.0
 drwxr-xr-x    4 root     root             0 Jan  1 00:00 Vivante GCCore
 drwxr-xr-x    3 root     root             0 Jan  1 00:00 alarmtimer
 drwxr-xr-x    3 root     root             0 Jan  1 00:00 imx6q-cpufreq
-drwxr-xr-x    2 root     root             0 Jan  1 01:55 power
+drwxr-xr-x    2 root     root             0 Jan  1 00:24 power
 drwxr-xr-x    4 root     root             0 Jan  1 00:00 reg-dummy
 drwxr-xr-x    3 root     root             0 Jan  1 00:00 regulatory.0
 drwxr-xr-x    3 root     root             0 Jan  1 00:00 snd-soc-dummy
 -rw-r--r--    1 root     root          4096 Jan  1 00:00 uevent
 
- ##  ls -al /sys/devices/platform/ 
+ ##  cat /sys/devices/system/cpu/cpu*/cpufreq/cpuinfo_cur_freq 
+ 792000
+
+ ##  ls -al /sys/kernel/debug 
  total 0
-drwxr-xr-x   10 root     root             0 Jan  1 00:00 .
-drwxr-xr-x   10 root     root             0 Jan  1 00:00 ..
-drwxr-xr-x    4 root     root             0 Jan  1 00:00 Fixed MDIO bus.0
-drwxr-xr-x    4 root     root             0 Jan  1 00:00 Vivante GCCore
-drwxr-xr-x    3 root     root             0 Jan  1 00:00 alarmtimer
-drwxr-xr-x    3 root     root             0 Jan  1 00:00 imx6q-cpufreq
-drwxr-xr-x    2 root     root             0 Jan  1 01:55 power
-drwxr-xr-x    4 root     root             0 Jan  1 00:00 reg-dummy
-drwxr-xr-x    3 root     root             0 Jan  1 00:00 regulatory.0
-drwxr-xr-x    3 root     root             0 Jan  1 00:00 snd-soc-dummy
--rw-r--r--    1 root     root          4096 Jan  1 00:00 uevent
+dr-xr-xr-x    2 root     root             0 Jan  1 00:24 .
+drwxr-xr-x    9 root     root             0 Jan  1 00:24 ..
 
  ##  cat /sys/kernel/debug/gpio 
  
@@ -341,6 +337,13 @@ link_name:
 dev:
 model:
 
+
+ ##  cat /sys/devices/virtual/thermal/thermal_zone*/type 
+ imx_thermal_zone
+
+ ##  cat /sys/devices/virtual/thermal/cooling_device*/type 
+ thermal-cpufreq-0
+thermal-devfreq-0
 
  ##  cat /proc/cmdline 
  console=ttymxc0,115200 root=/dev/mmcblk1p2 rootwait rw
@@ -372,14 +375,14 @@ sysfs /sys sysfs rw,relatime 0 0
 
  ##  cat /proc/interrupts 
             CPU0       
- 16:     186329       GPC  55 Level     i.MX Timer Tick
+ 16:      27314       GPC  55 Level     i.MX Timer Tick
  18:          0       GPC  31 Level     2008000.ecspi
  19:          0       GPC  33 Level     2010000.ecspi
- 20:      17242       GPC  26 Level     2020000.serial
+ 20:       2635       GPC  26 Level     2020000.serial
  21:          0       GPC  98 Level     sai
  22:          0       GPC  50 Level     2034000.asrc
  40:          0       GPC   4 Level     20cc000.snvs:snvs-powerkey
- 41:      83482       GPC 120 Level     20b4000.ethernet
+ 41:      11232       GPC 120 Level     20b4000.ethernet
  42:          0       GPC 121 Level     20b4000.ethernet
  43:          0       GPC  80 Level     20bc000.wdog
  44:          0       GPC  49 Level     imx_thermal
@@ -390,10 +393,10 @@ sysfs /sys sysfs rw,relatime 0 0
  62:          0       GPC 118 Level     2188000.ethernet
  63:          0       GPC 119 Level     2188000.ethernet
  64:          0       GPC  22 Level     mmc0
- 65:      10291       GPC  23 Level     mmc1
+ 65:       5277       GPC  23 Level     mmc1
  66:          1       GPC 100 Level     2198000.adc
- 67:        936       GPC  36 Level     21a0000.i2c
- 68:       1211       GPC  37 Level     21a4000.i2c
+ 67:        117       GPC  36 Level     21a0000.i2c
+ 68:        406       GPC  37 Level     21a4000.i2c
  70:          3       GPC   5 Level     21c8000.lcdif
  71:          0       GPC   8 Level     pxp-dmaengine-legacy
  72:          0       GPC  18 Level     pxp-dmaengine-std
@@ -411,7 +414,7 @@ IPI1:          0  Timer broadcast interrupts
 IPI2:          0  Rescheduling interrupts
 IPI3:          0  Function call interrupts
 IPI4:          0  CPU stop interrupts
-IPI5:      99934  IRQ work interrupts
+IPI5:      14324  IRQ work interrupts
 IPI6:          0  completion interrupts
 Err:          0
 

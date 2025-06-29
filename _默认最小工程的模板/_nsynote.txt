@@ -1,0 +1,8 @@
+/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/codelite_cpp/nisy/nisy/Debug/nisy
+  |__  codelite 的二进制直接就可以运行
+
+/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/anjuta_gtk/Debug/src
+    |__ anjuta 的二进制不能直接运行，必须要： /usr/bin/anjuta-launcher /media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/anjuta_gtk/Debug/src/nisy
+
+
+/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_app_nisy   <=== 不知道怎么编译

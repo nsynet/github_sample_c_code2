@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/_nisy_.dir/main.cpp.o  -o _nisy_ 

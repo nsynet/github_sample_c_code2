@@ -1,0 +1,4 @@
+[nsiy@nsiy-pc _nisy_ (编译前)]$ make all  -n
+g++    -c -o _nisy_.o _nisy_.cpp
+g++ -o _nisy_ _nisy_.o
+[nsiy@nsiy-pc _nisy_ (编译前)]$ 

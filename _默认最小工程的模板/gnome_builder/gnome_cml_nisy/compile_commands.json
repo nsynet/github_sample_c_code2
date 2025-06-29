@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_cml_nisy",
+    "command": "cc -Isrc/25a6634@@nisy@exe -Isrc -Inisy/src -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_cml_nisy -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g  -MD -MQ 'src/25a6634@@nisy@exe/main.c.o' -MF 'src/25a6634@@nisy@exe/main.c.o.d' -o 'src/25a6634@@nisy@exe/main.c.o' -c nisy/src/main.c",
+    "file": "nisy/src/main.c"
+  }
+]

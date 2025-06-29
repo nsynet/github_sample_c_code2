@@ -1,0 +1,1273 @@
+autogen.sh       9912   7104     0 ./autogen.sh
+PCOMM            PID    PPID   RET ARGS
+dirname          9913   9912     0 /usr/bin/dirname ./autogen.sh
+autoconf         9915   9912     0 /usr/bin/autoconf --version
+expr             9930   9915     0 /usr/bin/expr a : \(a\)
+expr             9931   9915     0 /usr/bin/expr 00001 : .*\(...\)
+basename         9932   9915     0 /usr/bin/basename -- /
+basename         9934   9933     0 /usr/bin/basename -- /
+basename         9936   9935     0 /usr/bin/basename -- /usr/bin/autoconf
+expr             9937   9915     0 /usr/bin/expr x--version : x\(--[^=]*\) | x--version : x\(-.\)
+expr             9938   9915     0 /usr/bin/expr x--version : x--[^=]*=\(.*\) | x--version : x-.\(.*\)
+grep             9939   9912     0 /usr/bin/grep ^IT_PROG_INTLTOOL ./configure.ac
+intltoolize      9940   9912     0 /usr/bin/intltoolize --version
+sed              9943   9941     0 /usr/bin/sed s%^.*/%%
+uname            9944   9940     0 /usr/bin/uname
+grep             9945   9912     0 /usr/bin/grep ^AM_PROG_XML_I18N_TOOLS ./configure.ac
+grep             9946   9912     0 /usr/bin/grep ^LT_INIT ./configure.ac
+libtool          9947   9912     0 /usr/bin/libtool --version
+sed              9954   9952     0 /usr/bin/sed s|^.*/||
+sed              9963   9947     0 /usr/bin/sed -n \n        /^# Written by /!b\n        s|^# ||; p; n\n\n        :fwd2blnk\n        /./ {\n          n\n          b fwd2blnk\n        }\n  
+grep             9964   9912     0 /usr/bin/grep ^AM_GLIB_GNU_GETTEXT ./configure.ac
+grep             9965   9912     0 /usr/bin/grep sed.*POTFILES ./configure.ac
+glib-gettextize  9966   9912     0 /usr/bin/glib-gettextize --version
+uname            9968   9966     0 /usr/bin/uname
+automake         9969   9912     0 /usr/bin/automake --version
+aclocal          9970   9912     0 /usr/bin/aclocal --version
+find             9971   9912     0 /usr/bin/find . -path ./CVS -prune -o -name configure.ac -print
+dirname          9972   9912     0 /usr/bin/dirname ./configure.ac
+grep             9974   9973     0 /usr/bin/grep ^AM_GLIB_GNU_GETTEXT configure.ac
+touch            9975   9973     0 /usr/bin/touch ./aclocal.m4
+glib-gettextize  9977   9973     0 /usr/bin/glib-gettextize --force --copy
+uname            9979   9977     0 /usr/bin/uname
+cat              9981   9980     0 /usr/bin/cat configure.ac
+grep             9982   9980     0 /usr/bin/grep ^AC_CONFIG_AUX_DIR
+sed              9983   9980     0 /usr/bin/sed -n -e s/AC_CONFIG_AUX_DIR(\([^()]*\))/\1/p
+sed              9984   9980     0 /usr/bin/sed -e s/^\[\(.*\)\]$/\1/
+sed              9985   9980     0 /usr/bin/sed -e 1q
+rm               9986   9977     0 /usr/bin/rm -f /home/nsiy/_code/_anjuta/_general1_/po/Makefile.in.in
+cp               9988   9977     0 /usr/bin/cp Makefile.in.in /home/nsiy/_code/_anjuta/_general1_/po/Makefile.in.in
+chmod            9989   9973     0 /usr/bin/chmod u+w ./aclocal.m4
+grep             9990   9973     0 /usr/bin/grep ^IT_PROG_INTLTOOL configure.ac
+intltoolize      9991   9973     0 /usr/bin/intltoolize --copy --force --automake
+sed              9994   9992     0 /usr/bin/sed s%^.*/%%
+uname            9995   9991     0 /usr/bin/uname
+rm               9997   9996     0 /usr/bin/rm -f po/Makefile.in.in
+basename         9998   9996     0 /usr/bin/basename po/Makefile.in.in
+cp               9999   9996     0 /usr/bin/cp -f /usr/share/intltool/Makefile.in.in po/Makefile.in.in
+rm               10000  9996     0 /usr/bin/rm -f intltool-extract.in
+egrep            10001  9996     0 /usr/bin/egrep intltool-extract.in Makefile.am
+grep             10001  9996     0 /usr/bin/grep -E intltool-extract.in Makefile.am
+touch            10002  9996     0 /usr/bin/touch intltool-extract.in
+rm               10003  9996     0 /usr/bin/rm -f intltool-merge.in
+egrep            10004  9996     0 /usr/bin/egrep intltool-merge.in Makefile.am
+grep             10004  9996     0 /usr/bin/grep -E intltool-merge.in Makefile.am
+touch            10005  9996     0 /usr/bin/touch intltool-merge.in
+rm               10006  9996     0 /usr/bin/rm -f intltool-update.in
+egrep            10007  9996     0 /usr/bin/egrep intltool-update.in Makefile.am
+grep             10007  9996     0 /usr/bin/grep -E intltool-update.in Makefile.am
+touch            10008  9996     0 /usr/bin/touch intltool-update.in
+cat              10010  10009    0 /usr/bin/cat configure.ac
+grep             10011  10009    0 /usr/bin/grep ^AC_CONFIG_MACRO_DIR
+sed              10012  10009    0 /usr/bin/sed -n -e s/AC_CONFIG_MACRO_DIR(\([^()]*\))/\1/p
+sed              10013  10009    0 /usr/bin/sed -e s/^\[\(.*\)\]$/\1/
+sed              10014  10009    0 /usr/bin/sed -e 1q
+grep             10015  9991     0 /usr/bin/grep INTLTOOL_MAKEFILE po/Makefile.in.in
+grep             10016  9973     0 /usr/bin/grep ^AM_PROG_XML_I18N_TOOLS configure.ac
+grep             10017  9973     0 /usr/bin/grep ^LT_INIT configure.ac
+libtoolize       10018  9973     0 /usr/bin/libtoolize --force --copy
+sed              10027  10025    0 /usr/bin/sed s|^.*/||
+ls               10044  10043    0 /usr/bin/ls
+ls               10047  10046    0 /usr/bin/ls
+ls               10050  10049    0 /usr/bin/ls
+sed              10052  10051    0 /usr/bin/sed s|#.*$||; s|^dnl .*$||; s| dnl .*$||; configure.ac
+grep             10053  10051    0 /usr/bin/grep AC_INIT
+m4               10057  10056    0 /usr/bin/m4 --version
+sed              10061  10059    0 /usr/bin/sed 1q
+expr             10062  10055    0 /usr/bin/expr m4 (GNU M4) 1.4.18 : .* \([0-9][^ ]*\)
+m4               10066  10065    0 /bin/m4 --version
+sed              10070  10068    0 /usr/bin/sed 1q
+expr             10071  10064    0 /usr/bin/expr m4 (GNU M4) 1.4.18 : .* \([0-9][^ ]*\)
+m4               10074  10073    0 /usr/bin/m4 --version
+sed              10078  10076    0 /usr/bin/sed 1q
+expr             10079  10018    0 /usr/bin/expr m4 (GNU M4) 1.4.18 : .* \([0-9][^ ]*\)
+sed              10083  10081    0 /usr/bin/sed s%,% --trace=%g
+sed              10086  10084    0 /usr/bin/sed s%,%|%g
+m4               10090  10088    0 /usr/bin/m4 -daq --prefix --trace=AC_LIB_LTDL --trace=AC_WITH_LTDL --trace=LT_WITH_LTDL --trace=LTDL_INIT - configure.ac
+sed              10091  10088    0 /usr/bin/sed -n -e s|#.*$||; s|^dnl .*$||; s| dnl .*$||;\n        /^m4trace: -1- AC_LIB_LTDL/ {\n          s|^m4trace: -1- AC_LIB_LTDL[([]*||\n       
+sed              10094  10092    0 /usr/bin/sed s%,% --trace=%g
+sed              10097  10095    0 /usr/bin/sed s%,%|%g
+m4               10101  10099    0 /usr/bin/m4 -daq --prefix --trace=AC_CONFIG_AUX_DIR - configure.ac
+sed              10102  10099    0 /usr/bin/sed -n -e s|#.*$||; s|^dnl .*$||; s| dnl .*$||;\n        /^m4trace: -1- AC_CONFIG_AUX_DIR/ {\n          s|^m4trace: -1- AC_CONFIG_AUX_DIR[([
+sed              10105  10103    0 /usr/bin/sed -e s|:.*$||g -e 1q
+sed              10108  10106    0 /usr/bin/sed s%,% --trace=%g
+sed              10111  10109    0 /usr/bin/sed s%,%|%g
+sed              10116  10113    0 /usr/bin/sed -n -e s|#.*$||; s|^dnl .*$||; s| dnl .*$||;\n        /^m4trace: -1- LTDL_INIT/ {\n          s|^m4trace: -1- LTDL_INIT[([]*||\n          s
+m4               10115  10113    0 /usr/bin/m4 -daq --prefix --trace=LTDL_INIT - configure.ac
+sed              10119  10117    0 /usr/bin/sed -e s|:.*$||g -e 1q
+sed              10122  10120    0 /usr/bin/sed s%,% --trace=%g
+sed              10125  10123    0 /usr/bin/sed s%,%|%g
+m4               10129  10127    0 /usr/bin/m4 -daq --prefix --trace=LT_CONFIG_LTDL_DIR - configure.ac
+sed              10130  10127    0 /usr/bin/sed -n -e s|#.*$||; s|^dnl .*$||; s| dnl .*$||;\n        /^m4trace: -1- LT_CONFIG_LTDL_DIR/ {\n          s|^m4trace: -1- LT_CONFIG_LTDL_DIR[
+sed              10133  10131    0 /usr/bin/sed -e s|:.*$||g -e 1q
+sed              10136  10134    0 /usr/bin/sed s|/*$||
+rm               10137  10018    0 /usr/bin/rm -f ./compile
+rm               10138  10018    0 /usr/bin/rm -f ./depcomp
+rm               10139  10018    0 /usr/bin/rm -f ./missing
+rm               10140  10018    0 /usr/bin/rm -f ./ltmain.sh
+rm               10141  10018    0 /usr/bin/rm -f ./ltmain.sh
+rm               10142  10018    0 /usr/bin/rm -f ./ltmain.sh
+sed              10145  10143    0 /usr/bin/sed s|:*$||
+cp               10146  10018    0 /usr/bin/cp -f /usr/share/libtool/build-aux/ltmain.sh ./ltmain.sh
+sed              10149  10147    0 /usr/bin/sed s%,% --trace=%g
+sed              10152  10150    0 /usr/bin/sed s%,%|%g
+m4               10156  10154    0 /usr/bin/m4 -daq --prefix --trace=AC_CONFIG_MACRO_DIRS - configure.ac
+sed              10157  10154    0 /usr/bin/sed -n -e s|#.*$||; s|^dnl .*$||; s| dnl .*$||;\n        /^m4trace: -1- AC_CONFIG_MACRO_DIRS/ {\n          s|^m4trace: -1- AC_CONFIG_MACRO_D
+sed              10160  10158    0 /usr/bin/sed -e s|:.*$||g -e 1q
+expr             10161  10018    0 /usr/bin/expr x : x\([^	 ]*\)
+sed              10164  10162    0 /usr/bin/sed s%,% --trace=%g
+sed              10167  10165    0 /usr/bin/sed s%,%|%g
+m4               10171  10169    0 /usr/bin/m4 -daq --prefix --trace=AC_CONFIG_MACRO_DIR - configure.ac
+sed              10172  10169    0 /usr/bin/sed -n -e s|#.*$||; s|^dnl .*$||; s| dnl .*$||;\n        /^m4trace: -1- AC_CONFIG_MACRO_DIR/ {\n          s|^m4trace: -1- AC_CONFIG_MACRO_DI
+sed              10175  10173    0 /usr/bin/sed -e s|:.*$||g -e 1q
+sed              10176  10018    0 /usr/bin/sed -n s|#.*$||\n        /^[	 ]*ACLOCAL_AMFLAGS[	 ]*=/ {\n            s|^.*=[	 ]*\(.*\)|aclocal_amflags="\1"|\n            p\n        } Makefile.am
+sed              10179  10177    0 /usr/bin/sed s%,% --trace=%g
+sed              10182  10180    0 /usr/bin/sed s%,%|%g
+m4               10186  10184    0 /usr/bin/m4 -daq --prefix --trace=AM_PROG_LIBTOOL --trace=AC_PROG_LIBTOOL --trace=LT_INIT - configure.ac
+sed              10187  10184    0 /usr/bin/sed -n -e s|#.*$||; s|^dnl .*$||; s| dnl .*$||;\n        /^m4trace: -1- AM_PROG_LIBTOOL/ {\n          s|^m4trace: -1- AM_PROG_LIBTOOL[([]*||
+sed              10190  10189    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d /usr/share/aclocal/libtool.m4
+grep             10191  10188    0 /usr/bin/grep ^AC_DEFUN(\[LT_INIT /usr/share/aclocal/libtool.m4
+sed              10192  10188    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*LT_INIT[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d /usr/share/aclocal/libtool.m4
+sed              10195  10194    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d aclocal.m4
+sed              10196  10193    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*LT_INIT[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d aclocal.m4
+sed              10199  10198    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d aclocal.m4
+sed              10200  10197    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*A[CM]_PROG_LIBTOOL[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d aclocal.m4
+sed              10203  10201    0 /usr/bin/sed s/[^0-9.]//g
+sed              10206  10204    0 /usr/bin/sed s/\..*$//g
+sed              10209  10207    0 /usr/bin/sed s/\..*$//g
+sed              10212  10211    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d /usr/share/aclocal/ltoptions.m4
+sed              10213  10210    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*ltoptions.m4[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d /usr/share/aclocal/ltoptions.m4
+sed              10216  10215    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d aclocal.m4
+sed              10217  10214    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*ltoptions.m4[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d aclocal.m4
+sed              10220  10218    0 /usr/bin/sed s/[^0-9.]//g
+sed              10223  10221    0 /usr/bin/sed s/\..*$//g
+sed              10226  10224    0 /usr/bin/sed s/\..*$//g
+sed              10229  10228    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d /usr/share/aclocal/ltsugar.m4
+sed              10230  10227    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*ltsugar.m4[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d /usr/share/aclocal/ltsugar.m4
+sed              10233  10232    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d aclocal.m4
+sed              10234  10231    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*ltsugar.m4[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d aclocal.m4
+sed              10237  10235    0 /usr/bin/sed s/[^0-9.]//g
+sed              10240  10238    0 /usr/bin/sed s/\..*$//g
+sed              10243  10241    0 /usr/bin/sed s/\..*$//g
+sed              10246  10245    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d /usr/share/aclocal/ltversion.m4
+sed              10247  10244    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*ltversion.m4[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d /usr/share/aclocal/ltversion.m4
+sed              10250  10249    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d aclocal.m4
+sed              10251  10248    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*ltversion.m4[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d aclocal.m4
+sed              10254  10252    0 /usr/bin/sed s/[^0-9.]//g
+sed              10257  10255    0 /usr/bin/sed s/\..*$//g
+sed              10260  10258    0 /usr/bin/sed s/\..*$//g
+sed              10263  10262    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d /usr/share/aclocal/lt~obsolete.m4
+sed              10264  10261    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*lt~obsolete.m4[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d /usr/share/aclocal/lt~obsolete.m4
+sed              10267  10266    0 /usr/bin/sed \n        /^m4_include(\[.*\])$/ {\n	    s|^m4_include(\[\(.*\)\])$|\1|\n	    p\n	}\n        d aclocal.m4
+sed              10268  10265    0 /usr/bin/sed -e \n	/^# serial [1-9][0-9.]*[	 ]*lt~obsolete.m4[	 ]*$/ {\n	    s|^# serial \([1-9][0-9.]*\).*$|\1|\n	    q\n	}\n	d aclocal.m4
+sed              10271  10269    0 /usr/bin/sed s/[^0-9.]//g
+sed              10274  10272    0 /usr/bin/sed s/\..*$//g
+sed              10277  10275    0 /usr/bin/sed s/\..*$//g
+sed              10278  10018    0 /usr/bin/sed s|dnl .*$||; s|# .*$|| configure.ac
+grep             10279  10018    0 /usr/bin/grep AC_PROG_RANLIB
+aclocal          10280  9973     0 /usr/bin/aclocal
+sh               10284  10280    0 /bin/sh -c echo 'm4_define([m4_require_silent_probe], [-])' | autom4te --language Autoconf-without-aclocal-m4  - /usr/share/aclocal-1.16/in
+autom4te         10286  10284    0 /usr/bin/autom4te --language Autoconf-without-aclocal-m4 - /usr/share/aclocal-1.16/internal/ac-config-macro-dirs.m4 /usr/share/aclocal/glib-gettext.m4 /usr/share/aclocal/intltool.m4 /usr/share/aclocal/libtool.m4 /usr/share/aclocal/ltargz.m4 /usr/share/aclocal/ltdl.m4 /usr/share/aclocal/ltoptions.m4 /usr/share/aclocal/ltsugar.m4 /usr/share/aclocal/ltversion.m4 /usr/share/aclocal/lt~obsolete.m4 /usr/share/aclocal/nls.m4 /usr/share/aclocal-1.16/amversion.m4 /usr/share/aclocal-1.16/auxdir.m4 /usr/share/aclocal-1.16/cond.m4 /usr/share/aclocal-1.16/depend.m4 /usr/share/aclocal-1.16/depout.m4 /usr/share/aclocal-1.16/init.m4 /usr/share/aclocal-1.16/install-sh.m4 /usr/share/aclocal-1.16/lead-dot.m4 /usr/share/aclocal-1.16/make.m4 /usr/share/aclocal-1.16/missing.m4 /usr/share/aclocal-1.16/options.m4 /usr/share/aclocal-1.16/prog-cc-c-o.m4 /usr/share/aclocal-1.16/runlog.m4 /usr/share/aclocal-1.16/sanity.m4 /usr/share/aclocal-1.16/silent.m4 /usr/share/aclocal-1.16/strip.m4 /usr/share/aclocal-1.16/substnot.m4 /usr/share/aclocal-1.16/tar.m4 --trace=AC_DEFUN:$f::$n::${::}% --trace=AC_DEFUN_ONCE:$f::$n::${::}% --trace=AU_DEFUN:$f::$n::${::}% --trace=_AM_AUTOCONF_VERSION:$f::$n::${::}% --trace=AC_CONFIG_MACRO_DIR_TRACE:$f::$n::${::}% --trace=AC_CONFIG_MACRO_DIR:$f::$n::${::}% --trace=_AM_CONFIG_MACRO_DIRS:$f::$n::${::}% --trace=IT_PROG_INTLTOOL:$f::$n --trace=AC_DEPLIBS_CHECK_METHOD:$f::$n --trace=_LT_COMPILER_OPTION:$f::$n --trace=LT_PROG_RC:$f::$n --trace=_LT_AC_SYS_LIBPATH_AIX:$f::$n --trace=LT_PATH_NM:$f::$n --trace=AC_PROG_LD:$f::$n --trace=LT_OUTPUT:$f::$n --trace=AC_LIBTOOL_DLOPEN_SELF:$f::$n --trace=AC_LIBTOOL_POSTDEP_PREDEP:$f::$n --trace=LTOPTIONS_VERSION:$f::$n --trace=IT_PO_SUBDIR:$f::$n --trace=LT_SYS_DLOPEN_SELF:$f::$n --trace=AC_LTDL_DLSYM_USCORE:$f::$n --trace=AM_PROG_NM:$f::$n --trace=AC_LIBTOOL_SYS_MAX_CMD_LEN:$f::$n --trace=AC_LIBTOOL_OBJDIR:$f::$n --trace=_AC_AM_CONFIG_HEADER_HOOK:$f::$n --trace=_LT_PREPARE_SED_QUOTE_VARS:$f::$n --trace=_LT_AC_LANG_C_CONFIG:$f::$n --trace=_AC_PROG_LIBTOOL:$f::$n --trace=AC_LIBTOOL_CONFIG:$f::$n --trace=AM_ENABLE_STATIC:$f::$n --trace=AC_LTDL_SYS_DLOPEN_DEPLIBS:$f::$n --trace=LT_SUPPORTED_TAG:$f::$n --trace=AM_SET_LEADING_DOT:$f::$n --trace=_LT_AC_PROG_ECHO_BACKSLASH:$f::$n --trace=_LT_REQUIRED_DARWIN_CHECKS:$f::$n --trace=AC_DISABLE_SHARED:$f::$n --trace=AC_DISABLE_STATIC:$f::$n --trace=_LT_LIBOBJ:$f::$n --trace=AM_AUTOMAKE_VERSION:$f::$n --trace=AC_LIBTOOL_LANG_F77_CONFIG:$f::$n --trace=_LT_PATH_TOOL_PREFIX:$f::$n --trace=AC_PATH_MAGIC:$f::$n --trace=LTVERSION_VERSION:$f::$n --trace=AM_PROG_LIBTOOL:$f::$n --trace=_LT_AC_SHELL_INIT:$f::$n --trace=AM_GLIB_GNU_GETTEXT:$f::$n --trace=_LT_PROG_CXX:$f::$n --trace=_LT_PROG_ECHO_BACKSLASH:$f::$n --trace=_LT_PROG_F77:$f::$n --trace=AM_MISSING_PROG:$f::$n --trace=AM_SILENT_RULES:$f::$n --trace=AM_MAKE_INCLUDE:$f::$n --trace=AC_PROG_EGREP:$f::$n --trace=_LT_CC_BASENAME:$f::$n --trace=AM_PROG_LD:$f::$n --trace=LT_SYS_DLSEARCH_PATH:$f::$n --trace=AC_LIBTOOL_PROG_COMPILER_PIC:$f::$n --trace=AC_CHECK_LIBM:$f::$n --trace=_LT_AC_LANG_CXX_CONFIG:$f::$n --trace=AC_LIBTOOL_SYS_DYNAMIC_LINKER:$f::$n --trace=AC_LIBTOOL_PROG_COMPILER_NO_RTTI:$f::$n --trace=LT_AC_PROG_GCJ:$f::$n --trace=LTDL_INIT:$f::$n --trace=GLIB_GNU_GETTEXT:$f::$n --trace=_IT_SUBST:$f::$n --trace=GLIB_RUN_PROG:$f::$n --trace=LT_AC_PROG_RC:$f::$n ...
+sh               10287  10286    0 /bin/sh -c /usr/bin/m4 --help </dev/null 2>&1 | grep reload-state >/dev/null
+grep             10289  10287    0 /usr/bin/grep reload-state
+m4               10288  10287    0 /usr/bin/m4 --help
+sh               10290  10286    0 /bin/sh -c echo dumpdef | /usr/bin/m4 --nesting-limit=1024 2>&1 >/dev/null
+m4               10292  10290    0 /usr/bin/m4 --nesting-limit=1024
+sh               10293  10286    0 /bin/sh -c (umask 077 &&\n	   mktemp -d /tmp/"am4tXXXXXX") 2>/dev/null
+mktemp           10295  10294    0 /usr/bin/mktemp -d /tmp/am4tXXXXXX
+sh               10296  10286    0 /bin/sh -c /usr/bin/m4 --nesting-limit=1024 --gnu --include=/usr/share/autoconf --debug=aflq --fatal-warning --debugfile=autom4te.cache/tra
+m4               10297  10296    0 /usr/bin/m4 --nesting-limit=1024 --gnu --include=/usr/share/autoconf --debug=aflq --fatal-warning --debugfile=autom4te.cache/traces.0t --trace=AC_CHECK_LIBM --trace=AC_CONFIG_MACRO_DIR --trace=AC_CONFIG_MACRO_DIR_TRACE --trace=AC_DEFUN --trace=AC_DEFUN_ONCE --trace=AC_DEPLIBS_CHECK_METHOD --trace=AC_DISABLE_FAST_INSTALL --trace=AC_DISABLE_SHARED --trace=AC_DISABLE_STATIC --trace=AC_ENABLE_FAST_INSTALL --trace=AC_ENABLE_SHARED --trace=AC_ENABLE_STATIC --trace=AC_LIBLTDL_CONVENIENCE --trace=AC_LIBLTDL_INSTALLABLE --trace=AC_LIBTOOL_COMPILER_OPTION --trace=AC_LIBTOOL_CONFIG --trace=AC_LIBTOOL_CXX --trace=AC_LIBTOOL_DLOPEN --trace=AC_LIBTOOL_DLOPEN_SELF --trace=AC_LIBTOOL_F77 --trace=AC_LIBTOOL_FC --trace=AC_LIBTOOL_GCJ --trace=AC_LIBTOOL_LANG_CXX_CONFIG --trace=AC_LIBTOOL_LANG_C_CONFIG --trace=AC_LIBTOOL_LANG_F77_CONFIG --trace=AC_LIBTOOL_LANG_GCJ_CONFIG --trace=AC_LIBTOOL_LANG_RC_CONFIG --trace=AC_LIBTOOL_LINKER_OPTION --trace=AC_LIBTOOL_OBJDIR --trace=AC_LIBTOOL_PICMODE --trace=AC_LIBTOOL_POSTDEP_PREDEP --trace=AC_LIBTOOL_PROG_CC_C_O --trace=AC_LIBTOOL_PROG_COMPILER_NO_RTTI --trace=AC_LIBTOOL_PROG_COMPILER_PIC --trace=AC_LIBTOOL_PROG_LD_HARDCODE_LIBPATH --trace=AC_LIBTOOL_PROG_LD_SHLIBS --trace=AC_LIBTOOL_RC --trace=AC_LIBTOOL_SETUP --trace=AC_LIBTOOL_SYS_DYNAMIC_LINKER --trace=AC_LIBTOOL_SYS_GLOBAL_SYMBOL_PIPE --trace=AC_LIBTOOL_SYS_HARD_LINK_LOCKS --trace=AC_LIBTOOL_SYS_LIB_STRIP --trace=AC_LIBTOOL_SYS_MAX_CMD_LEN --trace=AC_LIBTOOL_SYS_OLD_ARCHIVE --trace=AC_LIBTOOL_WIN32_DLL --trace=AC_LIB_LTDL --trace=AC_LTDL_DLLIB --trace=AC_LTDL_DLSYM_USCORE --trace=AC_LTDL_ENABLE_INSTALL --trace=AC_LTDL_OBJDIR --trace=AC_LTDL_PREOPEN --trace=AC_LTDL_SHLIBEXT --trace=AC_LTDL_SHLIBPATH --trace=AC_LTDL_SYMBOL_USCORE --trace=AC_LTDL_SYSSEARCHPATH --trace=AC_LTDL_SYS_DLOPEN_DEPLIBS --trace=AC_PATH_MAGIC --trace=AC_PATH_TOOL_PREFIX --trace=AC_PROG_EGREP --trace=AC_PROG_INTLTOOL --trace=AC_PROG_LD --trace=AC_PROG_LD_GNU --trace=AC_PROG_LD_RELOAD_FLAG --trace=AC_PROG_LIBTOOL --trace=AC_PROG_NM --trace=AC_WITH_LTDL --trace=AM_AUTOMAKE_VERSION --trace=AM_AUX_DIR_EXPAND --trace=AM_CONDITIONAL --trace=AM_DEP_TRACK --trace=AM_DISABLE_SHARED --trace=AM_DISABLE_STATIC --trace=AM_ENABLE_SHARED --trace=AM_ENABLE_STATIC --trace=AM_GLIB_DEFINE_LOCALEDIR --trace=AM_GLIB_GNU_GETTEXT --trace=AM_INIT_AUTOMAKE --trace=AM_MAKE_INCLUDE --trace=AM_MISSING_HAS_RUN --trace=AM_MISSING_PROG --trace=AM_NLS --trace=AM_OUTPUT_DEPENDENCY_COMMANDS --trace=AM_PROG_CC_C_O --trace=AM_PROG_INSTALL_SH --trace=AM_PROG_INSTALL_STRIP --trace=AM_PROG_LD --trace=AM_PROG_LIBTOOL --trace=AM_PROG_NM --trace=AM_RUN_LOG --trace=AM_SANITY_CHECK --trace=AM_SET_CURRENT_AUTOMAKE_VERSION --trace=AM_SET_DEPDIR --trace=AM_SET_LEADING_DOT ...
+m4               10298  10286    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4tcxDQzm/traces.m4
+m4               10299  10286    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4tcxDQzm/traces.m4
+grep             10300  9973     0 /usr/bin/grep ^A[CM]_CONFIG_HEADER configure.ac
+autoheader       10301  9973     0 /usr/bin/autoheader
+sh               10302  10301    0 /bin/sh -c (umask 077 &&\n	   mktemp -d /tmp/"ahXXXXXX") 2>/dev/null
+mktemp           10304  10303    0 /usr/bin/mktemp -d /tmp/ahXXXXXX
+sh               10305  10301    0 /bin/sh -c '/usr/bin/autom4te' --language=autoconf  --trace AC_CONFIG_HEADERS:'$$config_h ||= '"'"'$1'"'"';' --trace AH_OUTPUT:'$$verbatim{
+autom4te         10306  10305    0 /usr/bin/autom4te --language=autoconf --trace AC_CONFIG_HEADERS:$$config_h ||= '$1'; --trace AH_OUTPUT:$$verbatim{'$1'} = '$2'; --trace AC_DEFINE_TRACE_LITERAL:$$symbol{'$1'} = 1; configure.ac
+sh               10307  10306    0 /bin/sh -c /usr/bin/m4 --help </dev/null 2>&1 | grep reload-state >/dev/null
+m4               10308  10307    0 /usr/bin/m4 --help
+grep             10309  10307    0 /usr/bin/grep reload-state
+sh               10310  10306    0 /bin/sh -c echo dumpdef | /usr/bin/m4 --nesting-limit=1024 2>&1 >/dev/null
+m4               10312  10310    0 /usr/bin/m4 --nesting-limit=1024
+sh               10313  10306    0 /bin/sh -c (umask 077 &&\n	   mktemp -d /tmp/"am4tXXXXXX") 2>/dev/null
+mktemp           10315  10314    0 /usr/bin/mktemp -d /tmp/am4tXXXXXX
+sh               10316  10306    0 /bin/sh -c /usr/bin/m4 --nesting-limit=1024 --gnu --include=/usr/share/autoconf --debug=aflq --fatal-warning --debugfile=autom4te.cache/tra
+m4               10317  10316    0 /usr/bin/m4 --nesting-limit=1024 --gnu --include=/usr/share/autoconf --debug=aflq --fatal-warning --debugfile=autom4te.cache/traces.1t --trace=AC_CANONICAL_BUILD --trace=AC_CANONICAL_HOST --trace=AC_CANONICAL_SYSTEM --trace=AC_CANONICAL_TARGET --trace=AC_CONFIG_AUX_DIR --trace=AC_CONFIG_FILES --trace=AC_CONFIG_HEADERS --trace=AC_CONFIG_LIBOBJ_DIR --trace=AC_CONFIG_LINKS --trace=AC_CONFIG_SUBDIRS --trace=AC_DEFINE_TRACE_LITERAL --trace=AC_FC_FREEFORM --trace=AC_FC_PP_DEFINE --trace=AC_FC_PP_SRCEXT --trace=AC_FC_SRCEXT --trace=AC_INIT --trace=AC_LIBSOURCE --trace=AC_PROG_LIBTOOL --trace=AC_REQUIRE_AUX_FILE --trace=AC_SUBST --trace=AC_SUBST_TRACE --trace=AH_OUTPUT --trace=AM_AUTOMAKE_VERSION --trace=AM_CONDITIONAL --trace=AM_ENABLE_MULTILIB --trace=AM_GNU_GETTEXT --trace=AM_GNU_GETTEXT_INTL_SUBDIR --trace=AM_INIT_AUTOMAKE --trace=AM_MAINTAINER_MODE --trace=AM_MAKEFILE_INCLUDE --trace=AM_NLS --trace=AM_PATH_GUILE --trace=AM_POT_TOOLS --trace=AM_PROG_AR --trace=AM_PROG_CC_C_O --trace=AM_PROG_CXX_C_O --trace=AM_PROG_F77_C_O --trace=AM_PROG_FC_C_O --trace=AM_PROG_MOC --trace=AM_SILENT_RULES --trace=AM_XGETTEXT_OPTION --trace=LT_CONFIG_LTDL_DIR --trace=LT_INIT --trace=LT_SUPPORTED_TAG --trace=_AM_COND_ELSE --trace=_AM_COND_ENDIF --trace=_AM_COND_IF --trace=_AM_MAKEFILE_INCLUDE --trace=_AM_SUBST_NOTMAKE --trace=_LT_AC_TAGCONFIG --trace=_m4_warn --trace=include --trace=m4_include --trace=m4_pattern_allow --trace=m4_pattern_forbid --trace=m4_sinclude --trace=sinclude --reload-state=/usr/share/autoconf/autoconf/autoconf.m4f --undefine=__m4_version__ aclocal.m4 configure.ac
+m4               10318  10306    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4tlie86p/traces.m4
+m4               10319  10306    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4tlie86p/traces.m4
+sh               10320  10301    0 /bin/sh -c sed 's/^/| /' /tmp/ahywMZwn/traces.pl
+sed              10320  10301    0 /usr/bin/sed s/^/| / /tmp/ahywMZwn/traces.pl
+automake         10321  9973     0 /usr/bin/automake --add-missing --copy --gnu
+sh               10322  10321    0 /bin/sh -c autoconf --trace=m4_sinclude:\$f:\$l::\$d::\$n::\${::}% --trace=_AM_COND_ENDIF:\$f:\$l::\$d::\$n::\${::}% --trace=AM_INIT_AUTOMA
+autoconf         10322  10321    0 /usr/bin/autoconf --trace=m4_sinclude:$f:$l::$d::$n::${::}% --trace=_AM_COND_ENDIF:$f:$l::$d::$n::${::}% --trace=AM_INIT_AUTOMAKE:$f:$l::$d::$n::${::}% --trace=AC_INIT:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_HEADERS:$f:$l::$d::$n::${::}% --trace=AC_CANONICAL_TARGET:$f:$l::$d::$n::${::}% --trace=m4_include:$f:$l::$d::$n::${::}% --trace=AM_EXTRA_RECURSIVE_TARGETS:$f:$l::$d::$n::${::}% --trace=AC_CANONICAL_HOST:$f:$l::$d::$n::${::}% --trace=LT_SUPPORTED_TAG:$f:$l::$d::$n::${::}% --trace=AM_AUTOMAKE_VERSION:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_FILES:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_LIBOBJ_DIR:$f:$l::$d::$n::${::}% --trace=AC_FC_SRCEXT:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_LINKS:$f:$l::$d::$n::${::}% --trace=AC_REQUIRE_AUX_FILE:$f:$l::$d::$n::${::}% --trace=_AM_COND_IF:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_AUX_DIR:$f:$l::$d::$n::${::}% --trace=AM_CONDITIONAL:$f:$l::$d::$n::${::}% --trace=AM_GNU_GETTEXT:$f:$l::$d::$n::${::}% --trace=AM_PROG_AR:$f:$l::$d::$n::${::}% --trace=_AM_COND_ELSE:$f:$l::$d::$n::${::}% --trace=AM_GNU_GETTEXT_INTL_SUBDIR:$f:$l::$d::$n::${::}% --trace=AC_CANONICAL_BUILD:$f:$l::$d::$n::${::}% --trace=AC_LIBSOURCE:$f:$l::$d::$n::${::}% --trace=AC_SUBST_TRACE:$f:$l::$d::$n::${::}% --trace=_AM_SUBST_NOTMAKE:$f:$l::$d::$n::${::}% --trace=AM_PROG_MKDIR_P:$f:$l::$d::$n::${::}% --trace=AM_MAINTAINER_MODE:$f:$l::$d::$n::${::}% --trace=sinclude:$f:$l::$d::$n::${::}% --trace=_LT_AC_TAGCONFIG:$f:$l::$d::$n::${::}% configure.ac
+expr             10337  10322    0 /usr/bin/expr a : \(a\)
+expr             10338  10322    0 /usr/bin/expr 00001 : .*\(...\)
+basename         10339  10322    0 /usr/bin/basename -- /
+basename         10341  10340    0 /usr/bin/basename -- /
+basename         10343  10342    0 /usr/bin/basename -- /usr/bin/autoconf
+expr             10344  10322    0 /usr/bin/expr x--trace=m4_sinclude:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=m4_sinclude:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10345  10322    0 /usr/bin/expr x--trace=m4_sinclude:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=m4_sinclude:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10348  10346    0 /usr/bin/sed s/'/'\\''/g
+expr             10349  10322    0 /usr/bin/expr x--trace=_AM_COND_ENDIF:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=_AM_COND_ENDIF:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10350  10322    0 /usr/bin/expr x--trace=_AM_COND_ENDIF:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=_AM_COND_ENDIF:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10353  10351    0 /usr/bin/sed s/'/'\\''/g
+expr             10354  10322    0 /usr/bin/expr x--trace=AM_INIT_AUTOMAKE:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_INIT_AUTOMAKE:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10355  10322    0 /usr/bin/expr x--trace=AM_INIT_AUTOMAKE:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_INIT_AUTOMAKE:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10358  10356    0 /usr/bin/sed s/'/'\\''/g
+expr             10359  10322    0 /usr/bin/expr x--trace=AC_INIT:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_INIT:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10360  10322    0 /usr/bin/expr x--trace=AC_INIT:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_INIT:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10363  10361    0 /usr/bin/sed s/'/'\\''/g
+expr             10364  10322    0 /usr/bin/expr x--trace=AC_CONFIG_HEADERS:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_CONFIG_HEADERS:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10365  10322    0 /usr/bin/expr x--trace=AC_CONFIG_HEADERS:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_CONFIG_HEADERS:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10368  10366    0 /usr/bin/sed s/'/'\\''/g
+expr             10369  10322    0 /usr/bin/expr x--trace=AC_CANONICAL_TARGET:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_CANONICAL_TARGET:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10370  10322    0 /usr/bin/expr x--trace=AC_CANONICAL_TARGET:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_CANONICAL_TARGET:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10373  10371    0 /usr/bin/sed s/'/'\\''/g
+expr             10374  10322    0 /usr/bin/expr x--trace=m4_include:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=m4_include:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10375  10322    0 /usr/bin/expr x--trace=m4_include:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=m4_include:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10378  10376    0 /usr/bin/sed s/'/'\\''/g
+expr             10379  10322    0 /usr/bin/expr x--trace=AM_EXTRA_RECURSIVE_TARGETS:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_EXTRA_RECURSIVE_TARGETS:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10380  10322    0 /usr/bin/expr x--trace=AM_EXTRA_RECURSIVE_TARGETS:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_EXTRA_RECURSIVE_TARGETS:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10383  10381    0 /usr/bin/sed s/'/'\\''/g
+expr             10384  10322    0 /usr/bin/expr x--trace=AC_CANONICAL_HOST:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_CANONICAL_HOST:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10385  10322    0 /usr/bin/expr x--trace=AC_CANONICAL_HOST:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_CANONICAL_HOST:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10388  10386    0 /usr/bin/sed s/'/'\\''/g
+expr             10389  10322    0 /usr/bin/expr x--trace=LT_SUPPORTED_TAG:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=LT_SUPPORTED_TAG:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10390  10322    0 /usr/bin/expr x--trace=LT_SUPPORTED_TAG:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=LT_SUPPORTED_TAG:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10393  10391    0 /usr/bin/sed s/'/'\\''/g
+expr             10394  10322    0 /usr/bin/expr x--trace=AM_AUTOMAKE_VERSION:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_AUTOMAKE_VERSION:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10395  10322    0 /usr/bin/expr x--trace=AM_AUTOMAKE_VERSION:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_AUTOMAKE_VERSION:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10398  10396    0 /usr/bin/sed s/'/'\\''/g
+expr             10399  10322    0 /usr/bin/expr x--trace=AC_CONFIG_FILES:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_CONFIG_FILES:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10400  10322    0 /usr/bin/expr x--trace=AC_CONFIG_FILES:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_CONFIG_FILES:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10403  10401    0 /usr/bin/sed s/'/'\\''/g
+expr             10404  10322    0 /usr/bin/expr x--trace=AC_CONFIG_LIBOBJ_DIR:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_CONFIG_LIBOBJ_DIR:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10405  10322    0 /usr/bin/expr x--trace=AC_CONFIG_LIBOBJ_DIR:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_CONFIG_LIBOBJ_DIR:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10408  10406    0 /usr/bin/sed s/'/'\\''/g
+expr             10409  10322    0 /usr/bin/expr x--trace=AC_FC_SRCEXT:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_FC_SRCEXT:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10410  10322    0 /usr/bin/expr x--trace=AC_FC_SRCEXT:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_FC_SRCEXT:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10413  10411    0 /usr/bin/sed s/'/'\\''/g
+expr             10414  10322    0 /usr/bin/expr x--trace=AC_CONFIG_LINKS:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_CONFIG_LINKS:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10415  10322    0 /usr/bin/expr x--trace=AC_CONFIG_LINKS:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_CONFIG_LINKS:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10418  10416    0 /usr/bin/sed s/'/'\\''/g
+expr             10419  10322    0 /usr/bin/expr x--trace=AC_REQUIRE_AUX_FILE:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_REQUIRE_AUX_FILE:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10420  10322    0 /usr/bin/expr x--trace=AC_REQUIRE_AUX_FILE:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_REQUIRE_AUX_FILE:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10423  10421    0 /usr/bin/sed s/'/'\\''/g
+expr             10424  10322    0 /usr/bin/expr x--trace=_AM_COND_IF:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=_AM_COND_IF:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10425  10322    0 /usr/bin/expr x--trace=_AM_COND_IF:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=_AM_COND_IF:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10428  10426    0 /usr/bin/sed s/'/'\\''/g
+expr             10429  10322    0 /usr/bin/expr x--trace=AC_CONFIG_AUX_DIR:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_CONFIG_AUX_DIR:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10430  10322    0 /usr/bin/expr x--trace=AC_CONFIG_AUX_DIR:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_CONFIG_AUX_DIR:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10433  10431    0 /usr/bin/sed s/'/'\\''/g
+expr             10434  10322    0 /usr/bin/expr x--trace=AM_CONDITIONAL:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_CONDITIONAL:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10435  10322    0 /usr/bin/expr x--trace=AM_CONDITIONAL:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_CONDITIONAL:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10438  10436    0 /usr/bin/sed s/'/'\\''/g
+expr             10439  10322    0 /usr/bin/expr x--trace=AM_GNU_GETTEXT:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_GNU_GETTEXT:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10440  10322    0 /usr/bin/expr x--trace=AM_GNU_GETTEXT:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_GNU_GETTEXT:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10443  10441    0 /usr/bin/sed s/'/'\\''/g
+expr             10444  10322    0 /usr/bin/expr x--trace=AM_PROG_AR:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_PROG_AR:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10445  10322    0 /usr/bin/expr x--trace=AM_PROG_AR:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_PROG_AR:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10448  10446    0 /usr/bin/sed s/'/'\\''/g
+expr             10449  10322    0 /usr/bin/expr x--trace=_AM_COND_ELSE:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=_AM_COND_ELSE:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10450  10322    0 /usr/bin/expr x--trace=_AM_COND_ELSE:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=_AM_COND_ELSE:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10453  10451    0 /usr/bin/sed s/'/'\\''/g
+expr             10454  10322    0 /usr/bin/expr x--trace=AM_GNU_GETTEXT_INTL_SUBDIR:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_GNU_GETTEXT_INTL_SUBDIR:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10455  10322    0 /usr/bin/expr x--trace=AM_GNU_GETTEXT_INTL_SUBDIR:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_GNU_GETTEXT_INTL_SUBDIR:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10458  10456    0 /usr/bin/sed s/'/'\\''/g
+expr             10459  10322    0 /usr/bin/expr x--trace=AC_CANONICAL_BUILD:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_CANONICAL_BUILD:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10460  10322    0 /usr/bin/expr x--trace=AC_CANONICAL_BUILD:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_CANONICAL_BUILD:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10463  10461    0 /usr/bin/sed s/'/'\\''/g
+expr             10464  10322    0 /usr/bin/expr x--trace=AC_LIBSOURCE:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_LIBSOURCE:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10465  10322    0 /usr/bin/expr x--trace=AC_LIBSOURCE:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_LIBSOURCE:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10468  10466    0 /usr/bin/sed s/'/'\\''/g
+expr             10469  10322    0 /usr/bin/expr x--trace=AC_SUBST_TRACE:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AC_SUBST_TRACE:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10470  10322    0 /usr/bin/expr x--trace=AC_SUBST_TRACE:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AC_SUBST_TRACE:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10473  10471    0 /usr/bin/sed s/'/'\\''/g
+expr             10474  10322    0 /usr/bin/expr x--trace=_AM_SUBST_NOTMAKE:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=_AM_SUBST_NOTMAKE:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10475  10322    0 /usr/bin/expr x--trace=_AM_SUBST_NOTMAKE:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=_AM_SUBST_NOTMAKE:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10478  10476    0 /usr/bin/sed s/'/'\\''/g
+expr             10479  10322    0 /usr/bin/expr x--trace=AM_PROG_MKDIR_P:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_PROG_MKDIR_P:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10480  10322    0 /usr/bin/expr x--trace=AM_PROG_MKDIR_P:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_PROG_MKDIR_P:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10483  10481    0 /usr/bin/sed s/'/'\\''/g
+expr             10484  10322    0 /usr/bin/expr x--trace=AM_MAINTAINER_MODE:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=AM_MAINTAINER_MODE:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10485  10322    0 /usr/bin/expr x--trace=AM_MAINTAINER_MODE:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=AM_MAINTAINER_MODE:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10488  10486    0 /usr/bin/sed s/'/'\\''/g
+expr             10489  10322    0 /usr/bin/expr x--trace=sinclude:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=sinclude:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10490  10322    0 /usr/bin/expr x--trace=sinclude:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=sinclude:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10493  10491    0 /usr/bin/sed s/'/'\\''/g
+expr             10494  10322    0 /usr/bin/expr x--trace=_LT_AC_TAGCONFIG:$f:$l::$d::$n::${::}% : x\(--[^=]*\) | x--trace=_LT_AC_TAGCONFIG:$f:$l::$d::$n::${::}% : x\(-.\)
+expr             10495  10322    0 /usr/bin/expr x--trace=_LT_AC_TAGCONFIG:$f:$l::$d::$n::${::}% : x--[^=]*=\(.*\) | x--trace=_LT_AC_TAGCONFIG:$f:$l::$d::$n::${::}% : x-.\(.*\)
+sed              10498  10496    0 /usr/bin/sed s/'/'\\''/g
+expr             10499  10322    0 /usr/bin/expr xconfigure.ac : x\(--[^=]*\) | xconfigure.ac : x\(-.\)
+expr             10500  10322    0 /usr/bin/expr xconfigure.ac : x--[^=]*=\(.*\) | xconfigure.ac : x-.\(.*\)
+autom4te         10322  10321    0 /usr/bin/autom4te --language=autoconf --output=- --trace=m4_sinclude:$f:$l::$d::$n::${::}% --trace=_AM_COND_ENDIF:$f:$l::$d::$n::${::}% --trace=AM_INIT_AUTOMAKE:$f:$l::$d::$n::${::}% --trace=AC_INIT:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_HEADERS:$f:$l::$d::$n::${::}% --trace=AC_CANONICAL_TARGET:$f:$l::$d::$n::${::}% --trace=m4_include:$f:$l::$d::$n::${::}% --trace=AM_EXTRA_RECURSIVE_TARGETS:$f:$l::$d::$n::${::}% --trace=AC_CANONICAL_HOST:$f:$l::$d::$n::${::}% --trace=LT_SUPPORTED_TAG:$f:$l::$d::$n::${::}% --trace=AM_AUTOMAKE_VERSION:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_FILES:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_LIBOBJ_DIR:$f:$l::$d::$n::${::}% --trace=AC_FC_SRCEXT:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_LINKS:$f:$l::$d::$n::${::}% --trace=AC_REQUIRE_AUX_FILE:$f:$l::$d::$n::${::}% --trace=_AM_COND_IF:$f:$l::$d::$n::${::}% --trace=AC_CONFIG_AUX_DIR:$f:$l::$d::$n::${::}% --trace=AM_CONDITIONAL:$f:$l::$d::$n::${::}% --trace=AM_GNU_GETTEXT:$f:$l::$d::$n::${::}% --trace=AM_PROG_AR:$f:$l::$d::$n::${::}% --trace=_AM_COND_ELSE:$f:$l::$d::$n::${::}% --trace=AM_GNU_GETTEXT_INTL_SUBDIR:$f:$l::$d::$n::${::}% --trace=AC_CANONICAL_BUILD:$f:$l::$d::$n::${::}% --trace=AC_LIBSOURCE:$f:$l::$d::$n::${::}% --trace=AC_SUBST_TRACE:$f:$l::$d::$n::${::}% --trace=_AM_SUBST_NOTMAKE:$f:$l::$d::$n::${::}% --trace=AM_PROG_MKDIR_P:$f:$l::$d::$n::${::}% --trace=AM_MAINTAINER_MODE:$f:$l::$d::$n::${::}% --trace=sinclude:$f:$l::$d::$n::${::}% --trace=_LT_AC_TAGCONFIG:$f:$l::$d::$n::${::}% configure.ac
+sh               10501  10322    0 /bin/sh -c /usr/bin/m4 --help </dev/null 2>&1 | grep reload-state >/dev/null
+m4               10502  10501    0 /usr/bin/m4 --help
+grep             10503  10501    0 /usr/bin/grep reload-state
+sh               10504  10322    0 /bin/sh -c echo dumpdef | /usr/bin/m4 --nesting-limit=1024 2>&1 >/dev/null
+m4               10506  10504    0 /usr/bin/m4 --nesting-limit=1024
+sh               10507  10322    0 /bin/sh -c (umask 077 &&\n	   mktemp -d /tmp/"am4tXXXXXX") 2>/dev/null
+mktemp           10509  10508    0 /usr/bin/mktemp -d /tmp/am4tXXXXXX
+sh               10510  10322    0 /bin/sh -c /usr/bin/m4 --nesting-limit=1024 --gnu --include=/usr/share/autoconf --debug=aflq --fatal-warning --debugfile=autom4te.cache/tra
+m4               10511  10510    0 /usr/bin/m4 --nesting-limit=1024 --gnu --include=/usr/share/autoconf --debug=aflq --fatal-warning --debugfile=autom4te.cache/traces.1t --trace=AC_CANONICAL_BUILD --trace=AC_CANONICAL_HOST --trace=AC_CANONICAL_SYSTEM --trace=AC_CANONICAL_TARGET --trace=AC_CONFIG_AUX_DIR --trace=AC_CONFIG_FILES --trace=AC_CONFIG_HEADERS --trace=AC_CONFIG_LIBOBJ_DIR --trace=AC_CONFIG_LINKS --trace=AC_CONFIG_SUBDIRS --trace=AC_DEFINE_TRACE_LITERAL --trace=AC_FC_FREEFORM --trace=AC_FC_PP_DEFINE --trace=AC_FC_PP_SRCEXT --trace=AC_FC_SRCEXT --trace=AC_INIT --trace=AC_LIBSOURCE --trace=AC_PROG_LIBTOOL --trace=AC_REQUIRE_AUX_FILE --trace=AC_SUBST --trace=AC_SUBST_TRACE --trace=AH_OUTPUT --trace=AM_AUTOMAKE_VERSION --trace=AM_CONDITIONAL --trace=AM_ENABLE_MULTILIB --trace=AM_EXTRA_RECURSIVE_TARGETS --trace=AM_GNU_GETTEXT --trace=AM_GNU_GETTEXT_INTL_SUBDIR --trace=AM_INIT_AUTOMAKE --trace=AM_MAINTAINER_MODE --trace=AM_MAKEFILE_INCLUDE --trace=AM_NLS --trace=AM_PATH_GUILE --trace=AM_POT_TOOLS --trace=AM_PROG_AR --trace=AM_PROG_CC_C_O --trace=AM_PROG_CXX_C_O --trace=AM_PROG_F77_C_O --trace=AM_PROG_FC_C_O --trace=AM_PROG_MKDIR_P --trace=AM_PROG_MOC --trace=AM_SILENT_RULES --trace=AM_XGETTEXT_OPTION --trace=LT_CONFIG_LTDL_DIR --trace=LT_INIT --trace=LT_SUPPORTED_TAG --trace=_AM_COND_ELSE --trace=_AM_COND_ENDIF --trace=_AM_COND_IF --trace=_AM_MAKEFILE_INCLUDE --trace=_AM_SUBST_NOTMAKE --trace=_LT_AC_TAGCONFIG --trace=_m4_warn --trace=include --trace=m4_include --trace=m4_pattern_allow --trace=m4_pattern_forbid --trace=m4_sinclude --trace=sinclude --reload-state=/usr/share/autoconf/autoconf/autoconf.m4f --undefine=__m4_version__ aclocal.m4 configure.ac
+m4               10512  10322    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4taPTAgm/traces.m4
+m4               10513  10322    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4taPTAgm/traces.m4
+cp               10514  10321    0 /usr/bin/cp /usr/share/automake-1.16/compile ./compile
+cp               10515  10321    0 /usr/bin/cp /usr/share/automake-1.16/config.guess ./config.guess
+cp               10516  10321    0 /usr/bin/cp /usr/share/automake-1.16/config.sub ./config.sub
+cp               10517  10321    0 /usr/bin/cp /usr/share/automake-1.16/install-sh ./install-sh
+cp               10518  10321    0 /usr/bin/cp /usr/share/automake-1.16/missing ./missing
+cp               10519  10321    0 /usr/bin/cp /usr/share/automake-1.16/INSTALL ./INSTALL
+cp               10520  10321    0 /usr/bin/cp /usr/share/automake-1.16/depcomp ./depcomp
+autoconf         10521  9973     0 /usr/bin/autoconf
+expr             10536  10521    0 /usr/bin/expr a : \(a\)
+expr             10537  10521    0 /usr/bin/expr 00001 : .*\(...\)
+basename         10538  10521    0 /usr/bin/basename -- /
+basename         10540  10539    0 /usr/bin/basename -- /
+basename         10542  10541    0 /usr/bin/basename -- /usr/bin/autoconf
+autom4te         10521  9973     0 /usr/bin/autom4te --language=autoconf --output=configure configure.ac
+sh               10543  10521    0 /bin/sh -c /usr/bin/m4 --help </dev/null 2>&1 | grep reload-state >/dev/null
+m4               10544  10543    0 /usr/bin/m4 --help
+grep             10545  10543    0 /usr/bin/grep reload-state
+sh               10546  10521    0 /bin/sh -c echo dumpdef | /usr/bin/m4 --nesting-limit=1024 2>&1 >/dev/null
+m4               10548  10546    0 /usr/bin/m4 --nesting-limit=1024
+sh               10549  10521    0 /bin/sh -c (umask 077 &&\n	   mktemp -d /tmp/"am4tXXXXXX") 2>/dev/null
+mktemp           10551  10550    0 /usr/bin/mktemp -d /tmp/am4tXXXXXX
+m4               10557  10521    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4tGEMdHh/traces.m4
+m4               10558  10521    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4tGEMdHh/traces.m4
+m4               10559  10521    0 /usr/bin/m4 --nesting-limit=1024 /tmp/am4tGEMdHh/traces.m4
+configure        10560  9912     0 ./configure
+expr             10575  10574    0 /usr/bin/expr 191 + 1
+expr             10578  10560    0 /usr/bin/expr a : \(a\)
+expr             10579  10560    0 /usr/bin/expr 00001 : .*\(...\)
+basename         10580  10560    0 /usr/bin/basename -- /
+basename         10582  10581    0 /usr/bin/basename -- /
+dirname          10584  10583    0 /usr/bin/dirname -- /
+basename         10586  10585    0 /usr/bin/basename -- ./configure
+expr             10587  10560    0 /usr/bin/expr 469 + 1
+rm               10589  10560    0 /usr/bin/rm -f conf10560 conf10560.exe conf10560.file
+rm               10590  10560    0 /usr/bin/rm -f conf10560.dir
+mkdir            10591  10560    0 /usr/bin/mkdir conf10560.dir
+ln               10593  10560    0 /usr/bin/ln -s conf10560.file conf10560
+ln               10594  10560    0 /usr/bin/ln -s conf10560.file conf10560.dir
+rm               10595  10560    0 /usr/bin/rm -f conf10560 conf10560.exe conf10560.dir/conf10560.file conf10560.file
+rmdir            10596  10560    0 /usr/bin/rmdir conf10560.dir
+mkdir            10597  10560    0 /usr/bin/mkdir -p .
+sed              10600  10598    0 /usr/bin/sed 1q
+hostname         10601  10599    0 /usr/bin/hostname
+ls               10603  10560    0 /usr/bin/ls -di .
+ls               10604  10560    0 /usr/bin/ls -di .
+dirname          10606  10605    0 /usr/bin/dirname -- ./configure
+cat              10609  10560    0 /usr/bin/cat
+hostname         10614  10612    0 /usr/bin/hostname
+sed              10613  10611    0 /usr/bin/sed 1q
+uname            10616  10615    0 /usr/bin/uname -m
+uname            10618  10617    0 /usr/bin/uname -r
+uname            10620  10619    0 /usr/bin/uname -s
+uname            10622  10621    0 /usr/bin/uname -v
+uname            10624  10623    0 /usr/bin/uname -p
+uname            10626  10625    0 /bin/uname -X
+cat              10610  10560    0 /usr/bin/cat
+cat              10641  10560    0 /usr/bin/cat
+rm               10642  10560    0 /usr/bin/rm -f -r conftest* confdefs.h
+cat              10643  10560    0 /usr/bin/cat
+cat              10644  10560    0 /usr/bin/cat
+cat              10645  10560    0 /usr/bin/cat
+cat              10646  10560    0 /usr/bin/cat
+cat              10647  10560    0 /usr/bin/cat
+cat              10648  10560    0 /usr/bin/cat
+grep             10649  10560    0 /usr/bin/grep dspmsg /usr/bin/install
+grep             10650  10560    0 /usr/bin/grep pwplus /usr/bin/install
+rm               10651  10560    0 /usr/bin/rm -rf conftest.one conftest.two conftest.dir
+mkdir            10652  10560    0 /usr/bin/mkdir conftest.dir
+install          10654  10560    0 /usr/bin/install -c conftest.one conftest.two /home/nsiy/_code/_anjuta/_general1_/conftest.dir
+rm               10655  10560    0 /usr/bin/rm -rf conftest.one conftest.two conftest.dir
+ls               10659  10658    0 /usr/bin/ls -Lt ./configure conftest.file
+grep             10660  10560    0 /usr/bin/grep slept: no conftest.file
+rm               10662  10560    0 /usr/bin/rm -f conftest.file
+sleep            10661  10560    0 /usr/bin/sleep 1
+sed              10665  10663    0 /usr/bin/sed s/[\\$]/&&/g;s/;s,x,x,$//
+sh               10667  10560    0 /bin/sh /home/nsiy/_code/_anjuta/_general1_/missing --is-lightweight
+mkdir            10669  10668    0 /usr/bin/mkdir --version
+sed              10672  10670    0 /usr/bin/sed s/+/p/g; s/[^a-zA-Z0-9_]/_/g
+cat              10673  10560    0 /usr/bin/cat
+make             10675  10674    0 /usr/bin/make -f conftest.make
+echo             10676  10675    0 /usr/bin/echo @@@%%%=make=@@@%%%
+rm               10677  10560    0 /usr/bin/rm -f conftest.make
+rm               10678  10560    0 /usr/bin/rm -rf .tst
+mkdir            10679  10560    0 /usr/bin/mkdir .tst
+rmdir            10680  10560    0 /usr/bin/rmdir .tst
+make             10682  10560    0 /usr/bin/make -f -
+true             10683  10682    0 /usr/bin/true
+cat              10687  10560    0 /usr/bin/cat
+cat              10688  10560    0 /usr/bin/cat
+rm               10689  10560    0 /usr/bin/rm -f
+rm               10690  10560    0 /usr/bin/rm -fr
+rm               10691  10560    0 /usr/bin/rm -rf
+gcc              10693  10692    0 /usr/bin/gcc --version
+rm               10694  10560    0 /usr/bin/rm -f conftest.er1 conftest.err
+gcc              10696  10695    0 /usr/bin/gcc -v
+sed              10697  10560    0 /usr/bin/sed 10a\\n... rest of stderr output deleted ...\n         10q conftest.err
+cat              10698  10560    0 /usr/bin/cat conftest.er1
+rm               10699  10560    0 /usr/bin/rm -f conftest.er1 conftest.err
+gcc              10701  10700    0 /usr/bin/gcc -V
+sed              10702  10560    0 /usr/bin/sed 10a\\n... rest of stderr output deleted ...\n         10q conftest.err
+cat              10703  10560    0 /usr/bin/cat conftest.er1
+rm               10704  10560    0 /usr/bin/rm -f conftest.er1 conftest.err
+gcc              10706  10705    0 /usr/bin/gcc -qversion
+sed              10707  10560    0 /usr/bin/sed 10a\\n... rest of stderr output deleted ...\n         10q conftest.err
+cat              10708  10560    0 /usr/bin/cat conftest.er1
+rm               10709  10560    0 /usr/bin/rm -f conftest.er1 conftest.err
+cat              10710  10560    0 /usr/bin/cat confdefs.h -
+sed              10713  10711    0 /usr/bin/sed s/ -o *conftest[^ ]*//
+rm               10714  10560    0 /usr/bin/rm -f a.out conftest.exe conftest a.exe a_out.exe b.out
+gcc              10716  10715    0 /usr/bin/gcc conftest.c
+cc1              10717  10716    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -o /tmp/ccdohCzs.s
+as               10718  10716    0 /usr/bin/as --64 -o /tmp/ccDr8XOs.o /tmp/ccdohCzs.s
+collect2         10719  10716    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMPonou.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccDr8XOs.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               10720  10719    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMPonou.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccDr8XOs.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               10721  10560    0 /usr/bin/rm -f -r a.out a.out.dSYM a.exe conftest b.out
+gcc              10723  10722    0 /usr/bin/gcc -o conftest conftest.c
+cc1              10724  10723    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -o /tmp/ccaqPC02.s
+as               10725  10723    0 /usr/bin/as --64 -o /tmp/ccvsGoZ0.o /tmp/ccaqPC02.s
+collect2         10726  10723    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZn8yY2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccvsGoZ0.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               10727  10726    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZn8yY2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccvsGoZ0.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               10728  10560    0 /usr/bin/rm -f conftest conftest
+rm               10729  10560    0 /usr/bin/rm -f conftest.c
+cat              10730  10560    0 /usr/bin/cat confdefs.h -
+gcc              10732  10731    0 /usr/bin/gcc -o conftest conftest.c
+cc1              10733  10732    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -o /tmp/cc8qcPOF.s
+as               10734  10732    0 /usr/bin/as --64 -o /tmp/ccegGBoH.o /tmp/cc8qcPOF.s
+collect2         10735  10732    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6EKHcJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccegGBoH.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               10736  10735    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6EKHcJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccegGBoH.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+conftest         10738  10737    0 ./conftest
+rm               10739  10560    0 /usr/bin/rm -f conftest.c conftest conftest.out
+cat              10740  10560    0 /usr/bin/cat confdefs.h -
+rm               10741  10560    0 /usr/bin/rm -f conftest.o conftest.obj
+gcc              10743  10742    0 /usr/bin/gcc -c conftest.c
+cc1              10744  10743    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -o /tmp/cc4NJ08u.s
+as               10745  10743    0 /usr/bin/as --64 -o conftest.o /tmp/cc4NJ08u.s
+expr             10746  10560    0 /usr/bin/expr conftest.o : .*\.\(.*\)
+rm               10747  10560    0 /usr/bin/rm -f conftest.o conftest.c
+cat              10748  10560    0 /usr/bin/cat confdefs.h -
+rm               10749  10560    0 /usr/bin/rm -f conftest.o
+gcc              10751  10750    0 /usr/bin/gcc -c conftest.c
+cc1              10752  10751    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -o /tmp/ccUnDt87.s
+as               10753  10751    0 /usr/bin/as --64 -o conftest.o /tmp/ccUnDt87.s
+rm               10754  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+cat              10755  10560    0 /usr/bin/cat confdefs.h -
+rm               10756  10560    0  -f conftest.o
+gcc              10758  10757    0 /usr/bin/gcc -c -g conftest.c
+cc1              10759  10758    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -o /tmp/ccwh1uDH.s
+as               10760  10758    0 /usr/bin/as --64 -o conftest.o /tmp/ccwh1uDH.s
+rm               10761  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+cat              10762  10560    0 /usr/bin/cat confdefs.h -
+rm               10763  10560    0 /usr/bin/rm -f conftest.o
+gcc              10765  10764    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10766  10765    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccgSwUrd.s
+as               10767  10765    0 /usr/bin/as --64 -o conftest.o /tmp/ccgSwUrd.s
+rm               10768  10560    0 /usr/bin/rm -f core conftest.err conftest.o
+rm               10769  10560    0 /usr/bin/rm -f conftest.c
+cat              10770  10560    0 /usr/bin/cat confdefs.h -
+gcc              10771  10560    0 /usr/bin/gcc -c conftest.c -o conftest2.o
+cc1              10772  10771    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase-strip conftest2.o -o /tmp/cc7rgQiF.s
+as               10773  10771    0 /usr/bin/as --64 -o conftest2.o /tmp/cc7rgQiF.s
+gcc              10775  10560    0 /usr/bin/gcc -c conftest.c -o conftest2.o
+cc1              10776  10775    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase-strip conftest2.o -o /tmp/ccn90fwV.s
+as               10777  10775    0 /usr/bin/as --64 -o conftest2.o /tmp/ccn90fwV.s
+rm               10779  10560    0 /usr/bin/rm -f core conftest.c conftest2.o
+cat              10780  10560    0 /usr/bin/cat
+make             10782  10781    0 /usr/bin/make -f confmf.GNU
+sh               10783  10782    0 /bin/sh -c echo this is the am__doit target >confinc.out
+cat              10784  10781    0 /usr/bin/cat confinc.out
+cat              10787  10786    0 /usr/bin/cat confinc.out
+rm               10788  10560    0 /usr/bin/rm -f confinc.mk confinc.out confmf.BSD confmf.GNU
+rm               10789  10560    0 /usr/bin/rm -rf conftest.dir
+mkdir            10790  10560    0 /usr/bin/mkdir conftest.dir
+cp               10791  10560    0 /usr/bin/cp ./depcomp conftest.dir
+mkdir            10792  10560    0 /usr/bin/mkdir sub
+sed              10794  10793    0 /usr/bin/sed -n s/^#*\([a-zA-Z0-9]*\))$/\1/p
+sh               10795  10560    0 /bin/sh ./depcomp gcc -c -o sub/conftest.o sub/conftest.c
+rm               10796  10795    0 /usr/bin/rm -f sub/conftest.TPo
+gcc              10797  10795    0 /usr/bin/gcc -MT sub/conftest.o -MD -MP -MF sub/conftest.TPo -c -o sub/conftest.o sub/conftest.c
+cc1              10798  10797    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet -MD sub/conftest.d -MF sub/conftest.TPo -MP -MT sub/conftest.o sub/conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase-strip sub/conftest.o -o /tmp/ccgeEJhA.s
+as               10799  10797    0 /usr/bin/as --64 -o sub/conftest.o /tmp/ccgeEJhA.s
+mv               10800  10795    0 /usr/bin/mv sub/conftest.TPo sub/conftest.Po
+grep             10801  10560    0 /usr/bin/grep sub/conftst1.h sub/conftest.Po
+grep             10802  10560    0 /usr/bin/grep sub/conftst6.h sub/conftest.Po
+grep             10803  10560    0 /usr/bin/grep sub/conftest.o sub/conftest.Po
+make             10804  10560    0 /usr/bin/make -s -f confmf
+grep             10806  10805    0 /usr/bin/grep ignoring option conftest.err
+grep             10807  10805    0 /usr/bin/grep not supported conftest.err
+rm               10808  10560    0 /usr/bin/rm -rf conftest.dir
+awk              10811  10809    0 /usr/bin/awk -F. { print $ 1 * 1000 + $ 2 * 100 + $ 3; }
+intltool-update  10813  10812    0 /usr/bin/intltool-update --version
+head             10814  10812    0 /usr/bin/head -1
+cut              10815  10812    0 /usr/bin/cut -d  -f3
+awk              10818  10816    0 /usr/bin/awk -F. { print $ 1 * 1000 + $ 2 * 100 + $ 3; }
+xgettext         10820  10819    0 /usr/bin/xgettext --version
+grep             10821  10819    0 /usr/bin/grep (GNU 
+msgmerge         10823  10822    0 /usr/bin/msgmerge --version
+grep             10824  10822    0 /usr/bin/grep (GNU 
+msgfmt           10826  10825    0 /usr/bin/msgfmt --version
+grep             10827  10825    0 /usr/bin/grep (GNU 
+perl             10828  10560    0 /usr/bin/perl -e use 5.8.1;
+perl             10829  10560    0 /usr/bin/perl -e printf '%vd', $^V
+perl             10831  10830    0 /usr/bin/perl -e require XML::Parser
+cat              10832  10560    0 /usr/bin/cat
+cat              10833  10560    0 /usr/bin/cat confdefs.h -
+gcc              10835  10834    0 /usr/bin/gcc -E conftest.c
+cc1              10836  10835    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet conftest.c -mtune=generic -march=x86-64
+rm               10837  10560    0 /usr/bin/rm -f conftest.err conftest.i conftest.c
+cat              10838  10560    0 /usr/bin/cat confdefs.h -
+gcc              10840  10839    0 /usr/bin/gcc -E conftest.c
+cc1              10841  10840    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet conftest.c -mtune=generic -march=x86-64
+grep             10842  10560    0 /usr/bin/grep -v ^ *+ conftest.err
+cat              10843  10560    0 /usr/bin/cat conftest.er1
+mv               10844  10560    0 /usr/bin/mv -f conftest.er1 conftest.err
+sed              10845  10560    0 /usr/bin/sed s/^/| / conftest.c
+rm               10846  10560    0 /usr/bin/rm -f conftest.i conftest.err conftest.c
+cat              10847  10560    0 /usr/bin/cat confdefs.h -
+gcc              10849  10848    0 /usr/bin/gcc -E conftest.c
+cc1              10850  10849    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet conftest.c -mtune=generic -march=x86-64
+rm               10851  10560    0 /usr/bin/rm -f conftest.err conftest.i conftest.c
+cat              10852  10560    0 /usr/bin/cat confdefs.h -
+gcc              10854  10853    0 /usr/bin/gcc -E conftest.c
+cc1              10855  10854    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet conftest.c -mtune=generic -march=x86-64
+grep             10856  10560    0 /usr/bin/grep -v ^ *+ conftest.err
+cat              10857  10560    0 /usr/bin/cat conftest.er1
+mv               10858  10560    0 /usr/bin/mv -f conftest.er1 conftest.err
+sed              10859  10560    0 /usr/bin/sed s/^/| / conftest.c
+rm               10860  10560    0 /usr/bin/rm -f conftest.i conftest.err conftest.c
+grep             10862  10861    0 /usr/bin/grep --version
+grep             10864  10560    0 /usr/bin/grep -E (a|b)
+cat              10865  10560    0 /usr/bin/cat confdefs.h -
+rm               10866  10560    0 /usr/bin/rm -f conftest.o
+gcc              10868  10867    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10869  10868    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccn9uzZZ.s
+as               10870  10868    0 /usr/bin/as --64 -o conftest.o /tmp/ccn9uzZZ.s
+rm               10871  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+cat              10872  10560    0 /usr/bin/cat confdefs.h -
+gcc              10875  10873    0 /usr/bin/gcc -E conftest.c
+grep             10874  10560    0 /usr/bin/grep -E memchr
+cc1              10876  10875    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet conftest.c -mtune=generic -march=x86-64
+rm               10877  10560    0 /usr/bin/rm -f conftest.c
+cat              10878  10560    0 /usr/bin/cat confdefs.h -
+grep             10880  10560    0 /usr/bin/grep -E free
+gcc              10881  10879    0 /usr/bin/gcc -E conftest.c
+cc1              10882  10881    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet conftest.c -mtune=generic -march=x86-64
+rm               10883  10560    0 /usr/bin/rm -f conftest.c
+cat              10884  10560    0 /usr/bin/cat confdefs.h -
+gcc              10886  10885    0 /usr/bin/gcc -o conftest -g -O2 conftest.c
+cc1              10887  10886    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccDoAhkk.s
+as               10888  10886    0 /usr/bin/as --64 -o /tmp/ccOGiKTn.o /tmp/ccDoAhkk.s
+collect2         10889  10886    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckzAmtl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccOGiKTn.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               10890  10889    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckzAmtl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccOGiKTn.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+conftest         10892  10891    0 ./conftest
+rm               10893  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               10894  10560    0 /usr/bin/rm -f core *.core core.conftest.* gmon.out bb.out conftest conftest.o conftest.beam conftest.c
+sed              10898  10897    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              10899  10560    0 /usr/bin/cat confdefs.h -
+rm               10900  10560    0 /usr/bin/rm -f conftest.o
+gcc              10902  10901    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10903  10902    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccCewFtz.s
+as               10904  10902    0 /usr/bin/as --64 -o conftest.o /tmp/ccCewFtz.s
+rm               10905  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              10910  10909    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              10906  10560    0 /usr/bin/cat
+sed              10914  10913    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              10915  10560    0 /usr/bin/cat confdefs.h -
+rm               10916  10560    0 /usr/bin/rm -f conftest.o
+gcc              10918  10917    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10919  10918    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccuW8zoK.s
+as               10920  10918    0 /usr/bin/as --64 -o conftest.o /tmp/ccuW8zoK.s
+rm               10921  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              10926  10925    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              10922  10560    0 /usr/bin/cat
+sed              10930  10929    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              10931  10560    0 /usr/bin/cat confdefs.h -
+rm               10932  10560    0 /usr/bin/rm -f conftest.o
+gcc              10934  10933    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10935  10934    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/cc9xWzrW.s
+as               10936  10934    0 /usr/bin/as --64 -o conftest.o /tmp/cc9xWzrW.s
+rm               10937  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              10942  10941    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              10938  10560    0 /usr/bin/cat
+sed              10946  10945    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              10947  10560    0 /usr/bin/cat confdefs.h -
+rm               10948  10560    0 /usr/bin/rm -f conftest.o
+gcc              10950  10949    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10951  10950    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/cckT2POd.s
+as               10952  10950    0 /usr/bin/as --64 -o conftest.o /tmp/cckT2POd.s
+rm               10953  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              10958  10957    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              10954  10560    0 /usr/bin/cat
+sed              10962  10961    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              10963  10560    0 /usr/bin/cat confdefs.h -
+rm               10964  10560    0 /usr/bin/rm -f conftest.o
+gcc              10966  10965    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10967  10966    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccwFMzap.s
+as               10968  10966    0 /usr/bin/as --64 -o conftest.o /tmp/ccwFMzap.s
+rm               10969  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              10974  10973    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              10970  10560    0 /usr/bin/cat
+sed              10978  10977    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              10979  10560    0 /usr/bin/cat confdefs.h -
+rm               10980  10560    0 /usr/bin/rm -f conftest.o
+gcc              10982  10981    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10983  10982    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccdssthA.s
+as               10984  10982    0 /usr/bin/as --64 -o conftest.o /tmp/ccdssthA.s
+rm               10985  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              10990  10989    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              10986  10560    0 /usr/bin/cat
+sed              10994  10993    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              10995  10560    0 /usr/bin/cat confdefs.h -
+rm               10996  10560    0 /usr/bin/rm -f conftest.o
+gcc              10998  10997    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              10999  10998    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccJJ1IZN.s
+as               11000  10998    0 /usr/bin/as --64 -o conftest.o /tmp/ccJJ1IZN.s
+rm               11001  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              11006  11005    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              11002  10560    0 /usr/bin/cat
+sed              11010  11009    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              11011  10560    0 /usr/bin/cat confdefs.h -
+rm               11012  10560    0 /usr/bin/rm -f conftest.o
+gcc              11014  11013    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11015  11014    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccn5lRV3.s
+as               11016  11014    0 /usr/bin/as --64 -o conftest.o /tmp/ccn5lRV3.s
+rm               11017  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              11022  11021    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              11018  10560    0 /usr/bin/cat
+sed              11026  11025    0 /usr/bin/sed y%*+%pp%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%_%g
+cat              11027  10560    0 /usr/bin/cat confdefs.h -
+rm               11028  10560    0 /usr/bin/rm -f conftest.o
+gcc              11030  11029    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11031  11030    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccpOkQof.s
+as               11032  11030    0 /usr/bin/as --64 -o conftest.o /tmp/ccpOkQof.s
+rm               11033  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+sed              11038  11037    0 /usr/bin/sed y%*abcdefghijklmnopqrstuvwxyz%PABCDEFGHIJKLMNOPQRSTUVWXYZ%;s%[^_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]%
+cat              11034  10560    0 /usr/bin/cat
+cat              11039  10560    0 /usr/bin/cat confdefs.h -
+rm               11040  10560    0 /usr/bin/rm -f conftest.o
+gcc              11042  11041    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11043  11042    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccsCgU68.s
+as               11044  11042    0 /usr/bin/as --64 -o conftest.o /tmp/ccsCgU68.s
+rm               11045  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+cat              11046  10560    0 /usr/bin/cat confdefs.h -
+gcc              11048  11047    0 /usr/bin/gcc -E conftest.c
+cc1              11049  11048    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet conftest.c -mtune=generic -march=x86-64
+rm               11050  10560    0 /usr/bin/rm -f conftest.err conftest.i conftest.c
+cat              11051  10560    0 /usr/bin/cat
+cat              11052  10560    0 /usr/bin/cat confdefs.h -
+rm               11053  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11055  11054    0 /usr/bin/gcc -o conftest -g -O2 conftest.c
+cc1              11056  11055    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccMTdNja.s
+as               11057  11055    0 /usr/bin/as --64 -o /tmp/cca2gk25.o /tmp/ccMTdNja.s
+collect2         11058  11055    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cczbj2Z5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/cca2gk25.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11059  11058    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cczbj2Z5.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/cca2gk25.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11060  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               11061  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+cat              11062  10560    0 /usr/bin/cat confdefs.h -
+rm               11063  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11065  11064    0 /usr/bin/gcc -o conftest -g -O2 conftest.c -Wl,-framework -Wl,CoreFoundation
+cc1              11066  11065    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccOFnLST.s
+grep             11067  10560    0 /usr/bin/grep -v ^ *+ conftest.err
+cat              11068  10560    0 /usr/bin/cat conftest.er1
+mv               11069  10560    0 /usr/bin/mv -f conftest.er1 conftest.err
+sed              11070  10560    0 /usr/bin/sed s/^/| / conftest.c
+rm               11071  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               11072  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+cat              11073  10560    0 /usr/bin/cat confdefs.h -
+rm               11074  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11076  11075    0 /usr/bin/gcc -o conftest -g -O2 conftest.c -Wl,-framework -Wl,CoreFoundation
+cc1              11077  11076    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccSgJLSH.s
+grep             11078  10560    0 /usr/bin/grep -v ^ *+ conftest.err
+cat              11079  10560    0 /usr/bin/cat conftest.er1
+mv               11080  10560    0 /usr/bin/mv -f conftest.er1 conftest.err
+sed              11081  10560    0 /usr/bin/sed s/^/| / conftest.c
+rm               11082  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               11083  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+cat              11084  10560    0 /usr/bin/cat confdefs.h -
+rm               11085  10560    0 /usr/bin/rm -f conftest.o
+gcc              11087  11086    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11088  11087    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccqa6csx.s
+as               11089  11087    0 /usr/bin/as --64 -o conftest.o /tmp/ccqa6csx.s
+rm               11090  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+cat              11091  10560    0 /usr/bin/cat confdefs.h -
+gcc              11093  11092    0 /usr/bin/gcc -E conftest.c
+cc1              11094  11093    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet conftest.c -mtune=generic -march=x86-64
+rm               11095  10560    0 /usr/bin/rm -f conftest.err conftest.i conftest.c
+cat              11096  10560    0 /usr/bin/cat confdefs.h -
+rm               11097  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11099  11098    0 /usr/bin/gcc -o conftest -g -O2 conftest.c
+cc1              11100  11099    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccICs0Cq.s
+as               11101  11099    0 /usr/bin/as --64 -o /tmp/ccDwBNGq.o /tmp/ccICs0Cq.s
+collect2         11102  11099    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4j9Cnt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccDwBNGq.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11103  11102    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4j9Cnt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccDwBNGq.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11104  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               11105  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+cat              11106  10560    0 /usr/bin/cat confdefs.h -
+rm               11107  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11109  11108    0 /usr/bin/gcc -o conftest -g -O2 conftest.c
+cc1              11110  11109    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccubQ8Xe.s
+as               11111  11109    0 /usr/bin/as --64 -o /tmp/cc4R6s0a.o /tmp/ccubQ8Xe.s
+collect2         11112  11109    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8Syd1e.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/cc4R6s0a.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11113  11112    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8Syd1e.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/cc4R6s0a.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11114  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               11115  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+cat              11116  10560    0 /usr/bin/cat confdefs.h -
+rm               11117  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11119  11118    0 /usr/bin/gcc -o conftest -g -O2 conftest.c
+cc1              11120  11119    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/cclFDzqW.s
+as               11121  11119    0 /usr/bin/as --64 -o /tmp/cczgEgEW.o /tmp/cclFDzqW.s
+collect2         11122  11119    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqQrKvY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/cczgEgEW.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11123  11122    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqQrKvY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/cczgEgEW.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11124  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               11125  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+cat              11126  10560    0 /usr/bin/cat
+cat              11127  10560    0 /usr/bin/cat confdefs.h -
+rm               11128  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11130  11129    0 /usr/bin/gcc -o conftest -g -O2 conftest.c
+cc1              11131  11130    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/cc5cdvoN.s
+as               11132  11130    0 /usr/bin/as --64 -o /tmp/ccnocd1O.o /tmp/cc5cdvoN.s
+collect2         11133  11130    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHHDuVN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccnocd1O.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11134  11133    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHHDuVN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccnocd1O.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+grep             11135  10560    0 /usr/bin/grep -v ^ *+ conftest.err
+cat              11136  10560    0 /usr/bin/cat conftest.er1
+mv               11137  10560    0 /usr/bin/mv -f conftest.er1 conftest.err
+rm               11138  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               11139  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+cat              11140  10560    0 /usr/bin/cat
+cat              11141  10560    0 /usr/bin/cat
+msgfmt           11142  10560    0 /usr/bin/msgfmt -c -o /dev/null conftest.foo
+cat              11143  10560    0 /usr/bin/cat confdefs.h -
+rm               11144  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11146  11145    0 /usr/bin/gcc -o conftest -g -O2 conftest.c
+cc1              11147  11146    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccUXRoWY.s
+as               11148  11146    0 /usr/bin/as --64 -o /tmp/ccl2z6yY.o /tmp/ccUXRoWY.s
+collect2         11149  11146    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVmoRL1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccl2z6yY.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11150  11149    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVmoRL1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccl2z6yY.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11151  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+rm               11152  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+xgettext         11153  10560    0 /usr/bin/xgettext --omit-header /dev/null
+rm               11154  10560    0 /usr/bin/rm -f po/POTFILES
+sed              11155  10560    0 /usr/bin/sed -e /^#/d -e /^$/d -e s,.*,	../& \\, -e $s/\(.*\) \\/\1/
+sh               11157  10560    0 /bin/sh ./config.sub sun4
+sed              11160  11158    0 /usr/bin/sed -e s,.*/,,
+sed              11163  11161    0 /usr/bin/sed s/^\(.*\)-\([^-]*-[^-]*\)$/\2/
+sed              11166  11164    0 /usr/bin/sed s/-[^-]*$//
+sh               11167  10560    0 /bin/sh ./config.guess
+sed              11170  11168    0 /usr/bin/sed -e s,.*/,,
+uname            11173  11172    0 /usr/bin/uname -m
+uname            11175  11174    0 /usr/bin/uname -r
+uname            11177  11176    0 /usr/bin/uname -s
+uname            11179  11178    0 /usr/bin/uname -v
+mktemp           11182  11181    0 /usr/bin/mktemp -d /tmp/cgXXXXXX
+cc               11183  11167    0 /usr/bin/cc -c -o /tmp/cgzOMypU/dummy.o /tmp/cgzOMypU/dummy.c
+cc1              11184  11183    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet /tmp/cgzOMypU/dummy.c -quiet -dumpbase dummy.c -mtune=generic -march=x86-64 -auxbase-strip /tmp/cgzOMypU/dummy.o -o /tmp/ccXpv9SL.s
+as               11185  11183    0 /usr/bin/as --64 -o /tmp/cgzOMypU/dummy.o /tmp/ccXpv9SL.s
+cat              11186  11167    0 /usr/bin/cat
+cc               11188  11187    0 /usr/bin/cc -E /tmp/cgzOMypU/dummy.c
+grep             11189  11187    0 /usr/bin/grep ^LIBC
+sed              11190  11187    0 /usr/bin/sed s, ,,g
+cc1              11191  11188    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -E -quiet /tmp/cgzOMypU/dummy.c -mtune=generic -march=x86-64
+ldd              11192  11167    0 /usr/bin/ldd --version
+grep             11193  11167    0 /usr/bin/grep -q ^musl
+rm               11195  11194    0 /usr/bin/rm -f /tmp/cgzOMypU/dummy.c /tmp/cgzOMypU/dummy.o /tmp/cgzOMypU/dummy.rel /tmp/cgzOMypU/dummy
+rmdir            11196  11194    0 /usr/bin/rmdir /tmp/cgzOMypU
+sh               11197  10560    0 /bin/sh ./config.sub x86_64-pc-linux-gnu
+sed              11200  11198    0 /usr/bin/sed -e s,.*/,,
+sed              11203  11201    0 /usr/bin/sed s/^\(.*\)-\([^-]*-[^-]*\)$/\2/
+sed              11206  11204    0 /usr/bin/sed s/^\(.*\)-\([^-]*-[^-]*\)$/\1/
+sed              11211  10560    0 /usr/bin/sed 99q
+sed              11213  11212    0 /usr/bin/sed --version
+rm               11214  10560    0 /usr/bin/rm -f conftest.sed
+grep             11216  10560    0 /usr/bin/grep -F ab*c
+gcc              11218  11217    0 /usr/bin/gcc -print-prog-name=ld
+ld               11220  11219    0 /usr/bin/ld -v
+ld               11222  11221    0 /usr/bin/ld -v
+nm               11224  11223    0 /usr/bin/nm -B /dev/null
+sed              11225  11223    0 /usr/bin/sed 1q
+gcc              11228  11227    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11229  11228    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccNygpoc.s
+as               11230  11228    0 /usr/bin/as --64 -o conftest.o /tmp/ccNygpoc.s
+cat              11231  10560    0 /usr/bin/cat conftest.err
+nm               11234  11233    0 /usr/bin/nm -B conftest.o
+cat              11235  10560    0 /usr/bin/cat conftest.err
+cat              11237  10560    0 /usr/bin/cat conftest.out
+grep             11238  10560    0 /usr/bin/grep External.*some_variable conftest.out
+rm               11239  10560    0 /usr/bin/rm -f conftest.c conftest.err conftest.foo conftest.o conftest.out
+getconf          11241  11240    0 /usr/bin/getconf ARG_MAX
+expr             11242  10560    0 /usr/bin/expr 2097152 / 4
+expr             11243  10560    0 /usr/bin/expr 524288 * 3
+tr               11248  11246    0 /usr/bin/tr X \101
+cat              11249  10560    0 /usr/bin/cat confdefs.h -
+rm               11250  10560    0 /usr/bin/rm -f conftest.o
+gcc              11252  11251    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11253  11252    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccdPSBtZ.s
+as               11254  11252    0 /usr/bin/as --64 -o conftest.o /tmp/ccdPSBtZ.s
+ar               11256  11255    0 /usr/bin/ar cr libconftest.a @conftest.lst
+rm               11257  10560    0 /usr/bin/rm -f conftest.o libconftest.a
+ar               11259  11258    0 /usr/bin/ar cr libconftest.a @conftest.lst
+rm               11260  10560    0 /usr/bin/rm -f conftest.c conftest.err conftest.lst libconftest.a
+rm               11261  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+nm               11263  11262    0 /usr/bin/nm -B -V
+rm               11264  10560    0 /usr/bin/rm -f conftest*
+cat              11265  10560    0 /usr/bin/cat
+gcc              11267  11266    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11268  11267    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccesS008.s
+as               11269  11267    0 /usr/bin/as --64 -o conftest.o /tmp/ccesS008.s
+nm               11271  11270    0 /usr/bin/nm -B conftest.o
+sed              11272  11270    0 /usr/bin/sed -n -e s/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p
+sed              11273  11270    0 /usr/bin/sed / __gnu_lto/d
+sort             11274  10560    0 /usr/bin/sort conftest.nm
+uniq             11275  10560    0 /usr/bin/uniq
+mv               11276  10560    0 /usr/bin/mv -f conftest.nmT conftest.nm
+grep             11277  10560    0 /usr/bin/grep  nm_test_var$ conftest.nm
+grep             11278  10560    0 /usr/bin/grep  nm_test_func$ conftest.nm
+cat              11279  10560    0 /usr/bin/cat
+sed              11280  10560    0 /usr/bin/sed -n -e s/^T .* \(.*\)$/extern int \1();/p -e s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/extern char \1;/p
+grep             11281  10560    0 /usr/bin/grep -v main
+cat              11282  10560    0 /usr/bin/cat
+sed              11283  10560    0 /usr/bin/sed s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/  {"\1", (void *) \&\1},/
+grep             11284  10560    0 /usr/bin/grep -v main
+cat              11285  10560    0 /usr/bin/cat
+mv               11286  10560    0 /usr/bin/mv conftest.o conftstm.o
+gcc              11288  11287    0 /usr/bin/gcc -o conftest -g -O2 conftest.c conftstm.o
+cc1              11289  11288    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccaUDNCL.s
+as               11290  11288    0 /usr/bin/as --64 -o /tmp/ccRx4nKI.o /tmp/ccaUDNCL.s
+collect2         11291  11288    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrwM9kJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccRx4nKI.o conftstm.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11292  11291    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrwM9kJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccRx4nKI.o conftstm.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11293  10560    0 /usr/bin/rm -rf conftest conftest.c conftest.nm conftstm.o
+nm               11294  10560    0 /usr/bin/nm -B --help
+grep             11295  10560    0 /usr/bin/grep [@]FILE
+cat              11296  10560    0 /usr/bin/cat conftest.i conftest.i
+dd               11297  10560    0 /usr/bin/dd bs=32 count=1
+cmp              11298  10560    0 /usr/bin/cmp -s conftest.i conftest.out
+rm               11299  10560    0 /usr/bin/rm -f conftest.i conftest2.i conftest.out
+cat              11300  10560    0 /usr/bin/cat conftest.i conftest.i
+dd               11301  10560    0 /usr/bin/dd bs=32 count=1
+cmp              11302  10560    0 /usr/bin/cmp -s conftest.i conftest.out
+rm               11303  10560    0 /usr/bin/rm -f conftest.i conftest2.i conftest.out
+gcc              11305  11304    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11306  11305    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccU96Xm2.s
+as               11307  11305    0 /usr/bin/as --64 -o conftest.o /tmp/ccU96Xm2.s
+file             11308  10560    0 /usr/bin/file conftest.o
+rm               11309  10560    0 /usr/bin/rm -rf conftest.c conftest.o
+cat              11310  10560    0 /usr/bin/cat conftest.err
+grep             11311  10560    0 /usr/bin/grep Manifest Tool conftest.out
+rm               11312  10560    0 /usr/bin/rm -f conftest.err conftest.out
+cat              11313  10560    0 /usr/bin/cat confdefs.h -
+rm               11314  10560    0 /usr/bin/rm -f conftest.o
+gcc              11316  11315    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11317  11316    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/cco4LHsR.s
+as               11318  11316    0 /usr/bin/as --64 -o conftest.o /tmp/cco4LHsR.s
+rm               11319  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest.c
+cat              11320  10560    0 /usr/bin/cat
+rm               11321  10560    0 /usr/bin/rm -f .libs
+mkdir            11322  10560    0 /usr/bin/mkdir .libs
+rmdir            11323  10560    0 /usr/bin/rmdir .libs
+cat              11324  10560    0 /usr/bin/cat
+sed              11327  11325    0 /usr/bin/sed s%.*/%%; s%^-%%
+gcc              11330  11328    0 /usr/bin/gcc -c -g -O2 conftest.c
+sed              11329  10560    0 /usr/bin/sed /^$/d; /^ *+/d
+cc1              11331  11330    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccYqYWyV.s
+as               11332  11330    0 /usr/bin/as --64 -o conftest.o /tmp/ccYqYWyV.s
+cat              11333  10560    0 /usr/bin/cat conftest.err
+rm               11334  10560    0 /usr/bin/rm -f conftest.c conftest.err conftest.o
+gcc              11337  11335    0 /usr/bin/gcc -o conftest -g -O2 conftest.c
+sed              11336  10560    0 /usr/bin/sed /^$/d; /^ *+/d
+cc1              11338  11337    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/cc8JiD2p.s
+as               11339  11337    0 /usr/bin/as --64 -o /tmp/ccrxCafs.o /tmp/cc8JiD2p.s
+collect2         11340  11337    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGg9Bcr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccrxCafs.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11341  11340    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGg9Bcr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccrxCafs.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+cat              11342  10560    0 /usr/bin/cat conftest.err
+rm               11343  10560    0 /usr/bin/rm -f -r conftest conftest.c conftest.err
+sed              11346  11344    0 /usr/bin/sed -e s:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t -e s: [^ ]*conftest\.: $lt_compiler_flag&:; t -e s:$: $lt_compiler_flag:
+gcc              11349  11348    0 /usr/bin/gcc -c -g -O2 -fno-rtti -fno-exceptions conftest.c
+cc1              11350  11349    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -fno-rtti -fno-exceptions -o /tmp/cc4gynGn.s
+as               11351  11349    0 /usr/bin/as --64 -o conftest.o /tmp/cc4gynGn.s
+cat              11352  10560    0 /usr/bin/cat conftest.err
+sed              11355  10560    0 /usr/bin/sed /^$/d
+sed              11356  10560    0 /usr/bin/sed /^$/d; /^ *+/d conftest.err
+diff             11357  10560    0 /usr/bin/diff conftest.exp conftest.er2
+rm               11358  10560    0 /usr/bin/rm -f conftest.c conftest.er2 conftest.err conftest.exp conftest.o
+sed              11361  11359    0 /usr/bin/sed -e s:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t -e s: [^ ]*conftest\.: $lt_compiler_flag&:; t -e s:$: $lt_compiler_flag:
+gcc              11364  11363    0 /usr/bin/gcc -c -g -O2 -fPIC -DPIC -DPIC conftest.c
+cc1              11365  11364    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet -D PIC -D PIC conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -fPIC -o /tmp/ccgEvb6v.s
+as               11366  11364    0 /usr/bin/as --64 -o conftest.o /tmp/ccgEvb6v.s
+cat              11367  10560    0 /usr/bin/cat conftest.err
+sed              11370  10560    0 /usr/bin/sed /^$/d
+sed              11371  10560    0 /usr/bin/sed /^$/d; /^ *+/d conftest.err
+rm               11372  10560    0 /usr/bin/rm -f conftest.c conftest.er2 conftest.err conftest.exp conftest.o
+gcc              11374  11373    0 /usr/bin/gcc -o conftest -g -O2 -static conftest.c
+cc1              11375  11374    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccC1pU1g.s
+as               11376  11374    0 /usr/bin/as --64 -o /tmp/ccXuxTCe.o /tmp/ccC1pU1g.s
+collect2         11377  11374    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjGfO1d.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lc --build-id --hash-style=gnu -m elf_x86_64 -static -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginT.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccXuxTCe.o --start-group -lgcc -lgcc_eh -lc --end-group /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11378  11377    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjGfO1d.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lc --build-id --hash-style=gnu -m elf_x86_64 -static -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginT.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. /tmp/ccXuxTCe.o --start-group -lgcc -lgcc_eh -lc --end-group /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11379  10560    0 /usr/bin/rm -f -r conftest conftest.c conftest.err
+rm               11380  10560    0 /usr/bin/rm -f -r conftest
+mkdir            11381  10560    0 /usr/bin/mkdir conftest
+mkdir            11382  10560    0 /usr/bin/mkdir out
+sed              11385  11383    0 /usr/bin/sed -e s:.*FLAGS}\{0,1\} :&$lt_compiler_flag :; t -e s: [^ ]*conftest\.: $lt_compiler_flag&:; t -e s:$: $lt_compiler_flag:
+gcc              11388  11387    0 /usr/bin/gcc -c -g -O2 -o out/conftest2.o conftest.c
+cc1              11389  11388    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase-strip out/conftest2.o -g -O2 -o /tmp/cccpdRyj.s
+as               11390  11388    0 /usr/bin/as --64 -o out/conftest2.o /tmp/cccpdRyj.s
+cat              11391  10560    0 /usr/bin/cat out/conftest.err
+sed              11394  10560    0 /usr/bin/sed /^$/d
+sed              11395  10560    0 /usr/bin/sed /^$/d; /^ *+/d out/conftest.err
+chmod            11396  10560    0 /usr/bin/chmod u+w .
+rm               11397  10560    0 /usr/bin/rm -f conftest.c
+rm               11398  10560    0 /usr/bin/rm -f out/conftest.er2 out/conftest.err out/conftest.exp out/conftest2.o
+rmdir            11399  10560    0 /usr/bin/rmdir out
+rm               11400  10560    0 /usr/bin/rm -f -r conftest
+rm               11401  10560    0 /usr/bin/rm -f conftest*
+ld               11402  10560    0 /usr/bin/ld -m elf_x86_64 --help
+grep             11403  10560    0 /usr/bin/grep no-whole-archive
+ld               11405  11404    0 /usr/bin/ld -m elf_x86_64 -v
+sed              11406  11404    0 /usr/bin/sed -e s/(^)\+)\s\+//
+ld               11407  10560    0 /usr/bin/ld -m elf_x86_64 --help
+grep             11408  10560    0 /usr/bin/grep -E : supported targets:.* elf
+gcc              11410  11409    0 /usr/bin/gcc -V
+sed              11411  11409    0 /usr/bin/sed 5q
+rm               11412  10560    0 /usr/bin/rm -f conftest*
+gcc              11414  11413    0 /usr/bin/gcc -c -g -O2 conftest.c
+cc1              11415  11414    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccdBmt4f.s
+as               11416  11414    0 /usr/bin/as --64 -o conftest.o /tmp/ccdBmt4f.s
+gcc              11418  11417    0 /usr/bin/gcc -shared -fPIC -DPIC conftest.o -v -Wl,-soname -Wl,conftest -o conftest
+grep             11419  11417    0 /usr/bin/grep  -lc 
+collect2         11420  11418    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc100EOB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -shared -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. conftest.o -soname conftest -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11421  11420    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc100EOB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -shared -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. conftest.o -soname conftest -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11422  10560    0 /usr/bin/rm -f conftest conftest.c conftest.err conftest.o
+gcc              11424  11423    0 /usr/bin/gcc -print-search-dirs
+awk              11425  11423    0 /usr/bin/awk /^libraries:/
+sed              11426  11423    0 /usr/bin/sed -e s/^libraries:// -e s|=/|/|g
+sed              11429  11427    0 /usr/bin/sed s/:/ /g
+gcc              11431  11430    0 /usr/bin/gcc -g -O2 -print-multi-os-directory
+awk              11434  11432    0 /usr/bin/awk \nBEGIN {RS = " "; FS = "/|\n";} {\n  lt_foo = "";\n  lt_count = 0;\n  for (lt_i = NF; lt_i > 0; lt_i--) {\n    if ($lt_i != "" && $l
+tr               11437  11435    0 /usr/bin/tr \015\012 \040\040
+cat              11438  10560    0 /usr/bin/cat confdefs.h -
+rm               11439  10560    0 /usr/bin/rm -f conftest.o conftest
+gcc              11441  11440    0 /usr/bin/gcc -o conftest -g -O2 -Wl,-rpath -Wl,/foo conftest.c
+cc1              11442  11441    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet conftest.c -quiet -dumpbase conftest.c -mtune=generic -march=x86-64 -auxbase conftest -g -O2 -o /tmp/ccxqJWHj.s
+as               11443  11441    0 /usr/bin/as --64 -o /tmp/ccsppetk.o /tmp/ccxqJWHj.s
+collect2         11444  11441    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVksC0h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. -rpath /foo /tmp/ccsppetk.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               11445  11444    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVksC0h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o conftest /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. -rpath /foo /tmp/ccsppetk.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+rm               11446  10560    0 /usr/bin/rm -rf conftest.dSYM conftest_ipa8_conftest.oo
+objdump          11447  10560    0 /usr/bin/objdump -p conftest
+grep             11448  10560    0 /usr/bin/grep RUNPATH.*/foo
+rm               11449  10560    0 /usr/bin/rm -f core conftest.err conftest.o conftest conftest.c
+awk              11451  11450    0 /usr/bin/awk /^include / { system(sprintf("cd /etc; cat %s 2>/dev/null", $2)); skip = 1; } { if (!skip) print $0; skip = 0; }
+sed              11452  11450    0 /usr/bin/sed -e s/#.*//;/^[	 ]*hwcap[	 ]/d;s/[:,	]/ /g;s/=[^=]*$//;s/=[^= ]* / /g;s/"//g;/^$/d
+tr               11453  11450    0 /usr/bin/tr \n  
+sh               11454  11451    0 /bin/sh -c cd /etc; cat /etc/ld.so.conf.d/*.conf 2>/dev/null
+cat              11455  11454    0 /usr/bin/cat /etc/ld.so.conf.d/fakeroot.conf /etc/ld.so.conf.d/lib32-glibc.conf
+grep             11457  10560    0 /usr/bin/grep GNU strip
+strip            11456  10560    0 /usr/bin/strip -V
+cat              11458  10560    0 /usr/bin/cat
+sed              11460  10560    0 /usr/bin/sed \n     /^ac_cv_env_/b end\n     t clear\n     :clear\n     s/^\([^=]*\)=\(.*[{}].*\)$/test "${\1+set}" = set || &/\n     t end\n     s
+sed              11463  11461    0 /usr/bin/sed -n s/^\([a-zA-Z_][a-zA-Z0-9_]*\)=.*/\1/p
+sort             11466  11459    0 /usr/bin/sort
+sed              11469  11465    0 /usr/bin/sed -n /^[_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]*_cv_[_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01
+diff             11470  10560    0 /usr/bin/diff /dev/null confcache
+rm               11471  10560    0 /usr/bin/rm -f confcache
+cat              11472  10560    0 /usr/bin/cat
+cat              11473  10560    0 /usr/bin/cat
+chmod            11474  10560    0 /usr/bin/chmod +x ./config.status
+cat              11475  10560    0 /usr/bin/cat
+cat              11476  10560    0 /usr/bin/cat
+cat              11477  10560    0 /usr/bin/cat
+sed              11481  11479    0 /usr/bin/sed s/^ //; s/[\""`$]/\\&/g
+cat              11478  10560    0 /usr/bin/cat
+cat              11482  10560    0 /usr/bin/cat
+cat              11483  10560    0 /usr/bin/cat
+cat              11484  10560    0 /usr/bin/cat
+sed              11488  11486    0 /usr/bin/sed s/'/'\\\''/g
+sed              11491  11489    0 /usr/bin/sed s/'/'\\\''/g
+sed              11494  11492    0 /usr/bin/sed s/'/'\\\''/g
+sed              11497  11495    0 /usr/bin/sed s/'/'\\\''/g
+sed              11500  11498    0 /usr/bin/sed s/'/'\\\''/g
+sed              11503  11501    0 /usr/bin/sed s/'/'\\\''/g
+sed              11506  11504    0 /usr/bin/sed s/'/'\\\''/g
+sed              11509  11507    0 /usr/bin/sed s/'/'\\\''/g
+sed              11512  11510    0 /usr/bin/sed s/'/'\\\''/g
+sed              11515  11513    0 /usr/bin/sed s/'/'\\\''/g
+sed              11518  11516    0 /usr/bin/sed s/'/'\\\''/g
+sed              11521  11519    0 /usr/bin/sed s/'/'\\\''/g
+sed              11524  11522    0 /usr/bin/sed s/'/'\\\''/g
+sed              11527  11525    0 /usr/bin/sed s/'/'\\\''/g
+sed              11530  11528    0 /usr/bin/sed s/'/'\\\''/g
+sed              11533  11531    0 /usr/bin/sed s/'/'\\\''/g
+sed              11536  11534    0 /usr/bin/sed s/'/'\\\''/g
+sed              11539  11537    0 /usr/bin/sed s/'/'\\\''/g
+sed              11542  11540    0 /usr/bin/sed s/'/'\\\''/g
+sed              11545  11543    0 /usr/bin/sed s/'/'\\\''/g
+sed              11548  11546    0 /usr/bin/sed s/'/'\\\''/g
+sed              11551  11549    0 /usr/bin/sed s/'/'\\\''/g
+sed              11554  11552    0 /usr/bin/sed s/'/'\\\''/g
+sed              11557  11555    0 /usr/bin/sed s/'/'\\\''/g
+sed              11560  11558    0 /usr/bin/sed s/'/'\\\''/g
+sed              11563  11561    0 /usr/bin/sed s/'/'\\\''/g
+sed              11566  11564    0 /usr/bin/sed s/'/'\\\''/g
+sed              11569  11567    0 /usr/bin/sed s/'/'\\\''/g
+sed              11572  11570    0 /usr/bin/sed s/'/'\\\''/g
+sed              11575  11573    0 /usr/bin/sed s/'/'\\\''/g
+sed              11578  11576    0 /usr/bin/sed s/'/'\\\''/g
+sed              11581  11579    0 /usr/bin/sed s/'/'\\\''/g
+sed              11584  11582    0 /usr/bin/sed s/'/'\\\''/g
+sed              11587  11585    0 /usr/bin/sed s/'/'\\\''/g
+sed              11590  11588    0 /usr/bin/sed s/'/'\\\''/g
+sed              11593  11591    0 /usr/bin/sed s/'/'\\\''/g
+sed              11596  11594    0 /usr/bin/sed s/'/'\\\''/g
+sed              11599  11597    0 /usr/bin/sed s/'/'\\\''/g
+sed              11602  11600    0 /usr/bin/sed s/'/'\\\''/g
+sed              11605  11603    0 /usr/bin/sed s/'/'\\\''/g
+sed              11609  11606    0 /usr/bin/sed s/'/'\\\''/g
+sed              11612  11610    0 /usr/bin/sed s/'/'\\\''/g
+sed              11615  11613    0 /usr/bin/sed s/'/'\\\''/g
+sed              11618  11616    0 /usr/bin/sed s/'/'\\\''/g
+sed              11621  11619    0 /usr/bin/sed s/'/'\\\''/g
+sed              11624  11622    0 /usr/bin/sed s/'/'\\\''/g
+sed              11627  11625    0 /usr/bin/sed s/'/'\\\''/g
+sed              11630  11628    0 /usr/bin/sed s/'/'\\\''/g
+sed              11633  11631    0 /usr/bin/sed s/'/'\\\''/g
+sed              11636  11634    0 /usr/bin/sed s/'/'\\\''/g
+sed              11639  11637    0 /usr/bin/sed s/'/'\\\''/g
+sed              11642  11640    0 /usr/bin/sed s/'/'\\\''/g
+sed              11645  11643    0 /usr/bin/sed s/'/'\\\''/g
+sed              11648  11646    0 /usr/bin/sed s/'/'\\\''/g
+sed              11651  11649    0 /usr/bin/sed s/'/'\\\''/g
+sed              11654  11652    0 /usr/bin/sed s/'/'\\\''/g
+sed              11657  11655    0 /usr/bin/sed s/'/'\\\''/g
+sed              11660  11658    0 /usr/bin/sed s/'/'\\\''/g
+sed              11663  11661    0 /usr/bin/sed s/'/'\\\''/g
+sed              11666  11664    0 /usr/bin/sed s/'/'\\\''/g
+sed              11669  11667    0 /usr/bin/sed s/'/'\\\''/g
+sed              11672  11670    0 /usr/bin/sed s/'/'\\\''/g
+sed              11675  11673    0 /usr/bin/sed s/'/'\\\''/g
+sed              11678  11676    0 /usr/bin/sed s/'/'\\\''/g
+sed              11681  11679    0 /usr/bin/sed s/'/'\\\''/g
+sed              11684  11682    0 /usr/bin/sed s/'/'\\\''/g
+sed              11687  11685    0 /usr/bin/sed s/'/'\\\''/g
+sed              11690  11688    0 /usr/bin/sed s/'/'\\\''/g
+sed              11693  11691    0 /usr/bin/sed s/'/'\\\''/g
+sed              11696  11694    0 /usr/bin/sed s/'/'\\\''/g
+sed              11699  11697    0 /usr/bin/sed s/'/'\\\''/g
+sed              11702  11700    0 /usr/bin/sed s/'/'\\\''/g
+sed              11705  11703    0 /usr/bin/sed s/'/'\\\''/g
+sed              11708  11706    0 /usr/bin/sed s/'/'\\\''/g
+sed              11711  11709    0 /usr/bin/sed s/'/'\\\''/g
+sed              11714  11712    0 /usr/bin/sed s/'/'\\\''/g
+sed              11717  11715    0 /usr/bin/sed s/'/'\\\''/g
+sed              11720  11718    0 /usr/bin/sed s/'/'\\\''/g
+sed              11723  11721    0 /usr/bin/sed s/'/'\\\''/g
+sed              11726  11724    0 /usr/bin/sed s/'/'\\\''/g
+sed              11729  11727    0 /usr/bin/sed s/'/'\\\''/g
+sed              11732  11730    0 /usr/bin/sed s/'/'\\\''/g
+sed              11735  11733    0 /usr/bin/sed s/'/'\\\''/g
+sed              11738  11736    0 /usr/bin/sed s/'/'\\\''/g
+sed              11741  11739    0 /usr/bin/sed s/'/'\\\''/g
+sed              11744  11742    0 /usr/bin/sed s/'/'\\\''/g
+sed              11747  11745    0 /usr/bin/sed s/'/'\\\''/g
+sed              11750  11748    0 /usr/bin/sed s/'/'\\\''/g
+sed              11753  11751    0 /usr/bin/sed s/'/'\\\''/g
+sed              11756  11754    0 /usr/bin/sed s/'/'\\\''/g
+sed              11759  11757    0 /usr/bin/sed s/'/'\\\''/g
+sed              11762  11760    0 /usr/bin/sed s/'/'\\\''/g
+sed              11765  11763    0 /usr/bin/sed s/'/'\\\''/g
+sed              11768  11766    0 /usr/bin/sed s/'/'\\\''/g
+sed              11771  11769    0 /usr/bin/sed s/'/'\\\''/g
+sed              11774  11772    0 /usr/bin/sed s/'/'\\\''/g
+sed              11777  11775    0 /usr/bin/sed s/'/'\\\''/g
+sed              11780  11778    0 /usr/bin/sed s/'/'\\\''/g
+sed              11783  11781    0 /usr/bin/sed s/'/'\\\''/g
+sed              11786  11784    0 /usr/bin/sed s/'/'\\\''/g
+sed              11789  11787    0 /usr/bin/sed s/'/'\\\''/g
+sed              11792  11790    0 /usr/bin/sed s/'/'\\\''/g
+sed              11795  11793    0 /usr/bin/sed s/'/'\\\''/g
+sed              11798  11796    0 /usr/bin/sed s/'/'\\\''/g
+sed              11801  11799    0 /usr/bin/sed s/'/'\\\''/g
+sed              11804  11802    0 /usr/bin/sed s/'/'\\\''/g
+sed              11807  11805    0 /usr/bin/sed s/'/'\\\''/g
+sed              11810  11808    0 /usr/bin/sed s/'/'\\\''/g
+sed              11813  11811    0 /usr/bin/sed s/'/'\\\''/g
+sed              11816  11814    0 /usr/bin/sed s/'/'\\\''/g
+sed              11819  11817    0 /usr/bin/sed s/'/'\\\''/g
+sed              11822  11820    0 /usr/bin/sed s/'/'\\\''/g
+sed              11825  11823    0 /usr/bin/sed s/'/'\\\''/g
+sed              11828  11826    0 /usr/bin/sed s/'/'\\\''/g
+sed              11831  11829    0 /usr/bin/sed s/'/'\\\''/g
+sed              11834  11832    0 /usr/bin/sed s/'/'\\\''/g
+sed              11837  11835    0 /usr/bin/sed s/'/'\\\''/g
+sed              11840  11838    0 /usr/bin/sed s/'/'\\\''/g
+sed              11843  11841    0 /usr/bin/sed s/'/'\\\''/g
+sed              11846  11844    0 /usr/bin/sed s/'/'\\\''/g
+sed              11849  11847    0 /usr/bin/sed s/'/'\\\''/g
+sed              11852  11850    0 /usr/bin/sed s/'/'\\\''/g
+sed              11855  11853    0 /usr/bin/sed s/'/'\\\''/g
+sed              11858  11856    0 /usr/bin/sed s/'/'\\\''/g
+sed              11861  11859    0 /usr/bin/sed s/'/'\\\''/g
+sed              11864  11862    0 /usr/bin/sed s/'/'\\\''/g
+sed              11867  11865    0 /usr/bin/sed s/'/'\\\''/g
+sed              11870  11868    0 /usr/bin/sed s/'/'\\\''/g
+sed              11873  11871    0 /usr/bin/sed s/'/'\\\''/g
+sed              11876  11874    0 /usr/bin/sed s/'/'\\\''/g
+sed              11879  11877    0 /usr/bin/sed s/'/'\\\''/g
+sed              11882  11880    0 /usr/bin/sed s/'/'\\\''/g
+sed              11885  11883    0 /usr/bin/sed s/'/'\\\''/g
+sed              11888  11886    0 /usr/bin/sed s/'/'\\\''/g
+sed              11891  11889    0 /usr/bin/sed s/'/'\\\''/g
+sed              11894  11892    0 /usr/bin/sed s/'/'\\\''/g
+cat              11485  10560    0 /usr/bin/cat
+cat              11895  10560    0 /usr/bin/cat
+sed              11897  10560    0 /usr/bin/sed s/.*/&!$&$ac_delim/
+grep             11900  11898    0 /usr/bin/grep -c ^
+cat              11901  10560    0 /usr/bin/cat
+sed              11903  11902    0 /usr/bin/sed -n s/.*%!_!# $/X/p conf10560subs.awk
+grep             11904  11902    0 /usr/bin/grep -c X
+rm               11905  10560    0 /usr/bin/rm -f conf10560subs.sh
+cat              11906  10560    0 /usr/bin/cat
+sed              11907  10560    0 /usr/bin/sed -n \nh\ns/^/S["/; s/!.*/"]=/\np\ng\ns/^[^!]*!//\n:repl\nt repl\ns/%!_!# $//\nt delim\n:nl\nh\ns/\(.\{148\}\)..*/\1/\nt more1\ns/["\\]/\\&/g; s/^/
+sed              11908  10560    0 /usr/bin/sed \n/^[^""]/{\n  N\n  s/\n//\n}\n
+rm               11909  10560    0 /usr/bin/rm -f conf10560subs.awk
+cat              11910  10560    0 /usr/bin/cat
+cat              11911  10560    0 /usr/bin/cat
+cat              11912  10560    0 /usr/bin/cat
+sed              11913  10560    0 /usr/bin/sed -n /%!_!# /p confdefs.h
+sed              11914  10560    0 /usr/bin/sed -n \ns/.\{148\}/&%!_!# /g\nt rset\n:rset\ns/^[	 ]*#[	 ]*define[	 ][	 ]*/ /\nt def\nd\n:def\ns/\\$//\nt bsnl\ns/["\\]/\\&/g\ns/^ \([_abcdefghij
+sed              11915  10560    0 /usr/bin/sed \ns/%!_!# /"\\\\n"/g
+cat              11916  10560    0 /usr/bin/cat
+cat              11917  10560    0 /usr/bin/cat
+cat              11918  10560    0 /usr/bin/cat
+cat              11919  10560    0 /usr/bin/cat
+cat              11920  10560    0 /usr/bin/cat
+cat              11921  10560    0 /usr/bin/cat
+sh               11922  10560    0 /bin/sh ./config.status
+expr             11932  11922    0 /usr/bin/expr a : \(a\)
+expr             11933  11922    0 /usr/bin/expr 00001 : .*\(...\)
+basename         11934  11922    0 /usr/bin/basename -- /
+basename         11936  11935    0 /usr/bin/basename -- /
+dirname          11938  11937    0 /usr/bin/dirname -- /
+basename         11940  11939    0 /usr/bin/basename -- ./config.status
+rm               11942  11922    0 /usr/bin/rm -f conf11922 conf11922.exe conf11922.file
+rm               11943  11922    0 /usr/bin/rm -f conf11922.dir
+mkdir            11944  11922    0 /usr/bin/mkdir conf11922.dir
+ln               11946  11922    0 /usr/bin/ln -s conf11922.file conf11922
+ln               11947  11922    0 /usr/bin/ln -s conf11922.file conf11922.dir
+rm               11948  11922    0 /usr/bin/rm -f conf11922 conf11922.exe conf11922.dir/conf11922.file conf11922.file
+rmdir            11949  11922    0 /usr/bin/rmdir conf11922.dir
+mkdir            11950  11922    0 /usr/bin/mkdir -p .
+hostname         11954  11952    0 /usr/bin/hostname
+sed              11953  11951    0 /usr/bin/sed 1q
+sed              11955  11922    0 /usr/bin/sed h;s/./-/g;s/^.../## /;s/...$/ ##/;p;x;p;x
+sed              11961  11959    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              11973  11971    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              11977  11975    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              11984  11982    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              11991  11989    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12002  12000    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12006  12004    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12011  12009    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12015  12013    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12035  12033    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12039  12037    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12047  12045    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12056  12054    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12060  12058    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12064  12062    0 /usr/bin/sed s/\(["`$\\]\)/\\\1/g
+sed              12072  12070    0 /usr/bin/sed -e s/\(["`\\]\)/\\\1/g -e s/\(["`$\\]\)/\\\1/g -e s/\\\\\\\\\\\$/\\\\\\$/g
+sed              12077  12075    0 /usr/bin/sed -e s/\(["`\\]\)/\\\1/g -e s/\(["`$\\]\)/\\\1/g -e s/\\\\\\\\\\\$/\\\\\\$/g
+sed              12082  12080    0 /usr/bin/sed -e s/\(["`\\]\)/\\\1/g -e s/\(["`$\\]\)/\\\1/g -e s/\\\\\\\\\\\$/\\\\\\$/g
+sed              12089  12087    0 /usr/bin/sed -e s/\(["`\\]\)/\\\1/g -e s/\(["`$\\]\)/\\\1/g -e s/\\\\\\\\\\\$/\\\\\\$/g
+sed              12093  12091    0 /usr/bin/sed -e s/\(["`\\]\)/\\\1/g -e s/\(["`$\\]\)/\\\1/g -e s/\\\\\\\\\\\$/\\\\\\$/g
+sed              12099  12097    0 /usr/bin/sed -e s/\(["`\\]\)/\\\1/g -e s/\(["`$\\]\)/\\\1/g -e s/\\\\\\\\\\\$/\\\\\\$/g
+sed              12107  12105    0 /usr/bin/sed -e s/\(["`\\]\)/\\\1/g -e s/\(["`$\\]\)/\\\1/g -e s/\\\\\\\\\\\$/\\\\\\$/g
+mktemp           12113  12112    0 /usr/bin/mktemp -d ./confXXXXXX
+tr               12116  12114    0 /usr/bin/tr X \015
+gawk             12118  12117    0 /usr/bin/gawk BEGIN { print "a\rb" }
+cat              12119  11922    0 /usr/bin/cat
+cat              12120  11922    0 /usr/bin/cat
+sed              12121  11922    0 /usr/bin/sed s///
+sed              12122  11922    0 /usr/bin/sed s/$//; s//\\r/g
+cat              12123  11922    0 /usr/bin/cat
+sed              12126  12124    0 /usr/bin/sed s|^[^:]*/||;s|:[^:]*/|, |g
+dirname          12128  12127    0 /usr/bin/dirname -- Makefile
+sed              12130  12129    0 /usr/bin/sed -n \n/datarootdir/ {\n  p\n  q\n}\n/@datadir@/p\n/@docdir@/p\n/@infodir@/p\n/@localedir@/p\n/@mandir@/p Makefile.in
+sed              12133  12131    0 /usr/bin/sed /^[	 ]*VPATH[	 ]*=[	 ]*/{\nh\ns///\ns/^/:/\ns/[	 ]*$/:/\ns/:$(srcdir):/:/g\ns/:${srcdir}:/:/g\ns/:@srcdir@:/:/g\ns/^:*//\ns/:*$//\nx\ns/\(= Makefile.in
+gawk             12132  11922    0 /usr/bin/gawk -f ./confvwueaW/subs.awk
+rm               12134  11922    0 /usr/bin/rm -f ./confvwueaW/stdin
+rm               12135  11922    0 /usr/bin/rm -f Makefile
+mv               12136  11922    0 /usr/bin/mv ./confvwueaW/out Makefile
+sed              12139  12137    0 /usr/bin/sed s|^[^:]*/||;s|:[^:]*/|, |g
+dirname          12141  12140    0 /usr/bin/dirname -- src/Makefile
+sed              12144  12142    0 /usr/bin/sed s|^\.[\/]||
+sed              12147  12145    0 /usr/bin/sed s|/[^\/]*|/..|g;s|/||
+sed              12149  12148    0 /usr/bin/sed -n \n/datarootdir/ {\n  p\n  q\n}\n/@datadir@/p\n/@docdir@/p\n/@infodir@/p\n/@localedir@/p\n/@mandir@/p src/Makefile.in
+sed              12152  12150    0 /usr/bin/sed /^[	 ]*VPATH[	 ]*=[	 ]*/{\nh\ns///\ns/^/:/\ns/[	 ]*$/:/\ns/:$(srcdir):/:/g\ns/:${srcdir}:/:/g\ns/:@srcdir@:/:/g\ns/^:*//\ns/:*$//\nx\ns/\(= src/Makefile.in
+gawk             12151  11922    0 /usr/bin/gawk -f ./confvwueaW/subs.awk
+rm               12153  11922    0 /usr/bin/rm -f ./confvwueaW/stdin
+rm               12154  11922    0 /usr/bin/rm -f src/Makefile
+mv               12156  11922    0 /usr/bin/mv ./confvwueaW/out src/Makefile
+sed              12160  12157    0 /usr/bin/sed s|^[^:]*/||;s|:[^:]*/|, |g
+dirname          12162  12161    0 /usr/bin/dirname -- po/Makefile.in
+sed              12165  12163    0 /usr/bin/sed s|^\.[\/]||
+sed              12168  12166    0 /usr/bin/sed s|/[^\/]*|/..|g;s|/||
+sed              12170  12169    0 /usr/bin/sed -n \n/datarootdir/ {\n  p\n  q\n}\n/@datadir@/p\n/@docdir@/p\n/@infodir@/p\n/@localedir@/p\n/@mandir@/p po/Makefile.in.in
+sed              12173  12171    0 /usr/bin/sed /^[	 ]*VPATH[	 ]*=[	 ]*/{\nh\ns///\ns/^/:/\ns/[	 ]*$/:/\ns/:$(srcdir):/:/g\ns/:${srcdir}:/:/g\ns/:@srcdir@:/:/g\ns/^:*//\ns/:*$//\nx\ns/\(= po/Makefile.in.in
+gawk             12172  11922    0 /usr/bin/gawk -f ./confvwueaW/subs.awk
+rm               12174  11922    0 /usr/bin/rm -f ./confvwueaW/stdin
+rm               12175  11922    0 /usr/bin/rm -f po/Makefile.in
+mv               12176  11922    0 /usr/bin/mv ./confvwueaW/out po/Makefile.in
+sed              12179  12177    0 /usr/bin/sed s|^[^:]*/||;s|:[^:]*/|, |g
+dirname          12181  12180    0 /usr/bin/dirname -- config.h
+gawk             12182  11922    0 /usr/bin/gawk -f ./confvwueaW/defines.awk config.h.in
+diff             12183  11922    0 /usr/bin/diff config.h ./confvwueaW/config.h
+rm               12184  11922    0 /usr/bin/rm -f config.h
+mv               12185  11922    0 /usr/bin/mv ./confvwueaW/config.h config.h
+dirname          12187  12186    0 /usr/bin/dirname -- config.h
+dirname          12189  12188    0 /usr/bin/dirname -- depfiles
+sed              12192  12190    0 /usr/bin/sed -e s/:.*$//
+sed              12193  11922    0 /usr/bin/sed -n s,^am--depfiles:.*,X,p Makefile
+grep             12194  11922    0 /usr/bin/grep X
+sed              12197  12195    0 /usr/bin/sed -e s/:.*$//
+sed              12198  11922    0 /usr/bin/sed -n s,^am--depfiles:.*,X,p src/Makefile
+grep             12199  11922    0 /usr/bin/grep X
+dirname          12201  12200    0 /usr/bin/dirname -- src/Makefile
+basename         12203  12202    0 /usr/bin/basename -- src/Makefile
+sed              12205  12204    0 /usr/bin/sed -e /# am--include-marker/d Makefile
+make             12206  12204    0 /usr/bin/make -f - am--depfiles
+mkdir            12207  12206    0 /usr/bin/mkdir -p .deps
+sh               12208  12206    0 /bin/sh -c echo '# dummy' >.deps/main.Po-t && mv -f .deps/main.Po-t .deps/main.Po
+mv               12208  12206    0 /usr/bin/mv -f .deps/main.Po-t .deps/main.Po
+sed              12212  12210    0 /usr/bin/sed -e s/:.*$//
+sed              12213  11922    0 /usr/bin/sed -n s,^am--depfiles:.*,X,p po/Makefile.in
+grep             12214  11922    0 /usr/bin/grep X
+rm               12215  11922    0 /usr/bin/rm -f conftest-deps.mk
+dirname          12217  12216    0 /usr/bin/dirname -- default-1
+sed              12218  11922    0 /usr/bin/sed -e /POTFILES =/r po/POTFILES po/Makefile.in
+dirname          12220  12219    0 /usr/bin/dirname -- libtool
+rm               12221  11922    0 /usr/bin/rm -f libtoolT
+cat              12222  11922    0 /usr/bin/cat
+cat              12223  11922    0 /usr/bin/cat
+sed              12224  11922    0 /usr/bin/sed $q ./ltmain.sh
+mv               12225  11922    0 /usr/bin/mv -f libtoolT libtool
+chmod            12226  11922    0 /usr/bin/chmod +x libtool
+dirname          12228  12227    0 /usr/bin/dirname -- po/stamp-it
+sed              12231  12229    0 /usr/bin/sed s|^\.[\/]||
+sed              12234  12232    0 /usr/bin/sed s|/[^\/]*|/..|g;s|/||
+grep             12235  11922    0 /usr/bin/grep ^# INTLTOOL_MAKEFILE$ po/Makefile.in
+rm               12236  11922    0 /usr/bin/rm -f po/stamp-it po/stamp-it.tmp po/POTFILES po/Makefile.tmp
+sed              12237  11922    0 /usr/bin/sed /^#/d\n	 s/^[[].*] *//\n	 /^[ 	]*$/d\n	s|^|	../| ./po/POTFILES.in
+sed              12238  11922    0 /usr/bin/sed $!s/$/ \\/
+sed              12239  11922    0 /usr/bin/sed /^POTFILES =/,/[^\\]$/ {\n		/^POTFILES =/!d\n		r po/POTFILES\n	  }\n	  po/Makefile.in
+rm               12240  11922    0 /usr/bin/rm -f po/Makefile.tmp
+mv               12241  11922    0 /usr/bin/mv po/stamp-it.tmp po/stamp-it
+rm               12242  11922    0 /usr/bin/rm -fr ./confvwueaW
+sed              12246  12244    0 /usr/bin/sed -n s/^\([a-zA-Z_][a-zA-Z0-9_]*\)=.*/\1/p
+sort             12249  12243    0 /usr/bin/sort
+sed              12252  12248    0 /usr/bin/sed -n /^[_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]*_cv_[_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01
+sort             12254  10560    0 /usr/bin/sort
+cat              12255  10560    0 /usr/bin/cat confdefs.h
+rm               12256  10560    0 /usr/bin/rm -f core *.core core.conftest.*
+rm               12257  10560    0 /usr/bin/rm -f -r conftest* confdefs.h conf10560*

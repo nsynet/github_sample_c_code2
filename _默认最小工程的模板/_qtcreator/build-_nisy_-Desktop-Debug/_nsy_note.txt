@@ -1,0 +1,10 @@
+[nsiy@nsiy-pc build-_nisy_-Desktop-Debug]$ make -n
+/usr/bin/cmake -S/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/_nisy_ -B/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug/CMakeFiles /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make -f CMakeFiles/_nisy_.dir/build.make CMakeFiles/_nisy_.dir/depend
+cd /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/_nisy_ /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/_nisy_ /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug/CMakeFiles/_nisy_.dir/DependInfo.cmake --color=
+make -f CMakeFiles/_nisy_.dir/build.make CMakeFiles/_nisy_.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug/CMakeFiles --progress-num=1,2 "Built target _nisy_"
+/usr/bin/cmake -E cmake_progress_start /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug/CMakeFiles 0
+[nsiy@nsiy-pc build-_nisy_-Desktop-Debug]$ 

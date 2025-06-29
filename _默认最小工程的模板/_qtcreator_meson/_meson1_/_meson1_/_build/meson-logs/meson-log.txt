@@ -1,0 +1,74 @@
+Build started at 2019-12-28T07:32:01.568814
+Main binary: /usr/bin/python
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.52.1
+Source dir: /home/nsiy/_qtcreator/_meson1_/_meson1_
+Build dir: /home/nsiy/_qtcreator/_meson1_/_meson1_/_build
+Build type: native build
+Project name: _meson1_
+Project version: 1.0
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/sanitycheckcpp.cc -o /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 9.2.0 "c++ (GCC) 9.2.0")
+C++ linker for the build machine: GNU ld.bfd 2.33.1
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/sanitycheckcpp.cc -o /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 9.2.0 "c++ (GCC) 9.2.0")
+C++ linker for the host machine: GNU ld.bfd 2.33.1
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Adding test "basic"
+Build targets in project: 1
+Found ninja-1.9.0 at /usr/bin/ninja
+Running compile:
+Working directory:  /tmp/tmpld7bff6x
+Command line:  c++ /tmp/tmpld7bff6x/testfile.cpp -o /tmp/tmpld7bff6x/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++14 
+
+Code:
+ int i = static_cast<int>(0);
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler accepts -std=c++14: YES
+Running compile:
+Working directory:  /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/tmpepoi4lle
+Command line:  c++ /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/tmpepoi4lle/testfile.cpp -o /home/nsiy/_qtcreator/_meson1_/_meson1_/_build/meson-private/tmpepoi4lle/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/
+programs: =/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../x86_64-pc-linux-gnu/9.2.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/:/lib/x86_64-pc-linux-gnu/9.2.0/:/lib/../lib/:/usr/lib/x86_64-pc-linux-gnu/9.2.0/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 

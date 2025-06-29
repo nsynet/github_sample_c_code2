@@ -1,0 +1,49 @@
+[nsiy@nsiy-pc _general1_]$ sudo make install
+[sudo] nsiy 的密码：
+Making install in src
+make[1]: 进入目录“/home/nsiy/_code/_anjuta/_general1_/src”
+make[2]: 进入目录“/home/nsiy/_code/_anjuta/_general1_/src”
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c _general1_ '/usr/local/bin'
+libtool: install: /usr/bin/install -c _general1_ /usr/local/bin/_general1_
+make[2]: 对“install-data-am”无需做任何事。
+make[2]: 离开目录“/home/nsiy/_code/_anjuta/_general1_/src”
+make[1]: 离开目录“/home/nsiy/_code/_anjuta/_general1_/src”
+Making install in po
+make[1]: 进入目录“/home/nsiy/_code/_anjuta/_general1_/po”
+linguas=""; \
+for lang in $linguas; do \
+  dir=/usr/local/share/locale/$lang/LC_MESSAGES; \
+  /bin/sh /home/nsiy/_code/_anjuta/_general1_/install-sh -d $dir; \
+  if test -r $lang.gmo; then \
+    /usr/bin/install -c -m 644 $lang.gmo $dir/_general1_.mo; \
+    echo "installing $lang.gmo as $dir/_general1_.mo"; \
+  else \
+    /usr/bin/install -c -m 644 ./$lang.gmo $dir/_general1_.mo; \
+    echo "installing ./$lang.gmo as" \
+	 "$dir/_general1_.mo"; \
+  fi; \
+  if test -r $lang.gmo.m; then \
+    /usr/bin/install -c -m 644 $lang.gmo.m $dir/_general1_.mo.m; \
+    echo "installing $lang.gmo.m as $dir/_general1_.mo.m"; \
+  else \
+    if test -r ./$lang.gmo.m ; then \
+      /usr/bin/install -c -m 644 ./$lang.gmo.m \
+	$dir/_general1_.mo.m; \
+      echo "installing ./$lang.gmo.m as" \
+	   "$dir/_general1_.mo.m"; \
+    else \
+      true; \
+    fi; \
+  fi; \
+done
+make[1]: 离开目录“/home/nsiy/_code/_anjuta/_general1_/po”
+make[1]: 进入目录“/home/nsiy/_code/_anjuta/_general1_”
+make[2]: 进入目录“/home/nsiy/_code/_anjuta/_general1_”
+make[2]: 对“install-exec-am”无需做任何事。
+ /usr/bin/mkdir -p '/usr/local/share/doc/_general1_'
+ /usr/bin/install -c -m 644 README COPYING AUTHORS ChangeLog INSTALL NEWS '/usr/local/share/doc/_general1_'
+make[2]: 离开目录“/home/nsiy/_code/_anjuta/_general1_”
+make[1]: 离开目录“/home/nsiy/_code/_anjuta/_general1_”
+[nsiy@nsiy-pc _general1_]$ 
+

@@ -1,0 +1,15 @@
+makefile的理解：
+
+D:\_Technology\2_software_develop\_c\_GNU\_IDEs_default_project\_anjuta\foobar (编译前)  --有点不理解
+D:\_Technology\2_software_develop\_c\_GNU\_IDEs_default_project\_eclipse\_nisy_ (编译前) --有点不理解
+
+
+使用cmake：
+D:\_Technology\2_software_develop\_c\_GNU\_IDEs_default_project\_qtcreator\_nisy_ (编译前，使用cmake，没有使用qmake)
+D:\_Technology\2_software_develop\_c\_GNU\_IDEs_default_project\_KDevelop\_nisy_ (编译前)
+
+使用IDE自带：
+D:\_Technology\2_software_develop\_c\_GNU\_IDEs_default_project\_codeblocks\_nisy_ (编译前)
+
+使用meson：
+D:\_Technology\2_software_develop\_c\_GNU\_IDEs_default_project\_builder\_nisy_ (编译前)

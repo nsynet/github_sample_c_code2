@@ -1,0 +1,4 @@
+make -f ../../Makefile
+clang++ -c -O2   -o _nisy_.o /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_eclipse/_nisy_/_nisy_.cpp
+clang++ -o _nisy_ _nisy_.o
+Build complete (0 errors, 0 warnings): /run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_eclipse/_nisy_/build/default

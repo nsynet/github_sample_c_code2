@@ -1,0 +1,12 @@
+﻿  pch.cpp
+  ConsoleApplication1.cpp
+d:\_technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\test1\consoleapplication1.cpp(1): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+  d:\_technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\test1\consoleapplication1.cpp: note: 参见“_CRT_SECURE_NO_WARNINGS”的前一个定义
+d:\_technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\test1\consoleapplication1.cpp(1): warning C4603: “_CRT_SECURE_NO_WARNINGS”: 未定义宏或在预编译头使用后定义发生改变
+  d:\_technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\test1\consoleapplication1.cpp(1): note: 将宏添加到预编译头中，而不是在此处定义
+  d:\_technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\test1\consoleapplication1.cpp(3): note: 使用预编译头
+d:\_technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\test1\consoleapplication1.cpp(17): warning C4477: “printf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+  d:\_technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\test1\consoleapplication1.cpp(17): note: 请考虑在格式字符串中使用“%llu”
+  d:\_technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\test1\consoleapplication1.cpp(17): note: 请考虑在格式字符串中使用“%I64u”
+  TEST_MACRO=512
+  test1.vcxproj -> D:\_Technology_d\95_code\_my_github\task1\mini_code_collection\test1\test1\Debug\test1.exe

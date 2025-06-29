@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/_nisy_/main.cpp
+iostream
+-
+

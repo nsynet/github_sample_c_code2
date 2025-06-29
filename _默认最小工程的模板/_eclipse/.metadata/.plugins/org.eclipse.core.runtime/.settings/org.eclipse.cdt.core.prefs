@@ -1,0 +1,4 @@
+config/_nisy_/cdt.launchMode=run
+config/_nisy_/cdt.toolChain.id=gcc-x86_64-/usr/bin/clang
+config/_nisy_/cdt.toolChain.type=org.eclipse.cdt.build.clang
+eclipse.preferences.version=1

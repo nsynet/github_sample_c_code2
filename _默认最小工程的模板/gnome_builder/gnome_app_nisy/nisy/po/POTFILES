@@ -1,0 +1,7 @@
+data/org.gnome.Nisy.desktop.in
+data/org.gnome.Nisy.appdata.xml.in
+data/org.gnome.Nisy.gschema.xml
+src/nisy-window.ui
+src/main.c
+src/nisy-window.c
+

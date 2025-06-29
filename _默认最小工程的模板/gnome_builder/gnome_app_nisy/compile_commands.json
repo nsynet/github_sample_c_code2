@@ -1,0 +1,17 @@
+[
+  {
+    "directory": "/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_app_nisy",
+    "command": "cc -Isrc/25a6634@@nisy@exe -Isrc -Inisy/src -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/libdrm -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_app_nisy -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -pthread  -MD -MQ 'src/25a6634@@nisy@exe/meson-generated_.._nisy-resources.c.o' -MF 'src/25a6634@@nisy@exe/meson-generated_.._nisy-resources.c.o.d' -o 'src/25a6634@@nisy@exe/meson-generated_.._nisy-resources.c.o' -c src/nisy-resources.c",
+    "file": "src/nisy-resources.c"
+  },
+  {
+    "directory": "/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_app_nisy",
+    "command": "cc -Isrc/25a6634@@nisy@exe -Isrc -Inisy/src -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/libdrm -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_app_nisy -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -pthread  -MD -MQ 'src/25a6634@@nisy@exe/main.c.o' -MF 'src/25a6634@@nisy@exe/main.c.o.d' -o 'src/25a6634@@nisy@exe/main.c.o' -c nisy/src/main.c",
+    "file": "nisy/src/main.c"
+  },
+  {
+    "directory": "/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_app_nisy",
+    "command": "cc -Isrc/25a6634@@nisy@exe -Isrc -Inisy/src -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/libdrm -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/media/nisy/win_tech_E/_Technology/95_code/_IDE_default_project/gnome_builder/gnome_app_nisy -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -g -pthread  -MD -MQ 'src/25a6634@@nisy@exe/nisy-window.c.o' -MF 'src/25a6634@@nisy@exe/nisy-window.c.o.d' -o 'src/25a6634@@nisy@exe/nisy-window.c.o' -c nisy/src/nisy-window.c",
+    "file": "nisy/src/nisy-window.c"
+  }
+]

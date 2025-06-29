@@ -1,0 +1,3 @@
+/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug/CMakeFiles/_nisy_.dir
+/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug/CMakeFiles/edit_cache.dir

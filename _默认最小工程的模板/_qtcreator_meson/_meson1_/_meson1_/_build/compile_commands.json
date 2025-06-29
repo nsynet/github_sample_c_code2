@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/home/nsiy/_qtcreator/_meson1_/_meson1_/_build",
+    "command": "c++ -I_meson1_@exe -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -g -MD -MQ '_meson1_@exe/_meson1_.cpp.o' -MF '_meson1_@exe/_meson1_.cpp.o.d' -o '_meson1_@exe/_meson1_.cpp.o' -c ../_meson1_.cpp",
+    "file": "../_meson1_.cpp",
+    "output": "_meson1_@exe/_meson1_.cpp.o"
+  }
+]

@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "_nisy_",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "_nisy_::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_nisy_-Debug-5355dec5d009f812cdef.json",
+					"name" : "_nisy_",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/build-_nisy_-Desktop-Debug",
+		"source" : "/run/media/nsiy/win_data_D/_Technology/2_software_develop/_c/_GNU/_IDEs_default_project/_qtcreator/_nisy_"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

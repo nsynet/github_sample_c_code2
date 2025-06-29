@@ -1,0 +1,44 @@
+make             12674  7104     0 /usr/bin/make
+PCOMM            PID    PPID   RET ARGS
+sh               12675  12674    0 /bin/sh -c test -f config.h || rm -f stamp-h1
+sh               12676  12674    0 /bin/sh -c test -f config.h || make  stamp-h1
+make             12677  12674    0 /usr/bin/make all-recursive
+sh               12678  12677    0 /bin/sh -c fail=; \\nif (target_option=k; case ${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "t
+sed              12682  12680    0 /usr/bin/sed s/-recursive//
+make             12684  12683    0 /usr/bin/make all
+sh               12685  12684    0 /bin/sh -c echo "  CC      " main.o;gcc -DHAVE_CONFIG_H -I. -I..  -DPACKAGE_LOCALE_DIR=\""/usr/local/share/locale"\" -DPACKAGE_SRC_DIR=\"".
+gcc              12686  12685    0 /usr/bin/gcc -DHAVE_CONFIG_H -I. -I.. -DPACKAGE_LOCALE_DIR="/usr/local/share/locale" -DPACKAGE_SRC_DIR="." -DPACKAGE_DATA_DIR="/usr/local/share/_general1_" -Wall -g -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+cc1              12687  12686    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1 -quiet -I . -I .. -MD main.d -MF .deps/main.Tpo -MP -MT main.o -D HAVE_CONFIG_H -D PACKAGE_LOCALE_DIR="/usr/local/share/locale" -D PACKAGE_SRC_DIR="." -D PACKAGE_DATA_DIR="/usr/local/share/_general1_" main.c -quiet -dumpbase main.c -mtune=generic -march=x86-64 -auxbase-strip main.o -g -g -O2 -Wall -o /tmp/ccuJgAEt.s
+as               12688  12686    0 /usr/bin/as -I . -I .. --64 -o main.o /tmp/ccuJgAEt.s
+mv               12689  12684    0 /usr/bin/mv -f .deps/main.Tpo .deps/main.Po
+rm               12690  12684    0 /usr/bin/rm -f _general1_
+sh               12691  12684    0 /bin/sh -c echo "  CCLD    " _general1_;/bin/sh ../libtool --silent --tag=CC   --mode=link gcc -Wall -g -g -O2   -o _general1_ main.o  
+sh               12692  12691    0 /bin/sh ../libtool --silent --tag=CC --mode=link gcc -Wall -g -g -O2 -o _general1_ main.o
+sed              12699  12697    0 /usr/bin/sed s|^.*/||
+sed              12702  12700    0 /usr/bin/sed s|/[^/]*$||
+sed              12722  12720    0 /usr/bin/sed s/:/ /g
+sed              12725  12723    0 /usr/bin/sed s|:*$||
+mkdir            12726  12692    0 /usr/bin/mkdir .libs
+sed              12729  12727    0 /usr/bin/sed s%[^a-zA-Z0-9]%_%g
+sed              12732  12730    0 /usr/bin/sed s% @SYMFILE@%%
+sed              12735  12733    0 /usr/bin/sed s% @SYMFILE@%%
+sed              12738  12736    0 /usr/bin/sed s%@OUTPUT@%_general1_%g
+sed              12741  12739    0 /usr/bin/sed -e s/\(["`\\]\)/\\\1/g -e   s/\\\\\\\\/&\\n/g\n  s/^\\\\\$/\\&/\n  s/\([^\\]\)\\\\\$/\1\\\\\\\$/g\n  s/\n//g
+gcc              12742  12692    0 /usr/bin/gcc -Wall -g -g -O2 -o _general1_ main.o
+collect2         12743  12742    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cciyG0YF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o _general1_ /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. main.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+ld               12744  12743    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cciyG0YF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o _general1_ /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../.. main.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../lib/crtn.o
+make             12746  12745    0 /usr/bin/make all
+sh               12747  12746    0 /bin/sh -c if test -n ""; then LLINGUAS=""; ALINGUAS=""; for lang in $LLINGUAS; do if test -n "`grep \^$lang$ ./LINGUAS 2>/dev/null`" -o -n
+sh               12748  12746    0 /bin/sh -c if test -n ""; then LLINGUAS=""; ALINGUAS=""; for lang in $LLINGUAS; do if test -n "`grep \^$lang$ ./LINGUAS 2>/dev/null`" -o -n
+sh               12749  12746    0 /bin/sh -c if test -r ./LINGUAS; then grep -v "^#" ./LINGUAS; else echo ""; fi
+grep             12750  12749    0 /usr/bin/grep -v ^# ./LINGUAS
+sh               12751  12746    0 /bin/sh -c if test -r ./LINGUAS; then grep -v "^#" ./LINGUAS; else echo ""; fi
+grep             12752  12751    0 /usr/bin/grep -v ^# ./LINGUAS
+sh               12753  12746    0 /bin/sh -c if test -n "" -o -n ""; then LLINGUAS=""; else if test -n ""; then LLINGUAS=""; else LLINGUAS=""; fi; fi; for lang in $LLINGUAS;
+sh               12754  12746    0 /bin/sh -c LINGUAS=""; for lang in $LINGUAS; do printf "$lang.gmo "; done
+sh               12755  12746    0 /bin/sh -c if test -r ./LINGUAS; then grep -v "^#" ./LINGUAS; else echo ""; fi
+grep             12756  12755    0 /usr/bin/grep -v ^# ./LINGUAS
+sh               12757  12746    0 /bin/sh -c LINGUAS=""; for lang in $LINGUAS; do printf "$lang.po "; done
+make             12758  12678    0 /usr/bin/make all-am
+sh               12759  12758    0 /bin/sh -c test -f config.h || rm -f stamp-h1
+sh               12760  12758    0 /bin/sh -c test -f config.h || make  stamp-h1

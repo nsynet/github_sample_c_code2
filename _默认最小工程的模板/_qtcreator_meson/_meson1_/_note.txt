@@ -1,0 +1,14 @@
+[nsiy@nsiy-pc ~]$ cd /usr/share/bcc/tools/
+[nsiy@nsiy-pc tools]$ sudo ./execsnoop 
+[sudo] nsiy 的密码：
+PCOMM            PID    PPID   RET ARGS
+ninja            16761  16453    0 /usr/bin/ninja -v all
+sh               16762  16761    0 /bin/sh -c c++ -I_meson1_@exe -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wext
+c++              16762  16761    0 /usr/bin/c++ -I_meson1_@exe -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++14 -g -MD -MQ _meson1_@exe/_meson1_.cpp.o -MF _meson1_@exe/_meson1_.cpp.o.d -o ...
+cc1plus          16763  16762    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/cc1plus -quiet -I _meson1_@exe -I . -I .. -MD _meson1_@exe/_meson1_.cpp.d -MF _meson1_@exe/_meson1_.cpp.o.d -MQ _meson1_@exe/_meson1_.cpp.o -D_GNU_SOURCE -D _FILE_OFFSET_BITS=64 ../_meson1_.cpp -quiet -dumpbase ...
+as               16764  16762    0 /usr/bin/as -I _meson1_@exe -I . -I .. --64 -o _meson1_@exe/_meson1_.cpp.o
+sh               16765  16761    0 /bin/sh -c c++  -o _meson1_ '_meson1_@exe/_meson1_.cpp.o' -Wl,--as-needed -Wl,--no-undefined
+c++              16765  16761    0 /usr/bin/c++ -o _meson1_ _meson1_@exe/_meson1_.cpp.o -Wl,--as-needed -Wl,--no-undefined
+collect2         16766  16765    0 /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVntdRU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o _meson1_ ...
+ld               16767  16766    0 /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVntdRU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o _meson1_ ...
+ninja            16768  16453    0 /usr/bin/ninja -v all

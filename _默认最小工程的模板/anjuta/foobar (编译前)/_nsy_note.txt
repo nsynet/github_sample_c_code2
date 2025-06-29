@@ -1,0 +1,4 @@
+[nsiy@nsiy-pc foobar (编译前)]$ make -n
+gcc -o foobar.o -c -g -Wall foobar.c 
+gcc -o foobar foobar.o -Wl,-rpath,/usr/local/lib 
+[nsiy@nsiy-pc foobar (编译前)]$ 

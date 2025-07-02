@@ -36,8 +36,11 @@
 
 ----
 devm_kzalloc()
+
 devm_clk_get
+
 devm_gpio_request_one
+
 sysfs_create_group(struct kobject *kobj,const struct attribute_group *grp)
 
 ## 常用的内核函数
@@ -71,13 +74,20 @@ top -o %MEM
 ### 一个Linux内核模块的通用模板通常包括以下部分：
 
 头文档：在模块的开头，通常包含必要的头文档，例如#include <linux/module.h>和#include <linux/kernel.h>等。
+
 模块定义：使用module_LICENSE("GPL")宏声明模块的许可证，例如GPL。
+
 模块参数：使用module_param宏定义模块参数，例如module_param(param_name, param_type, perm_attr)。其中，param_name是参数名称，param_type是参数类型，perm_attr是参数的访问权限。
 模块导出函数：使用module_init(init_func)和module_exit(exit_func)宏定义模块的初始化和退出函数。其中，init_func是模块初始化函数，exit_func是模块退出函数。
+
 模块描述：使用MODULE_DESCRIPTION(description)宏声明模块的描述信息。
+
 模块参数列表：使用__param宏定义模块参数列表，例如__param(param_name, param_type)。
+
 模块导出符号：使用EXPORT_SYMBOL(symbol)宏导出内核符号，例如EXPORT_SYMBOL(my_function)。
+
 结束符号：使用MODULE_LICENSE("GPL")宏结束模块许可证声明。
+
 以下是一个简单的Linux内核模块的通用模板示例：
 
 ```c

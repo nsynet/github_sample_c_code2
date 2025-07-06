@@ -127,6 +127,7 @@ echo -e "\n #  ===================== /proc/ 文件系统 =====================" 
 echo -e "\n ##  cat /proc/cmdline \n $(cat /proc/cmdline)"  >>./save_basic_info_result.txt
 echo -e "\n ##  cat /proc/cpuinfo \n $(cat /proc/cpuinfo)" >>./save_basic_info_result.txt
 echo -e "\n ##  cat /proc/meminfo \n $(cat /proc/meminfo)" >>./save_basic_info_result.txt
+echo -e "\n ##  cat /proc/driver \n $(cat /proc/driver)" >>./save_basic_info_result.txt
 echo -e "\n ##  cat /proc/iomem \n $(cat /proc/iomem)" >>./save_basic_info_result.txt
 echo -e "\n ##  cat /proc/mounts \n $(cat /proc/mounts)" >>./save_basic_info_result.txt
 echo -e "\n ##  cat /proc/interrupts \n $(cat /proc/interrupts)" >>./save_basic_info_result.txt

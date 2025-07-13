@@ -19,8 +19,6 @@ BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
 ##  内核版本: 
  6.6.51+rpt-rpi-v8
 
-##  系统运行时间: 
- up 48 minutes
 
  #  =====================CPU 信息=====================
 

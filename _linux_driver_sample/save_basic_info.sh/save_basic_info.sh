@@ -70,6 +70,8 @@ echo -e "\n##  ps -ef \n\`\`\`\n$(ps -ef) \n\`\`\`"  >>./save_basic_info_result.
 echo -e "\n#  =====================常用命令 ====================="  >>./save_basic_info_result.md
 echo -e "\n##  lspci \n\`\`\`\n$(lspci) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  lsusb \n\`\`\`\n$(lsusb) \n\`\`\`"  >>./save_basic_info_result.md
+echo -e "\n##  lsipc \n\`\`\`\n$(lsipc) \n\`\`\`"  >>./save_basic_info_result.md
+echo -e "\n##  lsblk \n\`\`\`\n$(lsblk) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  fdisk -l \n\`\`\`\n$(fdisk -l) \n\`\`\`"  >>./save_basic_info_result.md
 
 echo -e "\n##  i2cdetect -l \n\`\`\`\n$(i2cdetect -l) \n\`\`\`"  >>./save_basic_info_result.md
@@ -109,6 +111,7 @@ for i in /sys/class/video4linux/video* ; do echo $i ;echo dev:$(cat $i/dev); ech
 echo -e "\n##  ===================== 打印 /sys/class/video4linux/v4l-subdev* ====================="  >>./save_basic_info_result.md
 for i in /sys/class/video4linux/v4l-subdev* ; do echo $i ;echo dev:$(cat $i/dev); echo name:$(cat $i/name);echo index:$(cat $i/index);echo link_name:$(cat $i/link_name);echo; done >>./save_basic_info_result.md
 echo -e "\n##  ===================== 打印 /sys/bus/media/devices/media* ====================="  >>./save_basic_info_result.md
+echo -e "\n##  ls -al /sys/bus/media/ \n\`\`\`\n$(ls -al /sys/bus/media/) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /sys/bus/media/devices \n\`\`\`\n$(ls -al /sys/bus/media/devices) \n\`\`\`"  >>./save_basic_info_result.md
 for i in /sys/bus/media/devices/media* ; do echo $i ;echo dev:$(cat $i/dev); echo model:$(cat $i/model);echo; done >>./save_basic_info_result.md
 

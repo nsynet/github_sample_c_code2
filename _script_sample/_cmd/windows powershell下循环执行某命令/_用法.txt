@@ -1,0 +1,3 @@
+在powershell中执行:
+
+powershell -ExecutionPolicy Bypass -File ".\1.ps1"

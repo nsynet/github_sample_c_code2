@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 检测是否是安卓系统
+# detect if android
 is_android() {
   if [ -f "/system/build.prop" ] || [ -f "/etc/build.prop" ]; then
     # 如果存在 build.prop 文件，可能是安卓系统
@@ -16,7 +16,7 @@ is_android() {
   return 1
 }
 
-# 检测是否是纯 Linux 系统
+# detect if pure linux
 is_linux() {
   if [ -f "/etc/os-release" ]; then
     LINUX_VERSION=$(grep "PRETTY_NAME" "/etc/os-release" 2>/dev/null | awk -F "=" '{print $2}' | sed 's/"//g')
@@ -28,23 +28,25 @@ is_linux() {
   return 1
 }
 
-# 显示系统信息
+
 echo -e "[toc]\n"  >./save_basic_info_result.md
-echo -e "\n#  =====================系统信息======================"  >>./save_basic_info_result.md
-echo -e "\n##  主机名: \n\`\`\`\n$(hostname) \n\`\`\`"  >>./save_basic_info_result.md
-echo -e "\n##  操作系统版本: \n\`\`\`\n$(cat /etc/os-release) \n\`\`\`"  >>./save_basic_info_result.md
-echo -e "\n##  内核版本: \n\`\`\`\n$(uname -r) \n\`\`\`"  >>./save_basic_info_result.md
+echo -e "\n#  ===================== system information ======================"  >>./save_basic_info_result.md
+echo -e "\n##  cat /etc/os-release \n\`\`\`\n$(cat /etc/os-release) \n\`\`\`"  >>./save_basic_info_result.md
+echo -e "\n##  uname -r \n\`\`\`\n$(uname -r) \n\`\`\`"  >>./save_basic_info_result.md
 
 
-# 显示 CPU 信息
-echo -e "\n#  =====================CPU 信息====================="  >>./save_basic_info_result.md
-echo -e "\n##  CPU 型号: \n\`\`\`\n$(lscpu | grep 'Model name' | awk -F: '{print $2}' | xargs) \n\`\`\`"  >>./save_basic_info_result.md
-echo -e "\n##  CPU 核心数: \n\`\`\`\n$(lscpu | grep 'CPU(s):' | head -1 | awk -F: '{print $2}' | xargs) \n\`\`\`"  >>./save_basic_info_result.md
-echo -e "\n##  CPU 逻辑处理器数: \n\`\`\`\n$(lscpu | grep 'Thread(s) per core:' | awk -F: '{print $2}' | xargs | sed 's/ /x/' | awk -F 'x' '{print $1*$2*$3}' | xargs) \n\`\`\`"  >>./save_basic_info_result.md
+echo -e "\n#  =====================CPU information ====================="  >>./save_basic_info_result.md
+echo -e "\n##  lscpu \n\`\`\`\n$(lscpu) \n\`\`\`"  >>./save_basic_info_result.md
+
+
+# kenerl configure
+echo -e "\n#  ===================== KERNEL config ====================="  >>./save_basic_info_result.md
+echo -e "\n##  zcat /proc/config.gz \n\`\`\`\n$(zcat /proc/config.gz) \n\`\`\`"  >>./save_basic_info_result.md
 
 # 显示内存信息
 echo -e "\n#  =====================内存信息====================="  >>./save_basic_info_result.md
-free -h | grep Mem | awk '{printf "总内存: %s\n可用内存: %s\n已用内存: %s\n", $2, $7, $3}' >>./save_basic_info_result.md
+#free -h | grep Mem | awk '{printf "总内存: %s\n可用内存: %s\n已用内存: %s\n", $2, $7, $3}' >>./save_basic_info_result.md
+echo -e "\n##  free -h \n\`\`\`\n$(free -h) \n\`\`\`"  >>./save_basic_info_result.md
 
 # 显示磁盘使用情况
 echo -e "\n#  =====================磁盘使用情况====================="  >>./save_basic_info_result.md
@@ -93,7 +95,7 @@ if is_android; then
 	echo -e "\n##  ls -al /system/bin \n\`\`\`\n$(ls -al /system/bin) \n\`\`\`"  >>./save_basic_info_result.md
 	echo -e "\n##  adb shell getprop \n\`\`\`\n$(adb shell getprop) \n\`\`\`"  >>./save_basic_info_result.md
 	echo -e "\n##  dumpsys -l \n\`\`\`\n$(dumpsys -l) \n\`\`\`"  >>./save_basic_info_result.md
-	echo -e "\n##  toybox $(toybox) \n\`\`\`"  >>./save_basic_info_result.md
+	echo -e "\n##  toybox  \n\`\`\`\n$(toybox) \n\`\`\`"  >>./save_basic_info_result.md
 fi
 
 

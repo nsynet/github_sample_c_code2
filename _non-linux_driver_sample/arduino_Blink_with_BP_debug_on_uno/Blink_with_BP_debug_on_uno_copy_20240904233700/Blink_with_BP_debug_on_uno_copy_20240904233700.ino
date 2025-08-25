@@ -43,6 +43,10 @@ int printMemoryInfo()
 // the setup function runs once when you press reset or power the board
 void setup() {
   Serial.begin(TERM_BAUD_RATE);
+  Serial.print("\n");
+  Serial.print(__DATE__); 
+  Serial.print(" ");
+  Serial.println(__TIME__); 
   printMemoryInfo(); 
   pinMode(LED_BUILTIN, OUTPUT);
 }

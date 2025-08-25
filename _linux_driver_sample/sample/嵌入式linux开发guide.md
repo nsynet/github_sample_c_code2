@@ -31,6 +31,13 @@
 |v4l2设备   |<p>v4l2_device_register()<br>video_register_device()<br></p>   |  |  | |
 |v4l2 subdevice设备   |<p>v4l2_subdev_init()<br>v4l2_device_register_subdev()</p>    |  |  | |
 |workqueue   |<p>struct delayed_work i2c8_cam_periodic_check_wq={0};<br>void i2c8_cam_periodic_check_report_wq_routine(struct work_struct *data);<br>INIT_DELAYED_WORK(&i2c8_cam_periodic_check_wq ,    i2c8_cam_periodic_check_report_wq_routine);</p>| schedule_delayed_work(&i2c8_cam_periodic_check_wq, msecs_to_jiffies(200)); |  | |
+|内核线程|<p>kthread_create() + kthread_bind() + wake_up_process()<br>或者<br>立即运行的内核线程kthread_run()<br></p>| kthread_stop() |  | |
+||<p> <br> <br></p>|  |  | |
+||<p> <br> <br></p>|  |  | |
+||<p> <br> <br></p>|  |  | |
+||<p> <br> <br></p>|  |  | |
+||<p> <br> <br></p>|  |  | |
+
 
 复位处理:硬复位一般重新上电没有问题;但是软复位需要考虑外设的复位,否则可能有故障(比如外设配置了新地址,cpu仍然使用默认地址读写外设,导致找不到外设),需要做到reset键把必要的外设芯片都重启了,避免外设芯片一直上电,导致故障时reset后仍然有故障(类似摄像头的寄存器配置错误的故障)
 

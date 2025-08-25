@@ -12,6 +12,30 @@
 
 [打印出枚举值的字符串](_linux_vscode__print_enum_string_by_enum_value/_print_enum_string_by_enum_value.c)
 
+参考代码:
+```
+#include <stdio.h>
+
+#define STR1(a)             #a	//以“#”的形式将输入转换成字符串,必须以宏定义的方式，直接加#编译报错！
+
+int main(int argc, char** argv)
+{
+    printf("print string: %s\r\n", STR1(test string));
+    printf("print string: %s\r\n", STR1(10086));
+    //printf("print string: %s\r\n", #10086);//必须用上面宏定义的方式，直接加#编译报错！！！
+    
+    return 0;
+}
+```
+执行结果:
+```
+C:\Users\nisy_tc\Documents\_Dev_Cpp\hello_world1>hello_world1.exe
+print string: test string
+print string: 10086
+```
+
+
+
 ## _linux_vscode_32bit_64bit_printf_test/
 
 [32/64 bit的printf打印区别](_linux_vscode_32bit_64bit_printf_test/printf.c)

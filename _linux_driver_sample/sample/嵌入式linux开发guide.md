@@ -4,10 +4,10 @@
 
 | 功能  |创建   |销毁| 备注 | 参考代码 |
 | ------------ | ------------ | ------------ | ------------ |------------ |
-|注册字符设备(古老,不建议用)   | register_chrdev()|unregister_chrdev()|register_chrdev()根据给定的主设备号是否为0来决定使用静态注册还是动态注册。当您使用unregister_chrdev()注销一个设备时，它会自动删除与该设备关联的cdev结构。但是，如果您使用unregister_chrdev_region()，您需要确保手动删除任何与该设备范围关联的cdev结构（如果有的话）| |
-|注册字符设备(静态注册)|register_chrdev_region()   |unregister_chrdev_region()|register_chrdev_region() 是用于静态注册设备号的函数。它要求开发者指定设备的主设备号和次设备号的范围，并事先知道要使用的主、次设备号。在调用这个函数之前，开发者需要查看 /proc/devices 文件来确认哪些设备号没有被使用,比register_chrdev()繁琐,但是避免了 register_chrdev() 中可能导致的资源浪费问题。| |
-|注册字符设备(动态注册)   | <p>alloc_chrdev_region() 分配一个设备号范围<br>cdev_alloc()<br>cdev_init()<br>cdev_add()<br></p>|cdev_del() + kfree() + unregister_chrdev_region()|register_chrdev_region（）函数用于已知起始设备的设备号的情况，而alloc_chrdev_region（）用于设备号未知，向系统动态申请未被占用的设备号的情况| |
-|创建/sys/kernel/下的 kobject（Kernel Object）  |kobject_create_and_add()   |kobject_put   | <p>msm_cam_sysfs_kobj = kobject_create_and_add("camera_360", kernel_kobj);<br>msm_sensor_sysfs_add_link(msm_cam_sysfs_kobj, &s_ctrl->pdev->dev.kobj, "max9286_pid_all", "max9286_pid_all");<br>效果: /sys/kernel/camera_360/max9286_pid_all 指向 /sys/devices/soc/1b0c000.qcom,cci/1b0c000.qcom,cci:qcom,camera@1/max9286_pid_all</p> | |
+|~~注册字符设备(古老,不建议用)~~   | ~~register_chrdev()~~|unregister_chrdev()|register_chrdev()根据给定的主设备号是否为0来决定使用静态注册还是动态注册。当您使用unregister_chrdev()注销一个设备时，它会自动删除与该设备关联的cdev结构。但是，如果您使用unregister_chrdev_region()，您需要确保手动删除任何与该设备范围关联的cdev结构（如果有的话）| |
+|~~注册字符设备(静态注册)~~|~~register_chrdev_region()~~   |unregister_chrdev_region()|register_chrdev_region() 是用于静态注册设备号的函数。它要求开发者指定设备的主设备号和次设备号的范围，并事先知道要使用的主、次设备号。在调用这个函数之前，开发者需要查看 /proc/devices 文件来确认哪些设备号没有被使用,比register_chrdev()繁琐,但是避免了 register_chrdev() 中可能导致的资源浪费问题。| |
+|注册字符设备(动态注册)   | <p>alloc_chrdev_region() 分配一个设备号范围<br>cdev_alloc()<br>cdev_init()<br>cdev_add()<br></p>|cdev_del() + kfree() + unregister_chrdev_region()|register_chrdev_region（）函数用于已知起始设备的设备号的情况，而alloc_chrdev_region（）用于设备号未知，向系统动态申请未被占用的设备号的情况;需要在用户态执行mknod()生成设备节点 |https://github.com/figozhang/runninglinuxkernel_5.0/tree/rlk_5.0/kmodules/rlk_lab/rlk_basic/chapter_6_device_driver/lab1_simple_driver  |
+|创建/sys/kernel/下的 kobject（Kernel Object）  |kobject_create_and_add()   |kobject_put   | <p>msm_cam_sysfs_kobj = kobject_create_and_add("camera_360", kernel_kobj);<br>msm_sensor_sysfs_add_link(msm_cam_sysfs_kobj, &s_ctrl->pdev->dev.kobj, "max9286_pid_all", "max9286_pid_all");<br>效果: /sys/kernel/camera_360/max9286_pid_all 指向 /sys/devices/soc/1b0c000.qcom,cci/1b0c000.qcom,cci:qcom,camera@1/max9286_pid_all</p> ||
 |创建/sys/class/xxx 节点  | class_create()  |class_destroy()| |
 |创建设备节点/dev/xxx   |device_create() 用于创建和注册设备实例  |device_destroy() | |
 |创建/sys/xxx 文件节点   |<p>device_create_file（）用于在sysfs中创建设备属性文件<br>   sysfs_create_group()   </p>| sysfs_remove_group() | https://github.com/figozhang/runninglinuxkernel_5.0/tree/rlk_5.0/kmodules/rlk_lab/rlk_basic/chapter_12_debug/lab4_sysfs |  |
@@ -21,7 +21,7 @@
 |供电芯片的开关   |<p>regulator_get();<br>regulator_enable();<br> regulator_disable();<br></p>  |regulator_put()| | |
 |模块化的平台设备驱动   | module_platform_driver  | | | |
 |非模块化的平台设备驱动   |<p>module_init时使用platform_driver_register()<br>probe时使用platform_set_drvdata()<br>of_platform_populate() 函数是一个用于从设备树（Device Tree）中解析并创建平台设备（platform devices）<br></p>|module_exit时使用platform_driver_unregister| | | |
-|misc device注册   | misc_register()  |misc_deregister()  | misc_register()会自动创建文件节点,不需要mknod()手工创建设备节点,misc设备不需要probe | |
+|misc device注册   | misc_register()  |misc_deregister()  | misc_register()会自动创建文件节点,不需要mknod()手工创建设备节点（对比字符设备需要！）,misc设备不需要probe | https://github.com/figozhang/runninglinuxkernel_5.0/tree/rlk_5.0/kmodules/rlk_lab/rlk_basic/chapter_6_device_driver/lab2_misc_driver|
 |i2c设备   |i2c_add_driver()   | i2c_del_driver()  | probe()阶段初始化:i2c_check_functionality()+i2c_set_clientdata() | |
 |kernel module 的C代码和makefile参考   |   |  |  |https://github.com/figozhang/runninglinuxkernel_5.0/tree/rlk_5.0/kmodules/rlk_lab/rlk_basic/chapter_12_debug/lab3_procfs|
 |module的加载和卸载   | insmod,但是推荐modprobe加载/rmod卸载/lsmod查询  |  |  |  |

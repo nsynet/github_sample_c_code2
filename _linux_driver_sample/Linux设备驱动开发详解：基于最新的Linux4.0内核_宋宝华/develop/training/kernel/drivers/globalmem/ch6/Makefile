@@ -2,6 +2,7 @@ KVERS = $(shell uname -r)
 
 # Kernel modules
 obj-m += globalmem.o
+obj-m += globalmem_nisy.o
 obj-m += multi_globalmem.o
 
 # Specify flags for the module compilation.

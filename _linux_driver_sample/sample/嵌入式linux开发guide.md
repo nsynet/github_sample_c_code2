@@ -6,7 +6,7 @@
 | ------------ | ------------ | ------------ | ------------ |------------ |
 |~~注册字符设备(古老,不建议用)~~   | ~~register_chrdev()~~|unregister_chrdev()|register_chrdev()根据给定的主设备号是否为0来决定使用静态注册还是动态注册。当您使用unregister_chrdev()注销一个设备时，它会自动删除与该设备关联的cdev结构。但是，如果您使用unregister_chrdev_region()，您需要确保手动删除任何与该设备范围关联的cdev结构（如果有的话）| |
 |~~注册字符设备(静态注册)~~|~~register_chrdev_region()~~   |unregister_chrdev_region()|register_chrdev_region() 是用于静态注册设备号的函数。它要求开发者指定设备的主设备号和次设备号的范围，并事先知道要使用的主、次设备号。在调用这个函数之前，开发者需要查看 /proc/devices 文件来确认哪些设备号没有被使用,比register_chrdev()繁琐,但是避免了 register_chrdev() 中可能导致的资源浪费问题。| |
-|注册字符设备(动态注册)   | <p>alloc_chrdev_region() 分配一个设备号范围<br>cdev_alloc()<br>cdev_init()<br>cdev_add()<br></p>|cdev_del() + kfree() + unregister_chrdev_region()|register_chrdev_region（）函数用于已知起始设备的设备号的情况，而alloc_chrdev_region（）用于设备号未知，向系统动态申请未被占用的设备号的情况;需要在用户态执行mknod()生成设备节点 |<p>https://github.com/figozhang/runninglinuxkernel_5.0/tree/rlk_5.0/kmodules/rlk_lab/rlk_basic/chapter_6_device_driver/lab1_simple_driver <br>https://github.com/nsynet/github_sample_c_code2/blob/main/_linux_driver_sample/Linux%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91%E8%AF%A6%E8%A7%A3%EF%BC%9A%E5%9F%BA%E4%BA%8E%E6%9C%80%E6%96%B0%E7%9A%84Linux4.0%E5%86%85%E6%A0%B8_%E5%AE%8B%E5%AE%9D%E5%8D%8E/develop/training/kernel/drivers/globalmem/ch6/globalmem.c<br></p> |
+|注册字符设备(动态注册)   | <p>alloc_chrdev_region() 分配一个设备号范围<br>cdev_alloc()<br>cdev_init()<br>cdev_add()<br></p>|cdev_del() + kfree() + unregister_chrdev_region()|register_chrdev_region（）函数用于已知起始设备的设备号的情况，而alloc_chrdev_region（）用于设备号未知，向系统动态申请未被占用的设备号的情况;需要在用户态执行mknod()生成设备节点 |<p>`https://github.com/nsynet/github_sample_c_code2/blob/main/_linux_driver_sample/Linux%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91%E8%AF%A6%E8%A7%A3%EF%BC%9A%E5%9F%BA%E4%BA%8E%E6%9C%80%E6%96%B0%E7%9A%84Linux4.0%E5%86%85%E6%A0%B8_%E5%AE%8B%E5%AE%9D%E5%8D%8E/develop/training/kernel/drivers/globalmem/ch6/globalmem_nisy.c`<br></p> |
 |创建/sys/kernel/下的 kobject（Kernel Object）  |kobject_create_and_add()   |kobject_put   | <p>msm_cam_sysfs_kobj = kobject_create_and_add("camera_360", kernel_kobj);<br>msm_sensor_sysfs_add_link(msm_cam_sysfs_kobj, &s_ctrl->pdev->dev.kobj, "max9286_pid_all", "max9286_pid_all");<br>效果: /sys/kernel/camera_360/max9286_pid_all 指向 /sys/devices/soc/1b0c000.qcom,cci/1b0c000.qcom,cci:qcom,camera@1/max9286_pid_all</p> ||
 |创建/sys/class/xxx 节点  | class_create()  |class_destroy()| |
 |创建设备节点/dev/xxx   |device_create() 用于创建和注册设备实例  |device_destroy() | |
@@ -31,13 +31,6 @@
 |v4l2设备   |<p>v4l2_device_register()<br>video_register_device()<br></p>   |  |  | |
 |v4l2 subdevice设备   |<p>v4l2_subdev_init()<br>v4l2_device_register_subdev()</p>    |  |  | |
 |workqueue   |<p>struct delayed_work i2c8_cam_periodic_check_wq={0};<br>void i2c8_cam_periodic_check_report_wq_routine(struct work_struct *data);<br>INIT_DELAYED_WORK(&i2c8_cam_periodic_check_wq ,    i2c8_cam_periodic_check_report_wq_routine);</p>| schedule_delayed_work(&i2c8_cam_periodic_check_wq, msecs_to_jiffies(200)); |  | |
-|内核线程|<p>kthread_create() + kthread_bind() + wake_up_process()<br>或者<br>立即运行的内核线程kthread_run()<br></p>| kthread_stop() |  | |
-||<p> <br> <br></p>|  |  | |
-||<p> <br> <br></p>|  |  | |
-||<p> <br> <br></p>|  |  | |
-||<p> <br> <br></p>|  |  | |
-||<p> <br> <br></p>|  |  | |
-
 
 复位处理:硬复位一般重新上电没有问题;但是软复位需要考虑外设的复位,否则可能有故障(比如外设配置了新地址,cpu仍然使用默认地址读写外设,导致找不到外设),需要做到reset键把必要的外设芯片都重启了,避免外设芯片一直上电,导致故障时reset后仍然有故障(类似摄像头的寄存器配置错误的故障)
 

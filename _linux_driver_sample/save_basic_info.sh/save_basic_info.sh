@@ -1,4 +1,4 @@
-#!/bin/bash
+####!/bin/bash
 
 # detect if android
 is_android() {
@@ -16,23 +16,14 @@ is_android() {
   return 1
 }
 
-# detect if pure linux
-is_linux() {
-  if [ -f "/etc/os-release" ]; then
-    LINUX_VERSION=$(grep "PRETTY_NAME" "/etc/os-release" 2>/dev/null | awk -F "=" '{print $2}' | sed 's/"//g')
-    if [ -n "$LINUX_VERSION" ]; then
-      echo -e "\n##  当前环境是纯 Linux 系统，版本为：$LINUX_VERSION"
-      return 0
-    fi
-  fi
-  return 1
-}
-
 
 echo -e "[toc]\n"  >./save_basic_info_result.md
 echo -e "\n#  ===================== system information ======================"  >>./save_basic_info_result.md
+if is_android; then
+else
 echo -e "\n##  cat /etc/os-release \n\`\`\`\n$(cat /etc/os-release) \n\`\`\`"  >>./save_basic_info_result.md
-echo -e "\n##  uname -r \n\`\`\`\n$(uname -r) \n\`\`\`"  >>./save_basic_info_result.md
+fi
+echo -e "\n##  uname -a \n\`\`\`\n$(uname -a) \n\`\`\`"  >>./save_basic_info_result.md
 
 
 echo -e "\n#  =====================CPU information ====================="  >>./save_basic_info_result.md
@@ -55,6 +46,7 @@ echo -e "\n##  df -h \n\`\`\`\n$(df -h) \n\`\`\`"  >>./save_basic_info_result.md
 # 显示网络接口信息
 echo -e "\n#  =====================网络接口信息====================="  >>./save_basic_info_result.md
 ip addr | grep 'state UP' -A 2 | grep -v 'state UP' | grep -v 'lo' >>./save_basic_info_result.md
+echo -e "\n##  ifconfig \n\`\`\`\n$(ifconfig) \n\`\`\`"  >>./save_basic_info_result.md
 
 # 显示当前登录用户信息
 echo -e "\n#  =====================当前登录用户信息====================="  >>./save_basic_info_result.md

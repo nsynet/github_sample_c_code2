@@ -3,14 +3,9 @@
 
 #  ===================== system information ======================
 
-##  cat /etc/os-release 
+##  uname -a 
 ```
- 
-```
-
-##  uname -r 
-```
-4.19.193 
+Linux localhost 4.19.193 #1 SMP PREEMPT Fri Oct 3 14:11:38 UTC 2025 aarch64 
 ```
 
 #  =====================CPU information =====================
@@ -6041,8 +6036,8 @@ CONFIG_ARCH_HAS_DEVMEM_IS_ALLOWED=y
 ##  free -h 
 ```
 		total        used        free      shared     buffers
-Mem:             1.9G        1.5G        320M        3.5M        4.4M
--/+ buffers/cache:           1.5G        324M
+Mem:             1.9G        1.5G        339M        3.4M        4.4M
+-/+ buffers/cache:           1.5G        343M
 Swap:            978M           0        978M 
 ```
 
@@ -6057,10 +6052,10 @@ tmpfs                 978M     0  978M   0% /mnt
 /dev/block/dm-0       934M  931M  2.8M 100% /
 tmpfs                 978M     0  978M   0% /apex
 tmpfs                 978M  264K  978M   1% /linkerconfig
-/dev/block/mmcblk2p10 356M  228K  356M   1% /cache
-/dev/block/dm-5        10G   36M   10G   1% /data
+/dev/block/mmcblk2p10 356M  460K  356M   1% /cache
+/dev/block/dm-5        10G   37M   10G   1% /data
 tmpfs                 978M     0  978M   0% /data_mirror
-/dev/fuse              10G   36M   10G   1% /mnt/user/0/emulated
+/dev/fuse              10G   37M   10G   1% /mnt/user/0/emulated
 /dev/block/dm-6       676M   92K  676M   1% /mnt/scratch
 overlay               676M   92K  676M   1% /system
 overlay               676M   92K  676M   1% /vendor
@@ -6073,13 +6068,13 @@ overlay               676M   92K  676M   1% /system_ext
 
 ##  ifconfig 
 ```
-dummy0    Link encap:Ethernet  HWaddr ea:9e:fd:35:e8:07
-          inet6 addr: fe80::e89e:fdff:fe35:e807/64 Scope: Link
+dummy0    Link encap:Ethernet  HWaddr ba:3e:67:52:23:ab
+          inet6 addr: fe80::b83e:67ff:fe52:23ab/64 Scope: Link
           UP BROADCAST RUNNING NOARP  MTU:1500  Metric:1
           RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
-          TX packets:9 errors:0 dropped:0 overruns:0 carrier:0 
+          TX packets:8 errors:0 dropped:0 overruns:0 carrier:0 
           collisions:0 txqueuelen:1000 
-          RX bytes:0 TX bytes:630 
+          RX bytes:0 TX bytes:560 
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0 
@@ -6103,235 +6098,235 @@ lo        Link encap:Local Loopback
 ##  ps -ef 
 ```
 UID             PID   PPID C STIME TTY          TIME CMD
-root              1      0 0 16:47:16 ?     00:00:06 init second_stage
-root              2      0 0 16:47:16 ?     00:00:00 [kthreadd]
-root              3      2 0 16:47:16 ?     00:00:00 [rcu_gp]
-root              4      2 0 16:47:16 ?     00:00:00 [rcu_par_gp]
-root              8      2 0 16:47:16 ?     00:00:00 [mm_percpu_wq]
-root              9      2 0 16:47:16 ?     00:00:00 [ksoftirqd/0]
-root             10      2 0 16:47:16 ?     00:00:00 [rcu_preempt]
-root             11      2 0 16:47:16 ?     00:00:00 [rcu_sched]
-root             12      2 0 16:47:16 ?     00:00:00 [rcu_bh]
-root             13      2 0 16:47:16 ?     00:00:00 [migration/0]
-root             14      2 0 16:47:16 ?     00:00:00 [kworker/0:1-cgroup_pidlist_destroy]
-root             15      2 0 16:47:16 ?     00:00:00 [cpuhp/0]
-root             16      2 0 16:47:16 ?     00:00:00 [cpuhp/1]
-root             17      2 0 16:47:16 ?     00:00:00 [migration/1]
-root             18      2 0 16:47:16 ?     00:00:00 [ksoftirqd/1]
-root             21      2 0 16:47:16 ?     00:00:00 [cpuhp/2]
-root             22      2 0 16:47:16 ?     00:00:00 [migration/2]
-root             23      2 0 16:47:16 ?     00:00:00 [ksoftirqd/2]
-root             26      2 0 16:47:16 ?     00:00:00 [cpuhp/3]
-root             27      2 0 16:47:16 ?     00:00:00 [migration/3]
-root             28      2 0 16:47:16 ?     00:00:00 [ksoftirqd/3]
-root             31      2 0 16:47:16 ?     00:00:00 [kdevtmpfs]
-root             32      2 0 16:47:16 ?     00:00:00 [kworker/u8:1-adb]
-root             33      2 0 16:47:16 ?     00:00:00 [netns]
-root             34      2 0 16:47:16 ?     00:00:00 [rcu_tasks_kthre]
-root             36      2 0 16:47:16 ?     00:00:00 [kauditd]
-root             37      2 0 16:47:16 ?     00:00:00 [khungtaskd]
-root             38      2 0 16:47:16 ?     00:00:00 [oom_reaper]
-root             39      2 0 16:47:16 ?     00:00:00 [writeback]
-root             40      2 0 16:47:16 ?     00:00:00 [kcompactd0]
-root             41      2 0 16:47:16 ?     00:00:00 [crypto]
-root             42      2 0 16:47:16 ?     00:00:00 [kblockd]
-root             44      2 0 16:47:16 ?     00:00:00 [blk_crypto_wq]
-root             45      2 0 16:47:16 ?     00:00:00 [kconsole]
-root             47      2 0 16:47:16 ?     00:00:00 [devfreq_wq]
-root             48      2 0 16:47:16 ?     00:00:00 [watchdogd]
-root             50      2 0 16:47:16 ?     00:00:08 [cfinteractive]
-root             51      2 0 16:47:16 ?     00:00:00 [cfg80211]
-root             52      2 0 16:47:16 ?     00:00:00 [kswapd0]
-root             53      2 0 16:47:16 ?     00:00:00 [irq/60-rockchip]
-root             54      2 0 16:47:16 ?     00:00:00 [irq/61-rockchip]
-root             56      2 0 16:47:16 ?     00:00:00 [iommu_wq]
-root             57      2 0 16:47:16 ?     00:00:00 [vdpu]
-root             58      2 0 16:47:16 ?     00:00:00 [irq/20-fdea0400]
-root             59      2 0 16:47:16 ?     00:00:00 [vepu]
-root             60      2 0 16:47:16 ?     00:00:00 [irq/25-fdee0000]
-root             61      2 0 16:47:16 ?     00:00:00 [iep]
-root             62      2 0 16:47:16 ?     00:00:00 [irq/27-fdef0000]
-root             63      2 0 16:47:16 ?     00:00:00 [jpegd]
-root             64      2 0 16:47:16 ?     00:00:00 [irq/23-fded0000]
-root             65      2 0 16:47:16 ?     00:00:00 [rkvdec]
-root             66      2 0 16:47:16 ?     00:00:00 [irq/31-fdf80200]
-root             67      2 0 16:47:16 ?     00:00:00 [hwrng]
-root             68      2 0 16:47:16 ?     00:00:00 [hpd_queue]
-root             69      2 0 16:47:16 ?     00:00:00 [irq/38-fe0a0000]
-root             70      2 0 16:47:16 ?     00:00:00 [cec-dw_hdmi]
-root             71      2 0 16:47:16 ?     00:00:00 [irq/38-dw-hdmi-]
-root             72      2 0 16:47:16 ?     00:00:00 [nvme-wq]
-root             73      2 0 16:47:16 ?     00:00:00 [nvme-reset-wq]
-root             74      2 0 16:47:16 ?     00:00:00 [nvme-delete-wq]
-root             75      2 0 16:47:16 ?     00:00:00 [spi3]
-root             77      2 0 16:47:16 ?     00:00:00 [uas]
-root             78      2 0 16:47:16 ?     00:00:00 [goodix_wq]
-root             79      2 0 16:47:16 ?     00:00:00 [irq/71-rk817]
-root             80      2 0 16:47:16 ?     00:00:00 [irq/58-rockchip]
-root             81      2 0 16:47:16 ?     00:00:00 [dm_bufio_cache]
-root             82      2 0 16:47:16 ?     00:00:00 [irq/42-mmc2]
-root             83      2 0 16:47:16 ?     00:00:00 [mmc_complete]
-root             86      2 0 16:47:16 ?     00:00:00 [ion_system_heap]
-root             87      2 0 16:47:17 ?     00:00:00 [ipv6_addrconf]
-root             88      2 0 16:47:17 ?     00:00:00 [krfcommd]
-root             90      2 0 16:47:17 ?     00:00:00 [irq/22-rga]
-root             91      2 0 16:47:17 ?     00:00:00 [rkvenc]
-root             92      2 0 16:47:17 ?     00:00:00 [iommu_wq]
-root             93      2 0 16:47:17 ?     00:00:00 [irq/28-fdf40000]
-root             94      2 0 16:47:17 ?     00:00:00 [gpu_power_off_w]
-root             96      2 0 16:47:17 ?     00:00:00 [kbase_job_fault]
-root             97      2 0 16:47:17 ?     00:00:00 [kworker/u8:2-events_unbound]
-root            100      2 0 16:47:17 ?     00:00:00 [kworker/2:1H-kblockd]
-root            102      2 0 16:47:17 ?     00:00:00 [jbd2/mmcblk2p11]
-root            103      2 0 16:47:17 ?     00:00:00 [ext4-rsv-conver]
-root            104      2 0 16:47:17 ?     00:00:00 [kdmflush]
-root            105      2 0 16:47:17 ?     00:00:00 [kdmflush]
-root            106      2 0 16:47:17 ?     00:00:00 [kdmflush]
-root            107      2 0 16:47:17 ?     00:00:00 [kdmflush]
-root            108      2 0 16:47:17 ?     00:00:00 [kdmflush]
-root            109      2 0 16:47:17 ?     00:00:00 [ext4-rsv-conver]
-root            111      2 0 16:47:17 ?     00:00:00 [kworker/3:2H-kblockd]
-root            112      2 0 16:47:17 ?     00:00:00 [ext4-rsv-conver]
-root            113      2 0 16:47:17 ?     00:00:00 [ext4-rsv-conver]
-root            114      2 0 16:47:17 ?     00:00:00 [ext4-rsv-conver]
-root            115      2 0 16:47:17 ?     00:00:00 [ext4-rsv-conver]
-root            116      2 0 16:47:17 ?     00:00:00 [kworker/1:2H-kblockd]
-root            118      1 0 16:47:17 ?     00:00:00 init subcontext u:r:vendor_init:s0 15
-root            120      1 0 16:47:17 ?     00:00:01 ueventd
-root            129      2 0 16:47:18 ?     00:00:00 [kworker/0:2-cgroup_pidlist_destroy]
-logd            137      1 0 16:47:18 ?     00:00:05 logd
-lmkd            138      1 0 16:47:18 ?     00:00:00 lmkd
-system          139      1 0 16:47:18 ?     00:00:00 servicemanager
-system          140      1 0 16:47:18 ?     00:00:04 hwservicemanager
-system          141      1 0 16:47:18 ?     00:00:00 vndservicemanager /dev/vndbinder
-shell           142      1 0 16:47:18 ttyFIQ0 00:00:00 sh
-root            143      2 0 16:47:18 ?     00:00:00 [psimon]
-root            146      1 0 16:47:18 ?     00:00:00 vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
-root            158      2 0 16:47:19 ?     00:00:00 [jbd2/mmcblk2p10]
-root            159      2 0 16:47:19 ?     00:00:00 [ext4-rsv-conver]
-root            161      1 0 16:47:19 ?     00:00:00 tee-supplicant
-system          162      1 0 16:47:19 ?     00:00:00 android.system.suspend@1.0-service
-system          163      1 0 16:47:19 ?     00:00:00 android.hardware.keymaster@4.0-service.optee
-system          164      1 0 16:47:19 ?     00:00:05 surfaceflinger
-root            175      2 0 16:47:19 ?     00:00:00 [kdmflush]
-root            183      2 0 16:47:19 ?     00:00:00 [f2fs_flush-253:]
-root            184      2 0 16:47:19 ?     00:00:00 [f2fs_discard-25]
-root            186      2 0 16:47:19 ?     00:00:00 [kworker/u9:4-kbase_pm_poweroff_wait]
-root            187      2 0 16:47:19 ?     00:00:00 [f2fs_gc-253:5]
-root            194      2 0 16:47:19 ?     00:00:00 [kbase_event]
-system          206      1 0 16:47:19 ?     00:00:00 android.hardware.graphics.allocator@4.0-service
-system          216      1 0 16:47:19 ?     00:00:00 android.hardware.graphics.composer@2.1-service
-tombstoned      229      1 0 16:47:20 ?     00:00:00 tombstoned
-statsd          241      1 0 16:47:20 ?     00:00:00 statsd
-root            242      1 0 16:47:20 ?     00:00:00 netd
-root            243      1 0 16:47:20 ?     00:00:04 zygote64
-root            244      1 0 16:47:20 ?     00:00:03 zygote
-root            248    242 0 16:47:20 ?     00:00:00 iptables-restore --noflush -w -v
-root            249    242 0 16:47:20 ?     00:00:00 ip6tables-restore --noflush -w -v
-system          251      1 0 16:47:20 ?     00:00:00 android.hidl.allocator@1.0-service
-audioserver     252      1 0 16:47:20 ?     00:00:00 android.hardware.audio.service
-bluetooth       253      1 0 16:47:20 ?     00:00:00 android.hardware.bluetooth@1.0-service
-cameraserver    254      1 0 16:47:20 ?     00:00:00 android.hardware.camera.provider@2.4-external-service
-cameraserver    256      1 0 16:47:20 ?     00:00:00 android.hardware.camera.provider@2.4-service
-media           257      1 0 16:47:20 ?     00:00:00 android.hardware.cas@1.2-service
-media           258      1 0 16:47:20 ?     00:00:00 android.hardware.drm@1.3-service.clearkey
-media           259      1 0 16:47:20 ?     00:00:00 android.hardware.drm@1.3-service.widevine
-system          260      1 0 16:47:20 ?     00:00:00 android.hardware.gatekeeper@1.0-service.optee
-system          261      1 0 16:47:20 ?     00:00:00 android.hardware.health@2.1-service
-system          263      1 0 16:47:20 ?     00:00:00 android.hardware.radio.config@1.0-service
-system          273      1 0 16:47:20 ?     00:00:00 android.hardware.radio@1.2-radio-service
-system          276      1 0 16:47:20 ?     00:00:00 android.hardware.sensors@1.0-service
-system          277      1 0 16:47:20 ?     00:00:00 android.hardware.weaver@1.0-service
-wifi            278      1 0 16:47:20 ?     00:00:00 android.hardware.wifi@1.0-service
-system          279      1 0 16:47:20 ?     00:00:00 android.hardware.lights-service.rockchip
-root            282      1 0 16:47:20 ?     00:00:00 android.hardware.power-service.rockchip
-system          283      1 0 16:47:20 ?     00:00:00 rockchip.hardware.neuralnetworks@1.0-service
-system          285      1 0 16:47:20 ?     00:00:00 rockchip.hardware.outputmanager@1.0-service
-media           286      1 0 16:47:20 ?     00:00:00 rockchip.hardware.rockit.hw@1.0-service
-audioserver     287      1 0 16:47:20 ?     00:00:00 audioserver
-credstore       288      1 0 16:47:20 ?     00:00:00 credstore /data/misc/credstore
-gpu_service     290      1 0 16:47:20 ?     00:00:00 gpuservice
-nobody          314      1 0 16:47:21 ?     00:00:00 traced_probes
-nobody          315      1 0 16:47:21 ?     00:00:00 traced
-cameraserver    316      1 0 16:47:21 ?     00:00:00 cameraserver
-drm             317      1 0 16:47:21 ?     00:00:00 drmserver
-incidentd       319      1 0 16:47:21 ?     00:00:00 incidentd
-root            321      1 0 16:47:21 ?     00:00:01 installd
-keystore        334      1 0 16:47:21 ?     00:00:00 keystore /data/misc/keystore
-mediaex         339      1 0 16:47:21 ?     00:00:00 media.extractor aextractor
-media           340      1 0 16:47:21 ?     00:00:00 media.metrics diametrics
-media           341      1 0 16:47:21 ?     00:00:00 mediaserver
-root            342      1 0 16:47:21 ?     00:00:00 storaged
-wifi            343      1 0 16:47:21 ?     00:00:00 wificond
-mediacodec      344      1 0 16:47:21 ?     00:00:00 media.codec hw/android.hardware.media.omx@1.0-service
-root            348      2 0 16:47:21 ?     00:00:00 [ext_eventd]
-root            351      2 0 16:47:21 ?     00:00:00 [dhd_watchdog_th]
-root            352      2 0 16:47:21 ?     00:00:00 [dhd_dpc]
-root            353      2 0 16:47:21 ?     00:00:00 [dhd_rxf]
-mediacodec      355      1 0 16:47:21 ?     00:00:00 media.swcodec oid.media.swcodec/bin/mediaswcodec
-system          356      1 0 16:47:21 ?     00:00:00 gatekeeperd /data/misc/gatekeeper
-system          414    243 1 16:47:25 ?     00:00:20 system_server
-u0_a115         568    243 1 16:47:31 ?     00:00:09 com.android.systemui
-network_stack   703    243 0 16:47:31 ?     00:00:00 com.android.networkstack.process
-secure_element  730    243 0 16:47:31 ?     00:00:00 com.android.se
-webview_zygote  765    244 0 16:47:31 ?     00:00:00 webview_zygote
-system          819    243 0 16:47:32 ?     00:00:01 com.android.settings
-u0_a120         842    243 0 16:47:32 ?     00:00:00 android.ext.services
-root            888      2 0 16:47:32 ?     00:00:00 [kbase_event]
-u0_a114         958    243 0 16:47:33 ?     00:00:02 com.android.launcher3
-root            998      2 0 16:47:33 ?     00:00:00 [kbase_event]
-u0_a106        1016    243 0 16:47:35 ?     00:00:00 com.android.inputmethod.latin
-u0_a111        1045    243 0 16:47:35 ?     00:00:00 com.android.deskclock
-u0_a119        1089    243 0 16:47:36 ?     00:00:04 com.android.providers.media.module
-system         1110    243 0 16:47:37 ?     00:00:00 com.cghs.stresstest
-u0_a80         1187    243 0 16:47:37 ?     00:00:00 com.android.printspooler
-root           1213      2 0 16:47:37 ?     00:00:00 [kbase_event]
-system         1233    243 0 16:47:37 ?     00:00:00 android.rockchip.update.service
-u0_a63         1275    243 0 16:47:37 ?     00:00:00 android.process.media
-u0_a110        1304    243 0 16:47:37 ?     00:00:00 com.android.calendar
-u0_a101        1336    243 0 16:47:38 ?     00:00:00 com.android.contacts
-system         1359    243 0 16:47:38 ?     00:00:00 com.android.dynsystem
-u0_a71         1383    243 0 16:47:38 ?     00:00:00 com.android.managedprovisioning
-u0_a99         1412    243 0 16:47:38 ?     00:00:00 com.android.onetimeinitializer
-u0_a68         1439    243 0 16:47:38 ?     00:00:00 com.android.packageinstaller
-u0_a121        1463    243 0 16:47:39 ?     00:00:00 com.android.permissioncontroller
-system         1490    243 0 16:47:40 ?     00:00:00 com.android.localtransport
-u0_a72         1665    243 0 16:48:39 ?     00:00:00 com.android.providers.calendar
-radio          1694    243 0 16:48:39 ?     00:00:02 com.android.phone
-shell          1714    243 0 16:48:39 ?     00:00:00 com.android.shell
-u0_a97         1739    243 0 16:48:39 ?     00:00:00 com.android.traceur
-u0_a67         1771    243 0 16:48:41 ?     00:00:00 com.android.externalstorage
-root           2327      2 0 16:52:33 ?     00:00:00 [kworker/2:1-mm_percpu_wq]
-root           2429      2 0 16:53:13 ?     00:00:00 [kworker/u8:0-devfreq_wq]
-root           2529      2 0 16:53:58 ?     00:00:00 [kworker/0:1H-mmc_complete]
-root           2766      2 0 16:55:41 ?     00:00:00 [kworker/3:1H]
-root           3298      2 0 16:59:27 ?     00:00:00 [kworker/3:1-cgroup_pidlist_destroy]
-root           3372      2 0 16:59:59 ?     00:00:00 [kworker/1:1-cgroup_pidlist_destroy]
-root           4100      2 0 17:05:15 ?     00:00:00 [kworker/1:2-cgroup_pidlist_destroy]
-root           4230      2 0 17:06:15 ?     00:00:00 [kworker/2:2H]
-root           4231      2 0 17:06:15 ?     00:00:00 [kworker/u9:1-kbase_pm_poweroff_wait]
-root           4306      2 0 17:06:48 ?     00:00:00 [kworker/0:0H-mmc_complete]
-root           4394      2 0 17:07:21 ?     00:00:00 [kworker/3:2-cgroup_destroy]
-root           4487      2 0 17:08:03 ?     00:00:00 [kworker/2:0-mm_percpu_wq]
-root           4620      2 0 17:08:50 ?     00:00:00 [kworker/1:0H]
-root           4859      2 0 17:10:30 ?     00:00:00 [kworker/0:0-mm_percpu_wq]
-root           5007      2 0 17:11:33 ?     00:00:00 [kworker/1:0-events_power_efficient]
-root           5029      2 0 17:11:44 ?     00:00:00 [kworker/2:0H]
-root           5050      2 0 17:11:55 ?     00:00:00 [kworker/0:2H-mmc_complete]
-root           5088      1 0 17:12:08 ?     00:00:00 adbd --root_seclabel=u:r:su:s0
-root           5094      2 0 17:12:08 ?     00:00:00 [irq/69-dwc3]
-root           5105      2 0 17:12:11 ?     00:00:00 [kdmflush]
-root           5108      2 0 17:12:11 ?     00:00:00 [kworker/3:0H]
-root           5111      2 0 17:12:11 ?     00:00:00 [f2fs_flush-253:]
-root           5112      2 0 17:12:11 ?     00:00:00 [f2fs_discard-25]
-root           5113      2 0 17:12:11 ?     00:00:00 [f2fs_gc-253:6]
-root           5147   5088 0 17:12:28 pts/0 00:00:00 sh
-root           5260      2 0 17:13:12 ?     00:00:00 [kworker/2:2-events_freezable]
-root           5403      2 0 17:14:11 ?     00:00:00 [kworker/3:0-events]
-root           5433      2 0 17:14:27 ?     00:00:00 [kworker/1:1H]
-radio          5476      1 0 17:14:43 ?     00:00:00 rild
-root           5518   5147 15 17:15:02 pts/0 00:00:00 sh ./save_basic_info.sh
-root           5531   5518 64 17:15:02 pts/0 00:00:00 ps -ef 
+root              1      0 1 03:15:37 ?     00:00:03 init second_stage
+root              2      0 0 03:15:37 ?     00:00:00 [kthreadd]
+root              3      2 0 03:15:37 ?     00:00:00 [rcu_gp]
+root              4      2 0 03:15:37 ?     00:00:00 [rcu_par_gp]
+root              5      2 0 03:15:37 ?     00:00:00 [kworker/0:0-cgroup_pidlist_destroy]
+root              6      2 0 03:15:37 ?     00:00:00 [kworker/0:0H-mmc_complete]
+root              7      2 0 03:15:37 ?     00:00:00 [kworker/u8:0-devfreq_wq]
+root              8      2 0 03:15:37 ?     00:00:00 [mm_percpu_wq]
+root              9      2 0 03:15:37 ?     00:00:00 [ksoftirqd/0]
+root             10      2 0 03:15:37 ?     00:00:00 [rcu_preempt]
+root             11      2 0 03:15:37 ?     00:00:00 [rcu_sched]
+root             12      2 0 03:15:37 ?     00:00:00 [rcu_bh]
+root             13      2 0 03:15:37 ?     00:00:00 [migration/0]
+root             15      2 0 03:15:37 ?     00:00:00 [cpuhp/0]
+root             16      2 0 03:15:37 ?     00:00:00 [cpuhp/1]
+root             17      2 0 03:15:37 ?     00:00:00 [migration/1]
+root             18      2 0 03:15:37 ?     00:00:00 [ksoftirqd/1]
+root             19      2 0 03:15:37 ?     00:00:00 [kworker/1:0-cgroup_pidlist_destroy]
+root             21      2 0 03:15:37 ?     00:00:00 [cpuhp/2]
+root             22      2 0 03:15:37 ?     00:00:00 [migration/2]
+root             23      2 0 03:15:37 ?     00:00:00 [ksoftirqd/2]
+root             26      2 0 03:15:37 ?     00:00:00 [cpuhp/3]
+root             27      2 0 03:15:37 ?     00:00:00 [migration/3]
+root             28      2 0 03:15:37 ?     00:00:00 [ksoftirqd/3]
+root             31      2 0 03:15:37 ?     00:00:00 [kdevtmpfs]
+root             32      2 0 03:15:37 ?     00:00:00 [kworker/u8:1-events_unbound]
+root             33      2 0 03:15:37 ?     00:00:00 [netns]
+root             34      2 0 03:15:37 ?     00:00:00 [rcu_tasks_kthre]
+root             36      2 0 03:15:37 ?     00:00:00 [kauditd]
+root             37      2 0 03:15:37 ?     00:00:00 [khungtaskd]
+root             38      2 0 03:15:37 ?     00:00:00 [oom_reaper]
+root             39      2 0 03:15:37 ?     00:00:00 [writeback]
+root             40      2 0 03:15:37 ?     00:00:00 [kcompactd0]
+root             41      2 0 03:15:37 ?     00:00:00 [crypto]
+root             42      2 0 03:15:37 ?     00:00:00 [kblockd]
+root             43      2 0 03:15:37 ?     00:00:00 [kworker/u9:0-blk_crypto_wq]
+root             44      2 0 03:15:37 ?     00:00:00 [blk_crypto_wq]
+root             45      2 0 03:15:37 ?     00:00:00 [kconsole]
+root             46      2 0 03:15:37 ?     00:00:00 [kworker/2:1-cgroup_pidlist_destroy]
+root             47      2 0 03:15:37 ?     00:00:00 [devfreq_wq]
+root             48      2 0 03:15:37 ?     00:00:00 [watchdogd]
+root             49      2 0 03:15:37 ?     00:00:00 [kworker/3:1-cgroup_pidlist_destroy]
+root             50      2 0 03:15:37 ?     00:00:02 [cfinteractive]
+root             51      2 0 03:15:37 ?     00:00:00 [cfg80211]
+root             52      2 0 03:15:37 ?     00:00:00 [kswapd0]
+root             53      2 0 03:15:37 ?     00:00:00 [irq/60-rockchip]
+root             54      2 0 03:15:37 ?     00:00:00 [irq/61-rockchip]
+root             56      2 0 03:15:37 ?     00:00:00 [iommu_wq]
+root             57      2 0 03:15:37 ?     00:00:00 [vdpu]
+root             58      2 0 03:15:37 ?     00:00:00 [irq/20-fdea0400]
+root             59      2 0 03:15:37 ?     00:00:00 [vepu]
+root             60      2 0 03:15:37 ?     00:00:00 [irq/25-fdee0000]
+root             61      2 0 03:15:37 ?     00:00:00 [iep]
+root             62      2 0 03:15:37 ?     00:00:00 [irq/27-fdef0000]
+root             63      2 0 03:15:37 ?     00:00:00 [jpegd]
+root             64      2 0 03:15:37 ?     00:00:00 [irq/23-fded0000]
+root             65      2 0 03:15:37 ?     00:00:00 [rkvdec]
+root             66      2 0 03:15:37 ?     00:00:00 [irq/31-fdf80200]
+root             67      2 0 03:15:37 ?     00:00:00 [hwrng]
+root             68      2 0 03:15:37 ?     00:00:00 [hpd_queue]
+root             69      2 0 03:15:37 ?     00:00:00 [irq/38-fe0a0000]
+root             70      2 0 03:15:37 ?     00:00:00 [cec-dw_hdmi]
+root             71      2 0 03:15:37 ?     00:00:00 [irq/38-dw-hdmi-]
+root             72      2 0 03:15:37 ?     00:00:00 [nvme-wq]
+root             73      2 0 03:15:37 ?     00:00:00 [nvme-reset-wq]
+root             74      2 0 03:15:37 ?     00:00:00 [nvme-delete-wq]
+root             75      2 0 03:15:37 ?     00:00:00 [spi3]
+root             76      2 0 03:15:37 ?     00:00:00 [kworker/0:2-pm]
+root             77      2 0 03:15:37 ?     00:00:00 [uas]
+root             78      2 0 03:15:37 ?     00:00:00 [goodix_wq]
+root             79      2 0 03:15:37 ?     00:00:00 [irq/71-rk817]
+root             80      2 0 03:15:37 ?     00:00:00 [irq/58-rockchip]
+root             81      2 0 03:15:37 ?     00:00:00 [dm_bufio_cache]
+root             82      2 0 03:15:37 ?     00:00:00 [irq/42-mmc2]
+root             83      2 0 03:15:37 ?     00:00:00 [mmc_complete]
+root             84      2 0 03:15:37 ?     00:00:00 [kworker/1:1H-kblockd]
+root             86      2 0 03:15:37 ?     00:00:00 [ion_system_heap]
+root             87      2 0 03:15:38 ?     00:00:00 [ipv6_addrconf]
+root             88      2 0 03:15:38 ?     00:00:00 [krfcommd]
+root             90      2 0 03:15:38 ?     00:00:00 [irq/22-rga]
+root             91      2 0 03:15:38 ?     00:00:00 [rkvenc]
+root             92      2 0 03:15:38 ?     00:00:00 [iommu_wq]
+root             93      2 0 03:15:38 ?     00:00:00 [irq/28-fdf40000]
+root             94      2 0 03:15:38 ?     00:00:00 [gpu_power_off_w]
+root             95      2 0 03:15:38 ?     00:00:00 [kworker/u9:1-kbase_pm_poweroff_wait]
+root             96      2 0 03:15:38 ?     00:00:00 [kbase_job_fault]
+root             99      2 0 03:15:38 ?     00:00:00 [kworker/3:1H-kblockd]
+root            100      2 0 03:15:38 ?     00:00:00 [jbd2/mmcblk2p11]
+root            101      2 0 03:15:38 ?     00:00:00 [ext4-rsv-conver]
+root            102      2 0 03:15:38 ?     00:00:00 [kdmflush]
+root            103      2 0 03:15:38 ?     00:00:00 [kdmflush]
+root            104      2 0 03:15:38 ?     00:00:00 [kdmflush]
+root            105      2 0 03:15:38 ?     00:00:00 [kdmflush]
+root            106      2 0 03:15:38 ?     00:00:00 [kdmflush]
+root            107      2 0 03:15:38 ?     00:00:00 [ext4-rsv-conver]
+root            108      2 0 03:15:38 ?     00:00:00 [kworker/3:2H]
+root            109      2 0 03:15:38 ?     00:00:00 [ext4-rsv-conver]
+root            110      2 0 03:15:38 ?     00:00:00 [ext4-rsv-conver]
+root            111      2 0 03:15:38 ?     00:00:00 [ext4-rsv-conver]
+root            112      2 0 03:15:38 ?     00:00:00 [kworker/1:2H-kblockd]
+root            113      2 0 03:15:38 ?     00:00:00 [ext4-rsv-conver]
+root            114      2 0 03:15:38 ?     00:00:00 [kworker/2:1H-kblockd]
+root            115      2 0 03:15:38 ?     00:00:00 [kworker/2:2H-kblockd]
+root            117      1 0 03:15:38 ?     00:00:00 init subcontext u:r:vendor_init:s0 15
+root            119      1 0 03:15:38 ?     00:00:01 ueventd
+root            121      2 0 03:15:38 ?     00:00:00 [kworker/3:2-cgroup_pidlist_destroy]
+logd            134      1 0 03:15:39 ?     00:00:02 logd
+lmkd            135      1 0 03:15:39 ?     00:00:00 lmkd
+system          136      1 0 03:15:39 ?     00:00:00 servicemanager
+system          137      1 0 03:15:39 ?     00:00:01 hwservicemanager
+system          138      1 0 03:15:39 ?     00:00:00 vndservicemanager /dev/vndbinder
+shell           139      1 0 03:15:39 ttyFIQ0 00:00:00 sh
+root            140      2 0 03:15:39 ?     00:00:00 [kworker/0:2H-mmc_complete]
+root            141      2 0 03:15:39 ?     00:00:00 [psimon]
+root            146      1 0 03:15:39 ?     00:00:00 vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+root            155      2 0 03:15:40 ?     00:00:00 [jbd2/mmcblk2p10]
+root            156      2 0 03:15:40 ?     00:00:00 [ext4-rsv-conver]
+root            158      1 0 03:15:40 ?     00:00:00 tee-supplicant
+system          159      1 0 03:15:40 ?     00:00:00 android.system.suspend@1.0-service
+system          160      1 0 03:15:40 ?     00:00:00 android.hardware.keymaster@4.0-service.optee
+system          161      1 1 03:15:40 ?     00:00:04 surfaceflinger
+root            172      2 0 03:15:40 ?     00:00:00 [kdmflush]
+root            174      2 0 03:15:40 ?     00:00:00 [kworker/1:2-cgroup_destroy]
+root            177      2 0 03:15:40 ?     00:00:00 [kworker/u9:2-kbase_pm_poweroff_wait]
+root            181      2 0 03:15:40 ?     00:00:00 [f2fs_flush-253:]
+root            182      2 0 03:15:40 ?     00:00:00 [f2fs_discard-25]
+root            185      2 0 03:15:40 ?     00:00:00 [f2fs_gc-253:5]
+root            189      2 0 03:15:40 ?     00:00:00 [kworker/0:3H-mmc_complete]
+root            193      2 0 03:15:40 ?     00:00:00 [kbase_event]
+system          205      1 0 03:15:40 ?     00:00:00 android.hardware.graphics.allocator@4.0-service
+system          213      1 0 03:15:40 ?     00:00:00 android.hardware.graphics.composer@2.1-service
+root            233      2 0 03:15:41 ?     00:00:00 [kworker/2:2-cgroup_pidlist_destroy]
+tombstoned      237      1 0 03:15:41 ?     00:00:00 tombstoned
+statsd          241      1 0 03:15:41 ?     00:00:00 statsd
+root            242      1 0 03:15:41 ?     00:00:00 netd
+root            243      1 1 03:15:41 ?     00:00:04 zygote64
+root            244      1 1 03:15:41 ?     00:00:03 zygote
+system          248      1 0 03:15:41 ?     00:00:00 android.hidl.allocator@1.0-service
+audioserver     249      1 0 03:15:41 ?     00:00:00 android.hardware.audio.service
+bluetooth       250      1 0 03:15:41 ?     00:00:00 android.hardware.bluetooth@1.0-service
+cameraserver    251      1 0 03:15:41 ?     00:00:00 android.hardware.camera.provider@2.4-external-service
+cameraserver    252      1 0 03:15:41 ?     00:00:00 android.hardware.camera.provider@2.4-service
+media           253      1 0 03:15:41 ?     00:00:00 android.hardware.cas@1.2-service
+media           254      1 0 03:15:41 ?     00:00:00 android.hardware.drm@1.3-service.clearkey
+media           255      1 0 03:15:41 ?     00:00:00 android.hardware.drm@1.3-service.widevine
+root            256    242 0 03:15:41 ?     00:00:00 iptables-restore --noflush -w -v
+root            257    242 0 03:15:41 ?     00:00:00 ip6tables-restore --noflush -w -v
+system          259      1 0 03:15:41 ?     00:00:00 android.hardware.gatekeeper@1.0-service.optee
+system          260      1 0 03:15:41 ?     00:00:00 android.hardware.health@2.1-service
+system          261      1 0 03:15:41 ?     00:00:00 android.hardware.radio.config@1.0-service
+system          264      1 0 03:15:41 ?     00:00:00 android.hardware.radio@1.2-radio-service
+system          265      1 0 03:15:41 ?     00:00:00 android.hardware.sensors@1.0-service
+system          267      1 0 03:15:41 ?     00:00:00 android.hardware.weaver@1.0-service
+wifi            269      1 0 03:15:41 ?     00:00:00 android.hardware.wifi@1.0-service
+system          272      1 0 03:15:41 ?     00:00:00 android.hardware.lights-service.rockchip
+root            273      1 0 03:15:41 ?     00:00:00 android.hardware.power-service.rockchip
+system          274      1 0 03:15:41 ?     00:00:00 rockchip.hardware.neuralnetworks@1.0-service
+system          277      1 0 03:15:41 ?     00:00:00 rockchip.hardware.outputmanager@1.0-service
+media           287      1 0 03:15:41 ?     00:00:00 rockchip.hardware.rockit.hw@1.0-service
+audioserver     293      1 0 03:15:41 ?     00:00:00 audioserver
+credstore       294      1 0 03:15:41 ?     00:00:00 credstore /data/misc/credstore
+gpu_service     296      1 0 03:15:41 ?     00:00:00 gpuservice
+nobody          319      1 0 03:15:42 ?     00:00:00 traced_probes
+nobody          320      1 0 03:15:42 ?     00:00:00 traced
+cameraserver    321      1 0 03:15:42 ?     00:00:00 cameraserver
+drm             322      1 0 03:15:42 ?     00:00:00 drmserver
+incidentd       324      1 0 03:15:42 ?     00:00:00 incidentd
+root            327      1 0 03:15:42 ?     00:00:01 installd
+keystore        328      1 0 03:15:42 ?     00:00:00 keystore /data/misc/keystore
+mediaex         329      1 0 03:15:42 ?     00:00:00 media.extractor aextractor
+media           330      1 0 03:15:42 ?     00:00:00 media.metrics diametrics
+root            332      2 0 03:15:42 ?     00:00:00 [ext_eventd]
+media           336      1 0 03:15:42 ?     00:00:00 mediaserver
+root            341      1 0 03:15:42 ?     00:00:00 storaged
+root            342      2 0 03:15:42 ?     00:00:00 [dhd_watchdog_th]
+root            343      2 0 03:15:42 ?     00:00:00 [dhd_dpc]
+root            344      2 0 03:15:42 ?     00:00:00 [dhd_rxf]
+wifi            345      1 0 03:15:42 ?     00:00:00 wificond
+mediacodec      346      1 0 03:15:42 ?     00:00:00 media.codec hw/android.hardware.media.omx@1.0-service
+mediacodec      355      1 0 03:15:42 ?     00:00:00 media.swcodec oid.media.swcodec/bin/mediaswcodec
+system          358      1 0 03:15:42 ?     00:00:00 gatekeeperd /data/misc/gatekeeper
+system          418    243 3 03:15:46 ?     00:00:15 system_server
+u0_a117         590    243 1 03:15:50 ?     00:00:07 com.android.systemui
+network_stack   710    243 0 03:15:51 ?     00:00:00 com.android.networkstack.process
+secure_element  738    243 0 03:15:51 ?     00:00:00 com.android.se
+webview_zygote  776    244 0 03:15:51 ?     00:00:00 webview_zygote
+system          823    243 0 03:15:51 ?     00:00:01 com.android.settings
+u0_a123         847    243 0 03:15:51 ?     00:00:00 android.ext.services
+root            911      2 0 03:15:52 ?     00:00:00 [kbase_event]
+u0_a113         968    243 0 03:15:52 ?     00:00:02 com.android.launcher3
+root           1012      2 0 03:15:53 ?     00:00:00 [kbase_event]
+u0_a111        1030    243 0 03:15:55 ?     00:00:00 com.android.inputmethod.latin
+u0_a107        1055    243 0 03:15:55 ?     00:00:00 com.android.deskclock
+u0_a120        1118    243 1 03:15:56 ?     00:00:03 com.android.providers.media.module
+system         1138    243 0 03:15:56 ?     00:00:00 com.cghs.stresstest
+root           1217      2 0 03:15:57 ?     00:00:00 [kbase_event]
+u0_a77         1237    243 0 03:15:57 ?     00:00:00 com.android.printspooler
+system         1262    243 0 03:15:57 ?     00:00:00 android.rockchip.update.service
+u0_a64         1304    243 0 03:15:57 ?     00:00:00 android.process.media
+u0_a108        1333    243 0 03:15:58 ?     00:00:00 com.android.calendar
+u0_a101        1366    243 0 03:15:58 ?     00:00:00 com.android.contacts
+system         1396    243 0 03:15:58 ?     00:00:00 com.android.dynsystem
+u0_a72         1422    243 0 03:15:59 ?     00:00:00 com.android.managedprovisioning
+u0_a99         1451    243 0 03:15:59 ?     00:00:00 com.android.onetimeinitializer
+u0_a70         1474    243 0 03:15:59 ?     00:00:00 com.android.packageinstaller
+u0_a119        1497    243 0 03:15:59 ?     00:00:00 com.android.permissioncontroller
+system         1524    243 0 03:16:00 ?     00:00:00 com.android.localtransport
+root           1558      2 0 03:16:03 ?     00:00:00 [kworker/u8:3-adb]
+root           1645      1 0 03:16:39 ?     00:00:00 adbd --root_seclabel=u:r:su:s0
+root           1651      2 0 03:16:39 ?     00:00:00 [irq/69-dwc3]
+root           1657      2 0 03:16:40 ?     00:00:00 [kdmflush]
+root           1662      2 0 03:16:40 ?     00:00:00 [f2fs_flush-253:]
+root           1663      2 0 03:16:40 ?     00:00:00 [f2fs_discard-25]
+root           1664      2 0 03:16:40 ?     00:00:00 [f2fs_gc-253:6]
+u0_a75         1727    243 0 03:16:59 ?     00:00:00 com.android.providers.calendar
+radio          1756    243 0 03:17:00 ?     00:00:01 com.android.phone
+shell          1777    243 0 03:17:00 ?     00:00:00 com.android.shell
+u0_a87         1800    243 0 03:17:00 ?     00:00:00 com.android.traceur
+u0_a65         1828    243 0 03:17:00 ?     00:00:00 com.android.externalstorage
+root           2020   1645 0 03:18:10 pts/0 00:00:00 sh
+root           2424      2 0 03:20:58 ?     00:00:00 [kworker/2:0-events]
+root           2462      2 0 03:21:17 ?     00:00:00 [kworker/u9:3-blk_crypto_wq]
+root           2499      2 0 03:21:30 ?     00:00:00 [kworker/3:0-events]
+root           2605      2 0 03:22:19 ?     00:00:00 [kworker/1:0H]
+root           2646      2 0 03:22:33 ?     00:00:00 [kworker/1:1-pm]
+root           2891      2 0 03:24:22 ?     00:00:00 [kworker/2:0H]
+radio          2936      1 0 03:24:40 ?     00:00:00 rild
+root           3000   2020 11 03:25:10 pts/0 00:00:00 sh ./save_basic_info.sh
+root           3016   3000 18 03:25:10 pts/0 00:00:00 ps -ef 
 ```
 
 #  =====================甯哥敤鍛戒护 =====================
@@ -6422,16 +6417,16 @@ i2c-0	i2c       	rk3x-i2c                        	I2C Adapter
 ##  i2cdetect -y 4 
 ```
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+00:          -- -- -- -- -- -- -- -- -- 0c -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- UU -- -- -- -- -- -- -- -- --
 40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --                         
 ```
-
+//这2个设备是加了摄像头后出现的
 ##  i2cdetect -y 5 
 ```
  
@@ -6457,9 +6452,9 @@ i2c-0	i2c       	rk3x-i2c                        	I2C Adapter
 
 ##  blkid 
 ```
-/dev/block/zram0: UUID="191ace71-235f-4700-973b-58c8ff4fb714" TYPE="swap" 
-/dev/block/mmcblk2p10: UUID="394fb26d-a5ab-4746-b477-5baa7b16a460" TYPE="ext4" 
-/dev/block/mmcblk2p11: UUID="4274f711-a23a-40de-bb09-1b46e9c31535" TYPE="ext4"  
+/dev/block/zram0: UUID="834fd3b3-236a-417b-8688-f60a40cde437" TYPE="swap" 
+/dev/block/mmcblk2p10: UUID="4e2ee42f-b941-4185-808d-6cbd5f57e9c5" TYPE="ext4" 
+/dev/block/mmcblk2p11: UUID="6acb05df-fcde-4c94-bbf7-328ae5815a1b" TYPE="ext4"  
 ```
 
 ##  lsmod 
@@ -6470,7 +6465,7 @@ bcmdhd               1175552  0
 
 ##  ls -al /bin 
 ```
-lrw-r--r-- 1 root root 11 2024-08-15 16:47 /bin -> /system/bin 
+lrw-r--r-- 1 root root 11 2023-09-12 03:15 /bin -> /system/bin 
 ```
 
 ##  busybox 
@@ -6490,668 +6485,1302 @@ Usage: busybox [function [arguments]...]
 	will act like whatever it was invoked as.
 
 Currently defined functions:
-	[, [[, ar, arp, ash, awk, base64, basename, bash, beep, blkid, blockdev, bootchartd, bunzip2, bzcat,
-	bzip2, cal, cat, catv, chat, chattr, chgrp, chmod, chown, chpst, chroot, chrt, chvt, cksum, clear, cmp,
-	comm, cp, cpio, crond, crontab, cttyhack, cut, dc, dd, deallocvt, depmod, devmem, df, diff, dirname,
-	dmesg, dnsd, dos2unix, dpkg, dpkg-deb, du, dumpkmap, echo, ed, egrep, env, envdir, envuidgid, expand,
-	expr, fakeidentd, false, fbset, fbsplash, fdflush, fdformat, fdisk, fgconsole, fgrep, find, findfs,
-	flash_lock, flash_unlock, flashcp, flock, fold, free, freeramdisk, fstrim, fsync, ftpd, ftpget, ftpput,
-	fuser, getopt, grep, gunzip, gzip, halt, hd, hdparm, head, hexdump, httpd, hwclock, ifconfig, ifdown,
-	ifup, init, inotifyd, insmod, install, iostat, ip, ipaddr, ipcalc, iplink, iproute, iprule, iptunnel,
-	klogd, less, linuxrc, ln, loadkmap, losetup, lpd, lpq, lpr, ls, lsattr, lsmod, lsof, lspci, lsusb, lzcat,
-	lzma, lzop, lzopcat, makedevs, makemime, man, md5sum, mdev, mesg, mkdir, mkfifo, mknod, mkswap, mktemp,
-	modinfo, modprobe, more, mount, mpstat, mv, nanddump, nbd-client, nc, netstat, nice, nmeter, nohup, od,
-	openvt, patch, pidof, ping, pipe_progress, pkill, pmap, popmaildir, poweroff, powertop, printenv, printf,
-	ps, pscan, pstree, pwd, pwdx, raidautorun, rdev, readlink, readprofile, realpath, reboot, reformime,
-	renice, reset, resize, rev, rm, rmdir, rmmod, route, rpm, rpm2cpio, rtcwake, run-parts, runsv, runsvdir,
-	rx, script, scriptreplay, sed, sendmail, seq, setconsole, setkeycodes, setlogcons, setserial, setsid,
-	setuidgid, sh, sha1sum, sha256sum, sha3sum, sha512sum, showkey, sleep, smemcap, softlimit, sort, split,
-	start-stop-daemon, strings, stty, sum, sv, svlogd, switch_root, sync, sysctl, tac, tail, tar, tcpsvd,
-	tee, telnet, telnetd, test, tftp, tftpd, time, timeout, top, tr, traceroute, true, ttysize, tunctl,
-	tune2fs, udhcpc, udpsvd, umount, uname, uncompress, unexpand, uniq, unix2dos, unlzma, unlzop, unxz,
-	unzip, uptime, usleep, uudecode, uuencode, vconfig, vi, volname, watch, wc, wget, which, whoami, whois,
-	xargs, xz, xzcat, yes, zcat 
+	[, [[, ar, arp, ash, awk, base64, basename, bash, beep, blkid, blockdev, bootchartd, bunzip2, bzcat, bzip2, cal, cat, catv, chat, chattr, chgrp, chmod, chown, chpst, chroot,
+	chrt, chvt, cksum, clear, cmp, comm, cp, cpio, crond, crontab, cttyhack, cut, dc, dd, deallocvt, depmod, devmem, df, diff, dirname, dmesg, dnsd, dos2unix, dpkg, dpkg-deb,
+	du, dumpkmap, echo, ed, egrep, env, envdir, envuidgid, expand, expr, fakeidentd, false, fbset, fbsplash, fdflush, fdformat, fdisk, fgconsole, fgrep, find, findfs,
+	flash_lock, flash_unlock, flashcp, flock, fold, free, freeramdisk, fstrim, fsync, ftpd, ftpget, ftpput, fuser, getopt, grep, gunzip, gzip, halt, hd, hdparm, head, hexdump,
+	httpd, hwclock, ifconfig, ifdown, ifup, init, inotifyd, insmod, install, iostat, ip, ipaddr, ipcalc, iplink, iproute, iprule, iptunnel, klogd, less, linuxrc, ln, loadkmap,
+	losetup, lpd, lpq, lpr, ls, lsattr, lsmod, lsof, lspci, lsusb, lzcat, lzma, lzop, lzopcat, makedevs, makemime, man, md5sum, mdev, mesg, mkdir, mkfifo, mknod, mkswap, mktemp,
+	modinfo, modprobe, more, mount, mpstat, mv, nanddump, nbd-client, nc, netstat, nice, nmeter, nohup, od, openvt, patch, pidof, ping, pipe_progress, pkill, pmap, popmaildir,
+	poweroff, powertop, printenv, printf, ps, pscan, pstree, pwd, pwdx, raidautorun, rdev, readlink, readprofile, realpath, reboot, reformime, renice, reset, resize, rev, rm,
+	rmdir, rmmod, route, rpm, rpm2cpio, rtcwake, run-parts, runsv, runsvdir, rx, script, scriptreplay, sed, sendmail, seq, setconsole, setkeycodes, setlogcons, setserial,
+	setsid, setuidgid, sh, sha1sum, sha256sum, sha3sum, sha512sum, showkey, sleep, smemcap, softlimit, sort, split, start-stop-daemon, strings, stty, sum, sv, svlogd,
+	switch_root, sync, sysctl, tac, tail, tar, tcpsvd, tee, telnet, telnetd, test, tftp, tftpd, time, timeout, top, tr, traceroute, true, ttysize, tunctl, tune2fs, udhcpc,
+	udpsvd, umount, uname, uncompress, unexpand, uniq, unix2dos, unlzma, unlzop, unxz, unzip, uptime, usleep, uudecode, uuencode, vconfig, vi, volname, watch, wc, wget, which,
+	whoami, whois, xargs, xz, xzcat, yes, zcat 
 ```
 
 ##  ls -al /vendor/bin 
 ```
 total 5739
-drwxr-x--x 3 root shell   4096 2024-08-14 16:58 .
-drwxr-xr-x 1 root root    3488 2024-08-15 17:12 ..
--rwxr-xr-x 1 root shell  16136 2024-08-14 16:02 abc
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 acpi -> toybox_vendor
--rwxr-xr-x 1 root shell 275440 2024-08-14 16:42 applypatch
--rwxr-xr-x 1 root shell 137408 2024-08-14 15:57 awk
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 base64 -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 basename -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 blockdev -> toybox_vendor
--rwxr-xr-x 1 root shell   3328 2024-08-14 15:59 boringssl_self_test32
--rwxr-xr-x 1 root shell  11312 2024-08-14 15:58 boringssl_self_test64
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 cal -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 cat -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 chattr -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 chcon -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 chgrp -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 chmod -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 chown -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 chroot -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 chrt -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 cksum -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 clear -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 cmp -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 comm -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 cp -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 cpio -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 cut -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 date -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 dd -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 devmem -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 df -> toybox_vendor
--rwxr-xr-x 1 root shell 247192 2024-08-13 13:54 dhcpcd
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 diff -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 dirname -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 dmesg -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 dos2unix -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 du -> toybox_vendor
--rwxr-xr-x 1 root shell  43112 2024-08-14 16:15 dumpsys
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 echo -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 egrep -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 env -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 expand -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 expr -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 fallocate -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 false -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 fgrep -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 file -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 find -> toybox_vendor
--rwxr-xr-x 1 root shell    238 2024-08-13 13:54 flash_img.sh
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 flock -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 fmt -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 free -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 fsync -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 getconf -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 getenforce -> toybox_vendor
-lrwxr-xr-x 1 root shell      7 2024-08-14 16:56 getevent -> toolbox
-lrwxr-xr-x 1 root shell      7 2024-08-14 16:56 getprop -> toolbox
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 grep -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 groups -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 gunzip -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 gzip -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 head -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 hostname -> toybox_vendor
-drwxr-x--x 2 root shell   4096 2024-08-14 16:51 hw
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 hwclock -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 i2cdetect -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 i2cdump -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 i2cget -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 i2cset -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 iconv -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 id -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 ifconfig -> toybox_vendor
--rwxr-xr-x 1 root shell    857 2024-08-13 13:54 init.insmod.sh
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 inotifyd -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 insmod -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 install -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 ionice -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 iorenice -> toybox_vendor
--rwxr-xr-x 1 root shell 544444 2024-08-13 13:54 iwconfig
--rwxr-xr-x 1 root shell 682733 2024-08-13 13:54 iwlist
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 kill -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 killall -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 ln -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 load_policy -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 log -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 logname -> toybox_vendor
--rwxr-xr-x 1 root shell  20520 2024-08-14 16:42 logwrapper
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 losetup -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 ls -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 lsattr -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 lsmod -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 lsof -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 lspci -> toybox_vendor
--rwxr-xr-x 1 root shell 679645 2024-08-13 13:54 lspcie
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 lsusb -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 md5sum -> toybox_vendor
--rwxr-xr-x 1 root shell  30576 2024-08-13 13:54 media-ctl
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 microcom -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 mkdir -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 mkfifo -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 mknod -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 mkswap -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 mktemp -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 modinfo -> toybox_vendor
-lrwxr-xr-x 1 root shell      7 2024-08-14 16:56 modprobe -> toolbox
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 more -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 mount -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 mountpoint -> toybox_vendor
--rwxr-xr-x 1 root shell    817 2024-08-13 15:58 move_widevine_data.sh
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 mv -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 nc -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 netcat -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 netstat -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 nice -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 nl -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 nohup -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 nproc -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 nsenter -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 od -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 paste -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 patch -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 pgrep -> toybox_vendor
--rwxr-xr-x 1 root shell  34028 2024-08-13 13:54 picocom
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 pidof -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 pkill -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 pmap -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 printenv -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 printf -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 ps -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 pwd -> toybox_vendor
--rwxr-xr-x 1 root shell     45 2024-08-13 13:54 read_pcie_info.sh
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 readelf -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 readlink -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 realpath -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 renice -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 restorecon -> toybox_vendor
--rwxr-xr-x 1 root shell  10884 2024-08-14 16:36 rkaiq_3A_server
--rwxr-xr-x 1 root shell 289072 2024-08-14 16:47 rkaiq_tool_server
--rwxr-xr-x 1 root shell  11624 2024-08-14 16:47 rkhelper
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 rm -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 rmdir -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 rmmod -> toybox_vendor
--rwxr-xr-x 1 root shell  11420 2024-08-14 16:33 rockchip.drmservice
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 runcon -> toybox_vendor
--rwxr-xr-x 1 root shell 637722 2024-08-13 13:54 rz
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sed -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sendevent -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 seq -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 setenforce -> toybox_vendor
-lrwxr-xr-x 1 root shell      7 2024-08-14 16:56 setprop -> toolbox
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 setsid -> toybox_vendor
--rwxr-xr-x 1 root shell 310408 2024-08-14 16:53 sh
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sha1sum -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sha224sum -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sha256sum -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sha384sum -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sha512sum -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sleep -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sort -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 split -> toybox_vendor
-lrwxr-xr-x 1 root shell      7 2024-08-14 16:56 start -> toolbox
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 stat -> toybox_vendor
-lrwxr-xr-x 1 root shell      7 2024-08-14 16:56 stop -> toolbox
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 strings -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 stty -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 swapoff -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 swapon -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sync -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 sysctl -> toybox_vendor
--rwxr-xr-x 1 root shell 646983 2024-08-13 13:54 sz
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 tac -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 tail -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 tar -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 taskset -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 tee -> toybox_vendor
--rwxr-xr-x 1 root shell  49568 2024-08-13 19:55 tee-supplicant
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 test -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 time -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 timeout -> toybox_vendor
--rwxr-xr-x 1 root shell 118224 2024-08-14 16:56 toolbox
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 top -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 touch -> toybox_vendor
--rwxr-xr-x 1 root shell 489360 2024-08-14 16:56 toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 tr -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 true -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 truncate -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 tty -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 ulimit -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 umount -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 uname -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 uniq -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 unix2dos -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 unlink -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 unshare -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 uptime -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 usleep -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 uudecode -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 uuencode -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 uuidgen -> toybox_vendor
--rwxr-xr-x 1 root shell 247980 2024-08-13 13:54 v4l2-ctl
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 vmstat -> toybox_vendor
--rwxr-xr-x 1 root shell  38104 2024-08-14 16:58 vndservice
--rwxr-xr-x 1 root shell  54768 2024-08-14 16:58 vndservicemanager
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 watch -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 wc -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 which -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 whoami -> toybox_vendor
--rwxr-xr-x 1 root shell 167888 2024-08-14 15:58 wpa_cli
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 xargs -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 xxd -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 yes -> toybox_vendor
-lrwxr-xr-x 1 root shell     13 2024-08-14 16:56 zcat -> toybox_vendor 
+drwxr-x--x 3 root shell   4096 2023-09-12 03:15 .
+drwxr-xr-x 1 root root    3488 2023-09-12 03:16 ..
+-rwxr-xr-x 1 root shell  16136 2023-09-12 03:15 abc
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 acpi -> toybox_vendor
+-rwxr-xr-x 1 root shell 275440 2023-09-12 03:15 applypatch
+-rwxr-xr-x 1 root shell 137408 2023-09-12 03:14 awk
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 base64 -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 basename -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 blockdev -> toybox_vendor
+-rwxr-xr-x 1 root shell   3328 2023-09-12 03:15 boringssl_self_test32
+-rwxr-xr-x 1 root shell  11312 2023-09-12 03:15 boringssl_self_test64
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 cal -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 cat -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 chattr -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 chcon -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 chgrp -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 chmod -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 chown -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 chroot -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 chrt -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 cksum -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 clear -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 cmp -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 comm -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 cp -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 cpio -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 cut -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 date -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 dd -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 devmem -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 df -> toybox_vendor
+-rwxr-xr-x 1 root shell 247192 2023-09-12 03:15 dhcpcd
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 diff -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 dirname -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 dmesg -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 dos2unix -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 du -> toybox_vendor
+-rwxr-xr-x 1 root shell  43112 2023-09-12 03:15 dumpsys
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 echo -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 egrep -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 env -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 expand -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 expr -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 fallocate -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 false -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 fgrep -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 file -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 find -> toybox_vendor
+-rwxr-xr-x 1 root shell    238 2023-09-12 03:15 flash_img.sh
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 flock -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 fmt -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 free -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 fsync -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 getconf -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 getenforce -> toybox_vendor
+lrwxr-xr-x 1 root shell      7 2023-09-12 03:14 getevent -> toolbox
+lrwxr-xr-x 1 root shell      7 2023-09-12 03:14 getprop -> toolbox
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 grep -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 groups -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 gunzip -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 gzip -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 head -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 hostname -> toybox_vendor
+drwxr-x--x 2 root shell   4096 2023-09-12 03:15 hw
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 hwclock -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 i2cdetect -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 i2cdump -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 i2cget -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 i2cset -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 iconv -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 id -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 ifconfig -> toybox_vendor
+-rwxr-xr-x 1 root shell    857 2023-09-12 03:15 init.insmod.sh
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 inotifyd -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 insmod -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 install -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 ionice -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 iorenice -> toybox_vendor
+-rwxr-xr-x 1 root shell 544444 2023-09-12 03:15 iwconfig
+-rwxr-xr-x 1 root shell 682733 2023-09-12 03:15 iwlist
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 kill -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 killall -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 ln -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 load_policy -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 log -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 logname -> toybox_vendor
+-rwxr-xr-x 1 root shell  20520 2023-09-12 03:14 logwrapper
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 losetup -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 ls -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 lsattr -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:14 lsmod -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 lsof -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 lspci -> toybox_vendor
+-rwxr-xr-x 1 root shell 679645 2023-09-12 03:15 lspcie
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 lsusb -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 md5sum -> toybox_vendor
+-rwxr-xr-x 1 root shell  30576 2023-09-12 03:15 media-ctl
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 microcom -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 mkdir -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 mkfifo -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 mknod -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 mkswap -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 mktemp -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 modinfo -> toybox_vendor
+lrwxr-xr-x 1 root shell      7 2023-09-12 03:14 modprobe -> toolbox
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 more -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 mount -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 mountpoint -> toybox_vendor
+-rwxr-xr-x 1 root shell    817 2023-09-12 03:15 move_widevine_data.sh
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 mv -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 nc -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 netcat -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 netstat -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 nice -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 nl -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 nohup -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 nproc -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 nsenter -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 od -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 paste -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 patch -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 pgrep -> toybox_vendor
+-rwxr-xr-x 1 root shell  34028 2023-09-12 03:15 picocom
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 pidof -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 pkill -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 pmap -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 printenv -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 printf -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 ps -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 pwd -> toybox_vendor
+-rwxr-xr-x 1 root shell     45 2023-09-12 03:15 read_pcie_info.sh
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 readelf -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 readlink -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 realpath -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 renice -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 restorecon -> toybox_vendor
+-rwxr-xr-x 1 root shell  10884 2023-09-12 03:15 rkaiq_3A_server
+-rwxr-xr-x 1 root shell 289072 2023-09-12 03:15 rkaiq_tool_server
+-rwxr-xr-x 1 root shell  11624 2023-09-12 03:15 rkhelper
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 rm -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 rmdir -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 rmmod -> toybox_vendor
+-rwxr-xr-x 1 root shell  11420 2023-09-12 03:15 rockchip.drmservice
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 runcon -> toybox_vendor
+-rwxr-xr-x 1 root shell 637722 2023-09-12 03:15 rz
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sed -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sendevent -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 seq -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 setenforce -> toybox_vendor
+lrwxr-xr-x 1 root shell      7 2023-09-12 03:14 setprop -> toolbox
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 setsid -> toybox_vendor
+-rwxr-xr-x 1 root shell 310408 2023-09-12 03:14 sh
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sha1sum -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sha224sum -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sha256sum -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sha384sum -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sha512sum -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sleep -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sort -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 split -> toybox_vendor
+lrwxr-xr-x 1 root shell      7 2023-09-12 03:14 start -> toolbox
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 stat -> toybox_vendor
+lrwxr-xr-x 1 root shell      7 2023-09-12 03:14 stop -> toolbox
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 strings -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 stty -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 swapoff -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 swapon -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sync -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 sysctl -> toybox_vendor
+-rwxr-xr-x 1 root shell 646983 2023-09-12 03:15 sz
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 tac -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 tail -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 tar -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 taskset -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 tee -> toybox_vendor
+-rwxr-xr-x 1 root shell  49568 2023-09-12 03:15 tee-supplicant
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 test -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 time -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 timeout -> toybox_vendor
+-rwxr-xr-x 1 root shell 118224 2023-09-12 03:14 toolbox
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 top -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 touch -> toybox_vendor
+-rwxr-xr-x 1 root shell 489360 2023-09-12 03:14 toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 tr -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 true -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 truncate -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 tty -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 ulimit -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 umount -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 uname -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 uniq -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 unix2dos -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 unlink -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 unshare -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 uptime -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 usleep -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 uudecode -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 uuencode -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 uuidgen -> toybox_vendor
+-rwxr-xr-x 1 root shell 247980 2023-09-12 03:15 v4l2-ctl
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 vmstat -> toybox_vendor
+-rwxr-xr-x 1 root shell  38104 2023-09-12 03:15 vndservice
+-rwxr-xr-x 1 root shell  54768 2023-09-12 03:15 vndservicemanager
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 watch -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 wc -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 which -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 whoami -> toybox_vendor
+-rwxr-xr-x 1 root shell 167888 2023-09-12 03:15 wpa_cli
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 xargs -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 xxd -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 yes -> toybox_vendor
+lrwxr-xr-x 1 root shell     13 2023-09-12 03:15 zcat -> toybox_vendor 
 ```
 
 ##  ls -al /system/bin 
 ```
 total 31671
-drwxr-x--x 4 root shell    8192 2024-08-15 16:43 .
-drwxr-xr-x 1 root root     3488 2024-08-15 17:12 ..
--rwxr-xr-x 1 root shell  129616 2024-08-14 16:06 abb
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 acpi -> toybox
--rwxr-xr-x 1 root shell     207 2024-08-15 15:50 am
--rwxr-xr-x 1 root shell  588208 2024-08-14 16:40 apexd
-lrwxr-xr-x 1 root shell      13 2024-08-15 16:47 app_process -> app_process64
--rwxr-xr-x 1 root shell   22544 2024-08-15 14:35 app_process32
--rwxr-xr-x 1 root shell   33864 2024-08-15 14:35 app_process64
--rwxr-xr-x 1 root shell      33 2024-08-13 13:55 appops
--rwxr-xr-x 1 root shell     141 2024-08-15 15:50 appwidget
--rwxr-xr-x 1 root shell   20488 2024-08-13 20:51 arping
--rwxr-xr-x 1 root shell   66696 2024-08-14 16:38 atrace
--rwxr-xr-x 1 root shell   20688 2024-08-14 16:38 audioserver
--rwxr-xr-x 1 root shell   11864 2024-08-14 15:57 auditctl
--rwxr-xr-x 1 root shell  137408 2024-08-13 20:51 awk
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 base64 -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 basename -> toybox
--rwxr-xr-x 1 root shell   81368 2024-08-13 20:51 bc
--rwxr-xr-x 1 root shell   43200 2024-08-14 16:05 bcc
--rwxr-xr-x 1 root shell   31584 2024-08-14 16:09 blank_screen
--rwxr-xr-x 1 root shell   20304 2024-08-14 16:38 blkid
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 blockdev -> toybox
--rwxr-xr-x 1 root shell     126 2024-08-15 15:51 bmgr
--rwxr-xr-x 1 root shell   21496 2024-08-15 14:35 bootanimation
--rwxr-xr-x 1 root shell  137328 2024-08-14 16:03 bootstat
-drwxr-x--x 2 root shell    4096 2024-08-13 19:03 bootstrap
--rwxr-xr-x 1 root shell    3328 2024-08-14 15:57 boringssl_self_test32
--rwxr-xr-x 1 root shell   11312 2024-08-13 20:52 boringssl_self_test64
--rwxr-xr-x 1 root shell   11744 2024-08-14 16:05 bpfloader
--rwxr-xr-x 1 root shell     173 2024-08-15 15:51 bu
--rwxr-xr-x 1 root shell   11664 2024-08-14 15:57 bugreport
--rwxr-xr-x 1 root shell   11744 2024-08-14 15:57 bugreportz
-lrwxr-xr-x 1 root shell       5 2024-08-15 16:47 bunzip2 -> bzip2
--rwxr-xr-x 1 root shell  887456 2024-08-13 20:51 busybox
-lrwxr-xr-x 1 root shell       5 2024-08-15 16:47 bzcat -> bzip2
--rwxr-xr-x 1 root shell   89880 2024-08-13 20:51 bzip2
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 cal -> toybox
--rwxr-xr-x 1 root shell    5884 2024-08-14 16:38 cameraserver
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 cat -> toybox
--rwxr-xr-x 1 root shell  214880 2024-08-14 16:38 charger
--rwxr-xr-x 1 root shell   26160 2024-08-13 13:54 chat
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 chattr -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 chcon -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 chgrp -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 chmod -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 chown -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 chroot -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 chrt -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 cksum -> toybox
--rwxr-xr-x 1 root shell   51784 2024-08-14 16:01 clatd
--rwxr-xr-x 1 root shell   11328 2024-08-14 16:38 clean_scratch_files
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 clear -> toybox
--rwxr-xr-x 1 root shell   47072 2024-08-14 16:06 cmd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 cmp -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 comm -> toybox
--rwxr-xr-x 1 root shell     135 2024-08-15 15:51 content
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 cp -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 cpio -> toybox
--rwxr-xr-x 1 root shell  105812 2024-08-14 16:04 crash_dump32
--rwxr-xr-x 1 root shell  141720 2024-08-14 16:04 crash_dump64
--rwxr-xr-x 1 root shell  268976 2024-08-14 16:10 credstore
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 cut -> toybox
-lrwxr-xr-x 1 root shell      34 2024-08-15 16:47 dalvikvm -> /apex/com.android.art/bin/dalvikvm
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 date -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 dd -> toybox
--rwxr-xr-x 1 root shell   16344 2024-08-14 16:02 debuggerd
-lrwxr-xr-x 1 root shell       9 2024-08-15 16:47 defrag.f2fs -> fsck.f2fs
--rwxr-xr-x 1 root shell      40 2024-08-13 20:51 device_config
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 devmem -> toybox
-lrwxr-xr-x 1 root shell      35 2024-08-15 16:47 dex2oat -> /apex/com.android.art/bin/dex2oat64
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 df -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 diff -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 dirname -> toybox
-lrwxr-xr-x 1 root shell      16 2024-08-15 16:47 disable-verity -> set-verity-state
--rwxr-xr-x 1 root shell   87024 2024-08-14 15:57 dmctl
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 dmesg -> toybox
--rwxr-xr-x 1 root shell  162840 2024-08-14 15:57 dnsmasq
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 dos2unix -> toybox
--rwxr-xr-x 1 root shell     173 2024-08-15 15:51 dpm
--rwxr-xr-x 1 root shell   51744 2024-08-14 16:14 drmserver
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 du -> toybox
-lrwxr-xr-x 1 root shell       9 2024-08-15 16:47 dump.f2fs -> fsck.f2fs
--rwxr-xr-x 1 root shell  342280 2024-08-14 16:58 dumpstate
--rwxr-xr-x 1 root shell   43112 2024-08-14 16:06 dumpsys
--rwxr-xr-x 1 root shell   11840 2024-08-14 16:38 e2freefrag
--rwxr-xr-x 1 root shell  241216 2024-08-14 16:38 e2fsck
--rwxr-xr-x 1 root shell   29640 2024-08-14 16:38 e2fsdroid
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 echo -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 egrep -> toybox
-lrwxr-xr-x 1 root shell      16 2024-08-15 16:47 enable-verity -> set-verity-state
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 env -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 expand -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 expr -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 fallocate -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 false -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 fgrep -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 file -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 find -> toybox
--rwxr-xr-x 1 root shell   11864 2024-08-14 16:51 flags_health_check
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 flock -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 fmt -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 free -> toybox
--rwxr-xr-x 1 root shell  254696 2024-08-14 16:38 fsck.f2fs
--rwxr-xr-x 1 root shell   41312 2024-08-13 20:51 fsck_msdos
--rwxr-xr-x 1 root shell   48360 2024-08-14 15:57 fsverity_init
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 fsync -> toybox
--rwxr-xr-x 1 root shell   36904 2024-08-14 16:10 gatekeeperd
--rwxr-xr-x 1 root shell 1006528 2024-08-14 15:56 gdbserver
--rwxr-xr-x 1 root shell 1343704 2024-08-13 20:51 gdbserver64
--rwxr-xr-x 1 root shell     151 2024-08-13 20:51 getbootmode.sh
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 getconf -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 getenforce -> toybox
-lrwxr-xr-x 1 root shell       7 2024-08-15 16:47 getevent -> toolbox
-lrwxr-xr-x 1 root shell       7 2024-08-15 16:47 getprop -> toolbox
--rwxr-xr-x 1 root shell   11600 2024-08-14 16:41 gpuservice
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 grep -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 groups -> toybox
--rwxr-xr-x 1 root shell   47016 2024-08-14 16:06 gsi_tool
--rwxr-xr-x 1 root shell  362680 2024-08-14 16:43 gsid
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 gunzip -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 gzip -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 head -> toybox
--rwxr-xr-x 1 root shell  435920 2024-08-14 16:05 heapprofd
--rwxr-xr-x 1 root shell     379 2024-08-15 15:53 hid
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 hostname -> toybox
-drwxr-x--x 2 root shell    4096 2024-08-14 16:55 hw
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 hwclock -> toybox
--rwxr-xr-x 1 root shell  103712 2024-08-14 16:38 hwservicemanager
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 i2cdetect -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 i2cdump -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 i2cget -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 i2cset -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 iconv -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 id -> toybox
--rwxr-xr-x 1 root shell  101920 2024-08-14 16:09 idlcli
--rwxr-xr-x 1 root shell   91024 2024-08-14 16:41 idmap2
--rwxr-xr-x 1 root shell   54616 2024-08-14 16:41 idmap2d
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 ifconfig -> toybox
--rwxr-xr-x 1 root shell      48 2024-08-13 14:01 ime
--rwxr-xr-x 1 root shell   42640 2024-08-14 16:06 incident
--rwxr-xr-x 1 root shell     220 2024-08-15 15:53 incident-helper-cmd
--rwxr-xr-x 1 root shell  224528 2024-08-14 17:04 incident_helper
--rwxr-xr-x 1 root shell  310552 2024-08-14 17:04 incidentd
--rwxr-xr-x 1 root shell 1028896 2024-08-14 16:53 init
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 inotifyd -> toybox
--rwxr-xr-x 1 root shell     129 2024-08-15 15:53 input
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 insmod -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 install -> toybox
--rwxr-xr-x 1 root shell  366656 2024-08-14 16:52 installd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 ionice -> toybox
--rwxr-xr-x 1 root shell 2590384 2024-08-14 16:55 iorap.cmd.compiler
--rwxr-xr-x 1 root shell  560936 2024-08-14 16:52 iorap.cmd.maintenance
--rwxr-xr-x 1 root shell  395496 2024-08-14 16:52 iorap.inode2filename
--rwxr-xr-x 1 root shell  202088 2024-08-14 16:52 iorap.prefetcherd
--rwxr-xr-x 1 root shell 1156120 2024-08-14 16:55 iorapd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 iorenice -> toybox
--rwxr-xr-x 1 root shell   59600 2024-08-14 16:01 iotop
--rwxr-xr-x 1 root shell  407856 2024-08-14 16:01 ip
-lrwxr-xr-x 1 root shell      20 2024-08-15 16:47 ip-wrapper-1.0 -> netutils-wrapper-1.0
-lrwxr-xr-x 1 root shell       8 2024-08-15 16:47 ip6tables -> iptables
-lrwxr-xr-x 1 root shell       8 2024-08-15 16:47 ip6tables-restore -> iptables
-lrwxr-xr-x 1 root shell       8 2024-08-15 16:47 ip6tables-save -> iptables
-lrwxr-xr-x 1 root shell      20 2024-08-15 16:47 ip6tables-wrapper-1.0 -> netutils-wrapper-1.0
--rwxr-xr-x 1 root shell  103664 2024-08-13 20:52 iperf3
--rwxr-xr-x 1 root shell  486736 2024-08-13 20:52 iptables
-lrwxr-xr-x 1 root shell       8 2024-08-15 16:47 iptables-restore -> iptables
-lrwxr-xr-x 1 root shell       8 2024-08-15 16:47 iptables-save -> iptables
-lrwxr-xr-x 1 root shell      20 2024-08-15 16:47 iptables-wrapper-1.0 -> netutils-wrapper-1.0
--rwxr-xr-x 1 root shell  152184 2024-08-14 16:01 iw
--rwxr-xr-x 1 root shell  423968 2024-08-15 14:28 keystore
--rwxr-xr-x 1 root shell   74752 2024-08-15 14:28 keystore_cli_v2
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 kill -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 killall -> toybox
--rwxr-xr-x 1 root shell  755464 2024-08-14 16:38 ld.mc
--rwxr-xr-x 1 root shell     357 2024-08-13 14:01 ldd
--rwxr-xr-x 1 root shell   38240 2024-08-14 16:02 librank
-lrwxr-xr-x 1 root shell      36 2024-08-15 16:47 linker -> /apex/com.android.runtime/bin/linker
-lrwxr-xr-x 1 root shell      38 2024-08-15 16:47 linker64 -> /apex/com.android.runtime/bin/linker64
-lrwxr-xr-x 1 root shell      36 2024-08-15 16:47 linker_asan -> /apex/com.android.runtime/bin/linker
-lrwxr-xr-x 1 root shell      38 2024-08-15 16:47 linker_asan64 -> /apex/com.android.runtime/bin/linker64
--rwxr-xr-x 1 root shell  765896 2024-08-13 20:49 linkerconfig
--rwxr-xr-x 1 root shell   46240 2024-08-14 16:42 lmkd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 ln -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 load_policy -> toybox
--rwxr-xr-x 1 root shell  216432 2024-08-14 16:42 lockagent_crasher
--rwxr-xr-x 1 root shell     211 2024-08-15 15:54 locksettings
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 log -> toybox
--rwxr-xr-x 1 root shell  166584 2024-08-14 16:42 logcat
--rwxr-xr-x 1 root shell     780 2024-08-13 15:38 logcatd
--r-xr-x--- 1 logd logd   181272 2024-08-14 16:42 logd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 logname -> toybox
-lrwxr-xr-x 1 root shell      16 2024-08-15 16:47 logpersist.cat -> logpersist.start
--rwxr-xr-x 1 root shell    5564 2024-08-13 15:38 logpersist.start
-lrwxr-xr-x 1 root shell      16 2024-08-15 16:47 logpersist.stop -> logpersist.start
--rwxr-xr-x 1 root shell   20520 2024-08-14 16:42 logwrapper
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 losetup -> toybox
--rwxr-xr-x 1 root shell   20408 2024-08-14 16:42 lpdump
--rwxr-xr-x 1 root shell   32152 2024-08-14 16:42 lpdumpd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 ls -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 lsattr -> toybox
--rwxr-xr-x 1 root shell  256000 2024-08-14 16:42 lshal
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 lsmod -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 lsof -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 lspci -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 lsusb -> toybox
--rwxr-xr-x 1 root shell  116320 2024-08-14 16:42 make_f2fs
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 md5sum -> toybox
--rwxr-xr-x 1 root shell  717032 2024-08-13 19:04 mdnsd
--rwxr-xr-x 1 root shell   15904 2024-08-14 16:42 mediaextractor
--rwxr-xr-x 1 root shell   15768 2024-08-14 16:42 mediametrics
--rwxr-xr-x 1 root shell    5268 2024-08-14 16:42 mediaserver
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 microcom -> toybox
--rwxr-xr-x 1 root shell    1418 2024-08-13 15:39 migrate_legacy_obb_data.sh
--rwxr-xr-x 1 root shell   34064 2024-08-14 16:42 mini-keyctl
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mkdir -> toybox
--rwxr-xr-x 1 root shell   75520 2024-08-13 20:51 mkdosfs
--rwxr-xr-x 1 root shell   71400 2024-08-14 16:43 mke2fs
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mkfifo -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mkfs.ext2 -> mke2fs
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mkfs.ext3 -> mke2fs
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mkfs.ext4 -> mke2fs
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mknod -> toybox
--rwxr-xr-x 1 root shell   70848 2024-08-14 16:05 mkntfs
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mkswap -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mktemp -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 modinfo -> toybox
-lrwxr-xr-x 1 root shell       7 2024-08-15 16:47 modprobe -> toolbox
--rwxr-xr-x 1 root shell     268 2024-08-15 16:43 monkey
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 more -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mount -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mountpoint -> toybox
--rwxr-xr-x 1 root shell   33600 2024-08-14 16:43 mtpd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 mv -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 nc -> toybox
--rwxr-xr-x 1 root shell   68440 2024-08-14 16:43 ndc
-lrwxr-xr-x 1 root shell      20 2024-08-15 16:47 ndc-wrapper-1.0 -> netutils-wrapper-1.0
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 netcat -> toybox
--rwxr-xr-x 1 root shell  828352 2024-08-14 16:44 netd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 netstat -> toybox
--rwxr-xr-x 1 root shell   70024 2024-08-14 16:43 netutils-wrapper-1.0
--rwxr-xr-x 1 root shell   25704 2024-08-14 16:43 newfs_msdos
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 nice -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 nl -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 nohup -> toybox
--rwxr-xr-x 1 root shell     103 2024-08-13 15:58 notify_traceur.sh
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 nproc -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 nsenter -> toybox
--rwxr-xr-x 1 root shell  180032 2024-08-14 16:05 ntfs-3g
--rwxr-xr-x 1 root shell   29024 2024-08-14 16:05 ntfsfix
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 od -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 paste -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 patch -> toybox
--rwxr-xr-x 1 root shell  624176 2024-08-14 16:46 perfetto
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 pgrep -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 pidof -> toybox
--rwxr-xr-x 1 root shell   37984 2024-08-14 16:44 ping
--rwxr-xr-x 1 root shell   42816 2024-08-14 16:44 ping6
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 pkill -> toybox
--rwxr-xr-x 1 root shell      34 2024-08-13 15:58 pm
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 pmap -> toybox
--rwxr-xr-x 1 root shell  259264 2024-08-14 16:44 pppd
--rwxr-xr-x 1 root shell    9286 2024-08-13 13:54 pppoe-connect
--rwxr-xr-x 1 root shell    5127 2024-08-13 13:54 pppoe-setup
--rwxr-xr-x 1 root shell    7133 2024-08-13 13:54 pppoe-start
--rwxr-xr-x 1 root shell    2399 2024-08-13 13:54 pppoe-status
--rwxr-xr-x 1 root shell    3757 2024-08-13 13:54 pppoe-stop
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 printenv -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 printf -> toybox
--rwxr-xr-x 1 root shell   47592 2024-08-14 16:45 procrank
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 ps -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 pwd -> toybox
--rwxr-xr-x 1 root shell  260920 2024-08-14 16:45 racoon
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 readelf -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 readlink -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 realpath -> toybox
--rwxr-xr-x 1 root shell   11688 2024-08-14 16:45 reboot
--rwxr-xr-x 1 root shell   20592 2024-08-14 16:46 recovery-persist
--rwxr-xr-x 1 root shell  164928 2024-08-14 16:46 remount
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 renice -> toybox
--rwxr-xr-x 1 root shell     205 2024-08-15 15:54 requestsync
-lrwxr-xr-x 1 root shell       9 2024-08-15 16:47 resize.f2fs -> fsck.f2fs
--rwxr-xr-x 1 root shell   58952 2024-08-14 16:47 resize2fs
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 restorecon -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 rm -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 rmdir -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 rmmod -> toybox
--rwxr-xr-x 1 root shell   11496 2024-08-14 16:51 rss_hwm_reset
--rwxr-x--- 1 root shell   16000 2024-08-14 16:51 run-as
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 runcon -> toybox
--rwxr-xr-x 1 root shell   11312 2024-08-14 16:51 sanitizer-status
--rwxr-xr-x 1 root shell   11416 2024-08-14 16:51 schedtest
--rwxr-xr-x 1 root shell   16288 2024-08-14 16:58 screencap
--rwxr-xr-x 1 root shell  124248 2024-08-14 16:51 screenrecord
--rwxr-xr-x 1 root shell   29136 2024-08-14 16:51 sdcard
--rwxr-xr-x 1 root shell   20840 2024-08-14 16:51 secdiscard
--rwx------ 1 root root   319248 2024-08-14 16:51 secilc
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sed -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sendevent -> toybox
--rwxr-xr-x 1 root shell   11664 2024-08-15 14:35 sensorservice
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 seq -> toybox
--rwxr-xr-x 1 root shell   38096 2024-08-14 16:51 service
--rwxr-xr-x 1 root shell   63176 2024-08-14 16:53 servicemanager
--rwxr-xr-x 1 root shell   79344 2024-08-14 16:53 set-verity-state
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 setenforce -> toybox
-lrwxr-xr-x 1 root shell       7 2024-08-15 16:47 setprop -> toolbox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 setsid -> toybox
--rwxr-xr-x 1 root shell      35 2024-08-13 16:00 settings
--rwxr-xr-x 1 root shell  182616 2024-08-14 16:53 sgdisk
--rwxr-xr-x 1 root shell  310280 2024-08-14 16:53 sh
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sha1sum -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sha224sum -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sha256sum -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sha384sum -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sha512sum -> toybox
--rwxr-xr-x 1 root shell   20600 2024-08-14 16:53 showmap
--rwxr-xr-x 1 root shell 1173128 2024-08-14 16:54 simpleperf
--rwxr-x--- 1 root shell   24272 2024-08-14 16:53 simpleperf_app_runner
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sleep -> toybox
--rwxr-xr-x 1 root shell  234040 2024-08-14 16:53 sload_f2fs
--rwxr-xr-x 1 root shell     120 2024-08-15 15:55 sm
--rwxr-xr-x 1 root shell  129224 2024-08-14 16:54 snapshotctl
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sort -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 split -> toybox
--rwxr-xr-x 1 root shell  158752 2024-08-14 16:54 sqlite3
--rwxr-xr-x 1 root shell   72072 2024-08-14 16:54 ss
-lrwxr-xr-x 1 root shell       7 2024-08-15 16:47 start -> toolbox
--rwxr-xr-x 1 root shell     208 2024-08-15 15:54 start_with_lockagent
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 stat -> toybox
-lrwxr-xr-x 1 root shell       7 2024-08-15 16:47 stop -> toolbox
--rwxr-xr-x 1 root shell  195200 2024-08-14 16:55 storaged
--rwxr-xr-x 1 root shell  817248 2024-08-14 16:55 strace
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 strings -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 stty -> toybox
--rwxr-xr-x 1 root shell   16232 2024-08-14 16:55 surfaceflinger
--rwxr-xr-x 1 root shell    1068 2024-08-15 15:55 svc
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 swapoff -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 swapon -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sync -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 sysctl -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 tac -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 tail -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 tar -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 taskset -> toybox
--rwxr-xr-x 1 root shell  280328 2024-08-14 16:55 tc
-lrwxr-xr-x 1 root shell      20 2024-08-15 16:47 tc-wrapper-1.0 -> netutils-wrapper-1.0
--rwxr-xr-x 1 root shell  913544 2024-08-14 16:56 tcpdump
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 tee -> toybox
--rwxr-xr-x 1 root shell     189 2024-08-15 15:56 telecom
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 test -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 time -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 timeout -> toybox
--rwxr-xr-x 1 root shell   11896 2024-08-14 16:55 tinycap
--rwxr-xr-x 1 root shell   16352 2024-08-14 16:55 tinymix
--rwxr-xr-x 1 root shell   12096 2024-08-14 16:55 tinypcminfo
--rwxr-xr-x 1 root shell   11920 2024-08-14 16:55 tinyplay
--rwxr-xr-x 1 root shell  112504 2024-08-14 16:56 tombstoned
--rwxr-xr-x 1 root shell  118224 2024-08-14 16:56 toolbox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 top -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 touch -> toybox
--rwxr-xr-x 1 root shell  489472 2024-08-14 16:56 toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 tr -> toybox
--rwxr-xr-x 1 root shell   11328 2024-08-14 16:56 traced
--rwxr-xr-x 1 root shell  384616 2024-08-14 16:58 traced_perf
--rwxr-xr-x 1 root shell   11328 2024-08-14 16:59 traced_probes
--rwxr-xr-x 1 root shell   12072 2024-08-14 16:56 tracepath
--rwxr-xr-x 1 root shell   16240 2024-08-14 16:56 tracepath6
--rwxr-xr-x 1 root shell   20392 2024-08-14 16:56 traceroute6
--rwxr-xr-x 1 root shell  278184 2024-08-14 16:59 trigger_perfetto
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 true -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 truncate -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 tty -> toybox
--rwxr-xr-x 1 root shell   58896 2024-08-14 16:56 tune2fs
--rwxr-xr-x 1 root shell   24504 2024-08-14 16:56 tzdatacheck
-lrwxr-xr-x 1 root shell       4 2024-08-15 16:47 ueventd -> init
--rwxr-xr-x 1 root shell    4173 2024-08-15 15:57 uiautomator
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 ulimit -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 umount -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 uname -> toybox
--rwxr-x--- 1 root root    37472 2024-08-14 16:57 uncrypt
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 uniq -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 unix2dos -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 unlink -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 unshare -> toybox
--rwxr-xr-x 1 root shell   20248 2024-08-14 16:57 unwind_info
--rwxr-xr-x 1 root shell   24712 2024-08-14 16:57 unwind_reg_info
--rwxr-xr-x 1 root shell   11784 2024-08-14 16:57 unwind_symbols
-lrwxr-xr-x 1 root shell       7 2024-08-15 16:47 unzip -> ziptool
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 uptime -> toybox
--rwxr-xr-x 1 root shell   11952 2024-08-14 16:57 usbd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 usleep -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 uudecode -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 uuencode -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 uuidgen -> toybox
--rwxr-xr-x 1 root shell   89056 2024-08-14 16:57 vdc
--rwxr-xr-x 1 root shell  251224 2024-08-14 16:58 viewcompiler
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 vmstat -> toybox
--rwxr-xr-x 1 root shell 1017600 2024-08-14 16:59 vold
--rwxr-xr-x 1 root shell   33872 2024-08-14 16:58 vold_prepare_subdirs
--rwxr-xr-x 1 root shell     169 2024-08-15 15:57 vr
--rwxr-xr-x 1 root shell   25616 2024-08-14 16:58 wait_for_keymaster
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 watch -> toybox
--rwxr-xr-x 1 root shell   16392 2024-08-14 16:58 watchdogd
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 wc -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 which -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 whoami -> toybox
--rwxr-xr-x 1 root shell  391616 2024-08-14 16:59 wificond
--rwxr-xr-x 1 root shell      33 2024-08-13 20:50 wm
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 xargs -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 xxd -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 yes -> toybox
-lrwxr-xr-x 1 root shell       6 2024-08-15 16:47 zcat -> toybox
-lrwxr-xr-x 1 root shell       7 2024-08-15 16:47 zipinfo -> ziptool
--rwxr-xr-x 1 root shell   25168 2024-08-15 14:38 ziptool 
+drwxr-x--x 4 root shell    8192 2023-09-12 03:15 .
+drwxr-xr-x 1 root root     3488 2023-09-12 03:16 ..
+-rwxr-xr-x 1 root shell  129616 2023-09-12 03:14 abb
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 acpi -> toybox
+-rwxr-xr-x 1 root shell     207 2023-09-12 03:15 am
+-rwxr-xr-x 1 root shell  588208 2023-09-12 03:15 apexd
+lrwxr-xr-x 1 root shell      13 2023-09-12 03:15 app_process -> app_process64
+-rwxr-xr-x 1 root shell   22544 2023-09-12 03:15 app_process32
+-rwxr-xr-x 1 root shell   33864 2023-09-12 03:15 app_process64
+-rwxr-xr-x 1 root shell      33 2023-09-12 03:15 appops
+-rwxr-xr-x 1 root shell     141 2023-09-12 03:15 appwidget
+-rwxr-xr-x 1 root shell   20488 2023-09-12 03:15 arping
+-rwxr-xr-x 1 root shell   66696 2023-09-12 03:15 atrace
+-rwxr-xr-x 1 root shell   20688 2023-09-12 03:15 audioserver
+-rwxr-xr-x 1 root shell   11864 2023-09-12 03:14 auditctl
+-rwxr-xr-x 1 root shell  137408 2023-09-12 03:14 awk
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 base64 -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 basename -> toybox
+-rwxr-xr-x 1 root shell   81368 2023-09-12 03:14 bc
+-rwxr-xr-x 1 root shell   43200 2023-09-12 03:15 bcc
+-rwxr-xr-x 1 root shell   31584 2023-09-12 03:15 blank_screen
+-rwxr-xr-x 1 root shell   20304 2023-09-12 03:15 blkid
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 blockdev -> toybox
+-rwxr-xr-x 1 root shell     126 2023-09-12 03:15 bmgr
+-rwxr-xr-x 1 root shell   21496 2023-09-12 03:15 bootanimation
+-rwxr-xr-x 1 root shell  137328 2023-09-12 03:15 bootstat
+drwxr-x--x 2 root shell    4096 2023-09-12 03:15 bootstrap
+-rwxr-xr-x 1 root shell    3328 2023-09-12 03:14 boringssl_self_test32
+-rwxr-xr-x 1 root shell   11312 2023-09-12 03:14 boringssl_self_test64
+-rwxr-xr-x 1 root shell   11744 2023-09-12 03:15 bpfloader
+-rwxr-xr-x 1 root shell     173 2023-09-12 03:15 bu
+-rwxr-xr-x 1 root shell   11664 2023-09-12 03:15 bugreport
+-rwxr-xr-x 1 root shell   11744 2023-09-12 03:15 bugreportz
+lrwxr-xr-x 1 root shell       5 2023-09-12 03:15 bunzip2 -> bzip2
+-rwxr-xr-x 1 root shell  887456 2023-09-12 03:15 busybox
+lrwxr-xr-x 1 root shell       5 2023-09-12 03:15 bzcat -> bzip2
+-rwxr-xr-x 1 root shell   89880 2023-09-12 03:14 bzip2
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 cal -> toybox
+-rwxr-xr-x 1 root shell    5884 2023-09-12 03:15 cameraserver
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 cat -> toybox
+-rwxr-xr-x 1 root shell  214880 2023-09-12 03:15 charger
+-rwxr-xr-x 1 root shell   26160 2023-09-12 03:15 chat
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 chattr -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 chcon -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 chgrp -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 chmod -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 chown -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 chroot -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 chrt -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 cksum -> toybox
+-rwxr-xr-x 1 root shell   51784 2023-09-12 03:15 clatd
+-rwxr-xr-x 1 root shell   11328 2023-09-12 03:15 clean_scratch_files
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 clear -> toybox
+-rwxr-xr-x 1 root shell   47072 2023-09-12 03:15 cmd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 cmp -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 comm -> toybox
+-rwxr-xr-x 1 root shell     135 2023-09-12 03:15 content
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 cp -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 cpio -> toybox
+-rwxr-xr-x 1 root shell  105812 2023-09-12 03:15 crash_dump32
+-rwxr-xr-x 1 root shell  141720 2023-09-12 03:15 crash_dump64
+-rwxr-xr-x 1 root shell  268976 2023-09-12 03:15 credstore
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 cut -> toybox
+lrwxr-xr-x 1 root shell      34 2023-09-12 03:15 dalvikvm -> /apex/com.android.art/bin/dalvikvm
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 date -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 dd -> toybox
+-rwxr-xr-x 1 root shell   16344 2023-09-12 03:15 debuggerd
+lrwxr-xr-x 1 root shell       9 2023-09-12 03:15 defrag.f2fs -> fsck.f2fs
+-rwxr-xr-x 1 root shell      40 2023-09-12 03:15 device_config
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 devmem -> toybox
+lrwxr-xr-x 1 root shell      35 2023-09-12 03:15 dex2oat -> /apex/com.android.art/bin/dex2oat64
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 df -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 diff -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 dirname -> toybox
+lrwxr-xr-x 1 root shell      16 2023-09-12 03:15 disable-verity -> set-verity-state
+-rwxr-xr-x 1 root shell   87024 2023-09-12 03:15 dmctl
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 dmesg -> toybox
+-rwxr-xr-x 1 root shell  162840 2023-09-12 03:15 dnsmasq
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 dos2unix -> toybox
+-rwxr-xr-x 1 root shell     173 2023-09-12 03:15 dpm
+-rwxr-xr-x 1 root shell   51744 2023-09-12 03:15 drmserver
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 du -> toybox
+lrwxr-xr-x 1 root shell       9 2023-09-12 03:15 dump.f2fs -> fsck.f2fs
+-rwxr-xr-x 1 root shell  342280 2023-09-12 03:15 dumpstate
+-rwxr-xr-x 1 root shell   43112 2023-09-12 03:15 dumpsys
+-rwxr-xr-x 1 root shell   11840 2023-09-12 03:14 e2freefrag
+-rwxr-xr-x 1 root shell  241216 2023-09-12 03:15 e2fsck
+-rwxr-xr-x 1 root shell   29640 2023-09-12 03:14 e2fsdroid
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 echo -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 egrep -> toybox
+lrwxr-xr-x 1 root shell      16 2023-09-12 03:15 enable-verity -> set-verity-state
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 env -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 expand -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 expr -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 fallocate -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 false -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 fgrep -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 file -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 find -> toybox
+-rwxr-xr-x 1 root shell   11864 2023-09-12 03:15 flags_health_check
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 flock -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 fmt -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 free -> toybox
+-rwxr-xr-x 1 root shell  254696 2023-09-12 03:15 fsck.f2fs
+-rwxr-xr-x 1 root shell   41312 2023-09-12 03:15 fsck_msdos
+-rwxr-xr-x 1 root shell   48360 2023-09-12 03:14 fsverity_init
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 fsync -> toybox
+-rwxr-xr-x 1 root shell   36904 2023-09-12 03:15 gatekeeperd
+-rwxr-xr-x 1 root shell 1006528 2023-09-12 03:15 gdbserver
+-rwxr-xr-x 1 root shell 1343704 2023-09-12 03:15 gdbserver64
+-rwxr-xr-x 1 root shell     151 2023-09-12 03:15 getbootmode.sh
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 getconf -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 getenforce -> toybox
+lrwxr-xr-x 1 root shell       7 2023-09-12 03:15 getevent -> toolbox
+lrwxr-xr-x 1 root shell       7 2023-09-12 03:15 getprop -> toolbox
+-rwxr-xr-x 1 root shell   11600 2023-09-12 03:15 gpuservice
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 grep -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 groups -> toybox
+-rwxr-xr-x 1 root shell   47016 2023-09-12 03:15 gsi_tool
+-rwxr-xr-x 1 root shell  362680 2023-09-12 03:15 gsid
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 gunzip -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 gzip -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 head -> toybox
+-rwxr-xr-x 1 root shell  435920 2023-09-12 03:15 heapprofd
+-rwxr-xr-x 1 root shell     379 2023-09-12 03:15 hid
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 hostname -> toybox
+drwxr-x--x 2 root shell    4096 2023-09-12 03:15 hw
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 hwclock -> toybox
+-rwxr-xr-x 1 root shell  103712 2023-09-12 03:15 hwservicemanager
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 i2cdetect -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 i2cdump -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 i2cget -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 i2cset -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 iconv -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 id -> toybox
+-rwxr-xr-x 1 root shell  101920 2023-09-12 03:15 idlcli
+-rwxr-xr-x 1 root shell   91024 2023-09-12 03:15 idmap2
+-rwxr-xr-x 1 root shell   54616 2023-09-12 03:15 idmap2d
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 ifconfig -> toybox
+-rwxr-xr-x 1 root shell      48 2023-09-12 03:15 ime
+-rwxr-xr-x 1 root shell   42640 2023-09-12 03:15 incident
+-rwxr-xr-x 1 root shell     220 2023-09-12 03:15 incident-helper-cmd
+-rwxr-xr-x 1 root shell  224528 2023-09-12 03:15 incident_helper
+-rwxr-xr-x 1 root shell  310552 2023-09-12 03:15 incidentd
+-rwxr-xr-x 1 root shell 1028896 2023-09-12 03:14 init
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 inotifyd -> toybox
+-rwxr-xr-x 1 root shell     129 2023-09-12 03:15 input
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 insmod -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 install -> toybox
+-rwxr-xr-x 1 root shell  366656 2023-09-12 03:15 installd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 ionice -> toybox
+-rwxr-xr-x 1 root shell 2590384 2023-09-12 03:15 iorap.cmd.compiler
+-rwxr-xr-x 1 root shell  560936 2023-09-12 03:15 iorap.cmd.maintenance
+-rwxr-xr-x 1 root shell  395496 2023-09-12 03:15 iorap.inode2filename
+-rwxr-xr-x 1 root shell  202088 2023-09-12 03:15 iorap.prefetcherd
+-rwxr-xr-x 1 root shell 1156120 2023-09-12 03:15 iorapd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 iorenice -> toybox
+-rwxr-xr-x 1 root shell   59600 2023-09-12 03:15 iotop
+-rwxr-xr-x 1 root shell  407856 2023-09-12 03:15 ip
+lrwxr-xr-x 1 root shell      20 2023-09-12 03:15 ip-wrapper-1.0 -> netutils-wrapper-1.0
+lrwxr-xr-x 1 root shell       8 2023-09-12 03:15 ip6tables -> iptables
+lrwxr-xr-x 1 root shell       8 2023-09-12 03:15 ip6tables-restore -> iptables
+lrwxr-xr-x 1 root shell       8 2023-09-12 03:15 ip6tables-save -> iptables
+lrwxr-xr-x 1 root shell      20 2023-09-12 03:15 ip6tables-wrapper-1.0 -> netutils-wrapper-1.0
+-rwxr-xr-x 1 root shell  103664 2023-09-12 03:15 iperf3
+-rwxr-xr-x 1 root shell  486736 2023-09-12 03:15 iptables
+lrwxr-xr-x 1 root shell       8 2023-09-12 03:15 iptables-restore -> iptables
+lrwxr-xr-x 1 root shell       8 2023-09-12 03:15 iptables-save -> iptables
+lrwxr-xr-x 1 root shell      20 2023-09-12 03:15 iptables-wrapper-1.0 -> netutils-wrapper-1.0
+-rwxr-xr-x 1 root shell  152184 2023-09-12 03:15 iw
+-rwxr-xr-x 1 root shell  423968 2023-09-12 03:15 keystore
+-rwxr-xr-x 1 root shell   74752 2023-09-12 03:15 keystore_cli_v2
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 kill -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 killall -> toybox
+-rwxr-xr-x 1 root shell  755464 2023-09-12 03:15 ld.mc
+-rwxr-xr-x 1 root shell     357 2023-09-12 03:14 ldd
+-rwxr-xr-x 1 root shell   38240 2023-09-12 03:15 librank
+lrwxr-xr-x 1 root shell      36 2023-09-12 03:15 linker -> /apex/com.android.runtime/bin/linker
+lrwxr-xr-x 1 root shell      38 2023-09-12 03:15 linker64 -> /apex/com.android.runtime/bin/linker64
+lrwxr-xr-x 1 root shell      36 2023-09-12 03:15 linker_asan -> /apex/com.android.runtime/bin/linker
+lrwxr-xr-x 1 root shell      38 2023-09-12 03:15 linker_asan64 -> /apex/com.android.runtime/bin/linker64
+-rwxr-xr-x 1 root shell  765896 2023-09-12 03:15 linkerconfig
+-rwxr-xr-x 1 root shell   46240 2023-09-12 03:15 lmkd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 ln -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 load_policy -> toybox
+-rwxr-xr-x 1 root shell  216432 2023-09-12 03:15 lockagent_crasher
+-rwxr-xr-x 1 root shell     211 2023-09-12 03:15 locksettings
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 log -> toybox
+-rwxr-xr-x 1 root shell  166584 2023-09-12 03:15 logcat
+-rwxr-xr-x 1 root shell     780 2023-09-12 03:15 logcatd
+-r-xr-x--- 1 logd logd   181272 2023-09-12 03:15 logd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 logname -> toybox
+lrwxr-xr-x 1 root shell      16 2023-09-12 03:15 logpersist.cat -> logpersist.start
+-rwxr-xr-x 1 root shell    5564 2023-09-12 03:15 logpersist.start
+lrwxr-xr-x 1 root shell      16 2023-09-12 03:15 logpersist.stop -> logpersist.start
+-rwxr-xr-x 1 root shell   20520 2023-09-12 03:14 logwrapper
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 losetup -> toybox
+-rwxr-xr-x 1 root shell   20408 2023-09-12 03:15 lpdump
+-rwxr-xr-x 1 root shell   32152 2023-09-12 03:15 lpdumpd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 ls -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 lsattr -> toybox
+-rwxr-xr-x 1 root shell  256000 2023-09-12 03:15 lshal
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 lsmod -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 lsof -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 lspci -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 lsusb -> toybox
+-rwxr-xr-x 1 root shell  116320 2023-09-12 03:14 make_f2fs
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 md5sum -> toybox
+-rwxr-xr-x 1 root shell  717032 2023-09-12 03:15 mdnsd
+-rwxr-xr-x 1 root shell   15904 2023-09-12 03:15 mediaextractor
+-rwxr-xr-x 1 root shell   15768 2023-09-12 03:15 mediametrics
+-rwxr-xr-x 1 root shell    5268 2023-09-12 03:15 mediaserver
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 microcom -> toybox
+-rwxr-xr-x 1 root shell    1418 2023-09-12 03:15 migrate_legacy_obb_data.sh
+-rwxr-xr-x 1 root shell   34064 2023-09-12 03:14 mini-keyctl
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mkdir -> toybox
+-rwxr-xr-x 1 root shell   75520 2023-09-12 03:15 mkdosfs
+-rwxr-xr-x 1 root shell   71400 2023-09-12 03:14 mke2fs
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mkfifo -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mkfs.ext2 -> mke2fs
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mkfs.ext3 -> mke2fs
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mkfs.ext4 -> mke2fs
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mknod -> toybox
+-rwxr-xr-x 1 root shell   70848 2023-09-12 03:15 mkntfs
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mkswap -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mktemp -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 modinfo -> toybox
+lrwxr-xr-x 1 root shell       7 2023-09-12 03:15 modprobe -> toolbox
+-rwxr-xr-x 1 root shell     268 2023-09-12 03:15 monkey
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 more -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mount -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mountpoint -> toybox
+-rwxr-xr-x 1 root shell   33600 2023-09-12 03:15 mtpd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 mv -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 nc -> toybox
+-rwxr-xr-x 1 root shell   68440 2023-09-12 03:15 ndc
+lrwxr-xr-x 1 root shell      20 2023-09-12 03:15 ndc-wrapper-1.0 -> netutils-wrapper-1.0
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 netcat -> toybox
+-rwxr-xr-x 1 root shell  828352 2023-09-12 03:15 netd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 netstat -> toybox
+-rwxr-xr-x 1 root shell   70024 2023-09-12 03:15 netutils-wrapper-1.0
+-rwxr-xr-x 1 root shell   25704 2023-09-12 03:14 newfs_msdos
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 nice -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 nl -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 nohup -> toybox
+-rwxr-xr-x 1 root shell     103 2023-09-12 03:15 notify_traceur.sh
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 nproc -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 nsenter -> toybox
+-rwxr-xr-x 1 root shell  180032 2023-09-12 03:15 ntfs-3g
+-rwxr-xr-x 1 root shell   29024 2023-09-12 03:15 ntfsfix
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 od -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 paste -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 patch -> toybox
+-rwxr-xr-x 1 root shell  624176 2023-09-12 03:15 perfetto
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 pgrep -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 pidof -> toybox
+-rwxr-xr-x 1 root shell   37984 2023-09-12 03:15 ping
+-rwxr-xr-x 1 root shell   42816 2023-09-12 03:15 ping6
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 pkill -> toybox
+-rwxr-xr-x 1 root shell      34 2023-09-12 03:15 pm
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 pmap -> toybox
+-rwxr-xr-x 1 root shell  259264 2023-09-12 03:15 pppd
+-rwxr-xr-x 1 root shell    9286 2023-09-12 03:15 pppoe-connect
+-rwxr-xr-x 1 root shell    5127 2023-09-12 03:15 pppoe-setup
+-rwxr-xr-x 1 root shell    7133 2023-09-12 03:15 pppoe-start
+-rwxr-xr-x 1 root shell    2399 2023-09-12 03:15 pppoe-status
+-rwxr-xr-x 1 root shell    3757 2023-09-12 03:15 pppoe-stop
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 printenv -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 printf -> toybox
+-rwxr-xr-x 1 root shell   47592 2023-09-12 03:15 procrank
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 ps -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 pwd -> toybox
+-rwxr-xr-x 1 root shell  260920 2023-09-12 03:15 racoon
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 readelf -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 readlink -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 realpath -> toybox
+-rwxr-xr-x 1 root shell   11688 2023-09-12 03:14 reboot
+-rwxr-xr-x 1 root shell   20592 2023-09-12 03:14 recovery-persist
+-rwxr-xr-x 1 root shell  164928 2023-09-12 03:15 remount
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 renice -> toybox
+-rwxr-xr-x 1 root shell     205 2023-09-12 03:15 requestsync
+lrwxr-xr-x 1 root shell       9 2023-09-12 03:15 resize.f2fs -> fsck.f2fs
+-rwxr-xr-x 1 root shell   58952 2023-09-12 03:15 resize2fs
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 restorecon -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 rm -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 rmdir -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 rmmod -> toybox
+-rwxr-xr-x 1 root shell   11496 2023-09-12 03:15 rss_hwm_reset
+-rwxr-x--- 1 root shell   16000 2023-09-12 03:15 run-as
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 runcon -> toybox
+-rwxr-xr-x 1 root shell   11312 2023-09-12 03:15 sanitizer-status
+-rwxr-xr-x 1 root shell   11416 2023-09-12 03:15 schedtest
+-rwxr-xr-x 1 root shell   16288 2023-09-12 03:15 screencap
+-rwxr-xr-x 1 root shell  124248 2023-09-12 03:15 screenrecord
+-rwxr-xr-x 1 root shell   29136 2023-09-12 03:15 sdcard
+-rwxr-xr-x 1 root shell   20840 2023-09-12 03:15 secdiscard
+-rwx------ 1 root root   319248 2023-09-12 03:14 secilc
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sed -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sendevent -> toybox
+-rwxr-xr-x 1 root shell   11664 2023-09-12 03:15 sensorservice
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 seq -> toybox
+-rwxr-xr-x 1 root shell   38096 2023-09-12 03:15 service
+-rwxr-xr-x 1 root shell   63176 2023-09-12 03:15 servicemanager
+-rwxr-xr-x 1 root shell   79344 2023-09-12 03:14 set-verity-state
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 setenforce -> toybox
+lrwxr-xr-x 1 root shell       7 2023-09-12 03:15 setprop -> toolbox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 setsid -> toybox
+-rwxr-xr-x 1 root shell      35 2023-09-12 03:15 settings
+-rwxr-xr-x 1 root shell  182616 2023-09-12 03:15 sgdisk
+-rwxr-xr-x 1 root shell  310280 2023-09-12 03:14 sh
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sha1sum -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sha224sum -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sha256sum -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sha384sum -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sha512sum -> toybox
+-rwxr-xr-x 1 root shell   20600 2023-09-12 03:15 showmap
+-rwxr-xr-x 1 root shell 1173128 2023-09-12 03:14 simpleperf
+-rwxr-x--- 1 root shell   24272 2023-09-12 03:14 simpleperf_app_runner
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sleep -> toybox
+-rwxr-xr-x 1 root shell  234040 2023-09-12 03:14 sload_f2fs
+-rwxr-xr-x 1 root shell     120 2023-09-12 03:15 sm
+-rwxr-xr-x 1 root shell  129224 2023-09-12 03:15 snapshotctl
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sort -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 split -> toybox
+-rwxr-xr-x 1 root shell  158752 2023-09-12 03:15 sqlite3
+-rwxr-xr-x 1 root shell   72072 2023-09-12 03:15 ss
+lrwxr-xr-x 1 root shell       7 2023-09-12 03:15 start -> toolbox
+-rwxr-xr-x 1 root shell     208 2023-09-12 03:15 start_with_lockagent
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 stat -> toybox
+lrwxr-xr-x 1 root shell       7 2023-09-12 03:15 stop -> toolbox
+-rwxr-xr-x 1 root shell  195200 2023-09-12 03:15 storaged
+-rwxr-xr-x 1 root shell  817248 2023-09-12 03:15 strace
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 strings -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 stty -> toybox
+-rwxr-xr-x 1 root shell   16232 2023-09-12 03:15 surfaceflinger
+-rwxr-xr-x 1 root shell    1068 2023-09-12 03:15 svc
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 swapoff -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 swapon -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sync -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 sysctl -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 tac -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 tail -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 tar -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 taskset -> toybox
+-rwxr-xr-x 1 root shell  280328 2023-09-12 03:15 tc
+lrwxr-xr-x 1 root shell      20 2023-09-12 03:15 tc-wrapper-1.0 -> netutils-wrapper-1.0
+-rwxr-xr-x 1 root shell  913544 2023-09-12 03:14 tcpdump
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 tee -> toybox
+-rwxr-xr-x 1 root shell     189 2023-09-12 03:15 telecom
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 test -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 time -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 timeout -> toybox
+-rwxr-xr-x 1 root shell   11896 2023-09-12 03:15 tinycap
+-rwxr-xr-x 1 root shell   16352 2023-09-12 03:15 tinymix
+-rwxr-xr-x 1 root shell   12096 2023-09-12 03:15 tinypcminfo
+-rwxr-xr-x 1 root shell   11920 2023-09-12 03:15 tinyplay
+-rwxr-xr-x 1 root shell  112504 2023-09-12 03:15 tombstoned
+-rwxr-xr-x 1 root shell  118224 2023-09-12 03:14 toolbox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 top -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 touch -> toybox
+-rwxr-xr-x 1 root shell  489472 2023-09-12 03:14 toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 tr -> toybox
+-rwxr-xr-x 1 root shell   11328 2023-09-12 03:15 traced
+-rwxr-xr-x 1 root shell  384616 2023-09-12 03:15 traced_perf
+-rwxr-xr-x 1 root shell   11328 2023-09-12 03:15 traced_probes
+-rwxr-xr-x 1 root shell   12072 2023-09-12 03:15 tracepath
+-rwxr-xr-x 1 root shell   16240 2023-09-12 03:15 tracepath6
+-rwxr-xr-x 1 root shell   20392 2023-09-12 03:15 traceroute6
+-rwxr-xr-x 1 root shell  278184 2023-09-12 03:15 trigger_perfetto
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 true -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 truncate -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 tty -> toybox
+-rwxr-xr-x 1 root shell   58896 2023-09-12 03:15 tune2fs
+-rwxr-xr-x 1 root shell   24504 2023-09-12 03:15 tzdatacheck
+lrwxr-xr-x 1 root shell       4 2023-09-12 03:15 ueventd -> init
+-rwxr-xr-x 1 root shell    4173 2023-09-12 03:15 uiautomator
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 ulimit -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 umount -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 uname -> toybox
+-rwxr-x--- 1 root root    37472 2023-09-12 03:15 uncrypt
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 uniq -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 unix2dos -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 unlink -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 unshare -> toybox
+-rwxr-xr-x 1 root shell   20248 2023-09-12 03:15 unwind_info
+-rwxr-xr-x 1 root shell   24712 2023-09-12 03:15 unwind_reg_info
+-rwxr-xr-x 1 root shell   11784 2023-09-12 03:15 unwind_symbols
+lrwxr-xr-x 1 root shell       7 2023-09-12 03:15 unzip -> ziptool
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 uptime -> toybox
+-rwxr-xr-x 1 root shell   11952 2023-09-12 03:15 usbd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 usleep -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 uudecode -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 uuencode -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 uuidgen -> toybox
+-rwxr-xr-x 1 root shell   89056 2023-09-12 03:15 vdc
+-rwxr-xr-x 1 root shell  251224 2023-09-12 03:15 viewcompiler
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 vmstat -> toybox
+-rwxr-xr-x 1 root shell 1017600 2023-09-12 03:15 vold
+-rwxr-xr-x 1 root shell   33872 2023-09-12 03:15 vold_prepare_subdirs
+-rwxr-xr-x 1 root shell     169 2023-09-12 03:15 vr
+-rwxr-xr-x 1 root shell   25616 2023-09-12 03:15 wait_for_keymaster
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 watch -> toybox
+-rwxr-xr-x 1 root shell   16392 2023-09-12 03:15 watchdogd
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 wc -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 which -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 whoami -> toybox
+-rwxr-xr-x 1 root shell  391616 2023-09-12 03:15 wificond
+-rwxr-xr-x 1 root shell      33 2023-09-12 03:15 wm
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 xargs -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 xxd -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 yes -> toybox
+lrwxr-xr-x 1 root shell       6 2023-09-12 03:15 zcat -> toybox
+lrwxr-xr-x 1 root shell       7 2023-09-12 03:15 zipinfo -> ziptool
+-rwxr-xr-x 1 root shell   25168 2023-09-12 03:14 ziptool 
 ```
 
 ##  adb shell getprop 
 ```
- 
+[UserVolumeLabel]: [RockChips]
+[apexd.status]: [ready]
+[bluetooth.enable_timeout_ms]: [11000]
+[bpf.progs_loaded]: [1]
+[build.version.extensions.r]: [0]
+[cache_key.bluetooth.get_bond_state]: [-4695157130021001164]
+[cache_key.bluetooth.get_profile_connection_state]: [-4695157130021001166]
+[cache_key.bluetooth.get_state]: [-4695157130021001167]
+[cache_key.bluetooth.is_offloaded_filtering_supported]: [-4695157130021001165]
+[cache_key.display_info]: [-3700824558390535441]
+[cache_key.has_system_feature]: [-3700824558390535447]
+[cache_key.is_compat_change_enabled]: [-3700824558390535430]
+[cache_key.is_interactive]: [-3700824558390535456]
+[cache_key.is_power_save_mode]: [-3700824558390535438]
+[cache_key.is_user_unlocked]: [-3700824558390535432]
+[cache_key.location_enabled]: [-3700824558390535437]
+[cache_key.package_info]: [-3700824558390535429]
+[dalvik.vm.appimageformat]: [lz4]
+[dalvik.vm.boot-dex2oat-threads]: [4]
+[dalvik.vm.dex2oat-Xms]: [64m]
+[dalvik.vm.dex2oat-Xmx]: [512m]
+[dalvik.vm.dex2oat-max-image-block-size]: [524288]
+[dalvik.vm.dex2oat-minidebuginfo]: [true]
+[dalvik.vm.dex2oat-resolve-startup-strings]: [true]
+[dalvik.vm.dex2oat-threads]: [4]
+[dalvik.vm.dex2oat-updatable-bcp-packages-file]: [/system/etc/updatable-bcp-packages.txt]
+[dalvik.vm.dexopt.secondary]: [true]
+[dalvik.vm.heapgrowthlimit]: [192m]
+[dalvik.vm.heapmaxfree]: [8m]
+[dalvik.vm.heapminfree]: [512k]
+[dalvik.vm.heapsize]: [512m]
+[dalvik.vm.heapstartsize]: [16m]
+[dalvik.vm.heaptargetutilization]: [0.75]
+[dalvik.vm.image-dex2oat-Xms]: [64m]
+[dalvik.vm.image-dex2oat-Xmx]: [64m]
+[dalvik.vm.isa.arm.features]: [default]
+[dalvik.vm.isa.arm.variant]: [cortex-a55]
+[dalvik.vm.isa.arm64.features]: [default]
+[dalvik.vm.isa.arm64.variant]: [cortex-a55]
+[dalvik.vm.lockprof.threshold]: [500]
+[dalvik.vm.minidebuginfo]: [true]
+[dalvik.vm.usejit]: [true]
+[dalvik.vm.usejitprofiles]: [true]
+[debug.atrace.tags.enableflags]: [0]
+[debug.force_rtl]: [false]
+[debug.hwui.use_partial_updates]: [false]
+[debug.nfc.fw_download]: [false]
+[debug.nfc.se]: [false]
+[debug.tracing.screen_brightness]: [0.46850395]
+[dev.bootcomplete]: [1]
+[dev.mnt.blk.data]: [dm-5]
+[dev.mnt.blk.data.user.0]: [dm-5]
+[dev.mnt.blk.data_mirror.cur_profiles]: [dm-5]
+[dev.mnt.blk.data_mirror.data_ce.null]: [dm-5]
+[dev.mnt.blk.data_mirror.data_ce.null.0]: [dm-5]
+[dev.mnt.blk.data_mirror.data_de.null]: [dm-5]
+[dev.mnt.blk.mnt.scratch]: [dm-6]
+[dev.mnt.blk.odm]: [dm-4]
+[dev.mnt.blk.product]: [dm-3]
+[dev.mnt.blk.root]: [dm-0]
+[dev.mnt.blk.system_ext]: [dm-1]
+[dev.mnt.blk.vendor]: [dm-2]
+[external_storage.casefold.enabled]: [1]
+[external_storage.projid.enabled]: [1]
+[external_storage.sdcardfs.enabled]: [0]
+[graphics.display.kernel_idle_timer.enabled]: [false]
+[gsid.image_installed]: [0]
+[hwservicemanager.ready]: [true]
+[init.svc.adbd]: [running]
+[init.svc.apexd]: [stopped]
+[init.svc.apexd-bootstrap]: [stopped]
+[init.svc.apexd-snapshotde]: [stopped]
+[init.svc.audioserver]: [running]
+[init.svc.bootanim]: [stopped]
+[init.svc.boringssl_self_test32]: [stopped]
+[init.svc.boringssl_self_test32_vendor]: [stopped]
+[init.svc.boringssl_self_test64]: [stopped]
+[init.svc.boringssl_self_test64_vendor]: [stopped]
+[init.svc.boringssl_self_test_apex32]: [stopped]
+[init.svc.boringssl_self_test_apex64]: [stopped]
+[init.svc.bpfloader]: [stopped]
+[init.svc.cameraserver]: [running]
+[init.svc.console]: [running]
+[init.svc.credstore]: [running]
+[init.svc.derive_sdk]: [stopped]
+[init.svc.drm]: [running]
+[init.svc.gatekeeperd]: [running]
+[init.svc.gpu]: [running]
+[init.svc.health-hal-2-1]: [running]
+[init.svc.heapprofd]: [stopped]
+[init.svc.hidl_memory]: [running]
+[init.svc.hwservicemanager]: [running]
+[init.svc.idmap2d]: [stopped]
+[init.svc.incidentd]: [running]
+[init.svc.installd]: [running]
+[init.svc.iorapd]: [stopped]
+[init.svc.keystore]: [running]
+[init.svc.lmkd]: [running]
+[init.svc.logd]: [running]
+[init.svc.logd-auditctl]: [stopped]
+[init.svc.logd-reinit]: [stopped]
+[init.svc.media]: [running]
+[init.svc.media.swcodec]: [running]
+[init.svc.mediadrm]: [running]
+[init.svc.mediaextractor]: [running]
+[init.svc.mediametrics]: [running]
+[init.svc.netd]: [running]
+[init.svc.rockchip.drmservice]: [stopped]
+[init.svc.servicemanager]: [running]
+[init.svc.statsd]: [running]
+[init.svc.storaged]: [running]
+[init.svc.surfaceflinger]: [running]
+[init.svc.system_suspend]: [running]
+[init.svc.tee-supplicant]: [running]
+[init.svc.tombstoned]: [running]
+[init.svc.traced]: [running]
+[init.svc.traced_perf]: [stopped]
+[init.svc.traced_probes]: [running]
+[init.svc.ueventd]: [running]
+[init.svc.usbd]: [stopped]
+[init.svc.vendor.audio-hal]: [running]
+[init.svc.vendor.bluetooth-1-0]: [running]
+[init.svc.vendor.camera-provider-2-4]: [running]
+[init.svc.vendor.camera-provider-2-4-ext]: [running]
+[init.svc.vendor.cas-hal-1-2]: [running]
+[init.svc.vendor.drm-clearkey-hal-1-3]: [running]
+[init.svc.vendor.drm-widevine-hal-1-3]: [running]
+[init.svc.vendor.gatekeeper-1-0]: [running]
+[init.svc.vendor.gralloc-4-0]: [running]
+[init.svc.vendor.hwcomposer-2-1]: [running]
+[init.svc.vendor.insmod_sh]: [stopped]
+[init.svc.vendor.keymaster-4-0]: [running]
+[init.svc.vendor.light-rockchip]: [running]
+[init.svc.vendor.media.omx]: [running]
+[init.svc.vendor.outputmanager-1-0]: [running]
+[init.svc.vendor.power-aidl-rockchip]: [running]
+[init.svc.vendor.radio-1-2]: [running]
+[init.svc.vendor.radio-config-hal-1-0]: [running]
+[init.svc.vendor.ril-daemon]: [running]
+[init.svc.vendor.rknn-1-0]: [running]
+[init.svc.vendor.rockit-hal-1-0]: [running]
+[init.svc.vendor.sensors-hal-1-0]: [running]
+[init.svc.vendor.weaver-hal-1-0]: [running]
+[init.svc.vendor.wifi_hal_legacy]: [running]
+[init.svc.vndservicemanager]: [running]
+[init.svc.vold]: [running]
+[init.svc.wait_for_keymaster]: [stopped]
+[init.svc.wificond]: [running]
+[init.svc.zygote]: [running]
+[init.svc.zygote_secondary]: [running]
+[init.svc_debug_pid.adbd]: [1645]
+[init.svc_debug_pid.apexd]: []
+[init.svc_debug_pid.apexd-bootstrap]: []
+[init.svc_debug_pid.apexd-snapshotde]: []
+[init.svc_debug_pid.audioserver]: [293]
+[init.svc_debug_pid.bootanim]: []
+[init.svc_debug_pid.boringssl_self_test32]: []
+[init.svc_debug_pid.boringssl_self_test32_vendor]: []
+[init.svc_debug_pid.boringssl_self_test64]: []
+[init.svc_debug_pid.boringssl_self_test64_vendor]: []
+[init.svc_debug_pid.boringssl_self_test_apex32]: []
+[init.svc_debug_pid.boringssl_self_test_apex64]: []
+[init.svc_debug_pid.bpfloader]: []
+[init.svc_debug_pid.cameraserver]: [321]
+[init.svc_debug_pid.console]: [139]
+[init.svc_debug_pid.credstore]: [294]
+[init.svc_debug_pid.derive_sdk]: []
+[init.svc_debug_pid.drm]: [322]
+[init.svc_debug_pid.gatekeeperd]: [358]
+[init.svc_debug_pid.gpu]: [296]
+[init.svc_debug_pid.health-hal-2-1]: [260]
+[init.svc_debug_pid.heapprofd]: []
+[init.svc_debug_pid.hidl_memory]: [248]
+[init.svc_debug_pid.hwservicemanager]: [137]
+[init.svc_debug_pid.idmap2d]: []
+[init.svc_debug_pid.incidentd]: [324]
+[init.svc_debug_pid.installd]: [327]
+[init.svc_debug_pid.iorapd]: []
+[init.svc_debug_pid.keystore]: [328]
+[init.svc_debug_pid.lmkd]: [135]
+[init.svc_debug_pid.logd]: [134]
+[init.svc_debug_pid.logd-auditctl]: []
+[init.svc_debug_pid.logd-reinit]: []
+[init.svc_debug_pid.media]: [336]
+[init.svc_debug_pid.media.swcodec]: [355]
+[init.svc_debug_pid.mediaextractor]: [329]
+[init.svc_debug_pid.mediametrics]: [330]
+[init.svc_debug_pid.netd]: [242]
+[init.svc_debug_pid.rockchip.drmservice]: []
+[init.svc_debug_pid.servicemanager]: [136]
+[init.svc_debug_pid.statsd]: [241]
+[init.svc_debug_pid.storaged]: [341]
+[init.svc_debug_pid.surfaceflinger]: [161]
+[init.svc_debug_pid.system_suspend]: [159]
+[init.svc_debug_pid.tee-supplicant]: [158]
+[init.svc_debug_pid.tombstoned]: [237]
+[init.svc_debug_pid.traced]: [320]
+[init.svc_debug_pid.traced_perf]: []
+[init.svc_debug_pid.traced_probes]: [319]
+[init.svc_debug_pid.ueventd]: [119]
+[init.svc_debug_pid.usbd]: []
+[init.svc_debug_pid.vendor.audio-hal]: [249]
+[init.svc_debug_pid.vendor.bluetooth-1-0]: [250]
+[init.svc_debug_pid.vendor.camera-provider-2-4]: [252]
+[init.svc_debug_pid.vendor.camera-provider-2-4-ext]: [251]
+[init.svc_debug_pid.vendor.cas-hal-1-2]: [253]
+[init.svc_debug_pid.vendor.drm-clearkey-hal-1-3]: [254]
+[init.svc_debug_pid.vendor.drm-widevine-hal-1-3]: [255]
+[init.svc_debug_pid.vendor.gatekeeper-1-0]: [259]
+[init.svc_debug_pid.vendor.gralloc-4-0]: [205]
+[init.svc_debug_pid.vendor.hwcomposer-2-1]: [213]
+[init.svc_debug_pid.vendor.insmod_sh]: []
+[init.svc_debug_pid.vendor.keymaster-4-0]: [160]
+[init.svc_debug_pid.vendor.light-rockchip]: [272]
+[init.svc_debug_pid.vendor.media.omx]: [346]
+[init.svc_debug_pid.vendor.outputmanager-1-0]: [277]
+[init.svc_debug_pid.vendor.power-aidl-rockchip]: [273]
+[init.svc_debug_pid.vendor.radio-1-2]: [264]
+[init.svc_debug_pid.vendor.radio-config-hal-1-0]: [261]
+[init.svc_debug_pid.vendor.ril-daemon]: [3038]
+[init.svc_debug_pid.vendor.rknn-1-0]: [274]
+[init.svc_debug_pid.vendor.rockit-hal-1-0]: [287]
+[init.svc_debug_pid.vendor.sensors-hal-1-0]: [265]
+[init.svc_debug_pid.vendor.weaver-hal-1-0]: [267]
+[init.svc_debug_pid.vendor.wifi_hal_legacy]: [269]
+[init.svc_debug_pid.vndservicemanager]: [138]
+[init.svc_debug_pid.vold]: [146]
+[init.svc_debug_pid.wait_for_keymaster]: []
+[init.svc_debug_pid.wificond]: [345]
+[init.svc_debug_pid.zygote]: [243]
+[init.svc_debug_pid.zygote_secondary]: [244]
+[keyguard.no_require_sim]: [true]
+[log.tag.APM_AudioPolicyManager]: [D]
+[log.tag.stats_log]: [I]
+[logd.logpersistd.enable]: [true]
+[net.bt.name]: [Android]
+[net.qtaguid_enabled]: [1]
+[net.tcp.default_init_rwnd]: [60]
+[persist.bluetooth.btsnoopenable]: [false]
+[persist.bluetooth.btsnooppath]: [/sdcard/btsnoop_hci.cfa]
+[persist.bluetooth.btsnoopsize]: [0xffff]
+[persist.bluetooth.rtkcoex]: [true]
+[persist.bt.power.down]: [true]
+[persist.debug.dalvik.vm.core_platform_api_policy]: [just-warn]
+[persist.device_config.attempted_boot_count]: [0]
+[persist.enable_task_snapshots]: [false]
+[persist.sys.boot.reason]: []
+[persist.sys.boot.reason.history]: [reboot,1501837212
+reboot,1501837213
+reboot,1694488601
+reboot,1694488563]
+[persist.sys.dalvik.vm.lib.2]: [libart.so]
+[persist.sys.device_provisioned]: [1]
+[persist.sys.displayinset.top]: [0]
+[persist.sys.first_booting]: [false]
+[persist.sys.fuse]: [true]
+[persist.sys.isolated_storage]: [true]
+[persist.sys.lmk.reportkills]: [true]
+[persist.sys.strictmode.visual]: [false]
+[persist.sys.theme]: [1]
+[persist.sys.timezone]: [GMT]
+[persist.sys.usb.config]: [adb]
+[persist.sys.zram_enabled]: [1]
+[persist.traced.enable]: [1]
+[persist.vendor.camera.debug.logfile]: [0]
+[persist.vendor.sys.hid]: []
+[persist.wifi.sleep.delay.ms]: [0]
+[pm.dexopt.ab-ota]: [speed-profile]
+[pm.dexopt.bg-dexopt]: [speed-profile]
+[pm.dexopt.boot]: [verify]
+[pm.dexopt.first-boot]: [quicken]
+[pm.dexopt.inactive]: [verify]
+[pm.dexopt.install]: [speed-profile]
+[pm.dexopt.shared]: [speed]
+[ril.function.dataonly]: [1]
+[ro.actionable_compatible_property.enabled]: [true]
+[ro.allow.mock.location]: [0]
+[ro.audio.monitorOrientation]: [true]
+[ro.baseband]: [N/A]
+[ro.bionic.2nd_arch]: [arm]
+[ro.bionic.2nd_cpu_variant]: [cortex-a55]
+[ro.bionic.arch]: [arm64]
+[ro.bionic.cpu_variant]: [cortex-a55]
+[ro.board.platform]: [rk356x]
+[ro.boot.baseband]: [N/A]
+[ro.boot.boot_devices]: [fe310000.sdhci,fe330000.nandc,fe000000.dwmmc]
+[ro.boot.bootreason]: [reboot]
+[ro.boot.console]: [ttyFIQ0]
+[ro.boot.dtb_idx]: [0]
+[ro.boot.dtbo_idx]: [0]
+[ro.boot.dynamic_partitions]: [true]
+[ro.boot.flash.locked]: [0]
+[ro.boot.hardware]: [rk30board]
+[ro.boot.mode]: [normal]
+[ro.boot.noril]: [false]
+[ro.boot.selinux]: [permissive]
+[ro.boot.serialno]: [b9842dca921fb5a2]
+[ro.boot.slot_suffix]: []
+[ro.boot.storagemedia]: [emmc]
+[ro.boot.verifiedbootstate]: [orange]
+[ro.boot.veritymode]: [enforcing]
+[ro.boot.vr]: [0]
+[ro.boot.wificountrycode]: [CN]
+[ro.bootimage.build.date]: [Tue Sep 12 03:13:55 UTC 2023]
+[ro.bootimage.build.date.utc]: [1694488435]
+[ro.bootimage.build.fingerprint]: [rockchip/rk3566_tspi/rk3566_tspi:11/RQ2A.210505.003/root09120313:userdebug/release-keys]
+[ro.bootloader]: [unknown]
+[ro.bootmode]: [normal]
+[ro.boottime.adbd]: [5278768601]
+[ro.boottime.apexd]: [3759341448]
+[ro.boottime.apexd-bootstrap]: [1861577674]
+[ro.boottime.apexd-snapshotde]: [4073488938]
+[ro.boottime.audioserver]: [4753542798]
+[ro.boottime.bootanim]: [3105549258]
+[ro.boottime.boringssl_self_test32]: [1969237102]
+[ro.boottime.boringssl_self_test32_vendor]: [2324553346]
+[ro.boottime.boringssl_self_test64]: [2051813777]
+[ro.boottime.boringssl_self_test64_vendor]: [2362817100]
+[ro.boottime.boringssl_self_test_apex32]: [5153732838]
+[ro.boottime.boringssl_self_test_apex64]: [5201195468]
+[ro.boottime.bpfloader]: [4241962914]
+[ro.boottime.cameraserver]: [5319220438]
+[ro.boottime.console]: [2881798610]
+[ro.boottime.credstore]: [4758237174]
+[ro.boottime.derive_sdk]: [3967339761]
+[ro.boottime.drm]: [5323808647]
+[ro.boottime.gatekeeperd]: [5626266719]
+[ro.boottime.gpu]: [4774926925]
+[ro.boottime.health-hal-2-1]: [4491862064]
+[ro.boottime.hidl_memory]: [4383418053]
+[ro.boottime.hwservicemanager]: [2873410859]
+[ro.boottime.idmap2d]: [5329928981]
+[ro.boottime.incidentd]: [5338077857]
+[ro.boottime.init]: [1081641721]
+[ro.boottime.init.cold_boot_wait]: [338]
+[ro.boottime.init.first_stage]: [236469357]
+[ro.boottime.init.fsck.cache]: [97]
+[ro.boottime.init.fsck.data]: [138]
+[ro.boottime.init.fsck.scratch]: [27]
+[ro.boottime.init.mount.cache]: [3]
+[ro.boottime.init.mount.data]: [171]
+[ro.boottime.init.mount.scratch]: [13]
+[ro.boottime.init.mount_all.early]: [116]
+[ro.boottime.init.mount_all.late]: [411]
+[ro.boottime.init.selinux]: [269454486]
+[ro.boottime.installd]: [5377049486]
+[ro.boottime.keystore]: [5397232530]
+[ro.boottime.lmkd]: [2865237192]
+[ro.boottime.logd]: [2860949983]
+[ro.boottime.logd-auditctl]: [18308970076]
+[ro.boottime.logd-reinit]: [4197710659]
+[ro.boottime.media]: [5448290243]
+[ro.boottime.media.swcodec]: [5584153257]
+[ro.boottime.mediaextractor]: [5415185490]
+[ro.boottime.mediametrics]: [5419763782]
+[ro.boottime.netd]: [4258487290]
+[ro.boottime.rockchip.drmservice]: [5511499374]
+[ro.boottime.servicemanager]: [2869016026]
+[ro.boottime.statsd]: [4250307206]
+[ro.boottime.storaged]: [5453108869]
+[ro.boottime.surfaceflinger]: [3100936841]
+[ro.boottime.system_suspend]: [3089714964]
+[ro.boottime.tee-supplicant]: [3084926672]
+[ro.boottime.tombstoned]: [4174732573]
+[ro.boottime.traced]: [5305032020]
+[ro.boottime.traced_probes]: [5293201144]
+[ro.boottime.ueventd]: [1854437674]
+[ro.boottime.usbd]: [5711546853]
+[ro.boottime.vendor.audio-hal]: [4388254762]
+[ro.boottime.vendor.bluetooth-1-0]: [4393330637]
+[ro.boottime.vendor.camera-provider-2-4]: [4410816931]
+[ro.boottime.vendor.camera-provider-2-4-ext]: [4398186596]
+[ro.boottime.vendor.cas-hal-1-2]: [4420849390]
+[ro.boottime.vendor.drm-clearkey-hal-1-3]: [4435598100]
+[ro.boottime.vendor.drm-widevine-hal-1-3]: [4448128976]
+[ro.boottime.vendor.gatekeeper-1-0]: [4463583227]
+[ro.boottime.vendor.gralloc-4-0]: [3840720248]
+[ro.boottime.vendor.hwcomposer-2-1]: [3951514801]
+[ro.boottime.vendor.insmod_sh]: [2320844512]
+[ro.boottime.vendor.keymaster-4-0]: [3094218590]
+[ro.boottime.vendor.light-rockchip]: [4653650455]
+[ro.boottime.vendor.media.omx]: [5506311791]
+[ro.boottime.vendor.outputmanager-1-0]: [4695198667]
+[ro.boottime.vendor.power-aidl-rockchip]: [4658224080]
+[ro.boottime.vendor.radio-1-2]: [4544335527]
+[ro.boottime.vendor.radio-config-hal-1-0]: [4496575981]
+[ro.boottime.vendor.ril-daemon]: [5542101044]
+[ro.boottime.vendor.rknn-1-0]: [4685652708]
+[ro.boottime.vendor.rockit-hal-1-0]: [4707557752]
+[ro.boottime.vendor.sensors-hal-1-0]: [4559753612]
+[ro.boottime.vendor.weaver-hal-1-0]: [4581277448]
+[ro.boottime.vendor.wifi_hal_legacy]: [4632022786]
+[ro.boottime.vndservicemanager]: [2877584901]
+[ro.boottime.vold]: [2918046072]
+[ro.boottime.wait_for_keymaster]: [3110265216]
+[ro.boottime.wificond]: [5468772828]
+[ro.boottime.zygote]: [4266173291]
+[ro.boottime.zygote_secondary]: [4272968542]
+[ro.bt.bdaddr_path]: [/data/misc/bluetooth/bdaddr]
+[ro.build.characteristics]: [tablet]
+[ro.build.date]: [Tue Sep 12 03:13:55 UTC 2023]
+[ro.build.date.utc]: [1694488435]
+[ro.build.description]: [rk3566_tspi-userdebug 11 RQ2A.210505.003 eng.root.20230911.031521 release-keys]
+[ro.build.display.id]: [rk3566_tspi-userdebug 11 RQ2A.210505.003 eng.root.20230911.031521 release-keys]
+[ro.build.fingerprint]: [rockchip/rk3566_tspi/rk3566_tspi:11/RQ2A.210505.003/eng.root.20230911.031521:userdebug/release-keys]
+[ro.build.flavor]: [rk3566_tspi-userdebug]
+[ro.build.host]: [lckfb]
+[ro.build.id]: [RQ2A.210505.003]
+[ro.build.product]: [rk3566_tspi]
+[ro.build.shutdown_timeout]: [6]
+[ro.build.tags]: [release-keys]
+[ro.build.type]: [userdebug]
+[ro.build.user]: [root]
+[ro.build.version.all_codenames]: [REL]
+[ro.build.version.base_os]: []
+[ro.build.version.codename]: [REL]
+[ro.build.version.incremental]: [eng.root.20230911.031521]
+[ro.build.version.min_supported_target_sdk]: [23]
+[ro.build.version.preview_sdk]: [0]
+[ro.build.version.preview_sdk_fingerprint]: [REL]
+[ro.build.version.release]: [11]
+[ro.build.version.release_or_codename]: [11]
+[ro.build.version.sdk]: [30]
+[ro.build.version.security_patch]: [2021-06-05]
+[ro.carrier]: [unknown]
+[ro.cold_boot_done]: [true]
+[ro.com.android.dataroaming]: [true]
+[ro.config.alarm_alert]: [Oxygen.ogg]
+[ro.config.enable.remotecontrol]: [false]
+[ro.config.notification_sound]: [pixiedust.ogg]
+[ro.config.ringtone]: [Ring_Synth_04.ogg]
+[ro.crypto.metadata.enabled]: [true]
+[ro.crypto.state]: [encrypted]
+[ro.crypto.type]: [file]
+[ro.crypto.uses_fs_ioc_add_encryption_key]: [true]
+[ro.dalvik.vm.native.bridge]: [0]
+[ro.debuggable]: [1]
+[ro.default.size]: [100]
+[ro.enable_boot_charger_mode]: [0]
+[ro.factory.hasGPS]: [false]
+[ro.factory.hasUMS]: [false]
+[ro.factory.storage_suppntfs]: [true]
+[ro.factory.tool]: [0]
+[ro.factory.without_battery]: [false]
+[ro.flash_img.enable]: [false]
+[ro.gsid.image_running]: [0]
+[ro.hardware]: [rk30board]
+[ro.hardware.egl]: [mali]
+[ro.hwui.use_vulkan]: []
+[ro.incremental.enable]: [yes]
+[ro.iorapd.enable]: [false]
+[ro.kernel.android.checkjni]: [0]
+[ro.logd.kernel]: [1]
+[ro.logd.size.stats]: [64K]
+[ro.minui.default_rotation]: [ROTATION_NONE]
+[ro.minui.pixel_format]: [RGBX_8888]
+[ro.odm.build.date]: [Tue Sep 12 03:13:55 UTC 2023]
+[ro.odm.build.date.utc]: [1694488435]
+[ro.odm.build.fingerprint]: [rockchip/rk3566_tspi/rk3566_tspi:11/RQ2A.210505.003/root09120313:userdebug/release-keys]
+[ro.odm.build.id]: [RQ2A.210505.003]
+[ro.odm.build.tags]: [release-keys]
+[ro.odm.build.type]: [userdebug]
+[ro.odm.build.version.incremental]: [eng.root.20230911.031521]
+[ro.odm.build.version.release]: [11]
+[ro.odm.build.version.release_or_codename]: [11]
+[ro.odm.build.version.sdk]: [30]
+[ro.odm.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
+[ro.odm.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.odm.product.cpu.abilist64]: [arm64-v8a]
+[ro.oem_unlock_supported]: [1]
+[ro.opengles.version]: [196610]
+[ro.organization_owned]: [false]
+[ro.persistent_properties.ready]: [true]
+[ro.postinstall.fstab.prefix]: [/system]
+[ro.product.board]: [rk30sdk]
+[ro.product.brand]: [rockchip]
+[ro.product.build.date]: [Tue Sep 12 03:13:55 UTC 2023]
+[ro.product.build.date.utc]: [1694488435]
+[ro.product.build.fingerprint]: [rockchip/rk3566_tspi/rk3566_tspi:11/RQ2A.210505.003/root09120313:userdebug/release-keys]
+[ro.product.build.id]: [RQ2A.210505.003]
+[ro.product.build.tags]: [release-keys]
+[ro.product.build.type]: [userdebug]
+[ro.product.build.version.incremental]: [eng.root.20230911.031521]
+[ro.product.build.version.release]: [11]
+[ro.product.build.version.release_or_codename]: [11]
+[ro.product.build.version.sdk]: [30]
+[ro.product.cpu.abi]: [arm64-v8a]
+[ro.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
+[ro.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.product.cpu.abilist64]: [arm64-v8a]
+[ro.product.device]: [rk3566_tspi]
+[ro.product.first_api_level]: [30]
+[ro.product.locale]: [zh-CN]
+[ro.product.manufacturer]: [rockchip]
+[ro.product.model]: [rk3566_tspi]
+[ro.product.name]: [rk3566_tspi]
+[ro.product.odm.brand]: [rockchip]
+[ro.product.odm.device]: [rk3566_tspi]
+[ro.product.odm.manufacturer]: [rockchip]
+[ro.product.odm.model]: [rk3566_tspi]
+[ro.product.odm.name]: [rk3566_tspi]
+[ro.product.ota.host]: [www.rockchip.com:2300]
+[ro.product.product.brand]: [rockchip]
+[ro.product.product.device]: [rk3566_tspi]
+[ro.product.product.manufacturer]: [rockchip]
+[ro.product.product.model]: [rk3566_tspi]
+[ro.product.product.name]: [rk3566_tspi]
+[ro.product.system.brand]: [rockchip]
+[ro.product.system.device]: [rk3566_tspi]
+[ro.product.system.manufacturer]: [rockchip]
+[ro.product.system.model]: [rk3566_tspi]
+[ro.product.system.name]: [rk3566_tspi]
+[ro.product.system_ext.brand]: [rockchip]
+[ro.product.system_ext.device]: [rk3566_tspi]
+[ro.product.system_ext.manufacturer]: [rockchip]
+[ro.product.system_ext.model]: [rk3566_tspi]
+[ro.product.system_ext.name]: [rk3566_tspi]
+[ro.product.usbfactory]: [rockchip_usb]
+[ro.product.vendor.brand]: [rockchip]
+[ro.product.vendor.device]: [rk3566_tspi]
+[ro.product.vendor.manufacturer]: [rockchip]
+[ro.product.vendor.model]: [rk3566_tspi]
+[ro.product.vendor.name]: [rk3566_tspi]
+[ro.product.vndk.version]: [30]
+[ro.property_service.version]: [2]
+[ro.revision]: [0]
+[ro.ril.ecclist]: [112,911]
+[ro.rk.bt_enable]: [true]
+[ro.rk.flash_enable]: [true]
+[ro.rk.hdmi_enable]: [true]
+[ro.rk.screenoff_time]: [60000]
+[ro.rk.screenshot_enable]: [true]
+[ro.rksdk.version]: [ANDROID11_RKR9]
+[ro.runtime.firstboot]: [1694488558175]
+[ro.safemode.disabled]: [true]
+[ro.secure]: [1]
+[ro.serialno]: [b9842dca921fb5a2]
+[ro.sf.fakerotation]: [false]
+[ro.sf.lcd_density]: [240]
+[ro.system.build.date]: [Tue Sep 12 03:13:55 UTC 2023]
+[ro.system.build.date.utc]: [1694488435]
+[ro.system.build.fingerprint]: [rockchip/rk3566_tspi/rk3566_tspi:11/RQ2A.210505.003/root09120313:userdebug/release-keys]
+[ro.system.build.id]: [RQ2A.210505.003]
+[ro.system.build.tags]: [release-keys]
+[ro.system.build.type]: [userdebug]
+[ro.system.build.version.incremental]: [eng.root.20230911.031521]
+[ro.system.build.version.release]: [11]
+[ro.system.build.version.release_or_codename]: [11]
+[ro.system.build.version.sdk]: [30]
+[ro.system_ext.build.date]: [Tue Sep 12 03:13:55 UTC 2023]
+[ro.system_ext.build.date.utc]: [1694488435]
+[ro.system_ext.build.fingerprint]: [rockchip/rk3566_tspi/rk3566_tspi:11/RQ2A.210505.003/root09120313:userdebug/release-keys]
+[ro.system_ext.build.id]: [RQ2A.210505.003]
+[ro.system_ext.build.tags]: [release-keys]
+[ro.system_ext.build.type]: [userdebug]
+[ro.system_ext.build.version.incremental]: [eng.root.20230911.031521]
+[ro.system_ext.build.version.release]: [11]
+[ro.system_ext.build.version.release_or_codename]: [11]
+[ro.system_ext.build.version.sdk]: [30]
+[ro.target.product]: [tablet]
+[ro.telephony.default_network]: [9]
+[ro.tether.denied]: [false]
+[ro.treble.enabled]: [true]
+[ro.vendor.build.date]: [Tue Sep 12 03:13:55 UTC 2023]
+[ro.vendor.build.date.utc]: [1694488435]
+[ro.vendor.build.fingerprint]: [rockchip/rk3566_tspi/rk3566_tspi:11/RQ2A.210505.003/root09120313:userdebug/release-keys]
+[ro.vendor.build.id]: [RQ2A.210505.003]
+[ro.vendor.build.security_patch]: [2021-06-05]
+[ro.vendor.build.tags]: [release-keys]
+[ro.vendor.build.type]: [userdebug]
+[ro.vendor.build.version.incremental]: [eng.root.20230911.031521]
+[ro.vendor.build.version.release]: [11]
+[ro.vendor.build.version.release_or_codename]: [11]
+[ro.vendor.build.version.sdk]: [30]
+[ro.vendor.ethernet_settings]: [true]
+[ro.vendor.frameratelock]: [true]
+[ro.vendor.hdmi_settings]: [true]
+[ro.vendor.hdmirotationlock]: [true]
+[ro.vendor.mpp_buf_type]: [1]
+[ro.vendor.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
+[ro.vendor.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.vendor.product.cpu.abilist64]: [arm64-v8a]
+[ro.vendor.rk_sdk]: [1]
+[ro.vendor.sdkversion]: [rk356x_ANDROID10.0_MID_V1.0]
+[ro.vendor.udisk.visible]: [true]
+[ro.vndk.version]: [30]
+[ro.wifi.channels]: []
+[ro.wifi.sleep.power.down]: [true]
+[ro.zygote]: [zygote64_32]
+[security.perf_harden]: [1]
+[selinux.restorecon_recursive]: [/data/misc_ce/0]
+[service.adb.root]: [1]
+[service.bootanim.exit]: [1]
+[service.sf.present_timestamp]: [1]
+[sf.power.control]: [2073600]
+[sys.boot.reason]: [reboot]
+[sys.boot.reason.last]: [reboot]
+[sys.boot_completed]: [1]
+[sys.bootstat.first_boot_completed]: [1]
+[sys.gmali.version]: [g2p0-01eac0-x-8@0]
+[sys.isolated_storage_snapshot]: [true]
+[sys.lmk.minfree_levels]: [18432:0,23040:100,27648:200,32256:250,55296:900,80640:950]
+[sys.lmk.reportkills]: [1]
+[sys.rescue_boot_count]: [1]
+[sys.resolution.changed]: [false]
+[sys.retaildemo.enabled]: [0]
+[sys.rkadb.root]: [0]
+[sys.status.hidebar_enable]: [false]
+[sys.sysctl.extra_free_kbytes]: [24300]
+[sys.system_server.start_count]: [1]
+[sys.system_server.start_elapsed]: [9391]
+[sys.system_server.start_uptime]: [9391]
+[sys.usb.config]: [adb]
+[sys.usb.configfs]: [1]
+[sys.usb.controller]: [fcc00000.dwc3]
+[sys.usb.ffs.ready]: [1]
+[sys.usb.mtp.device_type]: [3]
+[sys.usb.state]: [adb]
+[sys.use_memfd]: [false]
+[sys.user.0.ce_available]: [true]
+[sys.wallpaper.rgb565]: [0]
+[sys.wifitracing.started]: [1]
+[testing.mediascanner.skiplist]: [/mnt/shell/emulated/Android/]
+[tombstoned.max_tombstone_count]: [50]
+[vendor.all.modules.ready]: [1]
+[vendor.boot_completed]: [1]
+[vendor.cam.hal3.ver]: [v2.1.0]
+[vendor.cam.librkaiq.ver]: [AIQ v2.0x60.0]
+[vendor.cam.librkaiqAdapter.ver]: [v1.0.3]
+[vendor.cam.librkaiqCalib.ver]: [Calib v1.4.8,magicCode:1170944]
+[vendor.ghwc.version]: [HWC2-1.1.157]
+[vendor.gralloc.disable_afbc]: [0]
+[vendor.gralloc.fb_size]: [2073600]
+[vendor.hwc.compose_policy]: [1]
+[vendor.hwc.hdr_state]: [NORMAL]
+[vendor.rild.libpath]: [/vendor/lib64/librk-ril.so]
+[vendor.security.tee_supplicant]: [1]
+[vold.has_adoptable]: [0]
+[vold.has_quota]: [1]
+[vold.has_reserved]: [1]
+[wifi.interface]: [wlan0]
+[wifi.supplicant_scan_interval]: [15]
+[wlan.driver.status]: [ok] 
 ```
 
 ##  dumpsys -l 
@@ -7587,11 +8216,12 @@ drwxr-xr-x   6 root   root 0 1970-01-01 00:00 usb
 ##  cat /sys/kernel/debug/gpio 
 ```
 gpiochip0: GPIOs 0-31, parent: platform/fdd60000.gpio, gpio0:
+ gpio-8   (                    |power               ) out lo     //nisy-摄像头加上后出现
 
 gpiochip1: GPIOs 32-63, parent: platform/fe740000.gpio, gpio1:
  gpio-40  (                    |rgb-led-b           ) out hi    
  gpio-41  (                    |rgb-led-g           ) out hi    
- gpio-42  (                    |rgb-led-r           ) out lo    
+ gpio-42  (                    |rgb-led-r           ) out hi    
 
 gpiochip2: GPIOs 64-95, parent: platform/fe750000.gpio, gpio2:
  gpio-73  (                    |reset               ) out lo    
@@ -7603,6 +8233,8 @@ gpiochip2: GPIOs 64-95, parent: platform/fe750000.gpio, gpio2:
 gpiochip3: GPIOs 96-127, parent: platform/fe760000.gpio, gpio3:
 
 gpiochip4: GPIOs 128-159, parent: platform/fe770000.gpio, gpio4:
+ gpio-140 (                    |pwdn                ) out lo    //nisy-摄像头加上后出现
+ gpio-141 (                    |reset               ) out lo    //nisy-摄像头加上后出现
  gpio-148 (                    |vcc5v0_host         ) out hi    
 
 gpiochip5: GPIOs 255-255, parent: platform/rk805-pinctrl, rk817-gpio, can sleep: 
@@ -7615,18 +8247,19 @@ gpiochip5: GPIOs 255-255, parent: platform/rk805-pinctrl, rk817-gpio, can sleep:
 total 0
 drwxr-xr-x  2 root root 0 2017-08-04 09:00 .
 drwxr-xr-x 76 root root 0 2017-08-04 09:00 ..
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 v4l-subdev0 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev0
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 v4l-subdev1 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev1
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 v4l-subdev2 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev2
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video0 -> ../../devices/platform/rkisp-vir0/video4linux/video0
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video1 -> ../../devices/platform/rkisp-vir0/video4linux/video1
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video2 -> ../../devices/platform/rkisp-vir0/video4linux/video2
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video3 -> ../../devices/platform/rkisp-vir0/video4linux/video3
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video4 -> ../../devices/platform/rkisp-vir0/video4linux/video4
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video5 -> ../../devices/platform/rkisp-vir0/video4linux/video5
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video6 -> ../../devices/platform/rkisp-vir0/video4linux/video6
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video7 -> ../../devices/platform/rkisp-vir0/video4linux/video7
-lrwxrwxrwx  1 root root 0 2024-08-15 17:15 video8 -> ../../devices/platform/rkisp-vir0/video4linux/video8 
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev0 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev0
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev1 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev1
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev2 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev2
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev3 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev3  //nisy-摄像头加上后出现
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video0 -> ../../devices/platform/rkisp-vir0/video4linux/video0
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video1 -> ../../devices/platform/rkisp-vir0/video4linux/video1
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video2 -> ../../devices/platform/rkisp-vir0/video4linux/video2
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video3 -> ../../devices/platform/rkisp-vir0/video4linux/video3
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video4 -> ../../devices/platform/rkisp-vir0/video4linux/video4
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video5 -> ../../devices/platform/rkisp-vir0/video4linux/video5
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video6 -> ../../devices/platform/rkisp-vir0/video4linux/video6
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video7 -> ../../devices/platform/rkisp-vir0/video4linux/video7
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video8 -> ../../devices/platform/rkisp-vir0/video4linux/video8 
 ```
 /sys/class/video4linux/video0
 dev:81:0
@@ -7702,27 +8335,33 @@ name:rockchip-csi2-dphy1
 index:11
 link_name:
 
+/sys/class/video4linux/v4l-subdev3  //nisy-摄像头加上后出现
+dev:81:12
+name:m00_b_ov5695 4-0036
+index:12
+link_name:
+
 
 ##  ===================== 鎵撳嵃 /sys/bus/media/devices/media* =====================
 
 ##  ls -al /sys/bus/media/ 
 ```
 total 0
-drwxr-xr-x  4 root root    0 2024-08-15 17:15 .
+drwxr-xr-x  4 root root    0 2023-09-12 03:25 .
 drwxr-xr-x 30 root root    0 2017-08-04 09:00 ..
-drwxr-xr-x  2 root root    0 2024-08-15 17:15 devices
-drwxr-xr-x  2 root root    0 2024-08-15 17:15 drivers
--rw-r--r--  1 root root 4096 2024-08-15 17:15 drivers_autoprobe
---w-------  1 root root 4096 2024-08-15 17:15 drivers_probe
---w-------  1 root root 4096 2024-08-15 17:15 uevent 
+drwxr-xr-x  2 root root    0 2023-09-12 03:25 devices
+drwxr-xr-x  2 root root    0 2023-09-12 03:25 drivers
+-rw-r--r--  1 root root 4096 2023-09-12 03:25 drivers_autoprobe
+--w-------  1 root root 4096 2023-09-12 03:25 drivers_probe
+--w-------  1 root root 4096 2023-09-12 03:25 uevent 
 ```
 
 ##  ls -al /sys/bus/media/devices 
 ```
 total 0
-drwxr-xr-x 2 root root 0 2024-08-15 17:15 .
-drwxr-xr-x 4 root root 0 2024-08-15 17:15 ..
-lrwxrwxrwx 1 root root 0 2024-08-15 17:15 media0 -> ../../../devices/platform/rkisp-vir0/media0 
+drwxr-xr-x 2 root root 0 2023-09-12 03:25 .
+drwxr-xr-x 4 root root 0 2023-09-12 03:25 ..
+lrwxrwxrwx 1 root root 0 2023-09-12 03:25 media0 -> ../../../devices/platform/rkisp-vir0/media0 
 ```
 /sys/bus/media/devices/media0
 dev:250:0
@@ -7750,18 +8389,291 @@ thermal-devfreq-1
 
 == Service global info: ==
 
-Number of camera devices: 0
-Number of normal camera devices: 0
-Number of public camera devices visible to API1: 0
+Number of camera devices: 1
+Number of normal camera devices: 1
+Number of public camera devices visible to API1: 1
+    Device 0 maps to "0"
 Active Camera Clients:
 []
 Allowed user IDs: 0
 
 == Camera service events log (most recent at top): ==
-  08-15 16:47:32 : USER_SWITCH previous allowed user IDs: <None>, current allowed user IDs: 0
+  09-12 03:15:51 : USER_SWITCH previous allowed user IDs: <None>, current allowed user IDs: 0
+  08-04 09:00:13 : ADD device 0, reason: (Device added)
 
+== Camera device 0 dynamic info: ==
+  Device 0 is closed, no client instance
 == Camera Provider HAL external/0 (v2.5, remote) static info: 0 devices: ==
-== Camera Provider HAL legacy/0 (v2.5, remote) static info: 0 devices: ==
+== Camera Provider HAL legacy/0 (v2.5, remote) static info: 1 devices: ==
+== Camera HAL device device@3.3/legacy/0 (v3.3) static information: ==
+  Resource cost: 50
+  Conflicting devices: None
+  API1 info:
+    Has a flash unit: false
+    Facing: Back
+    Orientation: 180
+  API2 camera characteristics:
+    Dumping camera metadata array: 71 / 71 entries, 2176 / 2176 bytes of extra data.
+      Version: 1, Flags: 00000000
+      android.colorCorrection.availableAberrationModes (00004): byte[1]
+        [0 ]
+      android.control.aeAvailableAntibandingModes (10012): byte[4]
+        [0 1 2 3 ]
+      android.control.aeAvailableModes (10013): byte[2]
+        [1 0 ]
+      android.control.aeAvailableTargetFpsRanges (10014): int32[4]
+        [15 30 30 30 ]
+      android.control.aeCompensationRange (10015): int32[2]
+        [-6 6 ]
+      android.control.aeCompensationStep (10016): rational[1]
+        [(1 / 3) ]
+      android.control.afAvailableModes (10017): byte[6]
+        [0 1 2 3 4 5 ]
+      android.control.availableEffects (10018): byte[1]
+        [0 ]
+      android.control.availableSceneModes (10019): byte[1]
+        [0 ]
+      android.control.availableVideoStabilizationModes (1001a): byte[1]
+        [0 ]
+      android.control.awbAvailableModes (1001b): byte[5]
+        [1 2 3 5 6 ]
+      android.control.maxRegions (1001c): int32[3]
+        [1 0 1 ]
+      android.control.aeLockAvailable (10024): byte[1]
+        [FALSE ]
+      android.control.awbLockAvailable (10025): byte[1]
+        [TRUE ]
+      android.control.availableModes (10026): byte[1]
+        [1 ]
+      android.edge.availableEdgeModes (30002): byte[3]
+        [0 1 2 ]
+      android.flash.colorTemperature (40003): byte[1]
+        [0 ]
+      android.flash.maxEnergy (40004): byte[1]
+        [10 ]
+      android.flash.maxEnergy (40004): byte[1]
+        [0 ]
+      android.flash.info.available (50000): byte[1]
+        [FALSE ]
+      android.flash.info.chargeDuration (50001): int64[1]
+        [1000000 ]
+      android.jpeg.availableThumbnailSizes (70007): int32[8]
+        [0 0 160 120 ]
+        [320 180 320 240 ]
+      android.jpeg.maxSize (70008): int32[1]
+        [7558272 ]
+      android.lens.facing (80005): byte[1]
+        [BACK ]
+      android.lens.info.availableApertures (90000): float[1]
+        [2.00000000 ]
+      android.lens.info.availableFocalLengths (90002): float[1]
+        [2.03999996 ]
+      android.lens.info.availableOpticalStabilization (90003): byte[1]
+        [0 ]
+      android.lens.info.hyperfocalDistance (90004): float[1]
+        [0.00000000 ]
+      android.lens.info.minimumFocusDistance (90005): float[1]
+        [0.10000000 ]
+      android.noiseReduction.availableNoiseReductionModes (a0002): byte[3]
+        [0 1 2 ]
+      android.request.maxNumOutputStreams (c0006): int32[3]
+        [1 2 1 ]
+      android.request.maxNumInputStreams (c0008): int32[1]
+        [0 ]
+      android.request.pipelineMaxDepth (c000a): byte[1]
+        [4 ]
+      android.request.partialResultCount (c000b): int32[1]
+        [1 ]
+      android.request.availableCapabilities (c000c): byte[1]
+        [BACKWARD_COMPATIBLE ]
+      android.request.availableRequestKeys (c000d): int32[41]
+        [1441792 3 2 1 ]
+        [65536 65537 65538 65539 ]
+        [65541 65542 65543 65540 ]
+        [65544 65545 65569 65546 ]
+        [65547 65549 65550 65551 ]
+        [65552 65553 196608 262146 ]
+        [458755 458756 458757 458758 ]
+        [524288 524290 524292 655360 ]
+        [851968 1114112 1114115 1114126 ]
+        [-2147418112 -2147352576 -2147352575 -2147352574 ]
+        [65583 ]
+      android.request.availableResultKeys (c000e): int32[48]
+        [0 1 2 65536 ]
+        [65537 65538 65539 65541 ]
+        [65542 65543 65544 65545 ]
+        [65569 65546 65547 65549 ]
+        [65550 65551 65552 65553 ]
+        [65567 65568 65570 1507328 ]
+        [196608 262146 458755 458756 ]
+        [458757 458758 524290 524288 ]
+        [524292 786441 851968 917527 ]
+        [917528 917520 917530 1114112 ]
+        [1114115 655360 1114126 -2147418112 ]
+        [-2147352576 -2147352575 -2147352574 65583 ]
+      android.request.availableCharacteristicsKeys (c000f): int32[73]
+        [4 65574 65554 65555 ]
+        [65572 65556 65557 65558 ]
+        [65559 65560 65563 65573 ]
+        [65561 65562 65564 458760 ]
+        [458759 589824 589826 589827 ]
+        [589828 589829 524293 786438 ]
+        [786442 786440 786443 786444 ]
+        [786445 786446 786447 851972 ]
+        [851977 851978 851979 851980 ]
+        [851981 983040 983041 983042 ]
+        [983043 983044 983045 983046 ]
+        [983047 983048 917515 917516 ]
+        [917517 917518 917519 917529 ]
+        [1376256 1179648 1179649 1179650 ]
+        [1179654 1179655 262147 262148 ]
+        [327680 327681 262148 1507329 ]
+        [1572865 196610 655362 -2147418112 ]
+        [-2147352576 -2147352575 -2147352574 983050 ]
+        [65582 ]
+      android.scaler.availableMaxDigitalZoom (d0004): float[1]
+        [4.00000000 ]
+      android.scaler.availableInputOutputFormatsMap (d0009): int32[8]
+        [34 2 35 33 ]
+        [35 2 35 33 ]
+      android.scaler.availableStreamConfigurations (d000a): int32[84]
+        [33 2592 1944 OUTPUT ]
+        [33 1920 1080 OUTPUT ]
+        [33 1280 960 OUTPUT ]
+        [33 1280 720 OUTPUT ]
+        [33 640 480 OUTPUT ]
+        [33 320 240 OUTPUT ]
+        [33 176 144 OUTPUT ]
+        [35 2592 1944 OUTPUT ]
+        [35 1920 1080 OUTPUT ]
+        [35 1280 960 OUTPUT ]
+        [35 1280 720 OUTPUT ]
+        [35 640 480 OUTPUT ]
+        [35 320 240 OUTPUT ]
+        [35 176 144 OUTPUT ]
+        [34 2592 1944 OUTPUT ]
+        [34 1920 1080 OUTPUT ]
+        [34 1280 960 OUTPUT ]
+        [34 1280 720 OUTPUT ]
+        [34 640 480 OUTPUT ]
+        [34 320 240 OUTPUT ]
+        [34 176 144 OUTPUT ]
+      android.scaler.availableMinFrameDurations (d000b): int64[84]
+        [33 2592 ]
+        [1944 33333333 ]
+        [33 1920 ]
+        [1080 33333333 ]
+        [33 1280 ]
+        [960 33333333 ]
+        [33 1280 ]
+        [720 33333333 ]
+        [33 640 ]
+        [480 33333333 ]
+        [33 320 ]
+        [240 33333333 ]
+        [33 176 ]
+        [144 33333333 ]
+        [35 2592 ]
+        [1944 33333333 ]
+        [35 1920 ]
+        [1080 33333333 ]
+        [35 1280 ]
+        [960 33333333 ]
+        [35 1280 ]
+        [720 33333333 ]
+        [35 640 ]
+        [480 33333333 ]
+        [35 320 ]
+        [240 33333333 ]
+        [35 176 ]
+        [144 33333333 ]
+        [34 2592 ]
+        [1944 33333333 ]
+        [34 1920 ]
+        [1080 33333333 ]
+        [34 1280 ]
+        [960 33333333 ]
+        [34 1280 ]
+        [720 33333333 ]
+        [34 640 ]
+        [480 33333333 ]
+        [34 320 ]
+        [240 33333333 ]
+        [34 176 ]
+        [144 33333333 ]
+      android.scaler.availableStallDurations (d000c): int64[28]
+        [33 2592 ]
+        [1944 33333333 ]
+        [33 1920 ]
+        [1080 33333333 ]
+        [33 1280 ]
+        [960 33333333 ]
+        [33 1280 ]
+        [720 33333333 ]
+        [33 640 ]
+        [480 33333333 ]
+        [33 320 ]
+        [240 33333333 ]
+        [33 176 ]
+        [144 33333333 ]
+      android.scaler.croppingType (d000d): byte[1]
+        [CENTER_ONLY ]
+      android.sensor.baseGainFactor (e000b): rational[1]
+        [(0 / 1) ]
+      android.sensor.blackLevelPattern (e000c): int32[4]
+        [0 0 0 0 ]
+      android.sensor.maxAnalogSensitivity (e000d): int32[1]
+        [2400 ]
+      android.sensor.orientation (e000e): int32[1]
+        [180 ]
+      android.sensor.profileHueSatMapDimensions (e000f): int32[3]
+        [0 0 0 ]
+      android.sensor.availableTestPatternModes (e0019): int32[2]
+        [0 2 ]
+      android.sensor.info.activeArraySize (f0000): int32[4]
+        [0 0 2592 1944 ]
+      android.sensor.info.sensitivityRange (f0001): int32[2]
+        [32 2400 ]
+      android.sensor.info.colorFilterArrangement (f0002): byte[1]
+        [BGGR ]
+      android.sensor.info.exposureTimeRange (f0003): int64[2]
+        [100000 333333330 ]
+      android.sensor.info.maxFrameDuration (f0004): int64[1]
+        [66666666 ]
+      android.sensor.info.physicalSize (f0005): float[2]
+        [5.50000000 4.50000000 ]
+      android.sensor.info.pixelArraySize (f0006): int32[2]
+        [2592 1944 ]
+      android.sensor.info.whiteLevel (f0007): int32[1]
+        [0 ]
+      android.sensor.info.timestampSource (f0008): byte[1]
+        [UNKNOWN ]
+      android.statistics.info.availableFaceDetectModes (120000): byte[1]
+        [0 ]
+      android.statistics.info.histogramBucketCount (120001): int32[1]
+        [0 ]
+      android.statistics.info.maxFaceCount (120002): int32[1]
+        [0 ]
+      android.statistics.info.availableHotPixelMapModes (120006): byte[1]
+        [0 ]
+      android.statistics.info.availableLensShadingMapModes (120007): byte[1]
+        [0 ]
+      android.info.supportedHardwareLevel (150000): byte[1]
+        [LIMITED ]
+      android.sync.maxLatency (170001): int32[1]
+        [PER_FRAME_CONTROL ]
+      android.reprocess.maxCaptureStall (180001): int32[1]
+        [4 ]
+      com.rockchip.nrfeature.3dnrmode (80010000): byte[1]
+        [1 ]
+      android.scaler.availableRotateAndCropModes (d0010): byte[1]
+        [0 ]
+      android.sensor.info.preCorrectionActiveArraySize (f000a): int32[4]
+        [0 0 2592 1944 ]
+      android.control.zoomRatioRange (1002e): float[2]
+        [1.00000000 4.00000000 ]
+== Camera HAL device device@3.3/legacy/0 (v3.3) dumpState: ==
+No active camera device session instance
 
 == Vendor tags: ==
 
@@ -7852,39 +8764,39 @@ Serial		: 87267f20b717bf3b
 ##  cat /proc/meminfo 
 ```
 MemTotal:        2002884 kB
-MemFree:          322028 kB
-MemAvailable:    1109940 kB
-Buffers:            6968 kB
-Cached:           896792 kB
+MemFree:          340792 kB
+MemAvailable:    1108696 kB
+Buffers:            6972 kB
+Cached:           851808 kB
 SwapCached:            0 kB
-Active:           615300 kB
-Inactive:         622124 kB
-Active(anon):     432900 kB
-Inactive(anon):     3116 kB
-Active(file):     182400 kB
-Inactive(file):   619008 kB
-Unevictable:       99480 kB
-Mlocked:           99480 kB
+Active:           569324 kB
+Inactive:         624716 kB
+Active(anon):     434700 kB
+Inactive(anon):     2912 kB
+Active(file):     134624 kB
+Inactive(file):   621804 kB
+Unevictable:       99560 kB
+Mlocked:           99560 kB
 SwapTotal:       1001436 kB
 SwapFree:        1001436 kB
-Dirty:              1732 kB
+Dirty:                40 kB
 Writeback:             0 kB
-AnonPages:        433148 kB
-Mapped:           498712 kB
-Shmem:              3592 kB
-KReclaimable:      82824 kB
-Slab:             112652 kB
-SReclaimable:      49672 kB
-SUnreclaim:        62980 kB
-KernelStack:       15392 kB
-PageTables:        36664 kB
+AnonPages:        434600 kB
+Mapped:           499380 kB
+Shmem:              3512 kB
+KReclaimable:     107796 kB
+Slab:             113176 kB
+SReclaimable:      49908 kB
+SUnreclaim:        63268 kB
+KernelStack:       15680 kB
+PageTables:        36376 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:     2002876 kB
-Committed_AS:   37693416 kB
+Committed_AS:   37699044 kB
 VmallocTotal:   263061440 kB
-VmallocUsed:       29532 kB
+VmallocUsed:       28860 kB
 VmallocChunk:          0 kB
 Percpu:             2528 kB
 CmaTotal:           8192 kB
@@ -8002,25 +8914,25 @@ tmpfs /apex tmpfs rw,seclabel,nosuid,nodev,noexec,relatime,mode=755 0 0
 tmpfs /linkerconfig tmpfs rw,seclabel,nosuid,nodev,noexec,relatime,mode=755 0 0
 tmpfs /mnt/installer tmpfs rw,seclabel,nosuid,nodev,noexec,relatime,mode=755,gid=1000 0 0
 tmpfs /mnt/androidwritable tmpfs rw,seclabel,nosuid,nodev,noexec,relatime,mode=755,gid=1000 0 0
-/dev/block/dm-0 /apex/com.android.adbd ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.conscrypt ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.tzdata ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.wifi ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.runtime ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.resolv ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.art ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.neuralnetworks ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.permission ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.media ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.media.swcodec ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.tethering ext4 ro,seclabel,relatime 0 0
 /dev/block/dm-0 /apex/com.android.extservices ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.vndk.v30 ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.mediaprovider ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.ipsec ext4 ro,seclabel,relatime 0 0
-/dev/block/dm-0 /apex/com.android.os.statsd ext4 ro,seclabel,relatime 0 0
 /dev/block/dm-0 /apex/com.android.i18n ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.runtime ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.wifi ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.art ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.tzdata ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.mediaprovider ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.tethering ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.permission ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.vndk.v30 ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.os.statsd ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.media ext4 ro,seclabel,relatime 0 0
 /dev/block/dm-0 /apex/com.android.sdkext ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.adbd ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.resolv ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.media.swcodec ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.conscrypt ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.ipsec ext4 ro,seclabel,relatime 0 0
+/dev/block/dm-0 /apex/com.android.neuralnetworks ext4 ro,seclabel,relatime 0 0
 none /dev/blkio cgroup rw,nosuid,nodev,noexec,relatime,blkio 0 0
 none /sys/fs/cgroup cgroup2 rw,nosuid,nodev,noexec,relatime 0 0
 none /dev/cpuctl cgroup rw,nosuid,nodev,noexec,relatime,cpu 0 0
@@ -8048,7 +8960,7 @@ adb /dev/usb-ffs/adb functionfs rw,relatime 0 0
 mtp /dev/usb-ffs/mtp functionfs rw,relatime 0 0
 ptp /dev/usb-ffs/ptp functionfs rw,relatime 0 0
 /sys/kernel/debug /sys/kernel/debug debugfs rw,seclabel,relatime,mode=755 0 0
-/sys/kernel/debug/tracing /sys/kernel/debug/tracing tracefs rw,seclabel,relatime,mode=755 0 0
+tracefs /sys/kernel/debug/tracing tracefs rw,seclabel,relatime,mode=755 0 0
 /dev/fuse /mnt/user/0/emulated fuse rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other 0 0
 /dev/fuse /mnt/installer/0/emulated fuse rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other 0 0
 /dev/fuse /mnt/androidwritable/0/emulated fuse rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other 0 0
@@ -8073,8 +8985,8 @@ overlay /system_ext overlay rw,seclabel,noatime,lowerdir=/system_ext,upperdir=/m
 ##  cat /proc/interrupts 
 ```
            CPU0       CPU1       CPU2       CPU3       
-  5:      26449      26214      23451      27017     GICv3  26 Level     arch_timer
-  6:      23486      23591      42490      10296     GICv3 141 Level     rk_timer
+  5:      15635      14591      15053      16174     GICv3  26 Level     arch_timer
+  6:      15720       8952       5776       7656     GICv3 141 Level     rk_timer
   7:          0          0          0          0     GICv3 260 Level     arm-pmu
   8:          0          0          0          0     GICv3 261 Level     arm-pmu
   9:          0          0          0          0     GICv3 262 Level     arm-pmu
@@ -8083,11 +8995,11 @@ overlay /system_ext overlay rw,seclabel,noatime,lowerdir=/system_ext,upperdir=/m
  12:          0          0          0          0     GICv3 163 Level     ohci_hcd:usb3
  13:          0          0          0          0     GICv3 165 Level     ehci_hcd:usb2
  14:          0          0          0          0     GICv3 166 Level     ohci_hcd:usb4
- 15:      92935          0          0          0     GICv3  78 Level     fdd40000.i2c
+ 15:      33015          0          0          0     GICv3  78 Level     fdd40000.i2c
  16:          0          0          0          0     GICv3 183 Level     fde4b000.iommu, fde40000.npu
- 17:       3823          0          0          0     GICv3  71 Level     fde60000.gpu
- 18:          6          0          0          0     GICv3  73 Level     fde60000.gpu
- 19:       1491          0          0          0     GICv3  72 Level     fde60000.gpu
+ 17:       3188          0          0          0     GICv3  71 Level     fde60000.gpu
+ 18:          5          0          0          0     GICv3  73 Level     fde60000.gpu
+ 19:       1265          0          0          0     GICv3  72 Level     fde60000.gpu
  20:          0          0          0          0     GICv3 171 Level     fdea0400.vdpu
  21:          0          0          0          0     GICv3 170 Level     fdea0800.iommu
  22:          0          0          0          0     GICv3 122 Level     rga
@@ -8107,38 +9019,38 @@ overlay /system_ext overlay rw,seclabel,noatime,lowerdir=/system_ext,upperdir=/m
  36:          0          0          0          0     GICv3  91 Level     fdff1a00.iommu
  37:          0          0          0          0     GICv3 180 Level     fe043e00.iommu, fe040000.vop
  38:        115          0          0          0     GICv3  77 Level     fe0a0000.hdmi, dw-hdmi-cec
- 39:         16          0          0          0     GICv3  42 Level     dmc
+ 39:         11          0          0          0     GICv3  42 Level     dmc
  40:          0          0          0          0     GICv3 130 Level     dw-mci
- 41:       1185          0          0          0     GICv3 131 Level     dw-mci
- 42:      26480          0          0          0     GICv3  51 Level     mmc2
+ 41:       1188          0          0          0     GICv3 131 Level     dw-mci
+ 42:      24668          0          0          0     GICv3  51 Level     mmc2
  45:          0          0          0          0     GICv3  46 Level     fe530000.dmac
  46:          0          0          0          0     GICv3  45 Level     fe530000.dmac
- 47:        422          0          0          0     GICv3  48 Level     fe550000.dmac
+ 47:        424          0          0          0     GICv3  48 Level     fe550000.dmac
  48:          0          0          0          0     GICv3  47 Level     fe550000.dmac
  49:        234          0          0          0     GICv3  80 Level     fe5b0000.i2c
  50:        234          0          0          0     GICv3  81 Level     fe5c0000.i2c
- 51:        236          0          0          0     GICv3  82 Level     fe5d0000.i2c
+ 51:       2178          0          0          0     GICv3  82 Level     fe5d0000.i2c
  53:          0          0          0          0     GICv3 138 Level     fe640000.spi
- 56:          0        104          0          0     GICv3 117 Level     rk_pwm_irq
+ 56:          0      46438          0          0     GICv3 117 Level     rk_pwm_irq
  57:          0          0          0          0     GICv3 121 Level     rk_pwm_pwr_irq
  58:          0          0          0          0     GICv3 147 Level     rockchip_thermal
- 59:      16298          0          0          0     GICv3 125 Level     fe720000.saradc
- 60:          2          0          0          0     GICv3 167 Level     rockchip_usb2phy
+ 59:       5680          0          0          0     GICv3 125 Level     fe720000.saradc
+ 60:          1          0          0          0     GICv3 167 Level     rockchip_usb2phy
  61:          0          0          0          0     GICv3 168 Level     rockchip_usb2phy
- 68:         13          0          0          0     GICv3 150 Level     debug
- 69:       1467          0          0          0     GICv3 201 Level     dwc3
+ 68:          3          0          0          0     GICv3 150 Level     debug
+ 69:       1266          0          0          0     GICv3 201 Level     dwc3
  70:          0          0          0          0     GICv3 202 Level     xhci-hcd:usb5
  71:          0          0          0          0     gpio0   3 Level     rk817
  72:          0          0          0          0     rk817   0 Edge      rk805_pwrkey_fall
  73:          0          0          0          0     rk817   1 Edge      rk805_pwrkey_rise
  77:          0          0          0          0     rk817   5 Edge      RTC alarm
  96:          0          0          0          0     gpio2  16 Edge      bt_default_wake_host_irq
-IPI0:     39004      40550      53277      84803       Rescheduling interrupts
-IPI1:     10749      11972       6800      16870       Function call interrupts
+IPI0:     24315      26486      44236      23748       Rescheduling interrupts
+IPI1:      1883       1258       6035       4030       Function call interrupts
 IPI2:         0          0          0          0       CPU stop interrupts
 IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
-IPI4:     14002      14408      13917       6292       Timer broadcast interrupts
-IPI5:      9448      10956      24783       5548       IRQ work interrupts
+IPI4:      5175       3375       3923       5422       Timer broadcast interrupts
+IPI5:     10884       3030       3420       3771       IRQ work interrupts
 IPI6:         0          0          0          0       CPU wake-up interrupts
 Err:          0 
 ```
@@ -8226,15 +9138,15 @@ Block devices:
 ##  ls -al /dev/ 
 ```
 total 16
-drwxr-xr-x 21 root      root       2040 2017-08-04 09:00 .
-drwxr-xr-x 24 root      root       4096 2024-08-15 16:47 ..
+drwxr-xr-x 21 root      root       2060 2017-08-04 09:00 .
+drwxr-xr-x 24 root      root       4096 2023-09-12 03:15 ..
 drwx--x--x  2 root      root       3480 2017-08-04 09:00 __properties__
 crw-rw-rw-  1 root      root    10,  58 2017-08-04 09:00 ashmem
-crw-rw-rw-  1 root      root    10,  58 2017-08-04 09:00 ashmemaa3104ac-5308-4d15-b6b8-9adf04ecda4c
+crw-rw-rw-  1 root      root    10,  58 2017-08-04 09:00 ashmem6f69cb68-445f-4538-883c-b843b14d5110
 lrwxrwxrwx  1 root      root         20 2017-08-04 09:00 binder -> /dev/binderfs/binder
 drwxr-xr-x  3 root      root          0 2017-08-04 09:00 binderfs
 dr-xr-xr-x  3 system    system        0 2017-08-04 09:00 blkio
-drwxr-xr-x  6 root      root       1260 2024-08-15 17:12 block
+drwxr-xr-x  6 root      root       1260 2023-09-12 03:16 block
 drwxr-xr-x  3 root      root         60 2017-08-04 09:00 boringssl
 drwxr-xr-x  3 root      root         60 2017-08-04 09:00 bus
 crw-rw----  1 system    system 249,   0 2017-08-04 09:00 cec0
@@ -8249,7 +9161,7 @@ crw-------  1 root      root    10, 236 2017-08-04 09:00 device-mapper
 drwxr-xr-x  2 root      root        120 2017-08-04 09:00 dri
 -rw-r--r--  1 logd      logd         24 2017-08-04 09:00 event-log-tags
 lrwxrwxrwx  1 root      root         13 2017-08-04 09:00 fd -> /proc/self/fd
-drwxrwx---  2 root      system       60 2024-08-15 17:12 fscklogs
+drwxrwx---  2 root      system       60 2023-09-12 03:16 fscklogs
 crw-rw-rw-  1 root      root     1,   7 2017-08-04 09:00 full
 crw-------  1 root      root    10, 229 2017-08-04 09:00 fuse
 crw-------  1 root      root   254,   0 2017-08-04 09:00 gpiochip0
@@ -8285,14 +9197,14 @@ crw-rw-rw-  1 root      root     1,   3 2017-08-04 09:00 null
 crw-rw-rw-  1 root      root    10,  62 2017-08-04 09:00 opteearmtz00
 c-w--w--w-  1 root      log    252,   0 2017-08-04 09:00 pmsg0
 crw-rw----  1 radio     vpn    108,   0 2017-08-04 09:00 ppp
-crw-rw-rw-  1 root      root     5,   2 2024-08-15 17:14 ptmx
+crw-rw-rw-  1 root      root     5,   2 2023-09-12 03:25 ptmx
 drwxr-xr-x  2 root      root          0 2017-08-04 09:00 pts
 crw-rw-rw-  1 root      root     1,   8 2017-08-04 09:00 random
 crw-------  1 root      root    10, 242 2017-08-04 09:00 rfkill
 crw-rw-rw-  1 system    system  10,  53 2017-08-04 09:00 rga
 crw-r-----  1 system    system 251,   0 2017-08-04 09:00 rtc0
 drwxr-xr-x  2 root      root        160 2017-08-04 09:00 snd
-drwxr-xr-x  3 root      root        460 2024-08-15 17:12 socket
+drwxr-xr-x  3 root      root        460 2023-09-12 03:16 socket
 crw-------  1 root      root    10,  59 2017-08-04 09:00 spi_misc_test
 lrwxrwxrwx  1 root      root         15 2017-08-04 09:00 stderr -> /proc/self/fd/2
 lrwxrwxrwx  1 root      root         15 2017-08-04 09:00 stdin -> /proc/self/fd/0
@@ -8302,7 +9214,7 @@ crw-rw-rw-  1 system    system  10,  60 2017-08-04 09:00 sw_sync
 crw-rw-rw-  1 root      root   245,   0 2017-08-04 09:00 tee0
 crw-rw-rw-  1 root      root   245,  16 2017-08-04 09:00 teepriv0
 crw-rw-rw-  1 root      root     5,   0 2017-08-04 09:00 tty
-crw-------  1 root      root   253,   0 2024-08-15 17:08 ttyFIQ0
+crw-------  1 root      root   253,   0 2023-09-12 03:17 ttyFIQ0
 crw-rw----  1 bluetooth net_bt   4,  65 2017-08-04 09:00 ttyS1
 crw-------  1 root      root     4,  67 2017-08-04 09:00 ttyS3
 crw-rw----  1 system    vpn     10, 200 2017-08-04 09:00 tun
@@ -8314,6 +9226,7 @@ crw-rw----  1 root      usb     10,  50 2017-08-04 09:00 usb_accessory
 crw-rw-rw-  1 media     camera  81,   9 2017-08-04 09:00 v4l-subdev0
 crw-rw-rw-  1 media     camera  81,  10 2017-08-04 09:00 v4l-subdev1
 crw-rw-rw-  1 media     camera  81,  11 2017-08-04 09:00 v4l-subdev2
+crw-rw-rw-  1 media     camera  81,  12 2017-08-04 09:00 v4l-subdev3
 crw-rw-r--  1 bluetooth net_bt  10,  52 2017-08-04 09:00 vendor_storage
 crw-rw----  1 media     camera  81,   0 2017-08-04 09:00 video0
 crw-rw----  1 media     camera  81,   1 2017-08-04 09:00 video1
@@ -8334,7 +9247,7 @@ crw-rw-rw-  1 root      root     1,   5 2017-08-04 09:00 zero
 ```
 total 0
 drwxr-xr-x 2 root root  380 2017-08-04 09:00 .
-drwxr-xr-x 6 root root 1260 2024-08-15 17:12 ..
+drwxr-xr-x 6 root root 1260 2023-09-12 03:16 ..
 lrwxrwxrwx 1 root root   20 2017-08-04 09:00 backup -> /dev/block/mmcblk2p9
 lrwxrwxrwx 1 root root   21 2017-08-04 09:00 baseparameter -> /dev/block/mmcblk2p12
 lrwxrwxrwx 1 root root   20 2017-08-04 09:00 boot -> /dev/block/mmcblk2p7
@@ -8352,4 +9265,357 @@ lrwxrwxrwx 1 root root   20 2017-08-04 09:00 trust -> /dev/block/mmcblk2p3
 lrwxrwxrwx 1 root root   20 2017-08-04 09:00 uboot -> /dev/block/mmcblk2p2
 lrwxrwxrwx 1 root root   21 2017-08-04 09:00 userdata -> /dev/block/mmcblk2p14
 lrwxrwxrwx 1 root root   20 2017-08-04 09:00 vbmeta -> /dev/block/mmcblk2p6 
+```
+
+##  find / -iname "\*camera\*"  2\>/dev/null \|xargs ls -al 
+```
+-rw-r--r-- 1 root         root            5324 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.frameworks.cameraservice.common@2.0.so
+-rw-r--r-- 1 root         root          165832 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.frameworks.cameraservice.device@2.0.so
+-rw-r--r-- 1 root         root          115896 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.frameworks.cameraservice.service@2.0.so
+-rw-r--r-- 1 root         root          117048 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.frameworks.cameraservice.service@2.1.so
+-rw-r--r-- 1 root         root            5120 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.common@1.0.so
+-rw-r--r-- 1 root         root          246608 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.device@1.0.so
+-rw-r--r-- 1 root         root          167404 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.device@3.2.so
+-rw-r--r-- 1 root         root           75916 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.device@3.3.so
+-rw-r--r-- 1 root         root          125952 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.device@3.4.so
+-rw-r--r-- 1 root         root          197340 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.device@3.5.so
+-rw-r--r-- 1 root         root          190280 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.device@3.6.so
+-rw-r--r-- 1 root         root            2916 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.metadata@3.2.so
+-rw-r--r-- 1 root         root            2968 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.metadata@3.3.so
+-rw-r--r-- 1 root         root            3016 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.metadata@3.4.so
+-rw-r--r-- 1 root         root            3060 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.metadata@3.5.so
+-rw-r--r-- 1 root         root          118728 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.provider@2.4.so
+-rw-r--r-- 1 root         root           72988 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.provider@2.5.so
+-rw-r--r-- 1 root         root          123028 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/android.hardware.camera.provider@2.6.so
+-rw-r--r-- 1 root         root           36484 2023-09-12 03:14 /apex/com.android.vndk.v30/lib/libcamera_metadata.so
+-rw-r--r-- 1 root         root           10992 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.frameworks.cameraservice.common@2.0.so
+-rw-r--r-- 1 root         root          232672 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.frameworks.cameraservice.device@2.0.so
+-rw-r--r-- 1 root         root          163040 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.frameworks.cameraservice.service@2.0.so
+-rw-r--r-- 1 root         root          163832 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.frameworks.cameraservice.service@2.1.so
+-rw-r--r-- 1 root         root           10984 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.common@1.0.so
+-rw-r--r-- 1 root         root          335880 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.device@1.0.so
+-rw-r--r-- 1 root         root          232280 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.device@3.2.so
+-rw-r--r-- 1 root         root          104288 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.device@3.3.so
+-rw-r--r-- 1 root         root          173512 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.device@3.4.so
+-rw-r--r-- 1 root         root          274880 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.device@3.5.so
+-rw-r--r-- 1 root         root          266568 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.device@3.6.so
+-rw-r--r-- 1 root         root           10888 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.metadata@3.2.so
+-rw-r--r-- 1 root         root           10904 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.metadata@3.3.so
+-rw-r--r-- 1 root         root           10920 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.metadata@3.4.so
+-rw-r--r-- 1 root         root           10936 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.metadata@3.5.so
+-rw-r--r-- 1 root         root          167480 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.provider@2.4.so
+-rw-r--r-- 1 root         root          103496 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.provider@2.5.so
+-rw-r--r-- 1 root         root          173280 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/android.hardware.camera.provider@2.6.so
+-rw-r--r-- 1 root         root           50888 2023-09-12 03:14 /apex/com.android.vndk.v30/lib64/libcamera_metadata.so
+-rw------- 1 u0_a94       u0_a94          1291 2023-09-12 03:17 /data/data/com.android.camera2/shared_prefs/com.android.camera2_preferences.xml
+-rw------- 1 system       system          7664 2023-09-12 03:16 /data/system/package_cache/3902111335f413f49ec96066c3d12a1a2dfdc1f2/Camera2-16
+-rw------- 1 u0_a94       u0_a94          1291 2023-09-12 03:17 /data/user/0/com.android.camera2/shared_prefs/com.android.camera2_preferences.xml
+-rw------- 1 u0_a94       u0_a94          1291 2023-09-12 03:17 /data_mirror/data_ce/null/0/com.android.camera2/shared_prefs/com.android.camera2_preferences.xml
+-r--r--r-- 1 root         root          131072 2017-08-04 09:00 /dev/__properties__/u:object_r:exported_camera_prop:s0
+-r--r--r-- 1 root         root          131072 2017-08-04 09:00 /dev/__properties__/u:object_r:vendor_camera_prop:s0
+srw-rw-rw- 1 cameraserver camera             0 2017-08-04 09:00 /dev/socket/camera_tool
+-rw-r--r-- 1 root         root            5951 2023-09-12 03:15 /product/media/audio/ui/camera_click.ogg
+-rw-r--r-- 1 root         root            9376 2023-09-12 03:15 /product/media/audio/ui/camera_focus.ogg
+-r--r--r-- 1 root         root               5 2023-09-12 03:25 /sys/firmware/devicetree/base/i2c@fe5d0000/ov5695@36/rockchip,camera-module-facing
+-r--r--r-- 1 root         root               4 2023-09-12 03:25 /sys/firmware/devicetree/base/i2c@fe5d0000/ov5695@36/rockchip,camera-module-index
+-r--r--r-- 1 root         root              10 2023-09-12 03:25 /sys/firmware/devicetree/base/i2c@fe5d0000/ov5695@36/rockchip,camera-module-lens-name
+-r--r--r-- 1 root         root               7 2023-09-12 03:25 /sys/firmware/devicetree/base/i2c@fe5d0000/ov5695@36/rockchip,camera-module-name
+-rw-r--r-- 1 root         root            5324 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.frameworks.cameraservice.common@2.0.so
+-rw-r--r-- 1 root         root          165832 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.frameworks.cameraservice.device@2.0.so
+-rw-r--r-- 1 root         root          115896 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.frameworks.cameraservice.service@2.0.so
+-rw-r--r-- 1 root         root          117048 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.frameworks.cameraservice.service@2.1.so
+-rw-r--r-- 1 root         root            5120 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.common@1.0.so
+-rw-r--r-- 1 root         root          246608 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.device@1.0.so
+-rw-r--r-- 1 root         root          167404 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.device@3.2.so
+-rw-r--r-- 1 root         root           75916 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.device@3.3.so
+-rw-r--r-- 1 root         root          125952 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.device@3.4.so
+-rw-r--r-- 1 root         root          197340 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.device@3.5.so
+-rw-r--r-- 1 root         root          190280 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.device@3.6.so
+-rw-r--r-- 1 root         root            2916 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.metadata@3.2.so
+-rw-r--r-- 1 root         root            2968 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.metadata@3.3.so
+-rw-r--r-- 1 root         root            3016 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.metadata@3.4.so
+-rw-r--r-- 1 root         root            3060 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.metadata@3.5.so
+-rw-r--r-- 1 root         root          118728 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.provider@2.4.so
+-rw-r--r-- 1 root         root           72988 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.provider@2.5.so
+-rw-r--r-- 1 root         root          123028 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/android.hardware.camera.provider@2.6.so
+-rw-r--r-- 1 root         root           36484 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib/libcamera_metadata.so
+-rw-r--r-- 1 root         root           10992 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.frameworks.cameraservice.common@2.0.so
+-rw-r--r-- 1 root         root          232672 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.frameworks.cameraservice.device@2.0.so
+-rw-r--r-- 1 root         root          163040 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.frameworks.cameraservice.service@2.0.so
+-rw-r--r-- 1 root         root          163832 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.frameworks.cameraservice.service@2.1.so
+-rw-r--r-- 1 root         root           10984 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.common@1.0.so
+-rw-r--r-- 1 root         root          335880 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.device@1.0.so
+-rw-r--r-- 1 root         root          232280 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.device@3.2.so
+-rw-r--r-- 1 root         root          104288 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.device@3.3.so
+-rw-r--r-- 1 root         root          173512 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.device@3.4.so
+-rw-r--r-- 1 root         root          274880 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.device@3.5.so
+-rw-r--r-- 1 root         root          266568 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.device@3.6.so
+-rw-r--r-- 1 root         root           10888 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.metadata@3.2.so
+-rw-r--r-- 1 root         root           10904 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.metadata@3.3.so
+-rw-r--r-- 1 root         root           10920 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.metadata@3.4.so
+-rw-r--r-- 1 root         root           10936 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.metadata@3.5.so
+-rw-r--r-- 1 root         root          167480 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.provider@2.4.so
+-rw-r--r-- 1 root         root          103496 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.provider@2.5.so
+-rw-r--r-- 1 root         root          173280 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/android.hardware.camera.provider@2.6.so
+-rw-r--r-- 1 root         root           50888 2023-09-12 03:14 /system/apex/com.android.vndk.current/lib64/libcamera_metadata.so
+-rw-r--r-- 1 root         root         5215698 2023-09-12 03:15 /system/app/Camera2/Camera2.apk
+-rw-r--r-- 1 root         root         4492824 2023-09-12 03:15 /system/app/Camera2/oat/arm64/Camera2.odex
+-rw-r--r-- 1 root         root           18896 2023-09-12 03:15 /system/app/Camera2/oat/arm64/Camera2.vdex
+-rwxr-xr-x 1 root         shell           5884 2023-09-12 03:15 /system/bin/cameraserver
+-rw-r--r-- 1 root         root             223 2023-09-12 03:15 /system/etc/init/cameraserver.rc
+-rw-r--r-- 1 root         root             330 2023-09-12 03:15 /system/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service@2.1.xml
+-rw-r--r-- 1 root         root            5324 2023-09-12 03:15 /system/lib/android.frameworks.cameraservice.common@2.0.so
+-rw-r--r-- 1 root         root          165828 2023-09-12 03:15 /system/lib/android.frameworks.cameraservice.device@2.0.so
+-rw-r--r-- 1 root         root          115896 2023-09-12 03:15 /system/lib/android.frameworks.cameraservice.service@2.0.so
+-rw-r--r-- 1 root         root          117048 2023-09-12 03:15 /system/lib/android.frameworks.cameraservice.service@2.1.so
+-rw-r--r-- 1 root         root            5116 2023-09-12 03:15 /system/lib/android.hardware.camera.common@1.0.so
+-rw-r--r-- 1 root         root          246620 2023-09-12 03:15 /system/lib/android.hardware.camera.device@1.0.so
+-rw-r--r-- 1 root         root          167392 2023-09-12 03:15 /system/lib/android.hardware.camera.device@3.2.so
+-rw-r--r-- 1 root         root           75916 2023-09-12 03:15 /system/lib/android.hardware.camera.device@3.3.so
+-rw-r--r-- 1 root         root          125952 2023-09-12 03:15 /system/lib/android.hardware.camera.device@3.4.so
+-rw-r--r-- 1 root         root          197356 2023-09-12 03:15 /system/lib/android.hardware.camera.device@3.5.so
+-rw-r--r-- 1 root         root          190296 2023-09-12 03:15 /system/lib/android.hardware.camera.device@3.6.so
+-rw-r--r-- 1 root         root            2916 2023-09-12 03:15 /system/lib/android.hardware.camera.metadata@3.2.so
+-rw-r--r-- 1 root         root          118720 2023-09-12 03:15 /system/lib/android.hardware.camera.provider@2.4.so
+-rw-r--r-- 1 root         root           72992 2023-09-12 03:15 /system/lib/android.hardware.camera.provider@2.5.so
+-rw-r--r-- 1 root         root          123020 2023-09-12 03:15 /system/lib/android.hardware.camera.provider@2.6.so
+-rw-r--r-- 1 root         root          124772 2023-09-12 03:15 /system/lib/libcamera2ndk.so
+-rw-r--r-- 1 root         root          285616 2023-09-12 03:15 /system/lib/libcamera_client.so
+-rw-r--r-- 1 root         root           36484 2023-09-12 03:15 /system/lib/libcamera_metadata.so
+-rw-r--r-- 1 root         root         1511880 2023-09-12 03:15 /system/lib/libcameraservice.so
+-rw-r--r-- 1 root         root           10896 2023-09-12 03:15 /system/lib64/android.hardware.camera.metadata@3.2.so
+-rw-r--r-- 1 root         root          254264 2023-09-12 03:15 /system/lib64/libcamera2ndk.so
+-rw-r--r-- 1 root         root          498128 2023-09-12 03:15 /system/lib64/libcamera_client.so
+-rw-r--r-- 1 root         root           50888 2023-09-12 03:15 /system/lib64/libcamera_metadata.so
+-rwxr-xr-x 1 root         shell           5680 2023-09-12 03:15 /vendor/bin/hw/android.hardware.camera.provider@2.4-external-service
+-rwxr-xr-x 1 root         shell           5892 2023-09-12 03:15 /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+-rw-r--r-- 1 root         root          152877 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles.xml
+-rw-r--r-- 1 root         root          166244 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_default.xml
+-rw-r--r-- 1 root         root           14744 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk1126.xml
+-rw-r--r-- 1 root         root           48811 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk3126c.xml
+-rw-r--r-- 1 root         root           64987 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk3288.xml
+-rw-r--r-- 1 root         root           61800 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk3326.xml
+-rw-r--r-- 1 root         root           98549 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk3368.xml
+-rw-r--r-- 1 root         root           64766 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk3399.xml
+-rw-r--r-- 1 root         root           26451 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk3399_1608.xml
+-rw-r--r-- 1 root         root           77820 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk3399pro.xml
+-rw-r--r-- 1 root         root          152877 2023-09-12 03:15 /vendor/etc/camera/camera3_profiles_rk356x.xml
+-rw-r--r-- 1 root         root             145 2023-09-12 03:15 /vendor/etc/camera/reset_camera.sh
+-rw-r--r-- 1 root         root          560032 2023-09-12 03:15 /vendor/etc/camera/rkisp1/ov8858_CameraKing_Largan-9569A2.xml
+-rw-r--r-- 1 root         root            4206 2023-09-12 03:15 /vendor/etc/external_camera_config.xml
+-rw-r--r-- 1 root         root             360 2023-09-12 03:15 /vendor/etc/init/android.hardware.camera.provider@2.4-external-service.rc
+-rw-r--r-- 1 root         root             396 2023-09-12 03:15 /vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
+-rw-r--r-- 1 root         root             933 2023-09-12 03:15 /vendor/etc/permissions/android.hardware.camera.external.xml
+-rw-r--r-- 1 root         root             877 2023-09-12 03:15 /vendor/etc/permissions/android.hardware.camera.front.xml
+-rw-r--r-- 1 root         root             877 2023-09-12 03:15 /vendor/etc/permissions/android.hardware.camera.xml
+-rw-r--r-- 1 root         root           91644 2023-09-12 03:15 /vendor/lib/android.hardware.camera.provider@2.4-external.so
+-rw-r--r-- 1 root         root          149792 2023-09-12 03:15 /vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+-rw-r--r-- 1 root         root          137700 2023-09-12 03:15 /vendor/lib/camera.device@1.0-impl.so
+-rw-r--r-- 1 root         root          182772 2023-09-12 03:15 /vendor/lib/camera.device@3.2-impl.so
+-rw-r--r-- 1 root         root           25000 2023-09-12 03:15 /vendor/lib/camera.device@3.3-impl.so
+-rw-r--r-- 1 root         root          426172 2023-09-12 03:15 /vendor/lib/camera.device@3.4-external-impl.so
+-rw-r--r-- 1 root         root          124780 2023-09-12 03:15 /vendor/lib/camera.device@3.4-impl.so
+-rw-r--r-- 1 root         root          122408 2023-09-12 03:15 /vendor/lib/camera.device@3.5-external-impl.so
+-rw-r--r-- 1 root         root          144548 2023-09-12 03:15 /vendor/lib/camera.device@3.5-impl.so
+-rw-r--r-- 1 root         root          178440 2023-09-12 03:15 /vendor/lib/camera.device@3.6-external-impl.so
+-rw-r--r-- 1 root         root           13308 2023-09-12 03:15 /vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+-rw-r--r-- 1 root         root         1122256 2023-09-12 03:15 /vendor/lib/hw/camera.rk30board.so
+-rw-r--r-- 1 root         root          129080 2023-09-12 03:15 /vendor/lib64/android.hardware.camera.provider@2.4-external.so
+-rw-r--r-- 1 root         root          209960 2023-09-12 03:15 /vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+-rw-r--r-- 1 root         root          184776 2023-09-12 03:15 /vendor/lib64/camera.device@1.0-impl.so
+-rw-r--r-- 1 root         root          247128 2023-09-12 03:15 /vendor/lib64/camera.device@3.2-impl.so
+-rw-r--r-- 1 root         root           34952 2023-09-12 03:15 /vendor/lib64/camera.device@3.3-impl.so
+-rw-r--r-- 1 root         root          563840 2023-09-12 03:15 /vendor/lib64/camera.device@3.4-external-impl.so
+-rw-r--r-- 1 root         root          171688 2023-09-12 03:15 /vendor/lib64/camera.device@3.4-impl.so
+-rw-r--r-- 1 root         root          166040 2023-09-12 03:15 /vendor/lib64/camera.device@3.5-external-impl.so
+-rw-r--r-- 1 root         root          191528 2023-09-12 03:15 /vendor/lib64/camera.device@3.5-impl.so
+-rw-r--r-- 1 root         root          235432 2023-09-12 03:15 /vendor/lib64/camera.device@3.6-external-impl.so
+-rw-r--r-- 1 root         root           21320 2023-09-12 03:15 /vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+-rw-r--r-- 1 root         root         1475656 2023-09-12 03:15 /vendor/lib64/hw/camera.rk30board.so
+
+/config/usb_gadget/g1/functions/uvc.gs6/control/terminal/camera:
+total 0
+drwxr-xr-x 3 root root 0 2017-08-04 09:00 .
+drwxr-xr-x 4 root root 0 2017-08-04 09:00 ..
+drwxr-xr-x 2 root root 0 2023-09-12 03:25 default
+
+/data/data/com.android.camera2:
+total 28
+drwx------   5 u0_a94 u0_a94        3452 2023-09-12 03:16 .
+drwxrwx--x 157 system system       20480 2023-10-30 11:22 ..
+drwxrws--x   3 u0_a94 u0_a94_cache  3452 2023-09-12 03:26 cache
+drwxrws--x   2 u0_a94 u0_a94_cache  3452 2023-10-30 11:22 code_cache
+drwxrwx--x   2 u0_a94 u0_a94        3452 2017-08-04 09:00 shared_prefs
+
+/data/media/0/Android/data/com.android.camera2:
+total 12
+drwxrws--- 4 u0_a94   ext_data_rw 3452 2023-09-12 03:26 .
+drwxrws--x 3 media_rw ext_data_rw 3452 2023-09-12 03:26 ..
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 cache
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 files
+
+/data/media/0/DCIM/Camera:
+total 6
+drwx------ 2 u0_a120 u0_a120 3452 2023-09-12 03:17 .
+drwx------ 3 u0_a120 u0_a120 3452 2023-09-12 03:17 ..
+
+/data/misc/cameraserver:
+total 6
+drwx------  2 cameraserver cameraserver 3452 2023-10-30 11:22 .
+drwxrwx--t 53 system       misc         3452 2023-10-30 11:22 ..
+
+/data/misc/profiles/cur/0/com.android.camera2:
+total 19
+drwx------   2 u0_a94 u0_a94  3452 2023-10-30 11:22 .
+drwxrwx--x 157 system system 20480 2023-10-30 11:22 ..
+-rw-------   1 u0_a94 u0_a94     0 2023-10-30 11:22 primary.prof
+
+/data/misc/profiles/ref/com.android.camera2:
+total 19
+drwxrwx---   2 system all_a94  3452 2023-10-30 11:22 .
+drwxrwx--- 157 system system  20480 2023-10-30 11:22 ..
+
+/data/user/0/com.android.camera2:
+total 28
+drwx------   5 u0_a94 u0_a94        3452 2023-09-12 03:16 .
+drwxrwx--x 157 system system       20480 2023-10-30 11:22 ..
+drwxrws--x   3 u0_a94 u0_a94_cache  3452 2023-09-12 03:26 cache
+drwxrws--x   2 u0_a94 u0_a94_cache  3452 2023-10-30 11:22 code_cache
+drwxrwx--x   2 u0_a94 u0_a94        3452 2017-08-04 09:00 shared_prefs
+
+/data/user_de/0/com.android.camera2:
+total 25
+drwx------   4 u0_a94 u0_a94        3452 2023-10-30 11:22 .
+drwxrwx--x 157 system system       20480 2023-10-30 11:22 ..
+drwxrws--x   2 u0_a94 u0_a94_cache  3452 2023-10-30 11:22 cache
+drwxrws--x   2 u0_a94 u0_a94_cache  3452 2023-09-12 03:17 code_cache
+
+/data_mirror/cur_profiles/0/com.android.camera2:
+total 19
+drwx------   2 u0_a94 u0_a94  3452 2023-10-30 11:22 .
+drwxrwx--x 157 system system 20480 2023-10-30 11:22 ..
+-rw-------   1 u0_a94 u0_a94     0 2023-10-30 11:22 primary.prof
+
+/data_mirror/data_ce/null/0/com.android.camera2:
+total 28
+drwx------   5 u0_a94 u0_a94        3452 2023-09-12 03:16 .
+drwxrwx--x 157 system system       20480 2023-10-30 11:22 ..
+drwxrws--x   3 u0_a94 u0_a94_cache  3452 2023-09-12 03:26 cache
+drwxrws--x   2 u0_a94 u0_a94_cache  3452 2023-10-30 11:22 code_cache
+drwxrwx--x   2 u0_a94 u0_a94        3452 2017-08-04 09:00 shared_prefs
+
+/data_mirror/data_de/null/0/com.android.camera2:
+total 25
+drwx------   4 u0_a94 u0_a94        3452 2023-10-30 11:22 .
+drwxrwx--x 157 system system       20480 2023-10-30 11:22 ..
+drwxrws--x   2 u0_a94 u0_a94_cache  3452 2023-10-30 11:22 cache
+drwxrws--x   2 u0_a94 u0_a94_cache  3452 2023-09-12 03:17 code_cache
+
+/mnt/androidwritable/0/emulated/0/Android/data/com.android.camera2:
+total 12
+drwxrws--- 4 u0_a94   ext_data_rw 3452 2023-09-12 03:26 .
+drwxrws--x 3 media_rw ext_data_rw 3452 2023-09-12 03:26 ..
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 cache
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 files
+
+/mnt/androidwritable/0/emulated/0/DCIM/Camera:
+total 0
+
+/mnt/installer/0/emulated/0/Android/data/com.android.camera2:
+total 12
+drwxrws--- 4 u0_a94   ext_data_rw 3452 2023-09-12 03:26 .
+drwxrws--x 3 media_rw ext_data_rw 3452 2023-09-12 03:26 ..
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 cache
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 files
+
+/mnt/installer/0/emulated/0/DCIM/Camera:
+total 0
+
+/mnt/pass_through/0/emulated/0/Android/data/com.android.camera2:
+total 12
+drwxrws--- 4 u0_a94   ext_data_rw 3452 2023-09-12 03:26 .
+drwxrws--x 3 media_rw ext_data_rw 3452 2023-09-12 03:26 ..
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 cache
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 files
+
+/mnt/pass_through/0/emulated/0/DCIM/Camera:
+total 6
+drwx------ 2 u0_a120 u0_a120 3452 2023-09-12 03:17 .
+drwx------ 3 u0_a120 u0_a120 3452 2023-09-12 03:17 ..
+
+/mnt/user/0/emulated/0/Android/data/com.android.camera2:
+total 12
+drwxrws--- 4 u0_a94   ext_data_rw 3452 2023-09-12 03:26 .
+drwxrws--x 3 media_rw ext_data_rw 3452 2023-09-12 03:26 ..
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 cache
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 files
+
+/mnt/user/0/emulated/0/DCIM/Camera:
+total 0
+
+/storage/emulated/0/Android/data/com.android.camera2:
+total 12
+drwxrws--- 4 u0_a94   ext_data_rw 3452 2023-09-12 03:26 .
+drwxrws--x 3 media_rw ext_data_rw 3452 2023-09-12 03:26 ..
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 cache
+drwxrws--- 2 u0_a94   ext_data_rw 3452 2023-09-12 03:26 files
+
+/storage/emulated/0/DCIM/Camera:
+total 0
+
+/system/app/Camera2:
+total 5112
+drwxr-xr-x  4 root root    4096 2023-09-12 03:15 .
+drwxr-xr-x 30 root root    4096 2023-09-12 03:15 ..
+-rw-r--r--  1 root root 5215698 2023-09-12 03:15 Camera2.apk
+drwxr-xr-x  3 root root    4096 2023-09-12 03:15 lib
+drwxr-xr-x  3 root root    4096 2023-09-12 03:15 oat
+
+/vendor/etc/camera:
+total 956
+drwxr-xr-x  4 root shell   4096 2023-09-12 03:15 .
+drwxr-xr-x 13 root shell   4096 2023-09-12 03:15 ..
+-rw-r--r--  1 root root    3044 2023-09-12 03:15 README.txt
+-rw-r--r--  1 root root  152877 2023-09-12 03:15 camera3_profiles.xml
+-rw-r--r--  1 root root  166244 2023-09-12 03:15 camera3_profiles_default.xml
+-rw-r--r--  1 root root   14744 2023-09-12 03:15 camera3_profiles_rk1126.xml
+-rw-r--r--  1 root root   48811 2023-09-12 03:15 camera3_profiles_rk3126c.xml
+-rw-r--r--  1 root root   64987 2023-09-12 03:15 camera3_profiles_rk3288.xml
+-rw-r--r--  1 root root   61800 2023-09-12 03:15 camera3_profiles_rk3326.xml
+-rw-r--r--  1 root root   98549 2023-09-12 03:15 camera3_profiles_rk3368.xml
+-rw-r--r--  1 root root   64766 2023-09-12 03:15 camera3_profiles_rk3399.xml
+-rw-r--r--  1 root root   26451 2023-09-12 03:15 camera3_profiles_rk3399_1608.xml
+-rw-r--r--  1 root root   77820 2023-09-12 03:15 camera3_profiles_rk3399pro.xml
+-rw-r--r--  1 root root  152877 2023-09-12 03:15 camera3_profiles_rk356x.xml
+-rw-r--r--  1 root root    2875 2023-09-12 03:15 graph_descriptor.xml
+-rw-r--r--  1 root root     145 2023-09-12 03:15 reset_camera.sh
+drwxr-xr-x  2 root shell   4096 2023-09-12 03:15 rkisp1
+drwxr-xr-x  2 root shell   4096 2023-09-12 03:15 rkisp2 
+```
+
+#  ===================== 鍏朵粬浜哄伐琛ュ厖鐨勫懡浠?=====================
+```
+rk3566_tspi:/ # cat /vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
+service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+    interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
+    class hal
+    user cameraserver
+    group audio camera input drmrpc
+    ioprio rt 4
+    capabilities SYS_NICE
+    task_profiles CameraServiceCapacity MaxPerformance
+    socket camera_tool stream 0666 cameraserver camera
+rk3566_tspi:/ # 
+rk3566_tspi:/ # 
+rk3566_tspi:/ # cat /vendor/etc/init/android.hardware.camera.provider@2.4-external-service.rc
+service vendor.camera-provider-2-4-ext /vendor/bin/hw/android.hardware.camera.provider@2.4-external-service
+    interface android.hardware.camera.provider@2.4::ICameraProvider external/0
+    class hal
+    user cameraserver
+    group audio camera input drmrpc usb
+    ioprio rt 4
+    capabilities SYS_NICE
+    task_profiles CameraServiceCapacity MaxPerformance
+rk3566_tspi:/ # 
+
 ```

@@ -20,6 +20,7 @@ is_android() {
 echo -e "[toc]\n"  >./save_basic_info_result.md
 echo -e "\n#  ===================== system information ======================"  >>./save_basic_info_result.md
 if is_android; then
+    : #none action
 else
 echo -e "\n##  cat /etc/os-release \n\`\`\`\n$(cat /etc/os-release) \n\`\`\`"  >>./save_basic_info_result.md
 fi
@@ -85,7 +86,7 @@ echo -e "\n##  busybox \n\`\`\`\n$(busybox) \n\`\`\`"  >>./save_basic_info_resul
 if is_android; then
 	echo -e "\n##  ls -al /vendor/bin \n\`\`\`\n$(ls -al /vendor/bin) \n\`\`\`"  >>./save_basic_info_result.md
 	echo -e "\n##  ls -al /system/bin \n\`\`\`\n$(ls -al /system/bin) \n\`\`\`"  >>./save_basic_info_result.md
-	echo -e "\n##  adb shell getprop \n\`\`\`\n$(adb shell getprop) \n\`\`\`"  >>./save_basic_info_result.md
+	echo -e "\n##  adb shell getprop \n\`\`\`\n$(getprop) \n\`\`\`"  >>./save_basic_info_result.md
 	echo -e "\n##  dumpsys -l \n\`\`\`\n$(dumpsys -l) \n\`\`\`"  >>./save_basic_info_result.md
 	echo -e "\n##  toybox  \n\`\`\`\n$(toybox) \n\`\`\`"  >>./save_basic_info_result.md
 fi
@@ -120,7 +121,7 @@ if is_android; then
 fi
 
 ## procfs
-echo -e "\n#  ===================== /proc/ 文件系统 ====================="  >>./save_basic_info_result.md
+echo -e "\n#  ===================== /proc/ fs ====================="  >>./save_basic_info_result.md
 echo -e "\n##  cat /proc/cmdline \n\`\`\`\n$(cat /proc/cmdline) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /proc/cpuinfo \n\`\`\`\n$(cat /proc/cpuinfo) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /proc/meminfo \n\`\`\`\n$(cat /proc/meminfo) \n\`\`\`"  >>./save_basic_info_result.md
@@ -134,6 +135,9 @@ echo -e "\n##  cat /proc/sys/kernel/printk \n\`\`\`\n$(cat /proc/sys/kernel/prin
 #zcat /proc/config.gz  >>./save_basic_info_result.md
 
 ## other fs
-echo -e "\n#  ===================== 其他 ====================="  >>./save_basic_info_result.md
+echo -e "\n#  ===================== other ====================="  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /dev/ \n\`\`\`\n$(ls -al /dev) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /dev/block/by-name/ \n\`\`\`\n$(ls -al /dev/block/by-name/) \n\`\`\`"  >>./save_basic_info_result.md
+echo -e "\n##  find / -iname \"\*camera\*\"  2\>/dev/null \|xargs ls -al \n\`\`\`\n$( find / -iname "*camera*"  2>/dev/null |xargs ls -al) \n\`\`\`"  >>./save_basic_info_result.md
+
+echo -e "\n#  ===================== manual add commnd ====================="  >>./save_basic_info_result.md

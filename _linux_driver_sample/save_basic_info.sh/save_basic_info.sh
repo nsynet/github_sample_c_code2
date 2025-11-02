@@ -66,7 +66,7 @@ echo -e "\n#  =====================常用命令 ====================="  >>./save
 echo -e "\n##  lspci \n\`\`\`\n$(lspci) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  lsusb \n\`\`\`\n$(lsusb) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  lsipc \n\`\`\`\n$(lsipc) \n\`\`\`"  >>./save_basic_info_result.md
-echo -e "\n##  lsblk \n\`\`\`\n$(lsblk) \n\`\`\`"  >>./save_basic_info_result.md
+echo -e "\n##  lsblk -f \n\`\`\`\n$(lsblk -f) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  fdisk -l \n\`\`\`\n$(fdisk -l) \n\`\`\`"  >>./save_basic_info_result.md
 
 echo -e "\n##  i2cdetect -l \n\`\`\`\n$(i2cdetect -l) \n\`\`\`"  >>./save_basic_info_result.md

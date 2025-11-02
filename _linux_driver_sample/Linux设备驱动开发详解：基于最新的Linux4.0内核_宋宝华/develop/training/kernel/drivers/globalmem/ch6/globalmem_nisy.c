@@ -98,7 +98,9 @@ static ssize_t globalmem_write(struct file *filp, const char __user * buf,
 		count = GLOBALMEM_SIZE - p;
 
 	if (copy_from_user(dev->mem + p, buf, count))
+    {
 		ret = -EFAULT;
+    }
 	else {
 		*ppos += count;
 		ret = count;

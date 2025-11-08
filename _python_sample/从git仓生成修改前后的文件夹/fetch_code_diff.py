@@ -8,7 +8,6 @@ def save_changed_files():
     old_dir = "_old"
     new_dir = "_new"
     
-    # 创建目录
     os.makedirs(old_dir, exist_ok=True)
     os.makedirs(new_dir, exist_ok=True)
     

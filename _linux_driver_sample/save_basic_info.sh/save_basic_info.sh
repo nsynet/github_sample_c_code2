@@ -17,7 +17,7 @@ is_android() {
 }
 
 
-echo -e "[toc]\n"  >./save_basic_info_result.md
+echo -e "[TOC]\n"  >./save_basic_info_result.md
 echo -e "\n#  ===================== system information ======================"  >>./save_basic_info_result.md
 if is_android; then
     : #none action

@@ -18,7 +18,7 @@ is_android() {
 
 
 echo -e "[TOC]\n"  >./save_basic_info_result.md
-echo -e "\n#  ===================== system information ======================"  >>./save_basic_info_result.md
+echo -e "\n#  = system information ="  >>./save_basic_info_result.md
 if is_android; then
     : #none action
 else
@@ -27,34 +27,34 @@ fi
 echo -e "\n##  uname -a \n\`\`\`\n$(uname -a) \n\`\`\`"  >>./save_basic_info_result.md
 
 
-echo -e "\n#  =====================CPU information ====================="  >>./save_basic_info_result.md
+echo -e "\n#  =CPU information ="  >>./save_basic_info_result.md
 echo -e "\n##  lscpu \n\`\`\`\n$(lscpu) \n\`\`\`"  >>./save_basic_info_result.md
 
 
 # kenerl configure
-echo -e "\n#  ===================== KERNEL config ====================="  >>./save_basic_info_result.md
+echo -e "\n#  = KERNEL config ="  >>./save_basic_info_result.md
 echo -e "\n##  zcat /proc/config.gz \n\`\`\`\n$(zcat /proc/config.gz) \n\`\`\`"  >>./save_basic_info_result.md
 
 # 显示内存信息
-echo -e "\n#  =====================内存信息====================="  >>./save_basic_info_result.md
+echo -e "\n#  =内存信息="  >>./save_basic_info_result.md
 #free -h | grep Mem | awk '{printf "总内存: %s\n可用内存: %s\n已用内存: %s\n", $2, $7, $3}' >>./save_basic_info_result.md
 echo -e "\n##  free -h \n\`\`\`\n$(free -h) \n\`\`\`"  >>./save_basic_info_result.md
 
 # 显示磁盘使用情况
-echo -e "\n#  =====================磁盘使用情况====================="  >>./save_basic_info_result.md
+echo -e "\n#  =磁盘使用情况="  >>./save_basic_info_result.md
 echo -e "\n##  df -h \n\`\`\`\n$(df -h) \n\`\`\`"  >>./save_basic_info_result.md
 
 # 显示网络接口信息
-echo -e "\n#  =====================网络接口信息====================="  >>./save_basic_info_result.md
+echo -e "\n#  =网络接口信息="  >>./save_basic_info_result.md
 ip addr | grep 'state UP' -A 2 | grep -v 'state UP' | grep -v 'lo' >>./save_basic_info_result.md
 echo -e "\n##  ifconfig \n\`\`\`\n$(ifconfig) \n\`\`\`"  >>./save_basic_info_result.md
 
 # 显示当前登录用户信息
-echo -e "\n#  =====================当前登录用户信息====================="  >>./save_basic_info_result.md
+echo -e "\n#  =当前登录用户信息="  >>./save_basic_info_result.md
 echo -e "\n##  w \n\`\`\`\n$(w) \n\`\`\`"  >>./save_basic_info_result.md
 
 # 显示系统进程信息
-echo -e "\n#  =====================显示系统进程信息====================="  >>./save_basic_info_result.md
+echo -e "\n#  =显示系统进程信息="  >>./save_basic_info_result.md
 ## show %CPU,%MEM
 #echo -e "\n##  ps aux \n\`\`\`\n$(ps aux --sort=-%cpu | head -5)"  >>./save_basic_info_result.md
 
@@ -62,7 +62,7 @@ echo -e "\n#  =====================显示系统进程信息=====================
 echo -e "\n##  ps -ef \n\`\`\`\n$(ps -ef) \n\`\`\`"  >>./save_basic_info_result.md
 
 ## common cmman
-echo -e "\n#  =====================常用命令 ====================="  >>./save_basic_info_result.md
+echo -e "\n#  =常用命令 ="  >>./save_basic_info_result.md
 echo -e "\n##  lspci \n\`\`\`\n$(lspci) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  lsusb \n\`\`\`\n$(lsusb) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  lsipc \n\`\`\`\n$(lsipc) \n\`\`\`"  >>./save_basic_info_result.md
@@ -94,23 +94,23 @@ fi
 
 
 ## sysfs
-echo -e "\n#  ===================== /sys/ 文件系统 ====================="  >>./save_basic_info_result.md
+echo -e "\n#  = /sys/ 文件系统 ="  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /sys/devices/platform/ \n\`\`\`\n$(ls -al /sys/devices/platform/) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /sys/devices/system/cpu/cpu*/cpufreq/cpuinfo_cur_freq \n\`\`\`\n$(cat /sys/devices/system/cpu/cpu*/cpufreq/cpuinfo_cur_freq) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /sys/kernel/debug \n\`\`\`\n$(ls -al /sys/kernel/debug) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /sys/kernel/debug/gpio \n\`\`\`\n$(cat /sys/kernel/debug/gpio) \n\`\`\`"  >>./save_basic_info_result.md
 
-echo -e "\n##  ===================== 打印 /sys/class/video4linux/video* ====================="  >>./save_basic_info_result.md
+echo -e "\n##  = 打印 /sys/class/video4linux/video* ="  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /sys/class/video4linux \n\`\`\`\n$(ls -al /sys/class/video4linux) \n\`\`\`"  >>./save_basic_info_result.md
 for i in /sys/class/video4linux/video* ; do echo $i ;echo dev:$(cat $i/dev); echo name:$(cat $i/name);echo index:$(cat $i/index);echo link_name:$(cat $i/link_name);echo; done  >>./save_basic_info_result.md
-echo -e "\n##  ===================== 打印 /sys/class/video4linux/v4l-subdev* ====================="  >>./save_basic_info_result.md
+echo -e "\n##  = 打印 /sys/class/video4linux/v4l-subdev* ="  >>./save_basic_info_result.md
 for i in /sys/class/video4linux/v4l-subdev* ; do echo $i ;echo dev:$(cat $i/dev); echo name:$(cat $i/name);echo index:$(cat $i/index);echo link_name:$(cat $i/link_name);echo; done >>./save_basic_info_result.md
-echo -e "\n##  ===================== 打印 /sys/bus/media/devices/media* ====================="  >>./save_basic_info_result.md
+echo -e "\n##  = 打印 /sys/bus/media/devices/media* ="  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /sys/bus/media/ \n\`\`\`\n$(ls -al /sys/bus/media/) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /sys/bus/media/devices \n\`\`\`\n$(ls -al /sys/bus/media/devices) \n\`\`\`"  >>./save_basic_info_result.md
 for i in /sys/bus/media/devices/media* ; do echo $i ;echo dev:$(cat $i/dev); echo model:$(cat $i/model);echo; done >>./save_basic_info_result.md
 
-echo -e "\n##  ===================== 打印 /sys/ 的thermal相关 ====================="  >>./save_basic_info_result.md
+echo -e "\n##  = 打印 /sys/ 的thermal相关 ="  >>./save_basic_info_result.md
 echo -e "\n##  cat /sys/devices/virtual/thermal/thermal_zone*/type \n\`\`\`\n$(cat /sys/devices/virtual/thermal/thermal_zone*/type) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /sys/devices/virtual/thermal/cooling_device*/type \n\`\`\`\n$(cat /sys/devices/virtual/thermal/cooling_device*/type) \n\`\`\`"  >>./save_basic_info_result.md
 
@@ -121,7 +121,7 @@ if is_android; then
 fi
 
 ## procfs
-echo -e "\n#  ===================== /proc/ fs ====================="  >>./save_basic_info_result.md
+echo -e "\n#  = /proc/ fs ="  >>./save_basic_info_result.md
 echo -e "\n##  cat /proc/cmdline \n\`\`\`\n$(cat /proc/cmdline) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /proc/cpuinfo \n\`\`\`\n$(cat /proc/cpuinfo) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /proc/meminfo \n\`\`\`\n$(cat /proc/meminfo) \n\`\`\`"  >>./save_basic_info_result.md
@@ -131,13 +131,13 @@ echo -e "\n##  cat /proc/mounts \n\`\`\`\n$(cat /proc/mounts) \n\`\`\`"  >>./sav
 echo -e "\n##  cat /proc/interrupts \n\`\`\`\n$(cat /proc/interrupts) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /proc/devices \n\`\`\`\n$(cat /proc/devices) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  cat /proc/sys/kernel/printk \n\`\`\`\n$(cat /proc/sys/kernel/printk) \n\`\`\`"  >>./save_basic_info_result.md
-#echo -e "\n##  =====================kernel config ====================="  >>./save_basic_info_result.md
+#echo -e "\n##  =kernel config ="  >>./save_basic_info_result.md
 #zcat /proc/config.gz  >>./save_basic_info_result.md
 
 ## other fs
-echo -e "\n#  ===================== other ====================="  >>./save_basic_info_result.md
+echo -e "\n#  = other ="  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /dev/ \n\`\`\`\n$(ls -al /dev) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  ls -al /dev/block/by-name/ \n\`\`\`\n$(ls -al /dev/block/by-name/) \n\`\`\`"  >>./save_basic_info_result.md
 echo -e "\n##  find / -iname \"\*camera\*\"  2\>/dev/null \|xargs ls -al \n\`\`\`\n$( find / -iname "*camera*"  2>/dev/null |xargs ls -al) \n\`\`\`"  >>./save_basic_info_result.md
 
-echo -e "\n#  ===================== manual add commnd ====================="  >>./save_basic_info_result.md
+echo -e "\n#  = manual add commnd ="  >>./save_basic_info_result.md

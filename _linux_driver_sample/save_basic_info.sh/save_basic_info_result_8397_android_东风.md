@@ -9557,7 +9557,6 @@ lrwxr-xr-x 1 root   shell       13 2009-01-01 08:00 pwd -> toybox_vendor
 -rwxr-xr-x 1 root   shell    51440 2009-01-01 08:00 qcat_unbuffered
 -rwxr-xr-x 1 root   shell    51536 2009-01-01 08:00 qcom-system-daemon
 -rw-r--r-- 1 root   shell    12931 2025-12-17 16:47 qcx_config_v4l2_camera_hal.json
--rw-r--r-- 1 root   shell    12001 2009-01-01 08:00 qcx_config_v4l2_camera_hal.json_nisy_old
 -rwxr-xr-x 1 root   shell    85456 2009-01-01 08:00 qdcmss
 -rwxr-xr-x 1 root   shell    51768 2009-01-01 08:00 qdss_qmi_helper
 drwxr-x--x 2 root   shell     4096 2009-01-01 08:00 qmi-framework-tests
@@ -12953,7 +12952,6 @@ lrwxrwxrwx 1 root root   24 1970-01-01 08:00 vendor_boot_b -> /dev/block/vendor_
 cr--r--r-- 1 system       system       505,   7 1970-01-01 08:00 /dev/mem_buf_vm/qcom,cp_camera
 cr--r--r-- 1 system       system       505,  10 1970-01-01 08:00 /dev/mem_buf_vm/qcom,cp_camera_preview
 -rw-r--r-- 1 root         shell           12931 2025-12-17 16:47 /mnt/scratch/overlay/vendor/upper/bin/qcx_config_v4l2_camera_hal.json
--rw-r--r-- 1 root         shell           12001 2009-01-01 08:00 /mnt/scratch/overlay/vendor/upper/bin/qcx_config_v4l2_camera_hal.json_nisy_old
 -rw-r--r-- 1 root         root             5951 2009-01-01 08:00 /product/media/audio/ui/camera_click.ogg
 -rw-r--r-- 1 root         root             9376 2009-01-01 08:00 /product/media/audio/ui/camera_focus.ogg
 lrwxrwxrwx 1 root         root                0 2025-12-16 23:32 /sys/class/mem_buf_vm/qcom,cp_camera -> ../../devices/virtual/mem_buf_vm/qcom,cp_camera
@@ -12990,7 +12988,6 @@ lrwxrwxrwx 1 root         root                0 2025-12-16 23:32 /sys/class/mem_
 -rw-r--r-- 1 root         root            90536 2009-01-01 08:00 /system/lib64/libcamera_metadata.so
 -rwxr-xr-x 1 root         shell           51944 2009-01-01 08:00 /vendor/bin/hw/android.hardware.camera.provider@V1-qti-service
 -rw-r--r-- 1 root         shell           12931 2025-12-17 16:47 /vendor/bin/qcx_config_v4l2_camera_hal.json
--rw-r--r-- 1 root         shell           12001 2009-01-01 08:00 /vendor/bin/qcx_config_v4l2_camera_hal.json_nisy_old
 -rw-r--r-- 1 root         shell            3836 2009-01-01 08:00 /vendor/etc/display/camera_alignments.json
 -rw-r--r-- 1 root         root              351 2009-01-01 08:00 /vendor/etc/init/vendor.qti.camera.provider-service.rc
 -rw-r--r-- 1 root         shell             336 2009-01-01 08:00 /vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml

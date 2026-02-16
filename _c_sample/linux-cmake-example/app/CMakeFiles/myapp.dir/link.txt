@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/myapp.dir/main.c.o -o myapp  -Wl,-rpath,/home/linuxzn/linux-cmake-example/lib: ../lib/libstrutils.a ../lib/libmathutils.so -lm 

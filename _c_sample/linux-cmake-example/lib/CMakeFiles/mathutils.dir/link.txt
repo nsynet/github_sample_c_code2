@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libmathutils.so -o libmathutils.so CMakeFiles/mathutils.dir/math_utils.c.o 

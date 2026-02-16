@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 
 #  ===================== system information ======================
@@ -6426,7 +6426,7 @@ i2c-0	i2c       	rk3x-i2c                        	I2C Adapter
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --                         
 ```
-//Õâ2¸öÉè±¸ÊÇ¼ÓÁËÉãÏñÍ·ºó³öÏÖµÄ
+//ï¿½ï¿½2ï¿½ï¿½ï¿½è±¸ï¿½Ç¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½Öµï¿½
 ##  i2cdetect -y 5 
 ```
  
@@ -8216,7 +8216,7 @@ drwxr-xr-x   6 root   root 0 1970-01-01 00:00 usb
 ##  cat /sys/kernel/debug/gpio 
 ```
 gpiochip0: GPIOs 0-31, parent: platform/fdd60000.gpio, gpio0:
- gpio-8   (                    |power               ) out lo     //nisy-ÉãÏñÍ·¼ÓÉÏºó³öÏÖ
+ gpio-8   (                    |power               ) out lo     //nisy-ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½
 
 gpiochip1: GPIOs 32-63, parent: platform/fe740000.gpio, gpio1:
  gpio-40  (                    |rgb-led-b           ) out hi    
@@ -8233,8 +8233,8 @@ gpiochip2: GPIOs 64-95, parent: platform/fe750000.gpio, gpio2:
 gpiochip3: GPIOs 96-127, parent: platform/fe760000.gpio, gpio3:
 
 gpiochip4: GPIOs 128-159, parent: platform/fe770000.gpio, gpio4:
- gpio-140 (                    |pwdn                ) out lo    //nisy-ÉãÏñÍ·¼ÓÉÏºó³öÏÖ
- gpio-141 (                    |reset               ) out lo    //nisy-ÉãÏñÍ·¼ÓÉÏºó³öÏÖ
+ gpio-140 (                    |pwdn                ) out lo    //nisy-ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½
+ gpio-141 (                    |reset               ) out lo    //nisy-ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½
  gpio-148 (                    |vcc5v0_host         ) out hi    
 
 gpiochip5: GPIOs 255-255, parent: platform/rk805-pinctrl, rk817-gpio, can sleep: 
@@ -8250,7 +8250,7 @@ drwxr-xr-x 76 root root 0 2017-08-04 09:00 ..
 lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev0 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev0
 lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev1 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev1
 lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev2 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev2
-lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev3 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev3  //nisy-ÉãÏñÍ·¼ÓÉÏºó³öÏÖ
+lrwxrwxrwx  1 root root 0 2023-09-12 03:25 v4l-subdev3 -> ../../devices/platform/rkisp-vir0/video4linux/v4l-subdev3  //nisy-ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½
 lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video0 -> ../../devices/platform/rkisp-vir0/video4linux/video0
 lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video1 -> ../../devices/platform/rkisp-vir0/video4linux/video1
 lrwxrwxrwx  1 root root 0 2023-09-12 03:25 video2 -> ../../devices/platform/rkisp-vir0/video4linux/video2
@@ -8335,7 +8335,7 @@ name:rockchip-csi2-dphy1
 index:11
 link_name:
 
-/sys/class/video4linux/v4l-subdev3  //nisy-ÉãÏñÍ·¼ÓÉÏºó³öÏÖ
+/sys/class/video4linux/v4l-subdev3  //nisy-ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½
 dev:81:12
 name:m00_b_ov5695 4-0036
 index:12
@@ -9593,7 +9593,7 @@ drwxr-xr-x  2 root shell   4096 2023-09-12 03:15 rkisp1
 drwxr-xr-x  2 root shell   4096 2023-09-12 03:15 rkisp2 
 ```
 
-#  ===================== å…¶ä»–äººå·¥è¡¥å……çš„å‘½ä»?=====================
+#  ===================== å…¶ä»–äººå·¥è¡¥å……çš„å‘½ï¿½?=====================
 ```
 rk3566_tspi:/ # cat /vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
 service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service

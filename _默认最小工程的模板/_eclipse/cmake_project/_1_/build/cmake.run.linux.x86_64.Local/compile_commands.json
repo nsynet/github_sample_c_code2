@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/nisy/eclipse-workspace/_1_/build/cmake.run.linux.x86_64.Local",
+  "command": "/usr/bin/clang++ -I/home/nisy/eclipse-workspace/_1_/build/cmake.run.linux.x86_64.Local -O3 -DNDEBUG -o CMakeFiles/_1_.dir/_1_.cpp.o -c /home/nisy/eclipse-workspace/_1_/_1_.cpp",
+  "file": "/home/nisy/eclipse-workspace/_1_/_1_.cpp",
+  "output": "CMakeFiles/_1_.dir/_1_.cpp.o"
+}
+]
